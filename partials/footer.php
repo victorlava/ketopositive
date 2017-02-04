@@ -1,4 +1,4 @@
-			<div class="background background--overlay"></div>
+
 	        <section class="footer section section--dark-grey">
 	        	<footer>
 		        	<div class="container">
@@ -67,41 +67,9 @@
 		        	</div> 
 		        </footer>
 	        </section>
-		</main><!-- #main -->
 
 		<!--<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.min.js"></script>-->
 		<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-		<script src="bower_components/jRange/jquery.range-min.js"></script>
-		<script src="bower_components/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js"></script>
-		<script src="/assets/js/bootstrap-formhelpers.min.js"></script> 
-		<script src="/assets/js/lightbox.min.js"></script>
-
-		<script type="text/javascript">
-
-		$('.range-slider').jRange({
-		    from: 20,
-		    to: 300,
-		    step: 10,
-		    format: '%s EUR',
-		    width: 220,
-		    showLabels: true,
-		    isRange: true,
-		    showScale: false,
-		    theme: 'orange'
-		});
-		</script>
-
-		<script type="text/javascript">
-
-		    lightbox.option({
-		      'resizeDuration': 200,
-		      'wrapAround': true,
-		      'disableScrolling': true
-		    });
-
-		</script>
-
-
 
 	</body>
 </html> 
