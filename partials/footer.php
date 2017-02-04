@@ -1,68 +1,70 @@
 
-	        <section class="footer section section--dark-grey">
+	        <section class="footer section">
 	        	<footer>
 		        	<div class="container">
-		        		<div class="row">
-		        			<div class="col-md-4">
-		        			<div class="footer-block">
-		        				<h3 class="title">Contacts</h3>
-			        			<p class="footer-phone"><a href="tel:+37062179960">+370 621 79960</a></p>
-			        			<ul>
-			        				<li>
-			        					<a href="#">Email Us</a>
-			        				</li>
-			        				<li>
-			        					<a href="#">Have Difficulty Using the SIte?</a>
-			        				</li>
-			        				<li>
-			        					<a href="#">Client Feedback</a>
-			        				</li>
-			        			</ul>
-
-			        			<div class="footer-social footer--push-bottom">
-			        				<a href="#"><i class="icon icon-google-plus-white"></i></a>
-			        				<a href="#"><i class="icon icon-facebook-white"></i></a>
+		        		<div class="footer-top row">
+			        		<div class="col-md-3">
+			        			<div class="footer-block">
+			        				<header class="header header--line header--left">
+			        					<h4 class="header-title">Apie kelioniupaieska.lt</h4>
+			        				</header>
+				        			<p>Profesionalų komanda, sukaupusi ilgametę patirtį ir padedanti įsigyti keliones į bet kurį pasaulio kraštą. Siūlome aviabilietus, traukinių, autobusų, keltų bilietus, viešbučius visame pasaulyje. Mūsų biuruose gausite išsamią, tikslią ir naujausią informaciją.</p>
 			        			</div>
-		        			</div>
-		        		</div>
+			        		</div>
 
-		        		<div class="col-md-4">
-		        			<div class="footer-block">
-		        				<h3 class="title">FAQ</h3>
-			        			<ul>
-			        				<li>
-			        					<a href="#">How to rent your own Vehicle?</a>
-			        				</li>
-			        				<li>
-			        					<a href="#">Do we charge for Vehicle rental?</a>
-			        				</li>
-			        				<li>
-			        					<a href="#">Countries Involved</a>
-			        				</li>
-			        				<li>
-			        					<a href="#">MORE</a>
-			        				</li>
-			        			</ul>
-		        			</div>
-		        		</div>
-
-		        		<div class="col-md-4">
-		        			<div class="footer-block">
-		        				<h3 class="title">About Project</h3>
-			        			<ul>
-			        				<li>
-			        					<a href="#">Our Team</a>
-			        				</li>
-			        				<li>
-			        					<a href="#">Privacy Policy</a> 
-			        				</li>
-			        			</ul>
-			        			<div class="footer-logo footer--push-bottom">
-			        				<i class="icon icon-logo-blue pull-left"></i>
-			        				<p>2016 Motorcycle<br>Rental and Tours</p>
+			        		<div class="col-md-3">
+			        			<div class="footer-block">
+			        				<header class="header header--line header--left">
+			        					<h4 class="header-title">Agentūros filialai</h4>
+			        				</header>
+			        				<ul class="list list--phones">
+			        					<li><a href="call:852124474">Vilnius: 8 5 21244 74</a></li>
+			        					<li><a href="call:852124474">Vilnius: 8 5 21244 74</a></li>
+			        					<li><a href="call:852124474">Vilnius: 8 5 21244 74</a></li>
+			        					<li><a href="call:852124474">Vilnius: 8 5 21244 74</a></li>
+			        				</ul>
 			        			</div>
-		        			</div>
+			        		</div>
+
+			        		<div class="col-md-3">
+			        			<div class="footer-block">
+			        				<header class="header header--line header--left">
+			        					<h4 class="header-title">Naudinga informacija</h4>
+			        				</header>
+				        			<ul class="list list--links">
+			        					<li><a href="#">Madeira – amžina gėlių sala </a></li>
+			        					<li><a href="#">Ilgasis kovo savaitgalis</a></li>
+			        					<li><a href="#">Patarimai planuojantiems kelionę savarankiškai, bet norintiems </a></li>
+			        					<li><a href="#">3 vietos, kurių dar nematėte Europoje</a></li>
+			        				</ul>
+			        			</div>
+			        		</div>
+
+			        		<div class="col-md-3">
+			        			<div class="footer-block">
+			        				<header class="header header--line header--left">
+			        					<h4 class="header-title">Kelionės</h4>
+			        				</header>
+				        			<ul class="list list--links">
+			        					<li><a href="#">Novaturo kelionių pasiūlymai</a></li>
+			        					<li><a href="#">Teztour kelionių pasiūlymai</a></li>
+			        					<li><a href="#">Karščiausi kelionių pasiūlymai</a></li>
+			        					<li><a href="#">Pažintinės kelionės lėktuvu ir autobusu</a></li>
+			        				</ul>
+			        			</div>
+			        		</div>
 		        		</div>
+		        		<div class="footer-bottom row">
+		        			<div class="footer-copyright pull-left">
+		        				Kelioniupaieska.lt ® 2 016
+		        			</div>
+		        			<div class="footer-social pull-right">
+		        				<ul class="list list--inline">
+		        					<li><a href="#"><i class="fa"></i></a></li>
+		        					<li><a href="#"><i class="fa"></i></a></li>
+		        					<li><a href="#"><i class="fa"></i></a></li>
+		        				</ul>
+		        			</div>
 		        		</div>
 		        	</div> 
 		        </footer>
