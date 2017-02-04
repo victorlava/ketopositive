@@ -1,7 +1,8 @@
 ######################
-motorent.sublime-project
-motorent.sublime-workspace
+kelioniupaieska.sublime-project
+kelioniupaieska.sublime-workspace
+bower_components
 node_modules 
 node_modules/*
-assets/bower_components
+
 
