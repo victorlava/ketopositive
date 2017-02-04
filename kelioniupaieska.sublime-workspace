@@ -1,0 +1,697 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-family: "
+			],
+			[
+				"bak",
+				"background-position: "
+			],
+			[
+				"marg",
+				"margin: "
+			],
+			[
+				"pad",
+				"padding: "
+			],
+			[
+				"te",
+				"text-decoration: "
+			],
+			[
+				"mar",
+				"margin-right: "
+			],
+			[
+				"border",
+				"border-bottom: "
+			],
+			[
+				"bo",
+				"bottom: "
+			],
+			[
+				"margin",
+				"margin: "
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"padd",
+				"padding-left: "
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"text",
+				"text-align: "
+			],
+			[
+				"bac",
+				"background: "
+			],
+			[
+				"ba",
+				"background: "
+			],
+			[
+				"tex",
+				"text-transform: "
+			],
+			[
+				"margi",
+				"margin-bottom: "
+			],
+			[
+				"padding",
+				"padding-left: "
+			],
+			[
+				"border-r",
+				"border-right: "
+			],
+			[
+				"paddi",
+				"padding: "
+			],
+			[
+				"body-te",
+				"body-text-color"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"dropdown",
+				"dropdown-menu--sign"
+			],
+			[
+				"font-",
+				"font-size: "
+			],
+			[
+				"padi",
+				"padding-bottom: "
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ins",
+				"ins_company_price"
+			],
+			[
+				"defau",
+				"default_age"
+			],
+			[
+				"smo",
+				"smoking_status"
+			],
+			[
+				"Insura",
+				"insuranceForm"
+			],
+			[
+				"gen",
+				"gender_multiplier"
+			],
+			[
+				"age",
+				"age_multiplier"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"tet",
+				"text-align: "
+			],
+			[
+				"li",
+				"line-height: "
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"url",
+				"parse_url"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"service-",
+				"service-wrapper"
+			],
+			[
+				"fi",
+				"first_name"
+			],
+			[
+				"em",
+				"email_subject"
+			],
+			[
+				"conver",
+				"conversion-form-wrapper"
+			],
+			[
+				"err",
+				"error_message"
+			],
+			[
+				"splash",
+				"splash-content"
+			],
+			[
+				"splas",
+				"splash-content"
+			],
+			[
+				"span",
+				"spanWidth"
+			],
+			[
+				"half",
+				"half-section"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"part",
+				"partners-wrapper"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"d",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Works/Desktop/functions.php",
+		"/E/Vagrant/airwood/heart.dev/wp-content/themes/Zephyr-child/footer.php",
+		"/E/Vagrant/airwood/heart.dev/wp-content/themes/Zephyr/functions.php",
+		"/E/Vagrant/airwood/heart.dev/wp-content/themes/Zephyr-child/functions.php",
+		"/E/Vagrant/airwood/heart.dev/wp-content/themes/Zephyr/header.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_modal.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_motorcycles.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_order.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_range-slider.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_search-component.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_input-group.scss",
+		"/E/Vagrant/airwood/motorent.dev/partials/search-component.php",
+		"/E/Vagrant/airwood/motorent.dev/moto-list.php",
+		"/E/Vagrant/airwood/motorent.dev/moto-inner.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/order-main.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_checkbox.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_filter.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_mobile-nav.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/02-partials/_footer.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/02-partials/_header.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_buttons.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_fonts.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_panel.scss",
+		"/E/Vagrant/airwood/motorent.dev/config.rb",
+		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_global.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/main.scss",
+		"/E/Vagrant/airwood/motorent.dev/Gruntfile.js",
+		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_bootstrap.scss",
+		"/E/Vagrant/airwood/motorent.dev/partials/header.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_global.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_mixins.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_jumbotron.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_compass.scss",
+		"/E/Vagrant/airwood/motorent.dev/partials/footer.php",
+		"/E/Vagrant/airwood/motorent.dev/assets/js/src/script.js",
+		"/E/Vagrant/airwood/motorent.dev/index.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_section.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_email.scss",
+		"/C/Users/Works/Desktop/foodguide/@layout.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/order-daily.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/menu.php",
+		"/E/Vagrant/airwood/motorent.dev/assets/css/sprites.css",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_icons.scss",
+		"/E/Vagrant/airwood/motorent.dev/assets/css/lightbox.css",
+		"/C/Users/Works/Desktop/moto-list.php",
+		"/E/Vagrant/airwood/heart.dev/wp-content/themes/Zephyr/templates/single-post.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/motorcycles.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/email-cta.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/tours.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_list.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_price.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_settings.scss",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-config.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/style.css",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/functions.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/parts/entry-date.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-contact-owner.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-features.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-gallery.php",
+		"/C/Users/Works/Desktop/1klase.lt/search-form.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-address.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/item-container.php",
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/parts/entry-date-format.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/03-pages/_moto-list.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/03-pages/_moto-inner.scss",
+		"/E/Vagrant/airwood/motorent.dev/assets/css/bootstrap-formhelpers.css",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/Vagrant/airwood/motorent.dev/partials/gallery.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_photos-more.scss",
+		"/E/Vagrant/airwood/motorent.dev/bower_components/ekko-lightbox/dist/ekko-lightbox.min.js",
+		"/C/Users/Works/Downloads/lightbox-4.0.2/lightbox-4.0.2/examples/index.html",
+		"/C/Users/Works/Downloads/lightbox-4.0.2/lightbox-4.0.2/package.json",
+		"/C/Users/Works/Downloads/jRange-master/jRange-master/demo/index.html",
+		"/E/Vagrant/airwood/motorent.dev/assets/css/jRange.css",
+		"/C/Users/Works/Downloads/jRange-master/jRange-master/package.json",
+		"/C/Users/Works/Desktop/wp-config.php",
+		"/C/Users/Works/Desktop/robots.txt",
+		"/C/Users/Works/Desktop/skandinavija.today/public_html/wp-config.php",
+		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_helpers.scss",
+		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_span.scss",
+		"/C/Users/Works/Desktop/.htaccess",
+		"/C/Users/Works/Desktop/config.inc.php",
+		"/C/Users/Works/Desktop/form.php",
+		"/C/Users/Works/Desktop/results.php",
+		"/E/Vagrant/airwood/victor.dev/partials/footer.php",
+		"/E/Vagrant/airwood/motorent.dev/.gitignore",
+		"/E/Vagrant/airwood/motorent.dev/.htaccess",
+		"/E/Vagrant/airwood/brokeriai.dev/Gruntfile.js",
+		"/E/Vagrant/airwood/brokeriai.dev/form.php",
+		"/E/Vagrant/airwood/brokeriai.dev/index.php",
+		"/E/Vagrant/airwood/brokeriai.dev/send-mail.php",
+		"/E/Vagrant/airwood/brokeriai.dev/results.php",
+		"/E/Vagrant/airwood/brokeriai.dev/scss/main.scss",
+		"/E/Vagrant/airwood/brokeriai.dev/css/style.css",
+		"/C/Users/Works/Desktop/1klase.lt/themeforest-17090002-food-guide-restaurant-food-and-drinks-directory-listing-wordpress-theme/Foodguide Wordpress Theme/WP/foodguide-themeforest/foodguide/parts/comments-link.php",
+		"/C/Users/Works/Desktop/1klase.lt/themeforest-17090002-food-guide-restaurant-food-and-drinks-directory-listing-wordpress-theme/Foodguide Wordpress Theme/WP/foodguide-themeforest/foodguide/comments.php",
+		"/E/Vagrant/airwood/brokeriai.dev/scss/04-base/_bootstrap.scss",
+		"/E/Vagrant/airwood/brokeriai.dev/js/angular-slugify.js",
+		"/E/Vagrant/airwood/brokeriai.dev/thank-you.php",
+		"/E/Vagrant/airwood/victor.dev/send_form_email.php",
+		"/E/Vagrant/airwood/victor.dev/scripts/send-message.php",
+		"/E/Vagrant/airwood/victor.dev/partials/forms/form-header.php",
+		"/E/Vagrant/airwood/victor.dev/partials/forms/form-contact.php",
+		"/E/Vagrant/airwood/victor.dev/paslaugos/internetiniu-svetainiu-kurimas.php",
+		"/E/Vagrant/airwood/brokeriai.dev/test.php",
+		"/E/Vagrant/airwood/victor.dev/Gruntfile.js",
+		"/E/Vagrant/airwood/victor.dev/partials/header.php",
+		"/E/Vagrant/airwood/brokeriai.dev/js/script.js",
+		"/C/Users/Works/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Works/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/E/Vagrant/airwood/victor.dev/js/main.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/keyboard-image-navigation.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/small-menu.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/customizer.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/cart.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/html5.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/jquery.cookie.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/jquery.carousel.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/jquery.scrollTo.min.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/jquery.mCustomScrollbar.concat.min.js",
+		"/E/Vagrant/airwood/victor.dev/partials/footer-landing.php",
+		"/E/Vagrant/airwood/victor.dev/web-dizainas.php",
+		"/E/Vagrant/airwood/victor.dev/projektai.php",
+		"/E/Vagrant/airwood/victor.dev/scss/01-components/_projects-wrapper.scss",
+		"/E/Vagrant/airwood/victor.dev/scss/03-pages/_old.scss",
+		"/E/Vagrant/airwood/victor.dev/paslaugos/web-dizainas.php",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/foundation/jquery.foundation.reveal.js",
+		"/C/Users/Works/Downloads/backup-12.12.2016_15-58-28_baikal/backup-12.12.2016_15-58-28_baikal/homedir/public_html/saugiteritorija/wp-content/themes/saugi-teritorija/javascripts/foundation/jquery.foundation.tabs.js"
+	],
+	"find":
+	{
+		"height": 198.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"E:\\Vagrant\\airwood\\motorent.dev\\scss",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"only screen and (max-width: 768px)",
+			"ul.head-social li",
+			"max-wid",
+			"catt/",
+			"cat/",
+			"cat/([^/]+)/(feed|rdf|rss|rss2|atom)/?$",
+			"cat/",
+			"cat",
+			"kategorija",
+			"cat",
+			"item/",
+			"cat",
+			"cat/",
+			"cat/4",
+			"cat/",
+			".w-iconbox.size_small .w-iconbox-title",
+			".w-iconbox.iconpos_top",
+			"kategorija",
+			"cat/",
+			"cat",
+			"vieta",
+			"cat/",
+			"l-subheader",
+			"mobileNav",
+			"window.mobileNavWidth",
+			"group-countr",
+			"border-radius",
+			"@include box-shadow(0);",
+			"1.67",
+			"line-height",
+			"box-shadow",
+			"content:",
+			"content:\"\\",
+			"transition",
+			"opacity",
+			"placeholder",
+			"url",
+			"text-shadow",
+			"border-radius",
+			"box-sizing",
+			"box-shadow",
+			"watch",
+			".css",
+			".js",
+			".css",
+			"cssmin",
+			"submit",
+			"order",
+			"sign",
+			"sign-in",
+			"background",
+			"lb-close",
+			"lb-prev",
+			"lb-next",
+			"loading",
+			"load",
+			"next",
+			".icon-close",
+			".png",
+			"margin-left",
+			"border-bottom",
+			"padding-left: 4",
+			".checkbox",
+			"result",
+			".dropdown-menu",
+			"border-top-r",
+			"custom",
+			"custom.css",
+			"!important",
+			"navbar",
+			"aria-e",
+			"navbar--dropdown",
+			"result",
+			"input",
+			"padding:",
+			"date-second",
+			"$screen-sm-min",
+			" \n",
+			"background: $primary-color !important;",
+			"focus",
+			"opacity",
+			".dropdown-toggle",
+			"sign",
+			".result",
+			"location",
+			"panel-heading",
+			"button--center button--big button--primary",
+			"order-inside-ga",
+			"/img/",
+			"/images/",
+			"left",
+			"Filter",
+			"section--dark-grey",
+			"{\n",
+			"one",
+			"line",
+			"one",
+			"panel-title",
+			"headingThree",
+			"collapseThree",
+			"collapseTwo",
+			"dropdown-toggle",
+			"box-shadow",
+			"!important",
+			"panel",
+			"h4",
+			"h5",
+			"ul{",
+			"ul {",
+			"ul",
+			"panel-default",
+			"acc",
+			"phone",
+			"phoneRegex",
+			"smoking",
+			"exam",
+			"help-block",
+			".price",
+			"class=\"row\"",
+			"class=\"col-md-12\"",
+			"style",
+			"style.css",
+			"style",
+			"style.css",
+			"style",
+			"exc",
+			"http://viktoraslava-4cac.kxcdn.com/",
+			"min-width: 1441"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"catt/",
+			"@include box-shadow(none);",
+			".min.js",
+			".min.css",
+			"$screen-md-min",
+			"/img/src/",
+			"/img/",
+			"headingThreeDaily",
+			"collapseThreeDaily",
+			"collapseTwoDaily",
+			"h3",
+			"h4",
+			"panel-order",
+			"help-block error",
+			"class=\"form-item form-group\"",
+			"",
+			"/",
+			".container",
+			"tax-calculators",
+			"/tax-calculators/",
+			".container",
+			".splash-content",
+			"<a target=\"_blank\" href=\"#\">",
+			"<div class=\"image-wrapper\">",
+			"<div class=\"container\">",
+			"<div class=\"splash-content\">",
+			"",
+			"/",
+			"partials",
+			"project",
+			"partials",
+			"project",
+			"partials",
+			"project-intros/",
+			"partials",
+			"/partials",
+			"container-fluid",
+			"place=footer",
+			"/",
+			"container-fluid",
+			"../partials",
+			"../project-intros",
+			"../partials",
+			"uzsakymas@viktoraslava.lt",
+			"tinklalapyje",
+			"tinklalapiai",
+			"tinklalapis",
+			"tinklalapio",
+			"tinklalapių",
+			"tinklalapį",
+			"tinklapį",
+			"tinklapių",
+			"puslapio",
+			"puslapių",
+			"col-lg-9",
+			"<br>",
+			"http://viktoraslava-4cac.kxcdn.com/img",
+			"http://viktoraslava-4cac.kxcdn.com/fonts/",
+			"./index_files/",
+			"",
+			"/",
+			"",
+			"http://viktoraslava.lt",
+			"project-section",
+			"#da4033",
+			"http://pullzone-4cac.kxcdn.com/",
+			"",
+			"http://victorlava.com",
+			"h6",
+			"h5",
+			"h4",
+			"h3",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 75.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/E/Vagrant/airwood/heart.dev/heart.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true
+}

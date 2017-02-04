@@ -1,0 +1,16 @@
+{
+  "name": "Front-end",
+  "dependencies": {
+    "awesome-bootstrap-checkbox": "~0.3.7",
+    "bootstrap-datepicker-1.6.4-dist": "https://github.com/uxsolutions/bootstrap-datepicker/releases/download/v1.6.4/bootstrap-datepicker-1.6.4-dist.zip",
+    "bootstrap-sass": "~3.3.7",
+    "ekko-lightbox": "~5.0.0",
+    "font-awesome": "~4.7.0",
+    "foundation": "zurb/bower-foundation",
+    "jquery": "~3.1.1",
+    "jRange": "https://github.com/nitinhayaran/jRange.git",
+    "pure": "~0.6.0",
+    "v4.0": "https://github.com/ashleydw/lightbox/releases/tag/v4.0.2",
+    "waypoints": "~4.0.1"
+  }
+}

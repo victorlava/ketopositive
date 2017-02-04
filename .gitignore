@@ -1,0 +1,7 @@
+######################
+motorent.sublime-project
+motorent.sublime-workspace
+node_modules 
+node_modules/*
+assets/bower_components
+
