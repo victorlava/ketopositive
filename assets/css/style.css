@@ -3414,6 +3414,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 h4 {
   font-size: 20px;
   font-weight: 400;
@@ -3627,6 +3639,26 @@ since your site is should be mostly composed of tiny modules.
 	--Carousel
 	--Section
 	--Accordion												  						*/
+.header.header--main {
+  text-align: center;
+}
+
+.header.header--main .header-title {
+  color: #ff6138;
+}
+
+.header.header--main .header-subtitle {
+  color: #a07e75;
+}
+
+.header .header-title {
+  margin: 0;
+}
+
+.header .header-sub-title {
+  margin: 0;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -3793,6 +3825,20 @@ since your site is should be mostly composed of tiny modules.
   line-height: 1.5;
   margin: 0;
   padding-bottom: 2em;
+}
+
+section.email .email-wrapper {
+  background-color: #fff8f3;
+  padding: 2em 0;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+  padding: 2em 0;
+}
+
+.section.section--primary {
+  background-color: #ff6138;
 }
 
 /* Pages 
