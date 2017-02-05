@@ -7,7 +7,8 @@
 
         <div class="navbar-top-right">
           <div class="navbar-top-menu">
-            <ul class="nav nav--secondary nav--dropdown list list--inline">
+            <!-- visible for desktops only -->
+            <ul class="nav nav--secondary nav--dropdown list list--inline hidden-xs">
               <li class="active"> 
                 <a href="#">Vizos</a>
               </li>
@@ -22,6 +23,19 @@
                 <ul class="dropdown-menu">
                   <?php include('partials/department.php'); ?>
                 </ul>
+              </li>
+            </ul>
+
+            <!-- visible for mobiles only (mobile menu) -->
+            <ul class="nav nav--secondary nav--dropdown list list--inline visible-xs">
+              <li class="active"> 
+                <a href="#">Teztour keliones</a>
+              </li>
+              <li>
+                <a href="#">Novaturo keliones</a>
+              </li>
+              <li>
+                <a href="#">Viešbučiai</a> 
               </li>
             </ul>
           </div>

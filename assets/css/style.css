@@ -3436,6 +3436,31 @@ These partials may include files like:
   margin: 0;
 }
 
+.navbar .navbar-header {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+.navbar .navbar-header .navbar-toggle {
+  border: 1px solid #ff6138;
+  border-radius: 10em;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-header .navbar-toggle .icon-bar {
+  background: #ff6138;
+  width: 50%;
+  height: 2px;
+  border-radius: 1px;
+  left: 0;
+  right: 0;
+  margin: 5px auto;
+}
+
 .navbar .navbar-top {
   padding: .57em 0 .87em;
 }
