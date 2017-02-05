@@ -15,12 +15,12 @@
                 <a href="#">Autonuoma</a>
               </li>
               <li>
-                <a href="#">Draudimas</a>
+                <a href="#">Draudimas</a> 
               </li>
               <li class="dropdown">    
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kontaktai</a>
-                <ul class="dropdown-menu dropdown-menu--sign">
-                  <!-- inside kontaktai dropdown -->
+                <ul class="dropdown-menu">
+                  <?php include('partials/department.php'); ?>
                 </ul>
               </li>
             </ul>

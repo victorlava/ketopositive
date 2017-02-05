@@ -3414,6 +3414,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6138;
+}
+
 /* Partials
 The partials directory will probably contain the bulk of your SASS files. 
 A page may consist of multiple partials and should be styled individually. 
@@ -3461,13 +3467,10 @@ These partials may include files like:
 }
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days {
-  display: table;
-  width: 100%;
   padding-bottom: 3px;
 }
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days > div {
-  display: inline-block;
   padding-top: 4px;
 }
 
@@ -3541,9 +3544,12 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav.nav--main li {
-  border-left: 1px solid #ededed;
   border-right: 1px solid #ededed;
   text-align: center;
+}
+
+.nav.nav--main li:first-child {
+  border-left: 1px solid #ededed;
 }
 
 .nav.nav--main li.active, .nav.nav--main li:hover, .nav.nav--main li:focus, .nav.nav--main li:active {
@@ -3561,20 +3567,46 @@ since your site is should be mostly composed of tiny modules.
   font-size: 13px;
 }
 
-.nav.nav--secondary li:hover a, .nav.nav--secondary li:focus a, .nav.nav--secondary li:active a, .nav.nav--secondary li.active a {
+.nav.nav--secondary li:last-child a {
+  padding-right: 0;
+}
+
+.nav.nav--secondary li.dropdown a.dropdown-toggle {
+  z-index: 2;
+}
+
+.nav.nav--secondary li.dropdown ul.dropdown-menu {
+  top: -22px;
+  left: -5px;
+  z-index: 1;
+  border: none;
+  padding: 60px 7px 7px;
+  min-width: 490px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.275);
+}
+
+.nav.nav--secondary li.dropdown ul.dropdown-menu .title {
+  margin: 0;
+}
+
+.nav.nav--secondary li:hover a, .nav.nav--secondary li:focus a, .nav.nav--secondary li:active a, .nav.nav--secondary li.active a, .nav.nav--secondary li.open a {
   color: #f6a41b;
   background: transparent;
 }
 
-.nav.nav--secondary li:hover a:after, .nav.nav--secondary li:focus a:after, .nav.nav--secondary li:active a:after, .nav.nav--secondary li.active a:after {
+.nav.nav--secondary li:hover a:after, .nav.nav--secondary li:focus a:after, .nav.nav--secondary li:active a:after, .nav.nav--secondary li.active a:after, .nav.nav--secondary li.open a:after {
   display: none;
 }
 
 .nav.nav--secondary li a {
-  padding: 0px 17px;
+  padding: 0px 18px;
   color: #7a2b17;
   position: relative;
   text-transform: uppercase;
+}
+
+.nav.nav--secondary li a:focus {
+  background: transparent;
 }
 
 .nav.nav--secondary li a:after {
@@ -3585,6 +3617,15 @@ since your site is should be mostly composed of tiny modules.
   display: block;
   background: #f6a41b;
   position: relative;
+}
+
+.work-days {
+  display: table;
+  width: 100%;
+}
+
+.work-days > div {
+  display: inline-block;
 }
 
 .work-days .work-days-list li {
@@ -3603,6 +3644,26 @@ since your site is should be mostly composed of tiny modules.
   float: right;
   font-size: 14px;
   color: #7a2b17;
+}
+
+.department .work-days {
+  padding-bottom: 7px;
+  padding-top: 2px;
+}
+
+.department .col-md-6 {
+  padding-right: 3em;
+}
+
+.department ul {
+  padding: 0;
+}
+
+.department p {
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 2em;
 }
 
 /* Pages 
