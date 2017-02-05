@@ -1,14 +1,14 @@
 <nav class="navbar navbar--main">
-  <div class="container">
-    <div class="navbar-top row">
+    <div class="navbar-top">
+      <div class="container">
         <a class="navbar-brand pull-left" href="/">
-          Kelioniupaieska.lt
+          KelioniuPaieska.lt
         </a> 
 
         <div class="navbar-top-right">
           <div class="navbar-top-menu">
-            <ul class="nav nav--secondary nav--dropdown">
-              <li>
+            <ul class="nav nav--secondary nav--dropdown list list--inline">
+              <li class="active"> 
                 <a href="#">Vizos</a>
               </li>
               <li>
@@ -28,6 +28,7 @@
 
           <div class="navbar-top-phone">
             <!-- savaičių dienų partial -->
+            <?php include('partials/work-days.php'); ?>
             <a href="tel:+37052124474">+370 5 212 4474</a>
           </div>
 
@@ -40,10 +41,11 @@
           </div>
 
         </div><!-- .navbar-top-right -->
+      </div>
+  </div><!-- .navbar-top -->
 
-    </div><!-- .navbar-top -->
-
-    <div class="navbar-bottom row">
+  <div class="navbar-bottom">
+    <div class="container">
       <div id="navbar" class="navbar-collapse collapse in hidden-xs hidden-sm" aria-expanded="true">
         <ul class="nav nav--main navbar-nav">
           <li class="active"><a href="#">Top pasiūlymai</a></li>
@@ -55,9 +57,9 @@
           <li><a href="#about">Keltų bilietai</a></li>
         </ul>
       </div><!--/.nav-collapse -->
-    </div><!-- .navbar-bottom -->
+    </div>
+  </div><!-- .navbar-bottom -->
 
-  </div>
 </nav>
 
   <div class="mobile-nav">

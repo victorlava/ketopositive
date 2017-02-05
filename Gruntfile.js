@@ -11,17 +11,8 @@ module.exports = function(grunt) {
           outputStyle: 'expanded'
         },
         files: {
-          'assets/css/style.css': 'scss/main.scss'
+          'assets/css/style.css': 'scss/main.scss' 
         }         
-      }
-    },
-
-    compass: {
-      dist: {
-        options: {
-          sassDir: 'scss',
-          cssDir: 'assets/css/'
-        }
       }
     },
 
@@ -29,11 +20,11 @@ module.exports = function(grunt) {
       grunt: { files: ['Gruntfile.js'] },
       sass: {
         files: 'scss/**/*.scss',
-        tasks: ['compass']
+        tasks: ['sass']
       },
       options: { 
         livereload: true, 
-        host: 'motorent.dev',
+        host: 'kelioniupaieska.dev',
         port: 35728
       } //Add Live Reload Chrome Extension for this to work
     },
