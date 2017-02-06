@@ -75,21 +75,3 @@
   </div><!-- .navbar-bottom -->
 
 </nav>
-
-  <div class="mobile-nav">
-    <ul>
-       <li id="sign-mobile" class="active login">
-          <a href="/">Sign In</a>
-       </li>
-       <li class="active"><a href="#">Motorcycle Rentals</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li><a href="#about">Motorcycle Tours</a></li>
-       <li class="language"><a href="/">RU</a><a href="/">DE</a><a href="/">ES</a></li>
-    </ul>
-  </div>

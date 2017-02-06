@@ -3841,6 +3841,85 @@ section.email .email-wrapper {
   background-color: #ff6138;
 }
 
+.main-search {
+  padding: 6em 0;
+}
+
+.main-search form {
+  background: #FFF;
+  width: 100%;
+  display: table;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main-search form > div {
+  padding: 0;
+}
+
+.main-search form .main-search-inputs {
+  padding-top: 17px;
+  padding-left: 2.5em;
+  padding-right: .5em;
+}
+
+.main-search form .main-search-inputs > div {
+  float: left;
+  width: 25%;
+  padding: 0 .57em;
+}
+
+.main-search form .main-search-inputs > div .icon {
+  display: block;
+}
+
+.main-search form .main-search-inputs > div .input-group-addon {
+  background: #fff8f3;
+  border-color: #e6d3c5;
+  border-radius: 0;
+  border-right: 0;
+  padding: 12px;
+  padding-right: 5px;
+}
+
+.main-search form .main-search-inputs > div select {
+  background: #fff8f3;
+  border-radius: 0;
+  border: 1px solid #e6d3c5;
+  border-left: 0;
+  height: 44px;
+  padding: 12px 0px;
+}
+
+.main-search form .main-search-submit {
+  height: 76px;
+}
+
+.main-search form .main-search-submit input {
+  width: 100%;
+  border-radius: 0;
+  height: 80px;
+  line-height: 70px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+input[type="submit"] {
+  background: #ff6138;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+select {
+  box-shadow: none !important;
+}
+
 /* Pages 
 If you have page-specific styles, I think it’s cool to put them in a pages/ folder and in a 
 file named after the page. For example, it’s not uncommon to have very specific styles for 
