@@ -67,6 +67,13 @@
 		 </div>      
   	</div><!-- .main-search -->
 
+  	<section class="section">
+  		<header class="header header--main">
+			<h2 class="header-title">Karščiausi kelionių pasiūlymai</h2> 
+			<p class="header-sub-title">Atrinkome populiariausias kryptis ir geriausius viešbučius</p>
+		</header>
+  	</section>
+
   </main><!-- #main -->
 
   	<?php include('partials/email-cta.php'); ?>  
