@@ -68,10 +68,44 @@
   	</div><!-- .main-search -->
 
   	<section class="section">
-  		<header class="header header--main">
-			<h2 class="header-title">Karščiausi kelionių pasiūlymai</h2> 
-			<p class="header-sub-title">Atrinkome populiariausias kryptis ir geriausius viešbučius</p>
-		</header>
+  		<div class="container">
+	  		<div class="row">
+	  			<header class="header header--main header--line header--center">
+					<h2 class="header-title">Karščiausi kelionių pasiūlymai</h2> 
+					<p class="header-sub-title">Atrinkome populiariausias kryptis ir geriausius viešbučius</p>
+				</header>
+	  		</div>
+
+			<div class="row">
+				<?php for($i=0;$i < 6; $i++): ?>
+				<div class="col-md-4">
+					<div class="data-block data-block--offer">
+						<a href="#"> 
+							<div class="data-block-image">
+								<img src="/assets/img/src/offer.jpg">
+							</div>
+							<div class="data-block-info">
+								<h4 class="title">Lou' Lou' a Beach Resort</h4>
+								<time datetime="2001-05-15T19:00">2017 Gegužės 24</time>
+								<div class="price-wrapper">
+									<div class="align align--vertical">
+										<p>539€</p>
+										<p class="old-price">1039€</p>
+									</div>
+								</div>
+								<div class="included">
+									<ul class="list list--inline">
+										<li><i class="icon icon-bed"></i> 7 nakvynės</li>
+										<li><i class="icon icon-drink"></i> Viskas įskaičiuota</li>
+									</ul>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<?php endfor; ?>
+			</div>
+		</div>
   	</section>
 
   </main><!-- #main -->
