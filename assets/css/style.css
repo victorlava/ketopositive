@@ -4086,6 +4086,43 @@ select {
   margin: auto;
 }
 
+.direction-block {
+  height: 257px;
+  overflow: hidden;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+}
+
+.direction-block:hover, .direction-block:focus, .direction-block:active {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.direction-block header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  line-height: 1;
+}
+
+.direction-block header .header-title {
+  font-weight: 800;
+}
+
+.direction-block header .header-sub-title {
+  padding-top: 0;
+}
+
+.direction-block header * {
+  color: #FFF !important;
+}
+
+.direction-block img {
+  width: 100%;
+}
+
 /* Pages 
 If you have page-specific styles, I think it’s cool to put them in a pages/ folder and in a 
 file named after the page. For example, it’s not uncommon to have very specific styles for 

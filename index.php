@@ -112,6 +112,34 @@
 		</div>
   	</section>
 
+  	<section class="section">
+  		<div class="container">
+			<div class="row">
+				<header class="header header--main header--line header--center">
+					<h2 class="header-title">Populiariausios poilsinių kelionių kryptys</h2> 
+					<p class="header-sub-title">Išsirinkite savo atostogų kryptį</p>
+				</header>
+			</div>
+
+			<div class="row">
+				<?php for($i=0;$i < 4; $i++): ?>
+				<div class="col-md-6">
+					<div class="direction-block">
+						<a href="#">
+							<img src="/assets/img/src/direction.jpg">
+							<header class="header header--main align align--vertical">
+								<h2 class="header-title">Maljorka</h2> 
+								<p class="header-sub-title">Gražiausia Balearų sala</p>
+							</header>
+						</a>
+					</div>
+				</div>
+				<?php endfor; ?>
+			</div>
+		</div>
+
+  	</section>
+
   </main><!-- #main -->
 
   	<?php include('partials/email-cta.php'); ?>  
