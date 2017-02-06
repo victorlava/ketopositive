@@ -3461,6 +3461,7 @@ section.footer {
   color: #f3e1d9;
   font-size: 14px;
   font-weight: 400;
+  padding-bottom: 0;
 }
 
 section.footer a {
@@ -3491,6 +3492,10 @@ section.footer footer {
 section.footer footer .footer-top {
   padding: 5em 0 2em 0;
   border-bottom: 1px solid #695853;
+}
+
+section.footer footer .footer-top .footer-block .header {
+  margin-bottom: 1.4em;
 }
 
 section.footer footer .footer-bottom {
@@ -3670,15 +3675,26 @@ since your site is should be mostly composed of tiny modules.
 .header.header--line:after {
   content: " ";
   display: block;
+  background: #f3e1d9;
+  height: 4px;
+  width: 40px;
+}
+
+.header.header--line.header--left:after {
+  left: 0;
+  bottom: -25px;
+  width: 27px;
+}
+
+.header.header--line.header--left .header-title {
+  padding-bottom: .5em;
+  margin-bottom: .5em;
 }
 
 .header.header--line.header--center:after {
-  width: 40px;
   left: 0;
   right: 0;
   bottom: -25px;
-  height: 6px;
-  background: #f3e1d9;
   position: relative;
   margin: auto;
 }
