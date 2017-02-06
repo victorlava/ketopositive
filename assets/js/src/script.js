@@ -1,4 +1,5 @@
 $(function () {
 
+	$('#hotel-carousel').carousel();
 
 }); 

@@ -112,6 +112,140 @@
 		</div>
   	</section>
 
+  	<section class="section favourite-hotels">
+  		
+			<div class="row">
+				<header class="header header--main header--line header--center">
+					<h2 class="header-title">Mėgstamiausi mūsų keliautojų viešbučiai</h2> 
+					<p class="header-sub-title">Jūsų rinktinės vietos</p>
+				</header>
+			</div>
+
+			<div class="row">
+				<div class="carousel-selectors">  
+					<ul class="nav nav--secondary nav--carousel-selectors list list--inline">
+						<li class="active">
+							<a href="#">Turkija</a>
+						</li>
+						<li>
+							<a href="#">Graikija</a>
+						</li>
+						<li>
+							<a href="#">Bulgarija</a>
+						</li>
+						<li>
+							<a href="#">Egiptas</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div id="hotel-carousel" class="carousel slide" data-ride="carousel">
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    
+				    <div class="item active">
+				    	<?php for($i=0;$i < 6; $i++): ?>
+				    	<div class="col-md-2">
+				    		<div class="data-block data-block--offer data-block--hotels"> 
+								<a href="#"> 
+									<div class="data-block-image">
+										<img src="/assets/img/src/offer.jpg">
+									</div>
+									<div class="data-block-info">
+										<h4 class="title">Bcn Paseo De Gracia Rocamora </h4>
+										<div class="stars">
+											<ul class="list list--inline">
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+											</ul>
+										</div>
+										<p class="time">Alanija, Turkija</p>
+									</div>
+								</a>
+							</div>
+				    	</div>
+				    	<?php endfor; ?>
+				    </div>
+
+				    <div class="item">
+				    	<?php for($i=0;$i < 6; $i++): ?>
+				    	<div class="col-md-2">
+				    		<div class="data-block data-block--offer data-block--hotels"> 
+								<a href="#"> 
+									<div class="data-block-image">
+										<img src="/assets/img/src/offer.jpg">
+									</div>
+									<div class="data-block-info">
+										<h4 class="title">Bcn Paseo De Gracia Rocamora </h4>
+										<div class="stars">
+											<ul class="list list--inline">
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+											</ul>
+										</div>
+										<p class="time">Alanija, Turkija</p>
+									</div>
+								</a>
+							</div>
+				    	</div>
+				    	<?php endfor; ?>
+				    </div>
+
+				    <div class="item">
+				    	<?php for($i=0;$i < 6; $i++): ?>
+				    	<div class="col-md-2">
+				    		<div class="data-block data-block--offer data-block--hotels"> 
+								<a href="#"> 
+									<div class="data-block-image">
+										<img src="/assets/img/src/offer.jpg">
+									</div>
+									<div class="data-block-info">
+										<h4 class="title">Bcn Paseo De Gracia Rocamora </h4>
+										<div class="stars">
+											<ul class="list list--inline">
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+												<li><i class="icon icon-star"></i></li>
+											</ul>
+										</div>
+										<p class="time">Alanija, Turkija</p>
+									</div>
+								</a>
+							</div>
+				    	</div>
+				    	<?php endfor; ?>
+				    </div>
+				  </div>
+
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#hotel-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#hotel-carousel" data-slide-to="1"></li>
+				    <li data-target="#hotel-carousel" data-slide-to="2"></li>
+				  </ol>
+
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#hotel-carousel" role="button" data-slide="prev">
+				    <i class="icon icon-left align"></i>
+				  </a>
+				  <a class="right carousel-control" href="#hotel-carousel" role="button" data-slide="next">
+				     <i class="icon icon-left align"></i>
+				  </a>
+				</div>
+			</div>
+		
+
+  	</section>
+
   	<section class="section">
   		<div class="container">
 			<div class="row">

@@ -18,25 +18,37 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-adults {
   background-image: url(../img/src/sprites.png);
-  background-position: -319px -58px;
+  background-position: -329px -80px;
   width: 14px;
   height: 16px;
 }
 .icon-arrow-done {
   background-image: url(../img/src/sprites.png);
-  background-position: -333px -58px;
+  background-position: -329px -96px;
   width: 10px;
   height: 7px;
 }
+.icon-arrow-left {
+  background-image: url(../img/src/sprites.png);
+  background-position: -279px -58px;
+  width: 34px;
+  height: 64px;
+}
+.icon-arrow-right {
+  background-image: url(../img/src/sprites.png);
+  background-position: -279px -122px;
+  width: 34px;
+  height: 64px;
+}
 .icon-arrow-up {
   background-image: url(../img/src/sprites.png);
-  background-position: -333px -65px;
+  background-position: -329px -122px;
   width: 9px;
   height: 6px;
 }
 .icon-bed {
   background-image: url(../img/src/sprites.png);
-  background-position: -279px -58px;
+  background-position: -313px -58px;
   width: 24px;
   height: 22px;
 }
@@ -54,25 +66,31 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-children {
   background-image: url(../img/src/sprites.png);
-  background-position: -295px -80px;
+  background-position: -313px -138px;
   width: 16px;
   height: 14px;
 }
 .icon-date {
   background-image: url(../img/src/sprites.png);
-  background-position: -303px -58px;
+  background-position: -313px -122px;
   width: 16px;
   height: 16px;
 }
 .icon-drink {
   background-image: url(../img/src/sprites.png);
-  background-position: -279px -80px;
+  background-position: -313px -80px;
   width: 16px;
   height: 24px;
 }
 .icon-location {
   background-image: url(../img/src/sprites.png);
-  background-position: -279px -104px;
+  background-position: -330px -104px;
   width: 12px;
   height: 16px;
+}
+.icon-star {
+  background-image: url(../img/src/sprites.png);
+  background-position: -313px -104px;
+  width: 17px;
+  height: 16px; 
 }
