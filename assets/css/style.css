@@ -3489,7 +3489,7 @@ section.footer footer {
 }
 
 section.footer footer .footer-top {
-  padding: 2em 0;
+  padding: 5em 0 2em 0;
   border-bottom: 1px solid #695853;
 }
 
@@ -3859,10 +3859,51 @@ since your site is should be mostly composed of tiny modules.
   padding-bottom: 2em;
 }
 
+section.email {
+  z-index: 5;
+  position: relative;
+  padding: 0;
+  padding-top: .77em;
+}
+
 section.email .email-wrapper {
   background-color: #fff8f3;
-  padding: 2em 0;
-  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
+  padding: 2.27em 0;
+  box-shadow: 0 0 53px 5px rgba(0, 0, 0, 0.25);
+  bottom: -22px;
+  position: relative;
+}
+
+section.email .email-wrapper .header {
+  margin-bottom: 32px;
+}
+
+section.email .email-wrapper .email-form {
+  margin: auto;
+  float: none;
+}
+
+section.email .email-wrapper .email-form form > div {
+  padding: 0;
+}
+
+section.email .email-wrapper .email-form form .email-email input {
+  border: 1px solid #eeded3;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.05);
+  padding: 21px;
+  border-right: 0;
+}
+
+section.email .email-wrapper .email-form form .email-submit input {
+  width: 100%;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 14px;
+  box-shadow: inset 0 -3px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
 .section {

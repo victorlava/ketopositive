@@ -8,13 +8,13 @@
 				</header>
 			</div>
 			<div class="row">
-				<div class="email-form">
+				<div class="email-form col-md-7"> 
 					<form role="form">
-						<div class="input-group email-email">
+						<div class="email-email col-md-9">
 			                <input type="email" id="email" name="email" class="form-control" placeholder="Jūsų el. paštas">
 			            </div>
 
-			            <div class="input-group email-submit">
+			            <div class="email-submit col-md-3">
 			                <input type="submit" class="button button--primary pull-right" value="Prenumeruoti">
 			            </div>
 					</form>
