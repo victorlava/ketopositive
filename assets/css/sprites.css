@@ -16,9 +16,51 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-big-phone {
+.icon-adults {
+  background-image: url(../img/src/sprites.png);
+  background-position: -295px -58px;
+  width: 14px;
+  height: 16px;
+}
+.icon-arrow-done {
+  background-image: url(../img/src/sprites.png);
+  background-position: -325px -58px;
+  width: 10px;
+  height: 7px;
+}
+.icon-arrow-up {
+  background-image: url(../img/src/sprites.png);
+  background-position: -325px -65px;
+  width: 9px;
+  height: 6px;
+}
+.icon-big-email {
   background-image: url(../img/src/sprites.png);
   background-position: 0px 0px;
+  width: 279px;
+  height: 228px;
+}
+.icon-big-phone {
+  background-image: url(../img/src/sprites.png);
+  background-position: -279px 0px;
   width: 64px;
   height: 58px;
+}
+.icon-children {
+  background-image: url(../img/src/sprites.png);
+  background-position: -309px -58px;
+  width: 16px;
+  height: 14px;
+}
+.icon-date {
+  background-image: url(../img/src/sprites.png);
+  background-position: -279px -58px;
+  width: 16px;
+  height: 16px;
+}
+.icon-location {
+  background-image: url(../img/src/sprites.png);
+  background-position: -279px -74px;
+  width: 12px;
+  height: 16px;
 }

@@ -7,6 +7,10 @@
 
   <main id="main"> 
 
+  	<div class="main-search">
+  		
+  	</div>
+
   </main><!-- #main -->
 
   	<?php include('partials/email-cta.php'); ?>  
