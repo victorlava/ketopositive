@@ -105,6 +105,10 @@
 				</div>
 				<?php endfor; ?>
 			</div>
+
+			<div class="row">
+				<a href="#" class="button button--long button--center">Žiūrėti visus pasiūlymus</a>
+			</div>
 		</div>
   	</section>
 
