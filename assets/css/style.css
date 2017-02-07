@@ -4016,9 +4016,9 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .work-days .work-days-title {
-  float: right;
   font-size: 14px;
   color: #7a2b17;
+  margin-left: 20px;
 }
 
 .department-wrapper {

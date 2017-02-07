@@ -21,7 +21,11 @@
               <li class="dropdown">    
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kontaktai</a>
                 <ul class="dropdown-menu">
-                  <?php include('partials/department.php'); ?>
+                  <?php for($i=0;$i < 4; $i++): ?>
+                  <div class="col-md-6">
+                    <?php include('partials/department.php'); ?>
+                  </div>
+                  <?php endfor; ?>
                 </ul>
               </li>
             </ul>
