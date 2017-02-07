@@ -4252,6 +4252,42 @@ textarea {
   margin: 0;
 }
 
+.data-block.data-block--article {
+  color: #717171;
+}
+
+.data-block.data-block--article .data-block-image {
+  height: 190px;
+}
+
+.data-block.data-block--article .data-block-image img {
+  width: auto;
+  height: 190px;
+}
+
+.data-block.data-block--article .data-block-info {
+  padding: 16px;
+}
+
+.data-block.data-block--article .title {
+  font-size: 20px;
+  margin-bottom: 9px;
+  line-height: 1.1;
+}
+
+.data-block.data-block--article p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 9px;
+}
+
+.data-block.data-block--article:hover .title, .data-block.data-block--article:focus .title, .data-block.data-block--article:active .title {
+  color: #f6a41b;
+  text-decoration: underline;
+}
+
 .data-block.data-block--simple {
   padding: 25px 35px;
 }
@@ -4550,6 +4586,17 @@ section.favourite-hotels .row {
 
 section.favourite-hotels .carousel {
   height: 277px;
+}
+
+.tag-links a {
+  background: #fbfaf3;
+  border-radius: 4px;
+  border: 1px solid #f1eedb;
+  color: #f6a41b;
+  padding: 3px 10px;
+  font-size: 11px;
+  margin-right: 3px;
+  text-transform: uppercase;
 }
 
 /* Pages 
