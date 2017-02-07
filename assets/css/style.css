@@ -4397,6 +4397,7 @@ textarea {
 .data-block.data-block--sidebar {
   border-color: transparent;
   margin-bottom: 1em;
+  background: #FFF;
 }
 
 .data-block.data-block--sidebar a {
@@ -4422,6 +4423,13 @@ textarea {
   float: left;
   width: 70%;
   padding: 0 16px;
+  min-height: 0;
+}
+
+.data-block.data-block--cloud a {
+  color: #ff6138;
+  margin-right: 14px;
+  font-weight: 400;
 }
 
 .button {

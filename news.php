@@ -48,8 +48,15 @@
 			</div>
 
 			<div class="col-md-4"> 
-				<div class="data-block data-block--offer data-block--simple data-block--hoveroff">
-					tag cloud
+				<div class="data-block data-block--offer data-block--simple data-block--cloud data-block--hoveroff">
+					<a href="http://www.mysite.com/tag/word" class="tag-link-7" title="1 topic" style="font-size: 8pt;">word</a>
+					<a href="http://www.mysite.com/tag/tag" class="tag-link-5" title="2 topics" style="font-size: 14.3pt;">tag</a>
+					<a href="http://www.mysite.com/tag/phrase" class="tag-link-6" title="4 topics" style="font-size: 22pt;">phrase</a>
+					<a href="http://www.mysite.com/tag/subject" class="tag-link-4" title="1 topic" style="font-size: 8pt;">subject</a>
+					<a href="http://www.mysite.com/tag/word" class="tag-link-7" title="1 topic" style="font-size: 8pt;">word</a>
+					<a href="http://www.mysite.com/tag/tag" class="tag-link-5" title="2 topics" style="font-size: 14.3pt;">tag</a>
+					<a href="http://www.mysite.com/tag/phrase" class="tag-link-6" title="4 topics" style="font-size: 22pt;">phrase</a>
+					<a href="http://www.mysite.com/tag/subject" class="tag-link-4" title="1 topic" style="font-size: 8pt;">subject</a>
 				</div>
 
 				
