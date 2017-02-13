@@ -3432,6 +3432,14 @@ a:hover, a:focus, a:active {
   pointer-events: none;
 }
 
+.gmap {
+  background: grey;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
 hr {
   padding: .77em 0;
 }
@@ -4745,6 +4753,12 @@ section.favourite-hotels .carousel {
   line-height: 22px;
   padding-top: 20px;
   padding-right: 4em;
+  padding-bottom: 1em;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
 }
 
 .article .intro-text {
@@ -4857,7 +4871,6 @@ body.contact .departments {
 body.contact .gmap {
   height: 227px;
   width: 100%;
-  background: grey;
 }
 
 body.contact .department-wrapper {
@@ -4889,4 +4902,26 @@ body.contact .department-wrapper .department .work-days .work-days-title {
 
 body.new .sidebar {
   padding-top: 5.2em;
+}
+
+body.page #main:after {
+  display: none;
+}
+
+body.page .article {
+  padding-top: 0;
+}
+
+body.page .article p:first-child {
+  margin-top: 0;
+}
+
+body.page .header.header--top {
+  margin-bottom: 0;
+}
+
+body.page .gmap {
+  width: 100%;
+  height: 490px;
+  margin-top: 5em;
 }
