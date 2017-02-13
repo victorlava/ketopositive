@@ -47,7 +47,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4"> 
+			<div class="sidebar col-md-4"> 
 				<div class="data-block data-block--offer data-block--simple data-block--cloud data-block--hoveroff">
 					<a href="http://www.mysite.com/tag/word" class="tag-link-7" title="1 topic" style="font-size: 8pt;">word</a>
 					<a href="http://www.mysite.com/tag/tag" class="tag-link-5" title="2 topics" style="font-size: 14.3pt;">tag</a>

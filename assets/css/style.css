@@ -4450,6 +4450,11 @@ textarea {
   text-decoration: underline;
 }
 
+.data-block.data-block--news {
+  padding-bottom: .6em;
+  padding-top: .2em;
+}
+
 .data-block.data-block--news .data-block-info {
   width: 100%;
   padding: 0 24px;
@@ -4475,6 +4480,10 @@ textarea {
 .data-block.data-block--news .data-block-info a .title:hover, .data-block.data-block--news .data-block-info a .title:focus, .data-block.data-block--news .data-block-info a .title:active {
   color: #e89d20;
   text-decoration: underline;
+}
+
+.data-block.data-block--news .data-block-info:last-child .tag-links {
+  border: 0;
 }
 
 .button {
@@ -4691,6 +4700,10 @@ section.favourite-hotels .carousel {
 .wp-pagenavi .button.current {
   background: #ff6138;
   color: #FFF;
+}
+
+.sidebar .carousel-indicators {
+  bottom: -25px;
 }
 
 /* Pages 

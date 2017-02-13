@@ -41,14 +41,13 @@
 				</div>
 			</div>
 
-			<div class="col-md-4"> 
+			<div class="sidebar col-md-4"> 
 
 				<header class="header header--sidebar header--line"> 
 					<h4 class="header-title">Naujausi straipsniai</h4>
 				</header>
 				<div class="data-block data-block--news data-block--offer data-block--hoveroff"> 
 					<?php for($i=0; $i < 3; $i++): ?>
-				
 						<div class="data-block-info">
 							<a href="#"><h4 class="title">Kuršių Neriją pasieksime ne tik keltais, bet ir tiltu?</h4></a>
 							<div class="tag-links">  
@@ -56,9 +55,56 @@
 								<a href="#">Pigios kelionės</a>
 							</div>
 						</div>
-					
 					<?php endfor; ?>
 				</div>
+
+				<header class="header header--sidebar header--line"> 
+					<h4 class="header-title">Top pasiūlymai</h4>
+				</header>
+			
+				<div id="hotel-carousel" class="carousel slide" data-ride="carousel">
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    
+				    <?php for($b=0; $b < 5; $b++): ?>
+				    <div class="item <?php if($b == 1){ echo " active";}?>">
+						<?php for($i=0; $i < 3; $i++): ?>
+							<div class="data-block data-block--offer data-block--hoveroff">
+								<a href="#"> 
+									<div class="data-block-image">
+										<img src="/assets/img/src/offer.jpg">
+									</div>
+									<div class="data-block-info">
+										<h4 class="title">Lou' Lou' a Beach Resort</h4>
+										<time datetime="2001-05-15T19:00">2017 Gegužės 24</time>
+										<div class="price-wrapper">
+											<div class="align align--vertical">
+												<p>539€</p>
+												<p class="old-price">1039€</p>
+											</div>
+										</div>
+										<div class="included">
+											<ul class="list list--inline">
+												<li><i class="icon icon-bed"></i> 7 nakvynės</li>
+												<li><i class="icon icon-drink"></i> Viskas įskaičiuota</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+							</div>
+						<?php endfor; ?>
+				    </div>
+					<?php endfor; ?>
+				  </div>
+
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				  	<?php for($b=0; $b < 5; $b++): ?>
+				  	<li data-target="#hotel-carousel" data-slide-to="<?php echo $b; ?>" class="<?php if($b == 1){ echo "active";}?>"></li>
+				  	<?php endfor; ?>
+				  </ol>
+				</div>
+				
 
 			</div>
 		</div>
