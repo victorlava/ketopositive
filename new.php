@@ -24,8 +24,11 @@
 					<p>"How to Spend it" priedas leidžiamas kartą per mėnesį ir yra skirtas pasiturinčiai bei išsilavinusiai auditorijai. Vilnius jame aprašomas pirmą kartą. Straipsnio, pavadinto "Prabangaus ilgo savaitgalio gidas" autorius Nickas Haslamas skaitytojus supažindina su Lietuvos ir Vilniaus istorijos fragmentais, įvairialypiu kultūros ir architektūros paveldu. Būsimiems Vilniaus svečiams taip pat siūloma aplankyti muziejus, įvairias meno erdves, Lietuvos dizainerių studijas bei kruopščiai atrinktus sostinės viešbučius ir restoranus. "FT" savaitgalio numeris yra vienas skaitomiausių specializuotos spaudos leidinių Didžiojoje Britanijoje, jo bendrą auditoriją sudaro apie 550 tūkst. skaitytojų visame pasaulyje.</p>
 					<h3>Vilniaus gidas prancūziškai</h3>
 					<p>Paryžiuje bus pristatytas "Gallimard" leidyklos išleistas gidas "Vilnius žemėlapiuose" ("Cartoville Vilnius"). Tai pirmasis ir kol kas vienintelis gidas apie Vilnių prancūzų kalba. Beje, leidinyje trumpai apžvelgiami visi keturi mūsų šalies regionai. Leidykla "Gallimard" gidą "Vilnius žemėlapiuose", be prancūzų, išleido dar anglų ir norvegų kalbomis. Leidėjų teigimu, knygą bus galima įsigyti septynių Europos šalių knygynuose: prancūzų kalba - Prancūzijoje, Belgijoje, Šveicarijoje ir Liuksemburge, anglų - Jungtinėje Karalystėje ir Airijoje, norvegų - Norvegijoje. "Gido apie Vilnių išleidimas - didelis įvykis", - džiaugėsi Lietuvos turizmo informacijos centro Paryžiuje direktorė Inga Lanchas. - Iki šiol Prancūzijoje buvo galima rasti įvairių leidyklų gidų apie Baltijos šalis, dabar prancūzai galės naudotis atskiru gidu, skirtu Lietuvos sostinei. "Pasak direktorės, pastaruoju metu prancūzų susidomėjimas Lietuva, ypač sostine Vilniumi, smarkiai auga. 2008 metais į Vilnių atvyko 21,4 proc. daugiau prancūzų turistų negu 2007-aisiais.</p>
-
+					<p>-- fb share --</p>
 				</article>
+				<header class="header header--top header--line header--left"> 
+					<h2 class="header-title"></h2>
+				</header>
 				<div class="comments data-block data-block--simple data-block--stylesoff">
 					<h3 class="title">Komentarai</h3>
 					<div id="comments">
