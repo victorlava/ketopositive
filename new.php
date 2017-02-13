@@ -26,6 +26,34 @@
 					<p>Paryžiuje bus pristatytas "Gallimard" leidyklos išleistas gidas "Vilnius žemėlapiuose" ("Cartoville Vilnius"). Tai pirmasis ir kol kas vienintelis gidas apie Vilnių prancūzų kalba. Beje, leidinyje trumpai apžvelgiami visi keturi mūsų šalies regionai. Leidykla "Gallimard" gidą "Vilnius žemėlapiuose", be prancūzų, išleido dar anglų ir norvegų kalbomis. Leidėjų teigimu, knygą bus galima įsigyti septynių Europos šalių knygynuose: prancūzų kalba - Prancūzijoje, Belgijoje, Šveicarijoje ir Liuksemburge, anglų - Jungtinėje Karalystėje ir Airijoje, norvegų - Norvegijoje. "Gido apie Vilnių išleidimas - didelis įvykis", - džiaugėsi Lietuvos turizmo informacijos centro Paryžiuje direktorė Inga Lanchas. - Iki šiol Prancūzijoje buvo galima rasti įvairių leidyklų gidų apie Baltijos šalis, dabar prancūzai galės naudotis atskiru gidu, skirtu Lietuvos sostinei. "Pasak direktorės, pastaruoju metu prancūzų susidomėjimas Lietuva, ypač sostine Vilniumi, smarkiai auga. 2008 metais į Vilnių atvyko 21,4 proc. daugiau prancūzų turistų negu 2007-aisiais.</p>
 
 				</article>
+				<div class="add-comment data-block data-block--simple data-block--stylesoff">
+					<h3 class="title">Naujas komentaras</h3> 
+					<form lpformnum="1">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<label for="name">Vardas</label>
+							    	<input type="text" id="name" placeholder="">
+								</div>
+								<div class="col-md-6">
+								 	<label for="name">El. paštas</label>
+							    	<input type="text" id="email" placeholder="">	
+								</div>
+							</div>
+						 </div>
+
+						 <div class="form-group">
+						    <label for="name">Komentaras</label> 
+						    <textarea id="message"></textarea>
+						 </div>
+
+						 <div class="form-group col-md-3 pull-right">
+						    <div class="row">
+						    	 <input type="submit" class="form-control button button--primary" value="Išsiųsti">
+						    </div>
+						 </div>
+					</form>
+				</div>
 			</div>
 
 			<div class="sidebar col-md-4"> 

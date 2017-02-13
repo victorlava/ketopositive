@@ -4331,6 +4331,12 @@ textarea {
   box-shadow: 0 3px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
+.data-block.data-block--stylesoff {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0;
+}
+
 .data-block.data-block--offer {
   margin-bottom: 2em;
 }
