@@ -3828,6 +3828,19 @@ since your site is should be mostly composed of tiny modules.
   margin-bottom: .5em;
 }
 
+.header.header--line.header--left.header--top {
+  padding-bottom: .77em !important;
+}
+
+.header.header--line.header--left.header--top:after {
+  width: 47px;
+}
+
+.header.header--line.header--left.header--top .header-title {
+  padding-bottom: .1em;
+  margin-bottom: .1em;
+}
+
 .header.header--line.header--center:after {
   left: 0;
   right: 0;
@@ -4706,6 +4719,30 @@ section.favourite-hotels .carousel {
   bottom: -25px;
 }
 
+.article {
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 20px;
+  padding-right: 4em;
+}
+
+.article .intro-text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.article h3 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: .5em;
+}
+
+.article p {
+  margin-bottom: 1.5em;
+}
+
 /* Pages 
 If you have page-specific styles, I think it’s cool to put them in a pages/ folder and in a 
 file named after the page. For example, it’s not uncommon to have very specific styles for 
@@ -4750,4 +4787,8 @@ body.contact .department-wrapper .department .work-days {
 body.contact .department-wrapper .department .work-days .work-days-title {
   float: none;
   margin-left: 25px;
+}
+
+body.new .sidebar {
+  padding-top: 5.2em;
 }
