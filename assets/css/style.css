@@ -4403,6 +4403,11 @@ textarea {
   min-height: 110px;
 }
 
+.data-block.data-block--hotels:hover .title, .data-block.data-block--hotels:focus .title, .data-block.data-block--hotels:active .title {
+  color: #e89d20;
+  text-decoration: underline;
+}
+
 .data-block.data-block--sidebar {
   border-color: transparent;
   margin-bottom: 1em;
@@ -4442,6 +4447,33 @@ textarea {
 }
 
 .data-block.data-block--cloud a:hover, .data-block.data-block--cloud a:focus, .data-block.data-block--cloud a:active {
+  text-decoration: underline;
+}
+
+.data-block.data-block--news .data-block-info {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.data-block.data-block--news .data-block-info .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3d3939;
+  padding: 1em 0;
+  line-height: 1.3;
+}
+
+.data-block.data-block--news .data-block-info .tag-links {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #efe4e4;
+}
+
+.data-block.data-block--news .data-block-info a {
+  display: initial;
+}
+
+.data-block.data-block--news .data-block-info a .title:hover, .data-block.data-block--news .data-block-info a .title:focus, .data-block.data-block--news .data-block-info a .title:active {
+  color: #e89d20;
   text-decoration: underline;
 }
 
