@@ -3766,10 +3766,19 @@ since your site is should be mostly composed of tiny modules.
   color: #ff6138;
 }
 
+.header.header--main .header-title .header-smaller {
+  font-size: 30px;
+  padding-right: 1em;
+}
+
 .header.header--main .header-sub-title {
   color: #a5857c;
   font-weight: 400;
   padding-top: 4px;
+}
+
+.header.header--sidebar {
+  margin-bottom: 1em;
 }
 
 .header.header--sidebar .header-title {
@@ -3794,7 +3803,7 @@ since your site is should be mostly composed of tiny modules.
   content: " ";
   display: block;
   height: 6px;
-  width: 29%;
+  width: 14%;
   position: absolute;
   background: #f3e1d9;
   bottom: 7px;
@@ -4430,6 +4439,10 @@ textarea {
   color: #ff6138;
   margin-right: 14px;
   font-weight: 400;
+}
+
+.data-block.data-block--cloud a:hover, .data-block.data-block--cloud a:focus, .data-block.data-block--cloud a:active {
+  text-decoration: underline;
 }
 
 .button {

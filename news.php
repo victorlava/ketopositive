@@ -10,7 +10,7 @@
   	<div class="container">
   		<div class="row">
 		  	<header class="header header--top header--main header--line header--center"> 
-				<h2 class="header-title"><span>Naujienos</span> > Pigios kelionės</h2>
+				<h2 class="header-title"><span class="header-smaller">Naujienos</span> Pigios kelionės</h2>
 			</header>
 		</div>
 
