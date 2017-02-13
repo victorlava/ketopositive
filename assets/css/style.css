@@ -3432,6 +3432,16 @@ a:hover, a:focus, a:active {
   pointer-events: none;
 }
 
+hr {
+  padding: .77em 0;
+}
+
+hr.empty {
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
 .stars {
   display: table;
   width: 100%;
@@ -4337,6 +4347,11 @@ textarea {
   padding: 0;
 }
 
+.data-block form {
+  width: 100%;
+  display: table;
+}
+
 .data-block.data-block--offer {
   margin-bottom: 2em;
 }
@@ -4747,6 +4762,83 @@ section.favourite-hotels .carousel {
 
 .article p {
   margin-bottom: 1.5em;
+}
+
+.error.error--block {
+  display: block;
+  width: 100%;
+  padding: 1.4em 0;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 20px;
+  margin: 1em 0;
+}
+
+.error.error--block.error--red {
+  background: #f6d3ca;
+  color: #a02100;
+}
+
+.error.error--block.error--green {
+  background: #d2ecb5;
+  color: #52b123;
+}
+
+.comments #comments ol.commentlist {
+  padding: 0;
+  margin: 0;
+}
+
+.comments #comments ol.commentlist ul.children {
+  padding-left: 3.5em;
+  list-style: none;
+  position: relative;
+}
+
+.comments #comments ol.commentlist ul.children .comment-container {
+  position: relative;
+  overflow: visible;
+}
+
+.comments #comments ol.commentlist ul.children .comment-container:before {
+  content: " ";
+  width: 27px;
+  height: 27px;
+  border-left: 2.5px solid #e8ded9;
+  border-bottom: 2.5px solid #e8ded9;
+  position: relative;
+  left: -75px;
+  top: -35px;
+  display: block;
+}
+
+.comments #comments ol.commentlist .comment .comment-container {
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+
+.comments #comments ol.commentlist .comment .comment-container .comment-author {
+  padding-bottom: .77em;
+}
+
+.comments #comments ol.commentlist .comment .comment-container .comment-author cite {
+  font-style: normal;
+}
+
+.comments #comments ol.commentlist .comment .comment-container .comment-meta {
+  color: #75716f;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 11px;
+}
+
+.comments #comments ol.commentlist .comment .comment-container .reply {
+  margin-top: 1em;
+}
+
+.comments #comments ol.commentlist .comment .comment-container .reply a {
+  font-size: 14px;
+  color: #ff6138;
 }
 
 /* Pages 
