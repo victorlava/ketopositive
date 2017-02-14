@@ -8,16 +8,40 @@
 				"padding: "
 			],
 			[
-				"text",
-				"text-decoration: "
-			],
-			[
 				"mar",
 				"margin-bottom: "
 			],
 			[
+				"border-",
+				"border-color: "
+			],
+			[
+				"bor",
+				"border-bottom: "
+			],
+			[
+				"bo",
+				"bottom: "
+			],
+			[
+				"imp",
+				"important"
+			],
+			[
+				"text",
+				"text-align: "
+			],
+			[
+				"mari",
+				"margin-top: "
+			],
+			[
 				"padd",
-				"padding-top: "
+				"padding: "
+			],
+			[
+				"border",
+				"border: "
 			],
 			[
 				"te",
@@ -50,14 +74,6 @@
 			[
 				"bak",
 				"background-position: "
-			],
-			[
-				"border",
-				"border-bottom: "
-			],
-			[
-				"bo",
-				"bottom: "
 			],
 			[
 				"fu",
@@ -240,62 +256,69 @@
 	"buffers":
 	[
 		{
-			"file": "scss/03-pages/_news.scss",
-			"settings":
-			{
-				"buffer_size": 14,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "scss/01-components/_wp-pagenavi.scss",
-			"settings":
-			{
-				"buffer_size": 178,
-				"line_ending": "Windows",
-				"name": ".wp-pagenavi{"
-			}
-		},
-		{
 			"file": "scss/main.scss",
 			"settings":
 			{
-				"buffer_size": 2160,
+				"buffer_size": 2549,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "news.php",
+			"file": "scss/01-components/_price-wrapper.scss",
 			"settings":
 			{
-				"buffer_size": 3658,
+				"buffer_size": 245,
+				"line_ending": "Windows",
+				"name": ".price-wrapper{"
+			}
+		},
+		{
+			"file": "scss/01-components/_offer-form.scss",
+			"settings":
+			{
+				"buffer_size": 784,
+				"line_ending": "Windows",
+				"name": ".offer-form{"
+			}
+		},
+		{
+			"file": "pasiulymas.php",
+			"settings":
+			{
+				"buffer_size": 5998,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/01-components/_data-block.scss",
+			"file": "scss/01-components/_input.scss",
 			"settings":
 			{
-				"buffer_size": 3124,
+				"buffer_size": 1744,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Works/Desktop/form.php",
+			"file": "scss/03-pages/_offer.scss",
 			"settings":
 			{
-				"buffer_size": 8310,
+				"buffer_size": 62,
+				"line_ending": "Windows",
+				"name": "body.offer{"
+			}
+		},
+		{
+			"file": "scss/04-base/_settings.scss",
+			"settings":
+			{
+				"buffer_size": 323,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "#insurance-form{width:1170px;position:relative;margin:2em auto auto;left:0;right:0;border:5px solid #ecf0f1;padding:2.5em;border-radius:6px;display:table}#insurance-form.has-submitted{opacity:.5;cursor:not-allowed!important;pointer-events:none!important}#insurance-form.has-submitted:hover{cursor:not-allowed!important}#insurance-form .panel-heading{position:absolute;color:#2c3e50;top:-25px;background-color:#ecf0f1;border-radius:3px;margin-left:1.1em}#insurance-form .panel-heading .title{font-size:21px;margin:0;background-color:#ecf0f1}#insurance-form .help-block.error{color:#e74c3c}#insurance-form .example{text-align:center;color:#FFF;background:#7d9ec1;width:245px;padding:5px;left:0;border-radius:3px;right:0;margin:auto;position:absolute;top:190px;z-index:5;line-height:1.4;font-size:13px}#insurance-form .form-group .first{padding-right:1em!important}#insurance-form legend{margin-bottom:6px}#insurance-form .form-group{display:table;width:100%}#insurance-form .inside-text{margin:0 3px;display:inline-block;background:#ecf0f1;padding:3px 5px;border-radius:3px;font-size:13px;line-height:1}#insurance-form form.main{padding-right:3em}#insurance-form .results-wrapper .panel-body,#insurance-form .results-wrapper fieldset,#insurance-form .results-wrapper form,#insurance-form form.main .col-md-12,#insurance-form form.main .col-md-6{padding:0}#insurance-form .results-wrapper{font-size:14px}#insurance-form .results-wrapper label{font-size:13px}#insurance-form .results-wrapper .data-wrapper{display:table;width:100%;background:#fdfdfd;border-radius:3px;border-bottom:1px solid #eee;margin-bottom:0;padding-top:2em;padding-bottom:1em}#insurance-form .results-wrapper .data-wrapper .first{padding-right:2em;padding-left:3em}#insurance-form .results-wrapper .data-wrapper .second{padding-left:2em;padding-right:3em}#insurance-form .results-wrapper .data-wrapper .row{border-bottom:1px dashed #eee;padding-bottom:2px;margin-bottom:15px}#insurance-form .results-wrapper .price{text-align:center;position:absolute;right:0;height:100%;padding:1.1em 1.5em;color:#2c3e50;line-height:1.7}#insurance-form .results-wrapper .price .price-box{font-size:13px;display:inline-block;border-radius:1em;padding-right:5px;font-weight:700;opacity:1}#insurance-form .results-wrapper .price .price-box.animated{animation-name:price;animation-duration:1s;animation-timing-function:ease;animation-fill-mode:forwards;animation-iteration-count:1;animation-direction:normal}#insurance-form .results-wrapper .price .per-month{color:#2c3e50;font-style:italic;display:inline-block;font-size:12px;text-align:left;line-height:1;opacity:.77}#insurance-form .results-wrapper .companies-wrapper{margin-bottom:0}#insurance-form .results-wrapper .companies-wrapper .company{display:table;width:100%;margin-bottom:0;position:relative;border-bottom:1px solid #eee;background:#fff;padding:0;border-top-right-radius:0;border-bottom-right-radius:0;border-right:0}#insurance-form .results-wrapper .companies-wrapper .company:nth-child(even) .price{background:#fdfdfd;border-left:1px solid #eee}#insurance-form .results-wrapper .companies-wrapper .company .title{font-size:13px;font-weight:700;margin-left:.27em;margin-top:20px}#insurance-form .results-wrapper .companies-wrapper .company .logo{height:55px;width:55px}#insurance-form .results-wrapper .companies-wrapper .company .logo img{padding:12px;width:55px;position:relative;top:50%;transform:translateY(-50%)}#insurance-form .results-wrapper .companies-wrapper .company>div{float:left;display:inline-block}@keyframes price{0%{opacity:0!important}50%{opacity:.4!important}100%{opacity:1!important}}\n#insurance-form .help-block.error{color: #FFF !important;}",
-			"file": "/C/Users/Works/Desktop/style.min.css",
-			"file_size": 3679,
-			"file_write_time": 131311182302907950,
+			"file": "scss/04-base/_global.scss",
 			"settings":
 			{
-				"buffer_size": 3678,
+				"buffer_size": 1129,
 				"line_ending": "Windows"
 			}
 		}
@@ -324,13 +347,34 @@
 	},
 	"file_history":
 	[
-		"/E/Vagrant/airwood/kelioniupaieska.dev/kontaktai.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_tag-links.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_news.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/index.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_department.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_contact.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_header.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_global.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/top-pasiulymai.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/index.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_carousel.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/pasiulymas.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_offers.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_stylized-number.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-bar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/main.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/filialas.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_page.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/new.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/kontaktai.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_article.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_contact.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_comments.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_sidebar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_data-block.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_new.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/news.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_news.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_error.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_wp-pagenavi.scss",
+		"/C/Users/Works/Desktop/form.php",
+		"/C/Users/Works/Desktop/style.min.css",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_tag-links.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_department.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_main.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/menu.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_work-days.scss",
@@ -338,17 +382,13 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_input.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_settings.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_main-search.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_data-block.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/main.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_bootstrap.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/department.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_mixins.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_carousel.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_nav.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_favourite-hotels.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_section.scss",
 		"/E/Vagrant/airwood/heart.dev/wp-content/themes/Zephyr/single-us_portfolio.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_global.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/assets/css/sprites.css",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/assets/js/src/script.js",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_footer.scss",
@@ -434,28 +474,11 @@
 		"/E/Vagrant/airwood/motorent.dev/scss/03-pages/_moto-inner.scss",
 		"/E/Vagrant/airwood/motorent.dev/assets/css/bootstrap-formhelpers.css",
 		"/C/Windows/System32/drivers/etc/hosts",
-		"/E/Vagrant/airwood/motorent.dev/partials/gallery.php",
-		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_photos-more.scss",
-		"/E/Vagrant/airwood/motorent.dev/bower_components/ekko-lightbox/dist/ekko-lightbox.min.js",
-		"/C/Users/Works/Downloads/lightbox-4.0.2/lightbox-4.0.2/examples/index.html",
-		"/C/Users/Works/Downloads/lightbox-4.0.2/lightbox-4.0.2/package.json",
-		"/C/Users/Works/Downloads/jRange-master/jRange-master/demo/index.html",
-		"/E/Vagrant/airwood/motorent.dev/assets/css/jRange.css",
-		"/C/Users/Works/Downloads/jRange-master/jRange-master/package.json",
-		"/C/Users/Works/Desktop/wp-config.php",
-		"/C/Users/Works/Desktop/robots.txt",
-		"/C/Users/Works/Desktop/skandinavija.today/public_html/wp-config.php",
-		"/E/Vagrant/airwood/motorent.dev/scss/04-base/_helpers.scss",
-		"/E/Vagrant/airwood/motorent.dev/scss/01-components/_span.scss",
-		"/C/Users/Works/Desktop/.htaccess",
-		"/C/Users/Works/Desktop/config.inc.php",
-		"/C/Users/Works/Desktop/form.php",
-		"/C/Users/Works/Desktop/results.php",
-		"/E/Vagrant/airwood/victor.dev/partials/footer.php"
+		"/E/Vagrant/airwood/motorent.dev/partials/gallery.php"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -473,6 +496,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stars",
+			"box-shad",
+			"header-title",
 			"input",
 			"#carousel-example-generic",
 			"22",
@@ -597,10 +623,7 @@
 			"help-block",
 			".price",
 			"class=\"row\"",
-			"class=\"col-md-12\"",
-			"style",
-			"style.css",
-			"style"
+			"class=\"col-md-12\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -692,15 +715,188 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scss/03-pages/_news.scss",
+					"file": "scss/main.scss",
 					"settings":
 					{
-						"buffer_size": 14,
+						"buffer_size": 2549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2041,
+								2041
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/01-components/_price-wrapper.scss",
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".price-wrapper{",
+							"incomplete_sync": null,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/01-components/_offer-form.scss",
+					"settings":
+					{
+						"buffer_size": 784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								557,
+								557
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".offer-form{",
+							"incomplete_sync": null,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pasiulymas.php",
+					"settings":
+					{
+						"buffer_size": 5998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4068,
+								4068
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1558.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/01-components/_input.scss",
+					"settings":
+					{
+						"buffer_size": 1744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								107
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scss/03-pages/_offer.scss",
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
+							]
+						],
+						"settings":
+						{
+							"auto_name": "body.offer{",
+							"incomplete_sync": null,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/04-base/_settings.scss",
+					"settings":
+					{
+						"buffer_size": 323,
 						"regions":
 						{
 						},
@@ -725,47 +921,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "scss/01-components/_wp-pagenavi.scss",
+					"buffer": 7,
+					"file": "scss/04-base/_global.scss",
 					"settings":
 					{
-						"buffer_size": 178,
+						"buffer_size": 1129,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								166,
-								166
-							]
-						],
-						"settings":
-						{
-							"auto_name": ".wp-pagenavi{",
-							"incomplete_sync": null,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "scss/main.scss",
-					"settings":
-					{
-						"buffer_size": 2160,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1754,
-								1754
+								352,
+								352
 							]
 						],
 						"settings":
@@ -774,125 +942,8 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 594.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "news.php",
-					"settings":
-					{
-						"buffer_size": 3658,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2629,
-								2629
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 164.0,
-						"translation.y": 583.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "scss/01-components/_data-block.scss",
-					"settings":
-					{
-						"buffer_size": 3124,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3115,
-								3115
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3311.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Works/Desktop/form.php",
-					"settings":
-					{
-						"buffer_size": 8310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								781,
-								781
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/Works/Desktop/style.min.css",
-					"settings":
-					{
-						"buffer_size": 3678,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3677,
-								3677
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

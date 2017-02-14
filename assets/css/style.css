@@ -3436,6 +3436,10 @@ a:hover, a:focus, a:active {
   background: grey;
 }
 
+span.highlight {
+  color: #ff6138;
+}
+
 .box-shadow {
   box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
 }
@@ -4214,6 +4218,46 @@ section.email .email-wrapper .email-form form .email-submit input {
   border-bottom-right-radius: 4px;
 }
 
+.radio input {
+  display: none;
+}
+
+.radio input + label {
+  position: relative;
+  padding-left: 35px;
+}
+
+.radio input + label:before {
+  width: 18px;
+  height: 18px;
+  border-radius: 10em;
+  content: " ";
+  position: absolute;
+  left: 0;
+  display: block;
+  border: 1px solid #b7b7b7;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.radio input:checked + label:before {
+  background: #3397ff;
+  border-color: #3397ff;
+  box-shadow: none;
+}
+
+.radio input:checked + label:after {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 7px;
+  display: block;
+  content: " ";
+  background: #FFF;
+  top: 12px;
+  border-radius: 10em;
+  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
 input[type="submit"] {
   background: #ff6138;
   color: #FFF;
@@ -4960,6 +5004,83 @@ section.favourite-hotels .carousel {
   text-align: center;
 }
 
+.offer-form label {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.offer-form.offer-form--long {
+  padding: 2.5em 7em;
+}
+
+.offer-form.offer-form--long .title {
+  margin-bottom: 28px;
+}
+
+.offer-form.offer-form--long .sub-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.offer-form.offer-form--long li:last-child {
+  border-bottom: 0;
+}
+
+.offer-form .offer-form-first, .offer-form .offer-form-second {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.offer-form .offer-form-first {
+  font-weight: normal;
+  color: #787575;
+  vertical-align: top;
+  width: 45%;
+}
+
+.offer-form .offer-form-second {
+  color: #5b5858;
+  width: 55%;
+}
+
+.offer-form .offer-form-second .radio:first-child {
+  margin-top: 0;
+}
+
+.offer-form ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.offer-form ul li {
+  padding: 5px 0;
+  margin: 5px 0;
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #f3e1d9;
+}
+
+.price-wrapper {
+  background: #fbfaf3;
+  border: 1px solid #f1eedb;
+  border-radius: 6px;
+  padding: 6px 10px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.price-wrapper p {
+  font-weight: bold !important;
+}
+
+.price-wrapper p span {
+  color: #ff6138;
+  font-size: 21px;
+}
+
 /* Pages 
 If you have page-specific styles, I think it’s cool to put them in a pages/ folder and in a 
 file named after the page. For example, it’s not uncommon to have very specific styles for 
@@ -5040,4 +5161,8 @@ body.offers #main:after {
   position: absolute;
   bottom: 0;
   z-index: -1;
+}
+
+body.offer .header.header--top {
+  padding-bottom: 15px;
 }

@@ -56,6 +56,63 @@
 					<p>Paryžiuje bus pristatytas "Gallimard" leidyklos išleistas gidas "Vilnius žemėlapiuose" ("Cartoville Vilnius"). Tai pirmasis ir kol kas vienintelis gidas apie Vilnių prancūzų kalba. Beje, leidinyje trumpai apžvelgiami visi keturi mūsų šalies regionai. Leidykla "Gallimard" gidą "Vilnius žemėlapiuose", be prancūzų, išleido dar anglų ir norvegų kalbomis. Leidėjų teigimu, knygą bus galima įsigyti septynių Europos šalių knygynuose: prancūzų kalba - Prancūzijoje, Belgijoje, Šveicarijoje ir Liuksemburge, anglų - Jungtinėje Karalystėje ir Airijoje, norvegų - Norvegijoje. "Gido apie Vilnių išleidimas - didelis įvykis", - džiaugėsi Lietuvos turizmo informacijos centro Paryžiuje direktorė Inga Lanchas. - Iki šiol Prancūzijoje buvo galima rasti įvairių leidyklų gidų apie Baltijos šalis, </p>
 					<p>-- fb share --</p>
 				</article>
+
+				
+				<div class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff">
+					<form> 
+						<div class="row">
+							<h3 class="title">Užsakykite kelionę</h3>
+							<h3 class="sub-title">Graikija, Kreta, La Meridion Villon</h3>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<div class="row">
+									<ul>
+										<li>
+											<div class="offer-form-first">
+												Kelionės data:
+											</div>
+											<div class="offer-form-second">
+												2017 Gegužės 24
+											</div>
+										</li>
+										<li>
+											<div class="offer-form-first">
+												Nakvynių skaičius:
+											</div>
+											<div class="offer-form-second">
+												7 nakvynės
+											</div>
+										</li>
+										<li>
+											<div class="offer-form-first">
+												Maitinimas: 
+											</div>
+											<div class="offer-form-second">
+												<div class="radio">
+												  <input type="radio" id="breakfest" name="optradio">
+												  <label for="breakfest">Pusryčiai</label>
+												</div>
+												<div class="radio">
+												  <input type="radio" id="all" name="optradio">
+												  <label for="all">Viskas įskaičiuota <span class="highlight">+ 200 €</span></label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="price-wrapper">
+									<p>Kaina: <span>219 €</span></p> 
+								</div>
+								<input type="submit" class="form-control button button--primary" value="Užsakyti">
+							</div>
+						</div>
+					</form>
+				</div>
+				
+
 			</div>
 
 			<div class="sidebar col-md-4"> 
@@ -103,8 +160,6 @@
 						</a>
 					</div>
 				<?php endfor; ?>
-				
-
 			</div>
 		</div>
 	</div>
