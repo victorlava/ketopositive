@@ -235,10 +235,14 @@
 
 				  <!-- Controls -->
 				  <a class="left carousel-control" href="#hotel-carousel" role="button" data-slide="prev">
-				    <i class="icon icon-left align"></i>
+				    <i class="icon align">
+				    	<i class="icon-arrow-left"></i>
+				    </i>
 				  </a>
 				  <a class="right carousel-control" href="#hotel-carousel" role="button" data-slide="next">
-				     <i class="icon icon-left align"></i>
+				     <i class="icon align">
+				     	<i class="icon-arrow-right"></i>
+				     </i>
 				  </a>
 				</div>
 			</div>

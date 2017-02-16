@@ -45,10 +45,14 @@
 
 				  <!-- Controls -->
 				  <a class="left carousel-control" href="#hotel-carousel" role="button" data-slide="prev">
-				    <i class="icon icon-left align"></i>
+				    <i class="icon align">
+				    	<i class="icon-arrow-left"></i>
+				    </i>
 				  </a>
 				  <a class="right carousel-control" href="#hotel-carousel" role="button" data-slide="next">
-				     <i class="icon icon-left align"></i>
+				     <i class="icon align">
+				     	<i class="icon-arrow-right"></i>
+				     </i>
 				  </a>
 				</div>
 
@@ -70,7 +74,7 @@
 									<ul>
 										<li>
 											<div class="offer-form-first">
-												Kelionės data:
+												<i class="icon icon-small-calendar"></i> Kelionės data:
 											</div>
 											<div class="offer-form-second">
 												2017 Gegužės 24
@@ -78,7 +82,7 @@
 										</li>
 										<li>
 											<div class="offer-form-first">
-												Nakvynių skaičius:
+												<i class="icon icon-small-bed"></i> Nakvynių skaičius:
 											</div>
 											<div class="offer-form-second">
 												7 nakvynės
@@ -86,7 +90,7 @@
 										</li>
 										<li>
 											<div class="offer-form-first">
-												Maitinimas: 
+												<i class="icon icon-small-drink"></i> Maitinimas: 
 											</div>
 											<div class="offer-form-second">
 												<div class="radio">

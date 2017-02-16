@@ -8,7 +8,7 @@
 				</header>
 			</div>
 			<div class="row">
-				<div class="email-form col-md-7"> 
+				<div class="email-form col-md-8"> 
 					<form role="form">
 						<div class="email-email col-md-9">
 			                <input type="email" id="email" name="email" class="form-control" placeholder="Jūsų el. paštas">

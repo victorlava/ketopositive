@@ -3619,8 +3619,57 @@ section.footer footer .footer-bottom .footer-social li {
   margin-left: 10px;
 }
 
+section.footer footer .footer-bottom .footer-social li a .icon {
+  display: block;
+  position: relative;
+  top: 9px;
+  margin: auto;
+}
+
+section.footer footer .footer-bottom .footer-social li a.facebook .icon {
+  background-image: url(../img/src/sprites.png);
+  background-position: -313px -122px;
+  width: 20px;
+  height: 32px;
+}
+
+section.footer footer .footer-bottom .footer-social li a.google .icon {
+  background-image: url(../img/src/sprites.png);
+  background-position: -313px -90px;
+  width: 26px;
+  height: 32px;
+}
+
+section.footer footer .footer-bottom .footer-social li a.instagram .icon {
+  background-image: url(../img/src/sprites.png);
+  background-position: -311px -186px;
+  width: 32px;
+  height: 32px;
+}
+
 section.footer footer .footer-bottom .footer-social li:hover, section.footer footer .footer-bottom .footer-social li:active, section.footer footer .footer-bottom .footer-social li:focus {
   background: #ff6138;
+}
+
+section.footer footer .footer-bottom .footer-social li:hover a.facebook .icon, section.footer footer .footer-bottom .footer-social li:active a.facebook .icon, section.footer footer .footer-bottom .footer-social li:focus a.facebook .icon {
+  background-image: url(../img/src/sprites.png);
+  background-position: -313px -154px;
+  width: 20px;
+  height: 32px;
+}
+
+section.footer footer .footer-bottom .footer-social li:hover a.google .icon, section.footer footer .footer-bottom .footer-social li:active a.google .icon, section.footer footer .footer-bottom .footer-social li:focus a.google .icon {
+  background-image: url(../img/src/sprites.png);
+  background-position: -313px -58px;
+  width: 26px;
+  height: 32px;
+}
+
+section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, section.footer footer .footer-bottom .footer-social li:active a.instagram .icon, section.footer footer .footer-bottom .footer-social li:focus a.instagram .icon {
+  background-image: url(../img/src/sprites.png);
+  background-position: -279px -186px;
+  width: 32px;
+  height: 32px;
 }
 
 .navbar {
@@ -3702,7 +3751,7 @@ section.footer footer .footer-bottom .footer-social li:hover, section.footer foo
   left: 0;
   display: block;
   background-image: url(../img/src/sprites.png);
-  background-position: 0px 0px;
+  background-position: -279px 0px;
   width: 64px;
   height: 58px;
   bottom: 2px;
@@ -3750,6 +3799,10 @@ body.home #main {
   background-image: url("/assets/img/src/main-bg.jpg");
 }
 
+body.home #main:after {
+  display: none;
+}
+
 #main {
   background-image: url("/assets/img/src/main-all-bg.jpg");
   background-repeat: no-repeat;
@@ -3790,7 +3843,20 @@ since your site is should be mostly composed of tiny modules.
 
 .header.header--main .header-title .header-smaller {
   font-size: 30px;
-  padding-right: 1em;
+  padding-right: 1.25em;
+  position: relative;
+  margin-right: .4em;
+}
+
+.header.header--main .header-title .header-smaller:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  background-image: url(../img/src/sprites.png);
+  background-position: -51px -250px;
+  width: 14px;
+  height: 24px;
+  top: 3px;
 }
 
 .header.header--main .header-sub-title {
@@ -3975,6 +4041,25 @@ since your site is should be mostly composed of tiny modules.
   z-index: 2;
 }
 
+.nav.nav--secondary li.dropdown .dropdown-toggle:before {
+  content: " ";
+  position: absolute;
+  right: -23px;
+  top: 4px;
+  display: block;
+  background-image: url(../img/src/sprites.png);
+  background-position: -333px -122px;
+  width: 10px;
+  height: 7px;
+}
+
+.nav.nav--secondary li.dropdown.open .dropdown-toggle:before {
+  background-image: url(../img/src/sprites.png);
+  background-position: -333px -129px;
+  width: 9px;
+  height: 6px;
+}
+
 .nav.nav--secondary li.dropdown ul.dropdown-menu {
   top: -22px;
   left: -5px;
@@ -4034,6 +4119,32 @@ since your site is should be mostly composed of tiny modules.
 .nav.nav--carousel-selectors li a:after {
   background: #efc73d;
   bottom: -10px;
+}
+
+.nav.nav--carousel-selectors li.active:after, .nav.nav--carousel-selectors li.active:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  margin-top: -3px;
+}
+
+.nav.nav--carousel-selectors li.active:after {
+  border-color: rgba(239, 199, 61, 0);
+  border-top-color: #efc73d;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.nav.nav--carousel-selectors li.active:before {
+  border-color: rgba(215, 179, 55, 0);
+  border-top-color: #d7b337;
+  border-width: 9px;
+  margin-left: -9px;
 }
 
 .nav.nav--carousel-selectors li.active a {
@@ -4109,6 +4220,18 @@ section.email .email-wrapper {
   box-shadow: 0 0 53px 5px rgba(0, 0, 0, 0.25);
   bottom: -22px;
   position: relative;
+  overflow: hidden;
+}
+
+section.email .email-wrapper:before {
+  content: " ";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-image: url(../img/src/sprites.png);
+  background-position: 0px 0px;
+  width: 279px;
+  height: 228px;
 }
 
 section.email .email-wrapper .header {
@@ -4131,6 +4254,11 @@ section.email .email-wrapper .email-form form .email-email input {
   box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.05);
   padding: 21px;
   border-right: 0;
+  height: 48px !important;
+}
+
+section.email .email-wrapper .email-form form .email-email input:focus, section.email .email-wrapper .email-form form .email-email input:active {
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.05) !important;
 }
 
 section.email .email-wrapper .email-form form .email-submit input {
@@ -4213,7 +4341,7 @@ section.email .email-wrapper .email-form form .email-submit input {
   width: 100%;
   border-radius: 0;
   height: 80px;
-  line-height: 70px;
+  line-height: 50px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -4673,6 +4801,19 @@ textarea {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.carousel.carousel--simple .carousel-control .icon .icon-arrow-left, .carousel.carousel--simple .carousel-control .icon .icon-arrow-right {
+  transform: scale(0.412);
+  top: -8px !important;
+}
+
+.carousel.carousel--simple .carousel-control .icon .icon-arrow-left {
+  right: 1px !important;
+}
+
+.carousel.carousel--simple .carousel-control .icon .icon-arrow-right {
+  right: -1px !important;
+}
+
 .carousel.carousel--simple .carousel-indicators {
   bottom: -42px !important;
 }
@@ -4712,13 +4853,28 @@ textarea {
 
 .carousel .carousel-control .icon {
   background: rgba(0, 0, 0, 0.2);
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 10em;
   display: block;
   margin: auto;
   margin-top: 60px;
   position: absolute;
+}
+
+.carousel .carousel-control .icon .icon-arrow-left, .carousel .carousel-control .icon .icon-arrow-right {
+  display: block;
+  margin: auto;
+  top: 18px;
+  position: relative;
+}
+
+.carousel .carousel-control .icon .icon-arrow-left {
+  right: 5px;
+}
+
+.carousel .carousel-control .icon .icon-arrow-right {
+  right: -5px;
 }
 
 .carousel .carousel-control:hover .icon, .carousel .carousel-control:focus .icon, .carousel .carousel-control:active .icon {
@@ -5010,6 +5166,16 @@ section.favourite-hotels .carousel {
   font-weight: 500;
 }
 
+.offer-form .icon {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+
+.offer-form .icon.icon.icon-small-drink {
+  width: 16px;
+}
+
 .offer-form.offer-form--long {
   padding: 2.5em 7em;
 }
@@ -5030,13 +5196,13 @@ section.favourite-hotels .carousel {
 .offer-form .offer-form-first, .offer-form .offer-form-second {
   display: inline-block;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1;
+  vertical-align: top;
 }
 
 .offer-form .offer-form-first {
   font-weight: normal;
   color: #787575;
-  vertical-align: top;
   width: 45%;
 }
 
@@ -5056,8 +5222,8 @@ section.favourite-hotels .carousel {
 }
 
 .offer-form ul li {
-  padding: 5px 0;
-  margin: 5px 0;
+  padding: 6px 0;
+  margin: 6px 0;
   display: table;
   width: 100%;
   border-bottom: 1px solid #f3e1d9;

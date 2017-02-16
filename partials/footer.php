@@ -63,9 +63,9 @@
 			        			</div>
 			        			<div class="footer-social pull-right">
 			        				<ul class="list list--inline">
-			        					<li><a href="#"><i class="fa"></i></a></li>
-			        					<li><a href="#"><i class="fa"></i></a></li>
-			        					<li><a href="#"><i class="fa"></i></a></li>
+			        					<li><a href="#" class="facebook"><i class="icon"></i></a></li>
+			        					<li><a href="#" class="google"><i class="icon"></i></a></li>
+			        					<li><a href="#" class="instagram"><i class="icon"></i></a></li>
 			        				</ul>
 			        			</div>
 		        			</div>
