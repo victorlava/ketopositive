@@ -5206,6 +5206,56 @@ section.favourite-hotels .carousel {
   border-bottom: 0;
 }
 
+.offer-form.offer-form--short {
+  margin-bottom: 2.5em;
+  padding: 15px 20px;
+}
+
+.offer-form.offer-form--short .title {
+  color: #3d3939;
+}
+
+.offer-form.offer-form--short .radio input + label {
+  padding-left: 25px;
+}
+
+.offer-form.offer-form--short .icon {
+  margin-right: 5px !important;
+}
+
+.offer-form.offer-form--short .offer-form-first {
+  width: 55%;
+}
+
+.offer-form.offer-form--short .offer-form-second {
+  width: 45%;
+}
+
+.offer-form.offer-form--short ul li:last-child .offer-form-first {
+  width: 40%;
+}
+
+.offer-form.offer-form--short ul li:last-child .offer-form-second {
+  width: 60%;
+}
+
+.offer-form.offer-form--short .price-wrapper, .offer-form.offer-form--short .button {
+  width: 45%;
+  display: inline-block;
+  float: left;
+  padding: 6px 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.offer-form.offer-form--short .price-wrapper {
+  margin-top: 18px;
+}
+
+.offer-form.offer-form--short .button {
+  float: right;
+}
+
 .offer-form .offer-form-first, .offer-form .offer-form-second {
   display: inline-block;
   font-size: 13px;

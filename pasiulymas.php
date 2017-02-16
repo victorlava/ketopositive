@@ -71,46 +71,11 @@
 						<div class="row">
 							<div class="col-md-8">
 								<div class="row">
-									<ul>
-										<li>
-											<div class="offer-form-first">
-												<i class="icon icon-small-calendar"></i> Kelionės data:
-											</div>
-											<div class="offer-form-second">
-												2017 Gegužės 24
-											</div>
-										</li>
-										<li>
-											<div class="offer-form-first">
-												<i class="icon icon-small-bed"></i> Nakvynių skaičius:
-											</div>
-											<div class="offer-form-second">
-												7 nakvynės
-											</div>
-										</li>
-										<li>
-											<div class="offer-form-first">
-												<i class="icon icon-small-drink"></i> Maitinimas: 
-											</div>
-											<div class="offer-form-second">
-												<div class="radio">
-												  <input type="radio" id="breakfest" name="optradio">
-												  <label for="breakfest">Pusryčiai</label>
-												</div>
-												<div class="radio">
-												  <input type="radio" id="all" name="optradio">
-												  <label for="all">Viskas įskaičiuota <span class="highlight">+ 200 €</span></label>
-												</div>
-											</div>
-										</li>
-									</ul>
+									<?php include('partials/offer-form-list.php'); ?>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="price-wrapper">
-									<p>Kaina: <span>219 €</span></p> 
-								</div>
-								<input type="submit" class="form-control button button--primary" value="Užsakyti">
+								   <?php include('partials/offer-form-price.php'); ?>		
 							</div>
 						</div>
 					</form>
@@ -121,19 +86,10 @@
 
 			<div class="sidebar col-md-4"> 
 
-				<header class="header header--sidebar header--line"> 
-					<h4 class="header-title">Naujausi straipsniai</h4>
-				</header>
-				<div class="data-block data-block--news data-block--offer data-block--hoveroff"> 
-					<?php for($i=0; $i < 3; $i++): ?>
-						<div class="data-block-info">
-							<a href="#"><h4 class="title">Kuršių Neriją pasieksime ne tik keltais, bet ir tiltu?</h4></a>
-							<div class="tag-links">  
-								<a href="#">Egzotika</a>
-								<a href="#">Pigios kelionės</a>
-							</div>
-						</div>
-					<?php endfor; ?>
+				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff"> 
+					<h3 class="title">Graikija, Kreta</h3>
+					<?php include('partials/offer-form-list.php'); ?>
+					<?php include('partials/offer-form-price.php'); ?>
 				</div>
 
 				<header class="header header--sidebar header--line"> 
