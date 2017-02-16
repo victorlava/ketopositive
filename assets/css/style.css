@@ -3454,6 +3454,10 @@ hr.empty {
   background: transparent;
 }
 
+hr.half {
+  padding: .33em 0;
+}
+
 .stars {
   display: table;
   width: 100%;
@@ -4320,8 +4324,9 @@ section.email .email-wrapper .email-form form .email-submit input {
   border-color: #e6d3c5;
   border-radius: 0;
   border-right: 0;
-  padding: 12px;
-  padding-right: 5px;
+  padding: 13px;
+  position: absolute;
+  height: 44px;
 }
 
 .main-search form .main-search-inputs > div select {
@@ -4331,6 +4336,12 @@ section.email .email-wrapper .email-form form .email-submit input {
   border-left: 0;
   height: 44px;
   padding: 12px 0px;
+  padding-left: 40px;
+  box-shadow: none;
+}
+
+.main-search form .main-search-inputs > div select:focus, .main-search form .main-search-inputs > div select:active {
+  border-color: #ff6138;
 }
 
 .main-search form .main-search-submit {
@@ -4344,6 +4355,8 @@ section.email .email-wrapper .email-form form .email-submit input {
   line-height: 50px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  box-shadow: none;
+  box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15) !important;
 }
 
 .radio input {
@@ -5101,15 +5114,15 @@ section.favourite-hotels .carousel {
   position: relative;
 }
 
-.offer-bar li:hover, .offer-bar li:active, .offer-bar li:focus {
+.offer-bar li.active, .offer-bar li:hover, .offer-bar li:active, .offer-bar li:focus {
   background: #ff6138;
 }
 
-.offer-bar li:hover a, .offer-bar li:active a, .offer-bar li:focus a {
+.offer-bar li.active a, .offer-bar li:hover a, .offer-bar li:active a, .offer-bar li:focus a {
   color: #FFF;
 }
 
-.offer-bar li:hover:after, .offer-bar li:hover:before, .offer-bar li:active:after, .offer-bar li:active:before, .offer-bar li:focus:after, .offer-bar li:focus:before {
+.offer-bar li.active:after, .offer-bar li.active:before, .offer-bar li:hover:after, .offer-bar li:hover:before, .offer-bar li:active:after, .offer-bar li:active:before, .offer-bar li:focus:after, .offer-bar li:focus:before {
   content: " ";
   width: 100%;
   display: block;
@@ -5118,23 +5131,23 @@ section.favourite-hotels .carousel {
   border-bottom: 3px solid #ff6138;
 }
 
-.offer-bar li:hover:after, .offer-bar li:active:after, .offer-bar li:focus:after {
+.offer-bar li.active:after, .offer-bar li:hover:after, .offer-bar li:active:after, .offer-bar li:focus:after {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-.offer-bar li:hover:first-child, .offer-bar li:active:first-child, .offer-bar li:focus:first-child {
+.offer-bar li.active:first-child, .offer-bar li:hover:first-child, .offer-bar li:active:first-child, .offer-bar li:focus:first-child {
   border-top-left-radius: 4px !important;
 }
 
-.offer-bar li:hover:first-child:after, .offer-bar li:hover:first-child:before, .offer-bar li:active:first-child:after, .offer-bar li:active:first-child:before, .offer-bar li:focus:first-child:after, .offer-bar li:focus:first-child:before {
+.offer-bar li.active:first-child:after, .offer-bar li.active:first-child:before, .offer-bar li:hover:first-child:after, .offer-bar li:hover:first-child:before, .offer-bar li:active:first-child:after, .offer-bar li:active:first-child:before, .offer-bar li:focus:first-child:after, .offer-bar li:focus:first-child:before {
   border-bottom-left-radius: 12px !important;
 }
 
-.offer-bar li:hover:last-child, .offer-bar li:active:last-child, .offer-bar li:focus:last-child {
+.offer-bar li.active:last-child, .offer-bar li:hover:last-child, .offer-bar li:active:last-child, .offer-bar li:focus:last-child {
   border-top-right-radius: 4px !important;
 }
 
-.offer-bar li:hover:last-child:after, .offer-bar li:hover:last-child:before, .offer-bar li:active:last-child:after, .offer-bar li:active:last-child:before, .offer-bar li:focus:last-child:after, .offer-bar li:focus:last-child:before {
+.offer-bar li.active:last-child:after, .offer-bar li.active:last-child:before, .offer-bar li:hover:last-child:after, .offer-bar li:hover:last-child:before, .offer-bar li:active:last-child:after, .offer-bar li:active:last-child:before, .offer-bar li:focus:last-child:after, .offer-bar li:focus:last-child:before {
   border-bottom-right-radius: 12px !important;
 }
 

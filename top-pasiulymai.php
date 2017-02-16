@@ -13,11 +13,11 @@
 				<h2 class="header-title">Top pasiūlymai</h2>
 			</header>
 		</div>
-
+ 
 
 			<div class="offer-bar data-block data-block--simple data-block--hoveroff">
 				<ul class="list list--inline">
-					<li>
+					<li class="active">
 						<a href="#">
 							<span>Sausis</span>
 							<span class="stylized-number">12</span>

@@ -107,6 +107,7 @@
 			</div>
 
 			<div class="row">
+				<hr class="empty half">
 				<a href="#" class="button button--long button--center">Žiūrėti visus pasiūlymus</a>
 			</div>
 		</div>
