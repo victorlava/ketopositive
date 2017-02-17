@@ -115,11 +115,13 @@
 
   	<section class="section favourite-hotels">
   		
-			<div class="row">
-				<header class="header header--main header--line header--center">
-					<h2 class="header-title">Mėgstamiausi mūsų keliautojų viešbučiai</h2> 
-					<p class="header-sub-title">Jūsų rinktinės vietos</p>
-				</header>
+  			<div class="container">
+				<div class="row">
+					<header class="header header--main header--line header--center">
+						<h2 class="header-title">Mėgstamiausi mūsų keliautojų viešbučiai</h2> 
+						<p class="header-sub-title">Jūsų rinktinės vietos</p>
+					</header>
+				</div>
 			</div>
 
 			<div class="row">
