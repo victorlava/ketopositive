@@ -151,6 +151,89 @@ function codex_direction_init() {
 	register_post_type( 'direction', $args ); 
 }
 
+add_action( 'init', 'codex_hotels_init' );
+/**
+ * Register a direction post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function codex_hotels_init() {
+	$labels = array(
+		'name'               => _x( 'Hotels', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Hotel', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Viešbučiai', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Hotel', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add Hotel', 'book', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Hotel', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Hotel', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Hotel', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Hotel', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Hotels', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Hotels', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Hotels:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No hotel found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No hotels found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+        'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'viesbutis' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt')
+	);
+
+	register_post_type( 'hotels', $args ); 
+}
+
+// hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'create_hotels_taxonomies', 0 );
+
+// create two taxonomies, genres and writers for the post type "book"
+function create_hotels_taxonomies() {
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Categories', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Category', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Categories', 'textdomain' ),
+		'all_items'         => __( 'All Categories', 'textdomain' ),
+		'parent_item'       => __( 'Parent Category', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Category:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Category', 'textdomain' ),
+		'update_item'       => __( 'Update Category', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Category', 'textdomain' ),
+		'new_item_name'     => __( 'New Category Name', 'textdomain' ),
+		'menu_name'         => __( 'Kategorija', 'textdomain' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'kategorija' ),
+	);
+
+	register_taxonomy( 'kategorija', 'hotels', $args );
+
+}
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="styled-button"';
+}
+
 add_filter('acf/settings/google_api_key', function () {
     return 'AIzaSyAjPWSM0OMLF1b_LeztaVJmqxoqqmBZ4_8';
 });

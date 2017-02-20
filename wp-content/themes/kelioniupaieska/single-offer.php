@@ -179,6 +179,7 @@ get_header(); ?>
 						'post_type'              => array( 'offer' ),
 						'post_status'            => array( 'public' ),
 						'orderby'                => 'rand',
+						'posts_per_page'		 => 2
 					);
 
 					// The Query

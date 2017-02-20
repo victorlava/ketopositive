@@ -5305,7 +5305,7 @@ textarea {
   border: 0;
 }
 
-.button {
+.button, .page-numbers {
   box-shadow: inset 0 -3px 0px 0px rgba(0, 0, 0, 0.1);
   border: 0;
   outline: 0;
@@ -5317,35 +5317,35 @@ textarea {
   padding: 18px 28px;
 }
 
-.button:hover, .button:focus, .button:active {
+.button:hover, .button:focus, .button:active, .page-numbers:hover, .page-numbers:focus, .page-numbers:active {
   box-shadow: none;
   background: #ebe6e2;
   color: #545858;
 }
 
-.button.button--primary {
+.button.button--primary, .page-numbers.button--primary {
   background: #ff6138;
   color: #FFF;
 }
 
-.button.button--primary:hover, .button.button--primary:focus, .button.button--primary:active {
+.button.button--primary:hover, .button.button--primary:focus, .button.button--primary:active, .page-numbers.button--primary:hover, .page-numbers.button--primary:focus, .page-numbers.button--primary:active {
   background: #c9572c;
   box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
-.button.button--long {
+.button.button--long, .page-numbers.button--long {
   width: 227px;
   display: block;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .button.button--long {
+  .button.button--long, .page-numbers.button--long {
     width: 277px;
   }
 }
 
-.button.button--center {
+.button.button--center, .page-numbers.button--center {
   margin: auto;
 }
 
@@ -5601,19 +5601,19 @@ section.favourite-hotels .carousel {
   text-transform: uppercase;
 }
 
-.wp-pagenavi .button {
+.nav-links .page-numbers {
   padding: 10px 12px;
   display: inline-block;
   margin-right: 2px;
 }
 
 @media screen and (min-width: 768px) {
-  .wp-pagenavi .button {
+  .nav-links .page-numbers {
     padding: 14px 18px;
   }
 }
 
-.wp-pagenavi .button.current {
+.nav-links .page-numbers.current {
   background: #ff6138;
   color: #FFF;
 }
