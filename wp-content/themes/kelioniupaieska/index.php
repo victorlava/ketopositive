@@ -278,7 +278,17 @@ get_header(); ?>
 		
 
   	</section>
+	<?php
+		$args = array(
+			'post_type'              => array( 'direction' ),
+			'post_status'            => array( 'public' )
+		);
 
+		// The Query
+		$getDirections = new WP_Query( $args );
+
+	?>
+	<?php if( $getDirections->have_posts() ): ?>
   	<section class="section favourite-directions">
   		<div class="container">
 			<div class="row">
@@ -289,23 +299,23 @@ get_header(); ?>
 			</div>
 
 			<div class="row">
-				<?php for($i=0;$i < 4; $i++): ?>
+				<?php while( $getDirections->have_posts() ) : $getDirections->the_post(); ?>
 				<div class="col-md-6">
 					<div class="direction-block">
-						<a href="#">
-							<img src="/assets/img/src/direction.jpg">
+						<a href="<?php the_field('nuoroda'); ?>">
+							<img src="<?php the_field('nuotrauka'); ?>">
 							<header class="header header--main">
-								<h2 class="header-title">Maljorka</h2> 
-								<p class="header-sub-title">Gražiausia Balearų sala</p>
+								<h2 class="header-title"><?php the_title(); ?></h2> 
+								<p class="header-sub-title"><?php the_field('antraste'); ?></p>
 							</header>
 						</a>
 					</div>
 				</div>
-				<?php endfor; ?>
+				<?php endwhile; ?>
 			</div>
 		</div>
-
   	</section>
+    <?php endif; ?>
 
   </main><!-- #main -->
 

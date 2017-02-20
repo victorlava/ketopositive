@@ -31,7 +31,7 @@ function codex_offer_init() {
 	$labels = array(
 		'name'               => _x( 'Offers', 'post type general name', 'your-plugin-textdomain' ),
 		'singular_name'      => _x( 'Offer', 'post type singular name', 'your-plugin-textdomain' ),
-		'menu_name'          => _x( 'Offers', 'admin menu', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Pasiūlymai', 'admin menu', 'your-plugin-textdomain' ),
 		'name_admin_bar'     => _x( 'Offer', 'add new on admin bar', 'your-plugin-textdomain' ),
 		'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
 		'add_new_item'       => __( 'Add New Offer', 'your-plugin-textdomain' ),
@@ -75,8 +75,8 @@ function codex_branch_init() {
 	$labels = array(
 		'name'               => _x( 'Branches', 'post type general name', 'your-plugin-textdomain' ),
 		'singular_name'      => _x( 'Branch', 'post type singular name', 'your-plugin-textdomain' ),
-		'menu_name'          => _x( 'Branches', 'admin menu', 'your-plugin-textdomain' ),
-		'name_admin_bar'     => _x( 'Branch', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Filialai', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Filialai', 'add new on admin bar', 'your-plugin-textdomain' ),
 		'add_new'            => _x( 'Add Branch', 'book', 'your-plugin-textdomain' ),
 		'add_new_item'       => __( 'Add New Branch', 'your-plugin-textdomain' ),
 		'new_item'           => __( 'New Branch', 'your-plugin-textdomain' ),
@@ -106,6 +106,49 @@ function codex_branch_init() {
 	);
 
 	register_post_type( 'branch', $args ); 
+}
+
+add_action( 'init', 'codex_direction_init' );
+/**
+ * Register a direction post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function codex_direction_init() {
+	$labels = array(
+		'name'               => _x( 'Directions', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Direction', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Kelionių kryptys', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Direction', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add Direction', 'book', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Direction', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Direction', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Direction', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Direction', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Directions', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Directions', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Directions:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No direction found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No directions found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+        'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'kryptys' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt')
+	);
+
+	register_post_type( 'direction', $args ); 
 }
 
 add_filter('acf/settings/google_api_key', function () {
