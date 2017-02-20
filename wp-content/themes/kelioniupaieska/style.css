@@ -3581,6 +3581,174 @@ h5 {
   color: #ff6138;
 }
 
+.icon-adults {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -65px -250px;
+  width: 14px;
+  height: 16px;
+}
+
+.icon-arrow-done {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -333px -122px;
+  width: 10px;
+  height: 7px;
+}
+
+.icon-arrow-left {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -279px -122px;
+  width: 34px;
+  height: 64px;
+}
+
+.icon-arrow-right-brown {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -51px -250px;
+  width: 14px;
+  height: 24px;
+}
+
+.icon-arrow-right {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -279px -58px;
+  width: 34px;
+  height: 64px;
+}
+
+.icon-arrow-up {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -333px -129px;
+  width: 9px;
+  height: 6px;
+}
+
+.icon-bed {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -35px -228px;
+  width: 24px;
+  height: 22px;
+}
+
+.icon-big-email {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: 0px 0px;
+  width: 279px;
+  height: 228px;
+}
+
+.icon-big-phone {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -279px 0px;
+  width: 64px;
+  height: 58px;
+}
+
+.icon-children {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -108px -228px;
+  width: 16px;
+  height: 14px;
+}
+
+.icon-date {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -76px -228px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-drink {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -35px -250px;
+  width: 16px;
+  height: 24px;
+}
+
+.icon-facebook-white {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -313px -154px;
+  width: 20px;
+  height: 32px;
+}
+
+.icon-facebook {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -313px -122px;
+  width: 20px;
+  height: 32px;
+}
+
+.icon-google-white {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -313px -58px;
+  width: 26px;
+  height: 32px;
+}
+
+.icon-google {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -313px -90px;
+  width: 26px;
+  height: 32px;
+}
+
+.icon-instagram-white {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -279px -186px;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-instagram {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -311px -186px;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-location-gmap {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: 0px -228px;
+  width: 35px;
+  height: 50px;
+}
+
+.icon-location {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -79px -250px;
+  width: 12px;
+  height: 16px;
+}
+
+.icon-small-bed {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -124px -228px;
+  width: 16px;
+  height: 14px;
+}
+
+.icon-small-calendar {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -92px -228px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-small-drink {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -91px -250px;
+  width: 12px;
+  height: 16px;
+}
+
+.icon-star {
+  background-image: url("assets/img/src/sprites.png");
+  background-position: -59px -228px;
+  width: 17px;
+  height: 16px;
+}
+
 /* Partials
 The partials directory will probably contain the bulk of your SASS files. 
 A page may consist of multiple partials and should be styled individually. 
@@ -3590,7 +3758,7 @@ These partials may include files like:
 	--Navigation 
 	--Content Block 					 							  				*/
 section.footer {
-  background: url("/assets/img/src/footer-bg.jpg");
+  background: url("./assets/img/src/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -3705,21 +3873,21 @@ section.footer footer .footer-bottom .footer-social li a .icon {
 }
 
 section.footer footer .footer-bottom .footer-social li a.facebook .icon {
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -313px -122px;
   width: 20px;
   height: 32px;
 }
 
 section.footer footer .footer-bottom .footer-social li a.google .icon {
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -313px -90px;
   width: 26px;
   height: 32px;
 }
 
 section.footer footer .footer-bottom .footer-social li a.instagram .icon {
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -311px -186px;
   width: 32px;
   height: 32px;
@@ -3730,21 +3898,21 @@ section.footer footer .footer-bottom .footer-social li:hover, section.footer foo
 }
 
 section.footer footer .footer-bottom .footer-social li:hover a.facebook .icon, section.footer footer .footer-bottom .footer-social li:active a.facebook .icon, section.footer footer .footer-bottom .footer-social li:focus a.facebook .icon {
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -313px -154px;
   width: 20px;
   height: 32px;
 }
 
 section.footer footer .footer-bottom .footer-social li:hover a.google .icon, section.footer footer .footer-bottom .footer-social li:active a.google .icon, section.footer footer .footer-bottom .footer-social li:focus a.google .icon {
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -313px -58px;
   width: 26px;
   height: 32px;
 }
 
 section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, section.footer footer .footer-bottom .footer-social li:active a.instagram .icon, section.footer footer .footer-bottom .footer-social li:focus a.instagram .icon {
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -279px -186px;
   width: 32px;
   height: 32px;
@@ -3963,7 +4131,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   content: " ";
   position: absolute;
   display: block;
-  background-image: url(../img/src/phone-for-mobiles.png);
+  background-image: url(assets/img/src/phone-for-mobiles.png);
   width: 16px;
   height: 24px;
   right: 160px;
@@ -3978,7 +4146,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 
 @media screen and (min-width: 992px) {
   .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
-    background-image: url(../img/src/sprites.png);
+    background-image: url(assets/img/src/sprites.png);
     background-position: -279px 0px;
     width: 64px;
     height: 58px;
@@ -4046,7 +4214,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 }
 
 body.home #main {
-  background-image: url("/assets/img/src/main-bg.jpg");
+  background-image: url("./assets/img/src/main-bg.jpg");
 }
 
 body.home #main:after {
@@ -4054,7 +4222,7 @@ body.home #main:after {
 }
 
 #main {
-  background-image: url("/assets/img/src/main-all-bg.jpg");
+  background-image: url("./assets/img/src/main-all-bg.jpg");
   background-repeat: no-repeat;
   background-position-y: -140px;
   background-position-x: -200px;
@@ -4067,7 +4235,7 @@ body.home #main:after {
   bottom: 0;
   z-index: 0;
   display: block;
-  background-image: url(/assets/img/src/main-bottom-bg.jpg);
+  background-image: url(./assets/img/src/main-bottom-bg.jpg);
   background-repeat: no-repeat;
   position: relative;
 }
@@ -5387,13 +5555,13 @@ section.favourite-hotels .header {
 
 section.favourite-hotels:after {
   bottom: 0;
-  background-image: url("/assets/img/src/carousel-bottom.jpg");
+  background-image: url("./assets/img/src/carousel-bottom.jpg");
   background-position: center;
 }
 
 section.favourite-hotels:before {
   top: 0;
-  background-image: url("/assets/img/src/carousel-top.jpg");
+  background-image: url("./assets/img/src/carousel-top.jpg");
 }
 
 section.favourite-hotels:after, section.favourite-hotels:before {

@@ -1,9 +1,11 @@
+<?php
+/**
+ * The main template file
+ *
+ * @package WordPress
+ */
 
-<?php include('partials/header.php'); ?> 
-
-<body class="home">
-  
-  <?php include('partials/menu.php'); ?>
+get_header(); ?>
 
   <main id="main"> 
 
@@ -67,6 +69,19 @@
 		 </div>      
   	</div><!-- .main-search -->
 
+	<?php
+		$args = array(
+			'post_type'              => array( 'offer' ),
+			'post_status'            => array( 'public' ),
+			'posts_per_page' => 6
+		);
+
+		// The Query
+		$getOffers = new WP_Query( $args );
+
+	?>
+
+	<?php if( $getOffers->have_posts() ): ?>		
   	<section class="section">
   		<div class="container">
 	  		<div class="row">
@@ -77,25 +92,33 @@
 	  		</div>
 
 			<div class="row">
-				<?php for($i=0;$i < 6; $i++): ?>
+				<?php $b = 0; ?>
+				<?php while( $getOffers->have_posts() ) : $getOffers->the_post(); ?>
 				<div class="col-md-4">
 					<div class="data-block data-block--offer">
-						<a href="#"> 
-							<div class="data-block-image">
-								<img src="/assets/img/src/offer.jpg">
-							</div>
+						<a href="<?php get_permalink();?>"> 
+
+							<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
+						   		<div class="data-block-image">
+									<img src="<?php the_sub_field('nuotrauka'); ?>">
+							    </div>
+							    <?php break; ?>
+					   		<?php endwhile; ?>
+
 							<div class="data-block-info">
-								<h4 class="title">Lou' Lou' a Beach Resort</h4>
-								<time datetime="2001-05-15T19:00">2017 Gegužės 24</time>
+								<h4 class="title"><?php the_title(); ?></h4>
+								<time datetime="2001-05-15T19:00"><?php the_field('keliones_data'); ?></time>
 								<div class="price-wrapper">
 									<div class="align align--vertical">
-										<p>539€</p>
-										<p class="old-price">1039€</p>
+										<p><?php the_field('kaina'); ?>€</p>
+										<?php if(get_field('sena_kaina')): ?>
+											<p class="old-price"><?php the_field('sena_kaina'); ?>€</p> 
+										<?php endif; ?>
 									</div>
 								</div>
 								<div class="included">
 									<ul class="list list--inline">
-										<li><i class="icon icon-bed"></i> 7 nakvynės</li>
+										<li><i class="icon icon-bed"></i> <?php the_field('nakvyniu_skaicius'); ?></li>
 										<li><i class="icon icon-drink"></i> Viskas įskaičiuota</li>
 									</ul>
 								</div>
@@ -103,7 +126,7 @@
 						</a>
 					</div>
 				</div>
-				<?php endfor; ?>
+				<?php endwhile; ?>
 			</div>
 
 			<div class="row">
@@ -112,6 +135,9 @@
 			</div>
 		</div>
   	</section>
+	<?php endif; ?>
+	<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+				
 
   	<section class="section favourite-hotels">
   		
@@ -283,6 +309,4 @@
 
   </main><!-- #main -->
 
-  	<?php include('partials/email-cta.php'); ?>  
-
-    <?php include('partials/footer.php'); ?>  
+  <?php get_footer(); ?>
