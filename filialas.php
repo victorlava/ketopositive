@@ -54,11 +54,32 @@
 	</div>
 
 			
-	<div class="gmap">
+	<div id="gmap" class="gmap">
 		
 	</div>
-		
 
+	<script>
+      function initMap() {
+        var uluru = {lat: 54.6921976, lng: 25.2929409};
+        var map = new google.maps.Map(document.getElementById('gmap'), {
+          zoom: 15,
+          center: uluru
+        });
+
+        var icon = {
+            url: "/assets/img/src/location-gmap.png"
+        };
+
+        var marker = new google.maps.Marker({
+            position: {lat: 54.6921976, lng: 25.2929409},
+            map: map,
+            zoom: 1,
+            icon: icon
+        });
+
+      }
+    </script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjPWSM0OMLF1b_LeztaVJmqxoqqmBZ4_8&amp;callback=initMap"></script>
   </main><!-- #main -->
 
   	<?php include('partials/email-cta.php'); ?>  
