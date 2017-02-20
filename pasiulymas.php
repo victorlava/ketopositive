@@ -62,7 +62,7 @@
 				</article>
 
 				
-				<div class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff">
+				<div class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
 					<form> 
 						<div class="row">
 							<h3 class="title">Užsakykite kelionę</h3>

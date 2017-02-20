@@ -14,7 +14,7 @@
 			</header>
 		</div>
 
-		<div class="row">
+	
 			<div class="departments col-md-8">
 				<?php for($i=0; $i < 4; $i++): ?>
 				<div class="row">
@@ -84,7 +84,7 @@
 					</form> 
 				</div>
 			</div>
-		</div>
+		
 	</div>
 
   </main><!-- #main -->

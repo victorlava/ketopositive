@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-8 content-wrapper">
 				<?php for($i=0; $i < 8; $i++): ?>
 				<div class="col-md-6">
 					<div class="data-block data-block--offer data-block--article"> 

@@ -3964,6 +3964,12 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   top: 19px;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
     background-image: url(../img/src/sprites.png);
@@ -3974,6 +3980,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
     left: 0;
     top: auto;
     right: auto;
+    display: block;
   }
 }
 
@@ -4050,13 +4057,19 @@ body.home #main:after {
 #main:after {
   content: " ";
   width: 100%;
-  height: 177px;
+  height: 77px;
   bottom: 0;
   z-index: 0;
   display: block;
   background-image: url(/assets/img/src/main-bottom-bg.jpg);
   background-repeat: no-repeat;
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  #main:after {
+    height: 177px;
+  }
 }
 
 /* Components
@@ -4083,6 +4096,13 @@ since your site is should be mostly composed of tiny modules.
   padding-right: 1.25em;
   position: relative;
   margin-right: .4em;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header.header--main .header-title .header-smaller {
+    display: inline-block;
+  }
 }
 
 .header.header--main .header-title .header-smaller:after {
@@ -4132,6 +4152,13 @@ since your site is should be mostly composed of tiny modules.
   position: absolute;
   background: #f3e1d9;
   bottom: 7px;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .header.header--line.header--sidebar:after, .header.header--line.header--sidebar:before {
+    display: block;
+  }
 }
 
 .header.header--line.header--sidebar:after {
@@ -5401,14 +5428,30 @@ section.favourite-hotels .carousel {
 }
 
 .wp-pagenavi .button {
-  padding: 14px 18px;
+  padding: 10px 12px;
   display: inline-block;
   margin-right: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-pagenavi .button {
+    padding: 14px 18px;
+  }
 }
 
 .wp-pagenavi .button.current {
   background: #ff6138;
   color: #FFF;
+}
+
+.sidebar {
+  padding-top: 2em;
+}
+
+@media screen and (min-width: 992px) {
+  .sidebar {
+    padding-top: 0;
+  }
 }
 
 .sidebar .carousel-indicators {
@@ -5419,8 +5462,13 @@ section.favourite-hotels .carousel {
   font-weight: 400;
   line-height: 22px;
   padding-top: 20px;
-  padding-right: 4em;
   padding-bottom: 1em;
+}
+
+@media screen and (min-width: 992px) {
+  .article {
+    padding-right: 4em;
+  }
 }
 
 .article img {
@@ -5531,9 +5579,21 @@ section.favourite-hotels .carousel {
 }
 
 .offer-bar li {
-  width: 8.3333%;
+  width: 50%;
   text-align: center;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .offer-bar li {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .offer-bar li {
+    width: 8.3333%;
+  }
 }
 
 .offer-bar li.active, .offer-bar li:hover, .offer-bar li:active, .offer-bar li:focus {
@@ -5582,6 +5642,18 @@ section.favourite-hotels .carousel {
   color: #7a2b17;
 }
 
+@media screen and (min-width: 992px) {
+  .offer-bar li a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer-bar li a {
+    font-size: 12px;
+  }
+}
+
 .stylized-number {
   border-radius: 10em;
   width: 20px;
@@ -5612,7 +5684,13 @@ section.favourite-hotels .carousel {
 }
 
 .offer-form.offer-form--long {
-  padding: 2.5em 7em;
+  padding: 2.5em 4em;
+}
+
+@media screen and (min-width: 1200px) {
+  .offer-form.offer-form--long {
+    padding: 2.5em 7em;
+  }
 }
 
 .offer-form.offer-form--long .title {
@@ -5746,7 +5824,14 @@ the home page, so you’d have a _home.scss file in pages/ dealing with this.
 	--Contact
 																					*/
 body.contact .departments {
-  padding-right: 2.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media screen and (min-width: 992px) {
+  body.contact .departments {
+    padding-right: 2.2em;
+  }
 }
 
 body.contact .gmap {
@@ -5779,6 +5864,10 @@ body.contact .department-wrapper .department .work-days {
 body.contact .department-wrapper .department .work-days .work-days-title {
   float: none;
   margin-left: 25px;
+}
+
+body.news .content-wrapper {
+  padding: 0;
 }
 
 body.new .sidebar {
@@ -5820,4 +5909,8 @@ body.offers #main:after {
 
 body.offer .header.header--top {
   padding-bottom: 15px;
+}
+
+body.offer .carousel-inner img {
+  width: 100%;
 }
