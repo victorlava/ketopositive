@@ -253,7 +253,7 @@
 
   	</section>
 
-  	<section class="section">
+  	<section class="section favourite-directions">
   		<div class="container">
 			<div class="row">
 				<header class="header header--main header--line header--center">
@@ -268,7 +268,7 @@
 					<div class="direction-block">
 						<a href="#">
 							<img src="/assets/img/src/direction.jpg">
-							<header class="header header--main align align--vertical">
+							<header class="header header--main">
 								<h2 class="header-title">Maljorka</h2> 
 								<p class="header-sub-title">Gražiausia Balearų sala</p>
 							</header>

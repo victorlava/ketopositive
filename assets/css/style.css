@@ -3432,6 +3432,18 @@ a:hover, a:focus, a:active {
   pointer-events: none;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .gmap {
   background: grey;
 }
@@ -3729,9 +3741,60 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 }
 
 .navbar {
-  background: #fff8f3;
+  background: #FFF;
   margin-bottom: 0;
   border: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    background: #fff8f3;
+  }
+}
+
+.navbar #navbar .navbar-close {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar #navbar {
+    position: absolute;
+    top: 0;
+    z-index: 5555;
+    background: #fff8f3;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    display: none;
+  }
+  .navbar #navbar .navbar-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+  .navbar #navbar .navbar-nav {
+    padding-top: 4em;
+  }
+  .navbar #navbar .navbar-nav li {
+    width: 100% !important;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .navbar #navbar .navbar-nav li:after {
+    content: " ";
+    width: 20%;
+    height: 4px;
+    background: #f6a41b;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .navbar ul {
@@ -3741,7 +3804,13 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 .navbar .navbar-header {
   position: absolute;
   right: 0;
-  top: 35px;
+  top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-header {
+    top: 35px;
+  }
 }
 
 .navbar .navbar-header .navbar-toggle {
@@ -3751,6 +3820,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   height: 36px;
   margin: 0;
   padding: 0;
+  right: 15px;
 }
 
 .navbar .navbar-header .navbar-toggle .icon-bar {
@@ -3767,38 +3837,116 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   padding: .57em 0 .87em;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar .navbar-top {
+    padding-bottom: 0;
+  }
+}
+
 .navbar .navbar-top .navbar-brand {
-  font-size: 27px;
+  font-size: 24px;
   color: #3d3939;
-  padding-top: 35px;
+  padding-top: 20px;
   font-weight: 400;
+  padding-left: 15px;
+  padding-right: 0;
+  margin-bottom: 20px;
+  float: none !important;
+  display: block;
 }
 
-.navbar .navbar-top .navbar-top-right {
-  float: right;
+@media screen and (min-width: 768px) {
+  .navbar .navbar-top .navbar-brand {
+    padding-top: 22px;
+    margin-bottom: 0;
+    font-size: 27px;
+    float: left !important;
+  }
 }
 
-.navbar .navbar-top .navbar-top-right > div {
-  float: left;
-  display: inline-block;
+@media screen and (min-width: 992px) {
+  .navbar .navbar-top .navbar-brand {
+    padding-top: 35px;
+  }
 }
 
-.navbar .navbar-top .navbar-top-right .navbar-top-menu {
-  padding-top: 35px;
+@media screen and (min-width: 768px) {
+  .navbar .navbar-top .navbar-top-right {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-top .navbar-top-right > div {
+    float: left;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-menu {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-menu {
+    padding-top: 35px;
+  }
 }
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone {
-  padding-left: 5.5em;
-  margin-left: 3.5em;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone {
+    background: #fff8f3;
+    border-top: 1px solid #e8dfcc;
+    padding: 14px 15px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone {
+    margin-left: .5em;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone {
+    padding-left: 5.5em;
+    margin-left: 3.5em;
+  }
 }
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days {
   padding-bottom: 3px;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days {
+    width: 40%;
+    display: inline-block;
+  }
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days .work-days-title {
+    margin-left: 0;
+    font-size: 13px;
+  }
+}
+
 .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days > div {
   padding-top: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days > div {
+    display: block;
+    width: 100%;
+    float: left;
+  }
 }
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
@@ -3811,12 +3959,36 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   width: 64px;
   height: 58px;
   bottom: 2px;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
+    display: block;
+  }
 }
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone a {
   color: #ff6138;
-  font-size: 32px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone a {
+    font-size: 24px;
+    font-weight: 300;
+    float: none;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone a {
+    font-size: 32px;
+  }
 }
 
 .navbar .navbar-bottom {
@@ -4086,13 +4258,31 @@ since your site is should be mostly composed of tiny modules.
 
 .nav.nav--secondary {
   margin: 0;
-  font-size: 13px;
+  font-size: 9px;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav.nav--secondary {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav.nav--secondary {
+    font-size: 13px;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .nav.nav--secondary li:last-child a {
     padding-right: 0;
   }
+}
+
+.nav.nav--secondary li:first-child a {
+  padding-left: 0;
 }
 
 .nav.nav--secondary li.dropdown a.dropdown-toggle {
@@ -4102,13 +4292,19 @@ since your site is should be mostly composed of tiny modules.
 .nav.nav--secondary li.dropdown .dropdown-toggle:before {
   content: " ";
   position: absolute;
-  right: -23px;
+  right: -10px;
   top: 4px;
   display: block;
   background-image: url(../img/src/sprites.png);
   background-position: -333px -122px;
   width: 10px;
   height: 7px;
+}
+
+@media screen and (min-width: 992px) {
+  .nav.nav--secondary li.dropdown .dropdown-toggle:before {
+    right: -27px;
+  }
 }
 
 .nav.nav--secondary li.dropdown.open .dropdown-toggle:before {
@@ -4142,7 +4338,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav.nav--secondary li a {
-  padding: 0px 18px;
+  padding: 0px 5px;
   color: #7a2b17;
   position: relative;
   text-transform: uppercase;
@@ -4150,6 +4346,18 @@ since your site is should be mostly composed of tiny modules.
 
 .nav.nav--secondary li a:focus {
   background: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .nav.nav--secondary li a {
+    padding: 0px 8px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav.nav--secondary li a {
+    padding: 0px 12px;
+  }
 }
 
 .nav.nav--secondary li a:after {
@@ -4369,9 +4577,15 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .main-search {
-  padding: 8em 0 5em;
+  padding: 3em 0 5em;
   z-index: 0;
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .main-search {
+    padding: 8em 0 5em;
+  }
 }
 
 .main-search form {
@@ -4926,10 +5140,15 @@ textarea {
 }
 
 .direction-block {
-  height: 257px;
+  height: 207px;
   overflow: hidden;
   box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .direction-block {
+    height: 257px;
+  }
 }
 
 .direction-block:hover, .direction-block:focus, .direction-block:active {
@@ -4944,6 +5163,8 @@ textarea {
   margin: auto;
   bottom: 0;
   line-height: 1;
+  height: 55px;
+  margin-bottom: auto !important;
 }
 
 .direction-block header .header-title {
@@ -4958,8 +5179,10 @@ textarea {
   color: #FFF !important;
 }
 
-.direction-block img {
-  width: 100%;
+@media screen and (min-width: 520px) {
+  .direction-block img {
+    width: 100%;
+  }
 }
 
 .carousel-selectors {
@@ -5498,6 +5721,10 @@ section.favourite-hotels .carousel {
 .price-wrapper p span {
   color: #ff6138;
   font-size: 21px;
+}
+
+section.favourite-directions .col-md-6 {
+  margin-bottom: 2em;
 }
 
 /* Pages 

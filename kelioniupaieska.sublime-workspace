@@ -8,6 +8,10 @@
 				"padding: "
 			],
 			[
+				"padding",
+				"padding-bottom: "
+			],
+			[
 				"mar",
 				"margin-bottom: "
 			],
@@ -94,10 +98,6 @@
 			[
 				"margi",
 				"margin-bottom: "
-			],
-			[
-				"padding",
-				"padding-left: "
 			],
 			[
 				"border-r",
@@ -256,69 +256,59 @@
 	"buffers":
 	[
 		{
-			"file": "scss/main.scss",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 2549,
+				"buffer_size": 9256,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/01-components/_price-wrapper.scss",
+			"file": "scss/01-components/_favourite-directions.scss",
 			"settings":
 			{
-				"buffer_size": 245,
+				"buffer_size": 68,
 				"line_ending": "Windows",
-				"name": ".price-wrapper{"
+				"name": "section.favourite-directions{"
 			}
 		},
 		{
 			"file": "scss/01-components/_offer-form.scss",
 			"settings":
 			{
-				"buffer_size": 784,
-				"line_ending": "Windows",
-				"name": ".offer-form{"
-			}
-		},
-		{
-			"file": "pasiulymas.php",
-			"settings":
-			{
-				"buffer_size": 5998,
+				"buffer_size": 1486,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/01-components/_input.scss",
+			"file": "scss/01-components/_direction-block.scss",
 			"settings":
 			{
-				"buffer_size": 1744,
+				"buffer_size": 623,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/03-pages/_offer.scss",
+			"file": "scss/01-components/_header.scss",
 			"settings":
 			{
-				"buffer_size": 62,
-				"line_ending": "Windows",
-				"name": "body.offer{"
-			}
-		},
-		{
-			"file": "scss/04-base/_settings.scss",
-			"settings":
-			{
-				"buffer_size": 323,
+				"buffer_size": 1906,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/04-base/_global.scss",
+			"file": "scss/01-components/_main-search.scss",
 			"settings":
 			{
-				"buffer_size": 1129,
+				"buffer_size": 1636,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/main.scss",
+			"settings":
+			{
+				"buffer_size": 2595,
 				"line_ending": "Windows"
 			}
 		}
@@ -347,16 +337,39 @@
 	},
 	"file_history":
 	[
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_header.scss",
+		"/C/Users/Works/AppData/Roaming/Skype/My Skype Received Files/themeforest-9865647-zephyr-material-design-theme (1)/Product/Zephyr-child/Zephyr-child/style.css",
+		"/C/Users/Works/AppData/Roaming/Skype/My Skype Received Files/themeforest-9865647-zephyr-material-design-theme (1)/Product/Zephyr-child/Zephyr-child/functions.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_navbar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_nav.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_email.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_global.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/top-pasiulymai.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/index.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_fonts.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_carousel.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_favourite-hotels.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_main-search.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_button.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_settings.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_footer.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_data-block.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_price-wrapper.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/index.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/pasiulymas.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/offer-form-price.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/offer-form-list.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_header.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/top-pasiulymai.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-bar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/assets/css/sprites.css",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/news.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/footer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-form.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/email-cta.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_main.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/main.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_offer.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_input.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_offers.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_stylized-number.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-bar.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/main.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/filialas.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_page.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/new.php",
@@ -365,9 +378,7 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_contact.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_comments.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_sidebar.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_data-block.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_new.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/news.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_news.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_error.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_wp-pagenavi.scss",
@@ -375,30 +386,16 @@
 		"/C/Users/Works/Desktop/style.min.css",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_tag-links.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_department.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_main.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/menu.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_work-days.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/bower_components/bootstrap/scss/_forms.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_input.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_settings.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_main-search.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_bootstrap.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/department.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_mixins.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_nav.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_favourite-hotels.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_section.scss",
 		"/E/Vagrant/airwood/heart.dev/wp-content/themes/Zephyr/single-us_portfolio.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/assets/css/sprites.css",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/assets/js/src/script.js",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_footer.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/footer.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/email-cta.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_email.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_direction-block.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_button.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_fonts.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_navbar.scss",
 		"/E/Vagrant/airwood/motorent.dev/index.php",
 		"/E/Vagrant/airwood/motorent.dev/partials/search-component.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_list.scss",
@@ -467,14 +464,7 @@
 		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-features.php",
 		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-gallery.php",
 		"/C/Users/Works/Desktop/1klase.lt/search-form.php",
-		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-address.php",
-		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/item-container.php",
-		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/parts/entry-date-format.php",
-		"/E/Vagrant/airwood/motorent.dev/scss/03-pages/_moto-list.scss",
-		"/E/Vagrant/airwood/motorent.dev/scss/03-pages/_moto-inner.scss",
-		"/E/Vagrant/airwood/motorent.dev/assets/css/bootstrap-formhelpers.css",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/E/Vagrant/airwood/motorent.dev/partials/gallery.php"
+		"/C/Users/Works/Desktop/1klase.lt/backup/wp-content/themes/foodguide/portal/parts/single-item-address.php"
 	],
 	"find":
 	{
@@ -496,6 +486,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"icon",
+			"carousel",
+			"input",
+			".title",
+			"width: ",
+			"price-wrapper",
+			"data-block--offer",
+			"data-block-info",
+			"form",
+			"input",
+			"inout",
+			"header-smaller",
+			"small",
+			"facebook",
+			"arrow",
+			"dropdo",
+			"dropdow",
+			"top",
+			"top-p",
 			"stars",
 			"box-shad",
 			"header-title",
@@ -604,26 +613,7 @@
 			"panel-title",
 			"headingThree",
 			"collapseThree",
-			"collapseTwo",
-			"dropdown-toggle",
-			"box-shadow",
-			"!important",
-			"panel",
-			"h4",
-			"h5",
-			"ul{",
-			"ul {",
-			"ul",
-			"panel-default",
-			"acc",
-			"phone",
-			"phoneRegex",
-			"smoking",
-			"exam",
-			"help-block",
-			".price",
-			"class=\"row\"",
-			"class=\"col-md-12\""
+			"collapseTwo"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -715,22 +705,23 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scss/main.scss",
+					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 2549,
+						"buffer_size": 9256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2041,
-								2041
+								8389,
+								8389
 							]
 						],
 						"settings":
@@ -738,39 +729,36 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 969.0,
+						"translation.y": 4453.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scss/01-components/_price-wrapper.scss",
+					"file": "scss/01-components/_favourite-directions.scss",
 					"settings":
 					{
-						"buffer_size": 245,
+						"buffer_size": 68,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								97,
-								97
+								44,
+								44
 							]
 						],
 						"settings":
 						{
-							"auto_name": ".price-wrapper{",
+							"auto_name": "section.favourite-directions{",
 							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -783,20 +771,19 @@
 					"file": "scss/01-components/_offer-form.scss",
 					"settings":
 					{
-						"buffer_size": 784,
+						"buffer_size": 1486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								557,
-								557
+								526,
+								531
 							]
 						],
 						"settings":
 						{
-							"auto_name": ".offer-form{",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -804,55 +791,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 399.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "pasiulymas.php",
+					"file": "scss/01-components/_direction-block.scss",
 					"settings":
 					{
-						"buffer_size": 5998,
+						"buffer_size": 623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4068,
-								4068
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1558.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "scss/01-components/_input.scss",
-					"settings":
-					{
-						"buffer_size": 1744,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								144,
-								107
+								99,
+								99
 							]
 						],
 						"settings":
@@ -870,41 +827,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "scss/03-pages/_offer.scss",
+					"buffer": 4,
+					"file": "scss/01-components/_header.scss",
 					"settings":
 					{
-						"buffer_size": 62,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								54,
-								54
-							]
-						],
-						"settings":
-						{
-							"auto_name": "body.offer{",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "scss/04-base/_settings.scss",
-					"settings":
-					{
-						"buffer_size": 323,
+						"buffer_size": 1906,
 						"regions":
 						{
 						},
@@ -920,28 +847,59 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2451.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "scss/04-base/_global.scss",
+					"buffer": 5,
+					"file": "scss/01-components/_main-search.scss",
 					"settings":
 					{
-						"buffer_size": 1129,
+						"buffer_size": 1636,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								352,
-								352
+								408,
+								361
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/main.scss",
+					"settings":
+					{
+						"buffer_size": 2595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2087,
+								2087
 							]
 						],
 						"settings":
@@ -950,11 +908,10 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 627.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
