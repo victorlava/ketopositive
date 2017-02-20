@@ -3415,6 +3415,10 @@ html {
   box-sizing: border-box;
 }
 
+html.no-scroll {
+  overflow: hidden;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -3772,11 +3776,11 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   .navbar #navbar .navbar-close {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 15px;
+    top: 30px;
+    right: 25px;
   }
   .navbar #navbar .navbar-nav {
-    padding-top: 4em;
+    padding-top: 5em;
   }
   .navbar #navbar .navbar-nav li {
     width: 100% !important;
@@ -3952,19 +3956,24 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
   content: " ";
   position: absolute;
-  left: 0;
   display: block;
-  background-image: url(../img/src/sprites.png);
-  background-position: -279px 0px;
-  width: 64px;
-  height: 58px;
-  bottom: 2px;
-  display: none;
+  background-image: url(../img/src/phone-for-mobiles.png);
+  width: 16px;
+  height: 24px;
+  right: 160px;
+  top: 19px;
 }
 
 @media screen and (min-width: 992px) {
   .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
-    display: block;
+    background-image: url(../img/src/sprites.png);
+    background-position: -279px 0px;
+    width: 64px;
+    height: 58px;
+    bottom: 2px;
+    left: 0;
+    top: auto;
+    right: auto;
   }
 }
 
@@ -3973,7 +3982,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   font-size: 18px;
   font-weight: bold;
   float: right;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 @media screen and (min-width: 768px) {
@@ -4262,7 +4271,7 @@ since your site is should be mostly composed of tiny modules.
   padding: 0 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 390px) {
   .nav.nav--secondary {
     font-size: 11px;
   }
