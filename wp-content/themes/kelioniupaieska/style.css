@@ -5997,45 +5997,45 @@ the home page, so you’d have a _home.scss file in pages/ dealing with this.
 	--Blog
 	--Contact
 																					*/
-body.contact .departments {
+body.page-template-template-kontaktai .departments {
   padding-left: 1em;
   padding-right: 1em;
 }
 
 @media screen and (min-width: 992px) {
-  body.contact .departments {
+  body.page-template-template-kontaktai .departments {
     padding-right: 2.2em;
   }
 }
 
-body.contact .gmap {
-  height: 227px;
+body.page-template-template-kontaktai .gmap {
+  height: 267px;
   width: 100%;
 }
 
-body.contact .department-wrapper {
+body.page-template-template-kontaktai .department-wrapper {
   padding: 0;
   margin-bottom: 1.5em;
 }
 
-body.contact .department-wrapper > div {
+body.page-template-template-kontaktai .department-wrapper > div {
   padding: 0;
 }
 
-body.contact .department-wrapper .col-md-6 {
+body.page-template-template-kontaktai .department-wrapper .col-md-6 {
   padding: 0;
 }
 
-body.contact .department-wrapper .department {
+body.page-template-template-kontaktai .department-wrapper .department {
   padding: 25px 35px;
 }
 
-body.contact .department-wrapper .department .work-days {
+body.page-template-template-kontaktai .department-wrapper .department .work-days {
   padding-bottom: 12px;
   padding-top: 6px;
 }
 
-body.contact .department-wrapper .department .work-days .work-days-title {
+body.page-template-template-kontaktai .department-wrapper .department .work-days .work-days-title {
   float: none;
   margin-left: 25px;
 }
@@ -6048,23 +6048,23 @@ body.new .sidebar {
   padding-top: 5.2em;
 }
 
-body.page #main:after {
+body.branch-template-default #main:after {
   display: none;
 }
 
-body.page .article {
+body.branch-template-default .article {
   padding-top: 0;
 }
 
-body.page .article p:first-child {
+body.branch-template-default .article p:first-child {
   margin-top: 0;
 }
 
-body.page .header.header--top {
+body.branch-template-default .header.header--top {
   margin-bottom: 0;
 }
 
-body.page .gmap {
+body.branch-template-default .gmap {
   width: 100%;
   height: 490px;
   margin-top: 5em;

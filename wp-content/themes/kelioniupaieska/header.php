@@ -4,6 +4,18 @@
  *
  * @package WordPress
  */
+
+
+	$args = array(
+		'post_type'              => array( 'branch' ),
+		'post_status'            => array( 'public' )
+	);
+
+	// The Query
+	$getDepartments = new WP_Query( $args );
+
+			
+
 ?><!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -51,17 +63,43 @@
 	                <li>
 	                  <a href="#">Draudimas</a> 
 	                </li>
+	                <?php if( $getDepartments->have_posts() ): ?>
 	                <li class="dropdown">    
 	                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kontaktai</a>
-	                  <ul class="dropdown-menu">
-	                  	 <!--
-	                    <?php for($i=0;$i < 4; $i++): ?>
+	                  <ul class="dropdown-menu"> 
+	                    <?php while( $getDepartments->have_posts() ) : $getDepartments->the_post(); ?>
 	                    <div class="col-md-6">
-	                      <?php include('partials/department.php'); ?>
+	                      <div class="department">	
+								<a href="<?php the_permalink();?>">  
+									<h5 class="title"><?php the_field('miestas'); ?></h5>
+								</a>
+								<div class="work-days">
+									<div class="work-days-list">
+										<ul class="list list--inline">
+											<li class="active"></li>
+											<li class="active"></li>
+											<li class="active"></li>
+											<li class="active"></li>
+											<li class="active"></li>
+											<li class=""></li>
+											<li class=""></li>
+										</ul>
+									</div>
+									<div class="work-days-title">
+										<?php the_field('darbo_valandos'); ?>
+									</div>
+								</div>
+								<p> <?php the_field('adresas'); ?></br>
+									Tel.: <?php the_field('telefonas'); ?></br>
+									Faks.: <?php the_field('faksas'); ?>
+								</p>	
+						   </div>
 	                    </div>
-	                    <?php endfor; ?>-->
+	                    <?php endwhile;?>
 	                  </ul>
 	                </li>
+	                <?php endif;?>
+					<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 	              </ul>
 
 	              <!-- visible for mobiles only (mobile menu) -->
@@ -80,7 +118,22 @@
 
 	            <div class="navbar-top-phone">
 	              <!-- savaičių dienų partial -->
-	              <!--<?php include('partials/work-days.php'); ?>-->
+	              <div class="work-days">
+						<div class="work-days-list">
+							<ul class="list list--inline">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class=""></li>
+								<li class=""></li>
+							</ul>
+						</div>
+						<div class="work-days-title">
+							8:00 - 18:00
+						</div>
+				  </div>
 	              <a href="tel:+37052124474">+370 5 212 4474</a>
 	            </div>
 

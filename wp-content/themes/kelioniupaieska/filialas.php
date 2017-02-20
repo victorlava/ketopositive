@@ -10,14 +10,14 @@
   	<div class="container">
   		<div class="row">
 		  	<header class="header header--top header--main header--line header--center"> 
-				<h2 class="header-title">Vilniaus filialas</h2>
+				<h2 class="header-title"><?php the_title(); ?></h2>
 			</header>
 		</div>
 
 		<div class="row">
 			<div class="col-md-8">
 				<article class="article"> 
-					<p>Paryžiuje bus pristatytas "Gallimard" leidyklos išleistas gidas "Vilnius žemėlapiuose" ("Cartoville Vilnius"). Tai pirmasis ir kol kas vienintelis gidas apie Vilnių prancūzų kalba. Beje, leidinyje trumpai apžvelgiami visi keturi mūsų šalies regionai. Leidykla "Gallimard" gidą "Vilnius žemėlapiuose", be prancūzų, išleido dar anglų ir norvegų kalbomis. Leidėjų teigimu, knygą bus galima įsigyti septynių Europos šalių knygynuose: prancūzų kalba - Prancūzijoje, Belgijoje, Šveicarijoje ir Liuksemburge, anglų - Jungtinėje Karalystėje ir Airijoje, norvegų - Norvegijoje. "Gido apie Vilnių išleidimas - didelis įvykis", - džiaugėsi Lietuvos turizmo informacijos centro Paryžiuje direktorė Inga Lanchas. - Iki šiol Prancūzijoje buvo galima rasti įvairių leidyklų gidų apie Baltijos šalis, dabar prancūzai galės naudotis atskiru gidu, skirtu Lietuvos sostinei. "Pasak direktorės, pastaruoju metu prancūzų susidomėjimas Lietuva, ypač sostine Vilniumi, smarkiai auga. 2008 metais į Vilnių atvyko 21,4 proc. daugiau prancūzų turistų negu</p>
+					<?php echo get_post_field('post_content', $post->ID); ?>
 					<img class="box-shadow" src="/assets/img/src/content-image.jpg" width="903" height="426">
 				</article>
 			</div>
@@ -38,9 +38,16 @@
 							</ul>
 						</div>
 						<div class="work-days-title">
+							<?php the_field('darbo_valandos'); ?>
 							08:00 - 18:00
 						</div>
 					</div>
+					<p> <?php the_field('adresas'); ?></br>
+						Tel.: <?php the_field('telefonas'); ?></br>
+						Faks.: <?php the_field('faksas'); ?></br>
+						El. paštas: <?php the_field('el-pastas'); ?></br>
+						Darbo laikas: <?php the_field('darbo_dienos'); ?> : <?php the_field('darbo_valandos'); ?>
+					</p>
 					<p> P. Komunos g. 2 (šalia PC Technorama)</br>
 						Tel.: (8-46) 257660</br>
 						Faks.: (8-46) 257660</br>
