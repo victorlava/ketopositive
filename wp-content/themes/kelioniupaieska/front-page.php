@@ -214,10 +214,10 @@ get_header(); ?>
 												<h4 class="title"><?php the_title();?></h4>
 												<div class="stars">
 													<ul class="list list--inline">
-														<li><i class="icon icon-star"></i></li>
-														<li><i class="icon icon-star"></i></li>
-														<li><i class="icon icon-star"></i></li>
-														<li><i class="icon icon-star"></i></li>
+														<?php $count = get_field('zvaigzduciu_skaicius');$count = $count * 1;?>
+														<?php for($i=0;$i < $count;$i++): ?>
+															<li><i class="icon icon-star"></i></li>
+														<?php endfor; ?>
 													</ul>
 												</div>
 												<p class="time"><?php the_field('vieta'); ?></p>

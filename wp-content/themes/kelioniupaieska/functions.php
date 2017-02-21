@@ -279,6 +279,17 @@ add_action( 'pre_get_posts', function ( $q ) {
 
 });
 
+function get_excerpt(){ 
+$excerpt = get_the_excerpt();
+$excerpt = preg_replace(" ([.*?])",'',$excerpt);
+$excerpt = strip_shortcodes($excerpt);
+$excerpt = strip_tags($excerpt);
+$excerpt = substr($excerpt, 0, 235);
+$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+$excerpt = trim(preg_replace( '/s+/', ' ', $excerpt));
+return $excerpt;
+}
+
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'pagrindinis' => __( 'Pagrindinis', 'kp' ),
