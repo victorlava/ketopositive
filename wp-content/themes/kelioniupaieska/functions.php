@@ -227,13 +227,54 @@ function create_hotels_taxonomies() {
 
 }
 
-add_filter('next_posts_link_attributes', 'posts_link_attributes');
-add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+// hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'create_month_taxonomies', 0 );
 
-function posts_link_attributes() {
-    return 'class="styled-button"';
+// create two taxonomies, genres and writers for the post type "book"
+function create_month_taxonomies() {
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Months', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Month', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Months', 'textdomain' ),
+		'all_items'         => __( 'All Months', 'textdomain' ),
+		'parent_item'       => __( 'Parent Month', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Month:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Month', 'textdomain' ),
+		'update_item'       => __( 'Update Month', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Month', 'textdomain' ),
+		'new_item_name'     => __( 'New Month Name', 'textdomain' ),
+		'menu_name'         => __( 'Mėnesiai', 'textdomain' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'menesis' ),
+	);
+
+	register_taxonomy( 'menesis', 'offer', $args );
+
 }
+
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 add_filter('acf/settings/google_api_key', function () {
     return 'AIzaSyAjPWSM0OMLF1b_LeztaVJmqxoqqmBZ4_8';
+});
+
+add_action( 'pre_get_posts', function ( $q ) {
+
+    if( !is_admin() && $q->is_main_query() && $q->is_post_type_archive( 'offers' ) ) {
+
+        $q->set( 'posts_per_page', 2 );
+
+    }
+
 });

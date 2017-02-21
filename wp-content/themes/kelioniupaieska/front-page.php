@@ -72,7 +72,7 @@ get_header(); ?>
 	<?php
 		$args = array(
 			'post_type'              => array( 'offer' ),
-			'post_status'            => array( 'public' ),
+			'post_status'            => array( 'publish' ),
 			'posts_per_page' => 6
 		);
 
@@ -194,7 +194,7 @@ get_header(); ?>
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 
-				  	<?php $b = 1; ?>
+				  		<?php $b = 1; ?>
 					    <?php while( $getHotels->have_posts() ) : $getHotels->the_post(); ?>
 
 						    <?php if ($b % 6 === 1): // Every sixt item, we close the div and start it again. ?>

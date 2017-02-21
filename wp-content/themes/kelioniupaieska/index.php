@@ -22,21 +22,25 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<div class="col-md-6">
 					<div class="data-block data-block--offer data-block--article"> 
-						<a href="<?php esc_url( the_permalink())?>"> 
-							<div class="data-block-image">
-								<img src="/assets/img/src/offer.jpg">
+						<div class="data-block-image">
+				   			<?php if( have_rows('nuotraukos')): ?>
+					   			<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
+									<img src="<?php the_sub_field('nuotrauka'); ?>">
+									 <?php break; ?>
+								<?php endwhile; ?>
+							<?php else: ?>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/src/offer.jpg">
+							<?php endif; ?>
+					    </div>
+						<div class="data-block-info">
+							<a href="<?php echo esc_url( get_permalink()); ?>"><h3 class="title"><?php the_title(); ?></h3></a>
+							<p><?php the_excerpt(); ?></p>
+							<div class="tag-links">  
+								<?php the_tags(''); ?>
 							</div>
-							<div class="data-block-info">
-								<h3 class="title"><?php the_title(); ?></h3>
-								<p><?php the_excerpt(); ?></p>
-								<?php the_tags(); ?>
-								<div class="tag-links">  
-									<a href="#">Egzotika</a>
-									<a href="#">Pigios kelionės</a>
-								</div>
-							</div>
-						</a>
+						</div>
 					</div>
+					
 				</div>
 				<?php endwhile; ?>
 
@@ -56,28 +60,38 @@ get_header(); ?>
 
 			<div class="sidebar col-md-4"> 
 				<div class="data-block data-block--offer data-block--simple data-block--cloud data-block--hoveroff">
-					<a href="http://www.mysite.com/tag/word" class="tag-link-7" title="1 topic" style="font-size: 8pt;">word</a>
-					<a href="http://www.mysite.com/tag/tag" class="tag-link-5" title="2 topics" style="font-size: 14.3pt;">tag</a>
-					<a href="http://www.mysite.com/tag/phrase" class="tag-link-6" title="4 topics" style="font-size: 22pt;">phrase</a>
-					<a href="http://www.mysite.com/tag/subject" class="tag-link-4" title="1 topic" style="font-size: 8pt;">subject</a>
-					<a href="http://www.mysite.com/tag/word" class="tag-link-7" title="1 topic" style="font-size: 8pt;">word</a>
-					<a href="http://www.mysite.com/tag/tag" class="tag-link-5" title="2 topics" style="font-size: 14.3pt;">tag</a>
-					<a href="http://www.mysite.com/tag/phrase" class="tag-link-6" title="4 topics" style="font-size: 22pt;">phrase</a>
-					<a href="http://www.mysite.com/tag/subject" class="tag-link-4" title="1 topic" style="font-size: 8pt;">subject</a>
+					<?php wp_tag_cloud( '' ); ?>
 				</div>
 
-				
+					<?php
+						$args = array(
+							'post_type'              => array( 'hotels' ),
+							'post_status'            => array( 'publish' ),
+							'orderby'                => 'rand',
+							'posts_per_page' 		 => 10
+						);
+
+						// The Query
+						$getHotels = new WP_Query( $args );
+
+						//echo "<pre>";
+						//print_R($getHotels);
+						//echo "</pre>";
+
+					?>
+				<?php if( $getHotels->have_posts() ): ?>
 				<header class="header header--sidebar header--line"> 
 					<h4 class="header-title">Turkijos viešbučių TOP10</h4>
 				</header>
-				<?php for($i=0; $i < 10; $i++): ?>
+
+				<?php while( $getHotels->have_posts() ) : $getHotels->the_post(); ?>
 				<div class="data-block data-block--offer data-block--hotels data-block--sidebar"> 
-					<a href="#"> 
+					<a href="<?php the_field('nuoroda'); ?>"> 
 						<div class="data-block-image">
-							<img src="/assets/img/src/offer.jpg">
+							<img src="<?php the_field('nuotrauka'); ?>">
 						</div>
 						<div class="data-block-info">
-							<h4 class="title">Bcn Paseo De Gracia Rocamora </h4>
+							<h4 class="title"><?php the_title();?></h4>
 							<div class="stars">
 								<ul class="list list--inline">
 									<li><i class="icon icon-star"></i></li>
@@ -86,11 +100,12 @@ get_header(); ?>
 									<li><i class="icon icon-star"></i></li>
 								</ul>
 							</div>
-							<p class="time">Alanija, Turkija</p>
+							<p class="time"><?php the_field('vieta'); ?></p>
 						</div>
 					</a>
 				</div>
-				<?php endfor; ?>
+				<?php endwhile; ?>
+				<?php endif;?>
 				
 			</div>
 		</div>

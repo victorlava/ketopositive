@@ -5016,6 +5016,7 @@ textarea {
 
 .data-block.data-block--article {
   color: #717171;
+  min-height: 370px;
 }
 
 .data-block.data-block--article .data-block-image {
@@ -5220,6 +5221,10 @@ textarea {
 .data-block.data-block--hotels .data-block-info {
   padding: 6px 18px;
   min-height: 110px;
+}
+
+.data-block.data-block--hotels .title {
+  width: 100%;
 }
 
 .data-block.data-block--hotels:hover .title, .data-block.data-block--hotels:focus .title, .data-block.data-block--hotels:active .title {
@@ -5628,8 +5633,16 @@ section.favourite-hotels .carousel {
   }
 }
 
+.sidebar .data-block--hotels .title {
+  width: 80%;
+}
+
+.sidebar .carousel-inner {
+  padding-bottom: 20px;
+}
+
 .sidebar .carousel-indicators {
-  bottom: -25px;
+  bottom: -10px;
 }
 
 .article {
@@ -5655,6 +5668,11 @@ section.favourite-hotels .carousel {
   line-height: 24px;
   font-weight: 500;
   padding-bottom: 5px;
+}
+
+.article .intro-text p {
+  margin: 0;
+  margin-bottom: .77em;
 }
 
 .article h3 {
@@ -6044,7 +6062,7 @@ body.news .content-wrapper {
   padding: 0;
 }
 
-body.new .sidebar {
+body.post-template-default .sidebar {
   padding-top: 5.2em;
 }
 
