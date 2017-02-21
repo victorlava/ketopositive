@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php
 				$args = array(
 					'post_type'              => array( 'branch' ),
-					'post_status'            => array( 'public' )
+					'post_status'            => array( 'publish' )
 				);
 
 				// The Query

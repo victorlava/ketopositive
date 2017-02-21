@@ -6058,7 +6058,7 @@ body.page-template-template-kontaktai .department-wrapper .department .work-days
   margin-left: 25px;
 }
 
-body.news .content-wrapper {
+body.blog .content-wrapper {
   padding: 0;
 }
 
@@ -6088,21 +6088,29 @@ body.branch-template-default .gmap {
   margin-top: 5em;
 }
 
-body.offers #main {
+body.post-type-archive-offer #main {
   position: relative;
   padding-bottom: 80px;
 }
 
-body.offers #main:after {
+body.post-type-archive-offer #main:after {
   position: absolute;
   bottom: 0;
   z-index: -1;
 }
 
-body.offer .header.header--top {
+body.offer-template-default .header.header--top {
   padding-bottom: 15px;
 }
 
-body.offer .carousel-inner img {
+body.offer-template-default .carousel-inner img {
   width: 100%;
+}
+
+body.home .carousel-inner {
+  padding-bottom: 2em;
+}
+
+body.home .carousel .carousel-indicators {
+  bottom: -20px;
 }

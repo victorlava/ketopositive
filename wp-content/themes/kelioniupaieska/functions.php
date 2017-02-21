@@ -278,3 +278,12 @@ add_action( 'pre_get_posts', function ( $q ) {
     }
 
 });
+
+	// This theme uses wp_nav_menu() in two locations.
+	register_nav_menus( array(
+		'pagrindinis' => __( 'Pagrindinis', 'kp' ),
+		'virsutinis' => __( 'Virsutinis', 'kp' ),
+		'virsutinis_mobilus' => __( 'Virsutinis Mobilus', 'kp' ),
+		'keliones'  => __( 'Kelionės', 'kp' ),
+		'naudinga'  => __( 'Naudinga informacija', 'kp' ) 
+	) );

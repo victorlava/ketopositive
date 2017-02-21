@@ -8,7 +8,7 @@
 
 	$args = array(
 		'post_type'              => array( 'branch' ),
-		'post_status'            => array( 'public' )
+		'post_status'            => array( 'publish' )
 	);
 
 	// The Query
@@ -53,15 +53,19 @@
 	            <div class="navbar-top-menu">
 	              <!-- visible for desktops only -->
 	              <ul class="nav nav--secondary nav--dropdown list list--inline hidden-xs">
-	                <li class="active"> 
-	                  <a href="#">Vizos</a>
-	                </li>
-	                <li>
-	                  <a href="#">Autonuoma</a>
-	                </li>
-	                <li>
-	                  <a href="#">Draudimas</a> 
-	                </li>
+  		        	<?php 
+        				$defaults = array(
+						    'theme_location'  => 'virsutinis',
+						    'echo'            => true,  
+						    'container'		  => '', 
+						    'fallback_cb'     => 'wp_page_menu',
+						    'items_wrap'      => '%3$s' 
+						);
+
+    				?>
+
+    				<?php wp_nav_menu( $defaults ); ?>
+
 	                <?php if( $getDepartments->have_posts() ): ?>
 	                <li class="dropdown">    
 	                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kontaktai</a>
@@ -103,15 +107,17 @@
 
 	              <!-- visible for mobiles only (mobile menu) -->
 	              <ul class="nav nav--secondary nav--dropdown list list--inline visible-xs">
-	                <li class="active"> 
-	                  <a href="#">Teztour keliones</a>
-	                </li>
-	                <li>
-	                  <a href="#">Novaturo keliones</a>
-	                </li>
-	                <li>
-	                  <a href="#">Viešbučiai</a> 
-	                </li>
+	              	<?php 
+        				$defaults = array(
+						    'theme_location'  => 'virsutinis_mobilus',
+						    'echo'            => true,  
+						    'container'		  => '', 
+						    'fallback_cb'     => 'wp_page_menu',
+						    'items_wrap'      => '%3$s' 
+						);
+
+    				?>
+    				<?php wp_nav_menu( $defaults ); ?> 
 	              </ul>
 	            </div>
 
@@ -155,13 +161,17 @@
 	        <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
 	          <img class="navbar-close" src="<?php echo get_template_directory_uri(); ?>/assets/img/src/close.png" width="16" height="16"> 
 	          <ul class="nav nav--main navbar-nav">
-	            <li class="active"><a href="#">Top pasiūlymai</a></li>
-	            <li><a href="#about">TezTour kelionės</a></li>
-	            <li><a href="#about">Novaturo kelionės</a></li> 
-	            <li><a href="#about">Pažintinės kelionės</a></li>
-	            <li><a href="#about">Tolimi kraštai</a></li>
-	            <li><a href="#about">Viešbučiai</a></li>
-	            <li><a href="#about">Keltų bilietai</a></li>
+            	<?php 
+    				$defaults = array(
+					    'theme_location'  => 'pagrindinis',
+					    'echo'            => true,  
+					    'container'		  => '', 
+					    'fallback_cb'     => 'wp_page_menu',
+					    'items_wrap'      => '%3$s' 
+					);
+
+				?>
+				<?php wp_nav_menu( $defaults ); ?> 
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
