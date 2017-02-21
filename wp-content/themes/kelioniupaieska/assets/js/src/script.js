@@ -20,4 +20,18 @@ jQuery(document).ready(function( $ ) {
 	    $('html').off('scroll touchmove mousewheel');
 	});
 
+	$('.carousel-selectors li').each(function(){
+		$(this).click(function(e){
+			alert('clicked');
+			var category = $(this).data('category');
+			$('.carousel-selectors li').removeClass('active');
+			$(this).addClass('active');
+			e.preventDefault();
+
+			$('#hotel-carousel .data-block--hotels').hide();
+			$('#hotel-carousel .data-block--hotels.js-data-' + category).show();
+
+		})
+	});
+
 }); 

@@ -4606,7 +4606,7 @@ since your site is should be mostly composed of tiny modules.
   bottom: -10px;
 }
 
-.nav.nav--carousel-selectors li.current_page_item:after, .nav.nav--carousel-selectors li.current_page_item:before {
+.nav.nav--carousel-selectors li.active:after, .nav.nav--carousel-selectors li.active:before {
   top: 100%;
   left: 50%;
   border: solid transparent;
@@ -4618,21 +4618,21 @@ since your site is should be mostly composed of tiny modules.
   margin-top: -3px;
 }
 
-.nav.nav--carousel-selectors li.current_page_item:after {
+.nav.nav--carousel-selectors li.active:after {
   border-color: rgba(239, 199, 61, 0);
   border-top-color: #efc73d;
   border-width: 6px;
   margin-left: -6px;
 }
 
-.nav.nav--carousel-selectors li.current_page_item:before {
+.nav.nav--carousel-selectors li.active:before {
   border-color: rgba(215, 179, 55, 0);
   border-top-color: #d7b337;
   border-width: 9px;
   margin-left: -9px;
 }
 
-.nav.nav--carousel-selectors li.current_page_item a {
+.nav.nav--carousel-selectors li.active a {
   background: #efc73d;
   color: #FFF;
   border-radius: 3px;

@@ -142,6 +142,7 @@ get_header(); ?>
 		$args = array(
 			'post_type'              => array( 'hotels' ),
 			'post_status'            => array( 'publish' ),
+			'orderby'        => 'rand',
 			'posts_per_page' 		 => 100
 		);
 
@@ -175,11 +176,13 @@ get_header(); ?>
 						    'order' => "DESC"
 						) );
 
+
+
 					?>
 					<ul class="nav nav--secondary nav--carousel-selectors list list--inline">
 						<?php $b = 0; ?>
 						<?php foreach ($kategorijos as $kategorija): ?>
-						<li class="<?php if($b == 0){ echo 'active';}?>" data-category="<?php echo $kategorija->name; ?>">
+						<li class="<?php if($b == 0){ echo 'active';}?>" data-category="<?php echo $kategorija->term_id; ?>">
 							<a href="#"><?php echo $kategorija->name; ?></a>
 						</li>
 						<?php $b++; ?>
@@ -202,7 +205,7 @@ get_header(); ?>
 							<?php endif; ?>
 
 						    	<div class="col-md-2">
-						    		<div class="data-block data-block--offer data-block--hotels"> 
+						    		<div class="data-block data-block--offer data-block--hotels js-data-<?php the_field('salies_kategorija'); ?>"> 
 										<a href="<?php the_field('nuoroda'); ?>"> 
 											<div class="data-block-image">
 												<img src="<?php the_field('nuotrauka'); ?>">
