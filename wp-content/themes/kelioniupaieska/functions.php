@@ -290,11 +290,26 @@ $excerpt = trim(preg_replace( '/s+/', ' ', $excerpt));
 return $excerpt;
 }
 
-	// This theme uses wp_nav_menu() in two locations.
-	register_nav_menus( array(
-		'pagrindinis' => __( 'Pagrindinis', 'kp' ),
-		'virsutinis' => __( 'Virsutinis', 'kp' ),
-		'virsutinis_mobilus' => __( 'Virsutinis Mobilus', 'kp' ),
-		'keliones'  => __( 'Kelionės', 'kp' ),
-		'naudinga'  => __( 'Naudinga informacija', 'kp' ) 
-	) );
+// This theme uses wp_nav_menu() in two locations.
+register_nav_menus( array(
+	'pagrindinis' => __( 'Pagrindinis', 'kp' ),
+	'virsutinis' => __( 'Virsutinis', 'kp' ),
+	'virsutinis_mobilus' => __( 'Virsutinis Mobilus', 'kp' ),
+	'keliones'  => __( 'Kelionės', 'kp' ),
+	'naudinga'  => __( 'Naudinga informacija', 'kp' ) 
+) );
+
+// get the the role object
+$role_object = get_role( 'editor' );
+
+// add $cap capability to this role object
+$role_object->add_cap( 'edit_theme_options' );
+if($role_object->name == 'editor'){
+	function hide_menu() {
+
+	    remove_submenu_page( 'themes.php', 'themes.php' ); // hide the theme selection submenu
+	    remove_submenu_page( 'themes.php', 'widgets.php' ); // hide the widgets submenu
+	}
+
+	add_action('admin_head', 'hide_menu');
+}
