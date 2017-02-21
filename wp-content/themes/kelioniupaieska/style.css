@@ -4283,7 +4283,7 @@ since your site is should be mostly composed of tiny modules.
   content: " ";
   position: absolute;
   right: 0;
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -51px -250px;
   width: 14px;
   height: 24px;
@@ -4456,12 +4456,12 @@ since your site is should be mostly composed of tiny modules.
   border-left: 1px solid #ededed;
 }
 
-.nav.nav--main li.active, .nav.nav--main li:hover, .nav.nav--main li:focus, .nav.nav--main li:active {
+.nav.nav--main li.current_page_item, .nav.nav--main li:hover, .nav.nav--main li:focus, .nav.nav--main li:active {
   background: #f6a41b;
   border-color: #f6a41b;
 }
 
-.nav.nav--main li.active a, .nav.nav--main li:hover a, .nav.nav--main li:focus a, .nav.nav--main li:active a {
+.nav.nav--main li.current_page_item a, .nav.nav--main li:hover a, .nav.nav--main li:focus a, .nav.nav--main li:active a {
   color: #FFF;
   background: transparent;
 }
@@ -4505,7 +4505,7 @@ since your site is should be mostly composed of tiny modules.
   right: -10px;
   top: 4px;
   display: block;
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -333px -122px;
   width: 10px;
   height: 7px;
@@ -4518,7 +4518,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav.nav--secondary li.dropdown.open .dropdown-toggle:before {
-  background-image: url(../img/src/sprites.png);
+  background-image: url(assets/img/src/sprites.png);
   background-position: -333px -129px;
   width: 9px;
   height: 6px;
@@ -4538,12 +4538,12 @@ since your site is should be mostly composed of tiny modules.
   margin: 0;
 }
 
-.nav.nav--secondary li:hover a, .nav.nav--secondary li:focus a, .nav.nav--secondary li:active a, .nav.nav--secondary li.active a, .nav.nav--secondary li.open a {
+.nav.nav--secondary li:hover a, .nav.nav--secondary li:focus a, .nav.nav--secondary li:active a, .nav.nav--secondary li.current_page_item a, .nav.nav--secondary li.open a {
   color: #f6a41b;
   background: transparent;
 }
 
-.nav.nav--secondary li:hover a:after, .nav.nav--secondary li:focus a:after, .nav.nav--secondary li:active a:after, .nav.nav--secondary li.active a:after, .nav.nav--secondary li.open a:after {
+.nav.nav--secondary li:hover a:after, .nav.nav--secondary li:focus a:after, .nav.nav--secondary li:active a:after, .nav.nav--secondary li.current_page_item a:after, .nav.nav--secondary li.open a:after {
   display: none;
 }
 
@@ -4606,7 +4606,7 @@ since your site is should be mostly composed of tiny modules.
   bottom: -10px;
 }
 
-.nav.nav--carousel-selectors li.active:after, .nav.nav--carousel-selectors li.active:before {
+.nav.nav--carousel-selectors li.current_page_item:after, .nav.nav--carousel-selectors li.current_page_item:before {
   top: 100%;
   left: 50%;
   border: solid transparent;
@@ -4618,21 +4618,21 @@ since your site is should be mostly composed of tiny modules.
   margin-top: -3px;
 }
 
-.nav.nav--carousel-selectors li.active:after {
+.nav.nav--carousel-selectors li.current_page_item:after {
   border-color: rgba(239, 199, 61, 0);
   border-top-color: #efc73d;
   border-width: 6px;
   margin-left: -6px;
 }
 
-.nav.nav--carousel-selectors li.active:before {
+.nav.nav--carousel-selectors li.current_page_item:before {
   border-color: rgba(215, 179, 55, 0);
   border-top-color: #d7b337;
   border-width: 9px;
   margin-left: -9px;
 }
 
-.nav.nav--carousel-selectors li.active a {
+.nav.nav--carousel-selectors li.current_page_item a {
   background: #efc73d;
   color: #FFF;
   border-radius: 3px;

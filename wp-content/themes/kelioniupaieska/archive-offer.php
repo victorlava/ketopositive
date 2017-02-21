@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Offers
+ * Offers Archive
  *
  * @package WordPress
  */
