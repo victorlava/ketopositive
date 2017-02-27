@@ -20,6 +20,16 @@ jQuery(document).ready(function( $ ) {
 	    $('html').off('scroll touchmove mousewheel');
 	});
 
+
+	$('.input-group--select select').each(function(){
+		$(this).focus(function() {
+		        $(this).parent().find('.input-group-addon').addClass('selected');
+		      })
+		      .blur(function() {
+		        $(this).parent().find('.input-group-addon').removeClass('selected');
+		      });
+	})
+
 	$('.carousel-selectors li').each(function(){
 		$(this).click(function(e){
 			alert('clicked');

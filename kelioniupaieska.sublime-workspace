@@ -1,0 +1,1012 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-bottom: "
+			],
+			[
+				"pad",
+				"padding-right: "
+			],
+			[
+				"padd",
+				"padding-left: "
+			],
+			[
+				"marg",
+				"margin-bottom: "
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"tax",
+				"tax_query"
+			],
+			[
+				"mo",
+				"months"
+			],
+			[
+				"new",
+				"newestPosts"
+			],
+			[
+				"border",
+				"border-bottom: "
+			],
+			[
+				"padding",
+				"padding-bottom: "
+			],
+			[
+				"border-",
+				"border-color: "
+			],
+			[
+				"bor",
+				"border-bottom: "
+			],
+			[
+				"bo",
+				"bottom: "
+			],
+			[
+				"imp",
+				"important"
+			],
+			[
+				"text",
+				"text-align: "
+			],
+			[
+				"mari",
+				"margin-top: "
+			],
+			[
+				"te",
+				"text-align: "
+			],
+			[
+				"margin",
+				"margin-bottom: "
+			],
+			[
+				"ba",
+				"background: "
+			],
+			[
+				"h2",
+				"h2-fz"
+			],
+			[
+				"h1",
+				"h1-fz"
+			],
+			[
+				"font",
+				"font-size: "
+			],
+			[
+				"bak",
+				"background-position: "
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"bac",
+				"background: "
+			],
+			[
+				"tex",
+				"text-transform: "
+			],
+			[
+				"margi",
+				"margin-bottom: "
+			],
+			[
+				"border-r",
+				"border-right: "
+			],
+			[
+				"paddi",
+				"padding: "
+			],
+			[
+				"body-te",
+				"body-text-color"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"dropdown",
+				"dropdown-menu--sign"
+			],
+			[
+				"font-",
+				"font-size: "
+			],
+			[
+				"padi",
+				"padding-bottom: "
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ins",
+				"ins_company_price"
+			],
+			[
+				"defau",
+				"default_age"
+			],
+			[
+				"smo",
+				"smoking_status"
+			],
+			[
+				"Insura",
+				"insuranceForm"
+			],
+			[
+				"gen",
+				"gender_multiplier"
+			],
+			[
+				"age",
+				"age_multiplier"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"tet",
+				"text-align: "
+			],
+			[
+				"li",
+				"line-height: "
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"url",
+				"parse_url"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"service-",
+				"service-wrapper"
+			],
+			[
+				"fi",
+				"first_name"
+			],
+			[
+				"em",
+				"email_subject"
+			],
+			[
+				"conver",
+				"conversion-form-wrapper"
+			],
+			[
+				"err",
+				"error_message"
+			],
+			[
+				"splash",
+				"splash-content"
+			],
+			[
+				"splas",
+				"splash-content"
+			],
+			[
+				"span",
+				"spanWidth"
+			],
+			[
+				"half",
+				"half-section"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"part",
+				"partners-wrapper"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"d",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wp-content/themes/kelioniupaieska/assets/js/src/script.js",
+			"settings":
+			{
+				"buffer_size": 1186,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/single.php",
+			"settings":
+			{
+				"buffer_size": 4970,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/header.php",
+			"settings":
+			{
+				"buffer_size": 6550,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/template-kontaktai.php",
+			"settings":
+			{
+				"buffer_size": 9737,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/single-offer.php",
+			"settings":
+			{
+				"buffer_size": 14792,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/comments.php",
+			"settings":
+			{
+				"buffer_size": 5059,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_input.scss",
+			"settings":
+			{
+				"buffer_size": 2390,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify-classic/page-submission.php",
+		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify/sidebar-single-resume.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/index.php",
+		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/plugins/wp-job-manager/wp-job-manager-functions.php",
+		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify/job-filters-flat.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_input.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_offer.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/functions.php",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/front-page.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/.gitignore",
+		"/C/Users/Works/Desktop/wp-config.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/email.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/footer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/email.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/header.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/archive-offer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_header.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/js/src/script.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/menu.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/comments.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_home.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/main.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/functions.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/archive-offers.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/template-kontaktai.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/page.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_offers.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_news.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/top-pasiulymai.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/taxonomy-offer-month.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/taxonomy-month.php",
+		"/E/Vagrant/ieska.lt/public_html/wp-content/plugins/wp-job-manager/templates/job-submit.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/singlse-offasders.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/new.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single-branch.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_sidebar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_data-block.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_new.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_article.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/single.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/content.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/news.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/index.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_button.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentysixteen/template-parts/content.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentysixteen/header.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_wp-pagenavi.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single-offer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/filialas.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/pasiulymas.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/kontaktai.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/department.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_contact.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/work-days.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_page.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-input.min.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-field-group.min.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/offer-form-list.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/Gruntfile.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/02-partials/_main.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/02-partials/_footer.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_carousel.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_favourite-hotels.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/css/sprites.css",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/sprites.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/02-partials/_navbar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/header.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/style.css",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/js/src/bootstrap.min.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/js/src/script.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-form.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/header.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/footer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/style.css",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-bar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/filialas.php",
+		"/E/Vagrant/airwood/libeskind.dev/wp-content/themes/libeskind/partials/location.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/kontaktai.php",
+		"/E/Vagrant/airwood/libeskind.dev/wp-content/themes/libeskind/home.php",
+		"/E/Vagrant/airwood/motorent.dev/moto-inner.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/order-daily.php",
+		"/E/Vagrant/airwood/motorent.dev/partials/order-main.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_news.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_navbar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_contact.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_main.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_header.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_wp-pagenavi.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_sidebar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/news.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_article.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/pasiulymas.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_offer.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/assets/js/src/script.js",
+		"/E/Vagrant/airwood/motorent.dev/assets/js/src/script.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/menu.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/index.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_nav.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_main-search.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_global.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_settings.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/header.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_favourite-directions.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_direction-block.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/main.scss",
+		"/C/Users/Works/AppData/Roaming/Skype/My Skype Received Files/themeforest-9865647-zephyr-material-design-theme (1)/Product/Zephyr-child/Zephyr-child/style.css",
+		"/C/Users/Works/AppData/Roaming/Skype/My Skype Received Files/themeforest-9865647-zephyr-material-design-theme (1)/Product/Zephyr-child/Zephyr-child/functions.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_email.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_fonts.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_carousel.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_favourite-hotels.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_button.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_footer.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_data-block.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_price-wrapper.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/offer-form-price.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/offer-form-list.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/top-pasiulymai.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/assets/css/sprites.css",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/footer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/partials/email-cta.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_input.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/03-pages/_offers.scss"
+	],
+	"find":
+	{
+		"height": 109.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"E:\\Vagrant\\airwood\\motorent.dev\\scss",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"filialas",
+			"permal",
+			"form",
+			"get_perm",
+			"offer-form",
+			"input",
+			"hotels",
+			"carousel",
+			".active",
+			"pasiulym",
+			"esc",
+			"tax",
+			"$terms",
+			"taxonomy",
+			"offer",
+			"has_archive",
+			"400",
+			"ran",
+			"terms",
+			"vie",
+			"$b =",
+			"kryptys",
+			"places",
+			"api",
+			"googleapis",
+			"google",
+			"sensor=false&libraries=places",
+			"sensor=false",
+			"sensor=false&libraries=places",
+			"register_post_type",
+			"post",
+			"image",
+			".adult",
+			"$spritesheet-sprites",
+			"adults",
+			".icon-adults",
+			"icon-adults",
+			".icon-adults",
+			"icon-adults",
+			".icon",
+			"..",
+			"./",
+			"../",
+			"url",
+			"image",
+			"enq",
+			"map",
+			"google",
+			"content-wrapper",
+			"top-phone",
+			"button",
+			"navbar",
+			"right:-23",
+			"14px",
+			"40%",
+			"navbar-header",
+			"icon",
+			"carousel",
+			"input",
+			".title",
+			"width: ",
+			"price-wrapper",
+			"data-block--offer",
+			"data-block-info",
+			"form",
+			"input",
+			"inout",
+			"header-smaller",
+			"small",
+			"facebook",
+			"arrow",
+			"dropdo",
+			"dropdow",
+			"top",
+			"top-p",
+			"stars",
+			"box-shad",
+			"header-title",
+			"input",
+			"#carousel-example-generic",
+			"22",
+			"top:",
+			"brand",
+			"only screen and (max-width: 768px)",
+			"ul.head-social li",
+			"max-wid",
+			"catt/",
+			"cat/",
+			"cat/([^/]+)/(feed|rdf|rss|rss2|atom)/?$",
+			"cat/",
+			"cat",
+			"kategorija",
+			"cat",
+			"item/",
+			"cat",
+			"cat/",
+			"cat/4",
+			"cat/",
+			".w-iconbox.size_small .w-iconbox-title",
+			".w-iconbox.iconpos_top",
+			"kategorija",
+			"cat/",
+			"cat",
+			"vieta",
+			"cat/",
+			"l-subheader",
+			"mobileNav",
+			"window.mobileNavWidth",
+			"group-countr",
+			"border-radius",
+			"@include box-shadow(0);",
+			"1.67",
+			"line-height",
+			"box-shadow",
+			"content:",
+			"content:\"\\",
+			"transition",
+			"opacity",
+			"placeholder",
+			"url",
+			"text-shadow",
+			"border-radius",
+			"box-sizing",
+			"box-shadow",
+			"watch",
+			".css",
+			".js",
+			".css"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../",
+			"..",
+			"./",
+			"#hotel-carousel",
+			"catt/",
+			"@include box-shadow(none);",
+			".min.js",
+			".min.css",
+			"$screen-md-min",
+			"/img/src/",
+			"/img/",
+			"headingThreeDaily",
+			"collapseThreeDaily",
+			"collapseTwoDaily",
+			"h3",
+			"h4",
+			"panel-order",
+			"help-block error",
+			"class=\"form-item form-group\"",
+			"",
+			"/",
+			".container",
+			"tax-calculators",
+			"/tax-calculators/",
+			".container",
+			".splash-content",
+			"<a target=\"_blank\" href=\"#\">",
+			"<div class=\"image-wrapper\">",
+			"<div class=\"container\">",
+			"<div class=\"splash-content\">",
+			"",
+			"/",
+			"partials",
+			"project",
+			"partials",
+			"project",
+			"partials",
+			"project-intros/",
+			"partials",
+			"/partials",
+			"container-fluid",
+			"place=footer",
+			"/",
+			"container-fluid",
+			"../partials",
+			"../project-intros",
+			"../partials",
+			"uzsakymas@viktoraslava.lt",
+			"tinklalapyje",
+			"tinklalapiai",
+			"tinklalapis",
+			"tinklalapio",
+			"tinklalapių",
+			"tinklalapį",
+			"tinklapį",
+			"tinklapių",
+			"puslapio",
+			"puslapių",
+			"col-lg-9",
+			"<br>",
+			"http://viktoraslava-4cac.kxcdn.com/img",
+			"http://viktoraslava-4cac.kxcdn.com/fonts/",
+			"./index_files/",
+			"",
+			"/",
+			"",
+			"http://viktoraslava.lt",
+			"project-section",
+			"#da4033",
+			"http://pullzone-4cac.kxcdn.com/",
+			"",
+			"http://victorlava.com",
+			"h6",
+			"h5",
+			"h4",
+			"h3",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/kelioniupaieska/assets/js/src/script.js",
+					"settings":
+					{
+						"buffer_size": 1186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								790,
+								790
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 235.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/kelioniupaieska/single.php",
+					"settings":
+					{
+						"buffer_size": 4970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								783,
+								783
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/kelioniupaieska/header.php",
+					"settings":
+					{
+						"buffer_size": 6550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1242,
+								1242
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/kelioniupaieska/template-kontaktai.php",
+					"settings":
+					{
+						"buffer_size": 9737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1604,
+								1604
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1421.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/kelioniupaieska/single-offer.php",
+					"settings":
+					{
+						"buffer_size": 14792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6554,
+								6070
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3374.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/kelioniupaieska/comments.php",
+					"settings":
+					{
+						"buffer_size": 5059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5047,
+								4950
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2304.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_input.scss",
+					"settings":
+					{
+						"buffer_size": 2390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1019,
+								1019
+							],
+							[
+								1290,
+								1290
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 918.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 63.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/E/Vagrant/airwood/heart.dev/heart.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true
+}

@@ -199,7 +199,7 @@ get_header(); ?>
 
 				  		<?php $b = 1; ?>
 					    <?php while( $getHotels->have_posts() ) : $getHotels->the_post(); ?>
-
+					    
 						    <?php if ($b % 6 === 1): // Every sixt item, we close the div and start it again. ?>
 								<div class="item<?php if($b == 1){echo ' active';}?>">
 							<?php endif; ?>

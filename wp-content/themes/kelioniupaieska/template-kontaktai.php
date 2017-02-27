@@ -9,6 +9,66 @@ get_header(); ?>
    
   <main id="main"> 
 
+  	 <?php 
+	if ( ! empty( $_POST ) ) {
+
+	    //echo "<pre>";
+	    //print_R($_POST);
+	    //echo "</pre>";
+
+	    $first_name = TRUE;
+	    $filialas = TRUE;
+	    $phone = TRUE;
+	    $email = TRUE;
+	    $message = TRUE;
+	    $hideForm = FALSE;
+
+	    if($_POST['first_name'] != ''){$first_name = FALSE;}
+	    if($_POST['phone'] != ''){$phone = FALSE;}
+	    if($_POST['email'] != ''){$email = FALSE;}
+	    if($_POST['filialas'] != ''){$filialas = FALSE;}
+	    if($_POST['message'] != ''){$message = FALSE;}
+
+	    if($first_name == FALSE && 
+	       $filialas == FALSE && 
+	       $phone == FALSE &&
+	       $email == FALSE && 
+	       $message == FALSE){
+
+	       $hideForm = TRUE;
+
+	       $message = "";
+	       $message = $_POST['message'] . "\r\n";
+	       $message .= "\r\n";
+	       $message .= "Vardas: " . $_POST['first_name'] . "\r\n";
+	       $message .= "Tel. numeris: " . $_POST['phone'] . "\r\n";
+	       $message .= "El. paštas: " . $_POST['email'] . "\r\n";
+	       $message .= "Filialas: " . $_POST['filialas'] . "\r\n";
+ 
+	       //$headers = array('From: ieska.lt <info@ieska.lt>');
+	       $headers = array('');
+
+	       $mailResult = false;
+
+	       $mailResult = wp_mail('hello@victorlava.com', 'Naujas užklausa', $message, $headers);
+	       //$mailResult = wp_mail($_POST['filialas'], 'Naujas užklausa', $message, $headers);
+	      
+
+	    }
+	    else{
+	        
+	    }
+	    /* name required */
+	    /* email required */
+	    /* sub category required */
+
+	    // Sanitize the POST field
+	    // Generate email content
+	    // Send to appropriate email
+	}
+
+ ?>
+
   	<div class="container">
   		<div class="row">
 		  	<header class="header header--top header--main header--line header--center"> 
@@ -261,39 +321,52 @@ get_header(); ?>
 					<p><?php echo get_post_field('post_content', $post->ID); ?></p>
 				</div>
 
-				<div>
+				<div id="susisiekite">
 					<header class="header header--sidebar header--line"> 
 						<h4 class="header-title">Susisiekite</h4>
 					</header>
-					<form>
+					<form action="<?php get_permalink(); ?>#susisiekite" method="POST">
+					<?php if($filialas == TRUE): ?>
+					<div class="error error--block error--red">
+						Prašome pasirinkti filialą
+					</div>
+					<?php endif; ?>
+
+					<?php if($hideForm == TRUE): ?>
+					<div class="error error--block error--green">
+						Žinutė sėkmingai išsiųsta!
+					</div>
+					<?php endif; ?>
 						<div class="form-group">
 						    <label for="name">Vardas *</label>
-						    <input type="text" id="name" placeholder="">
+						    <input type="text" id="first_name" name="first_name" placeholder="" value="<?php echo $_POST['first_name']; ?>" required>
 						 </div>
 
 						 <div class="form-group">
 						    <label for="name">El. paštas *</label>
-						    <input type="text" id="email" placeholder="">
+						    <input type="email" id="email" name="email" placeholder="" value="<?php echo $_POST['email']; ?>" required>
 						 </div>
 
 						 <div class="form-group">
 						    <label for="name">Telefonas *</label>
-						    <input type="text" id="telephone" placeholder="">
+						    <input type="text" id="phone" name="phone" placeholder="" value="<?php echo $_POST['phone']; ?>" required>
 						 </div>
 
 						 <div class="form-group">
 						    <label for="name">Filialas</label>
-						    <select>
-			                  <option selected="">Centrinis filialas</option>
-			                  <option value="1">1</option>
-			                  <option value="2">2</option>
-			                  <option value="3">3</option>
+						    <select id="filialas" name="filialas">
+			                  <option selected="">Pasirinkite filialą</option>
+			                  <?php if( $getDepartments->have_posts() ): ?>
+							  <?php while( $getDepartments->have_posts() ) : $getDepartments->the_post(); ?>
+			                  	<option value="<?php the_field('el_pastas'); ?>"><?php the_title(); ?></option>
+			                  <?php endwhile; ?>
+			             	  <?php endif; ?>
 			                </select>
 						 </div>
 
 						 <div class="form-group">
 						    <label for="name">Jūsų žinutė *</label>
-						    <textarea id="message"></textarea>
+						    <textarea id="message" name="message" required><?php echo $_POST['message']; ?></textarea>
 						 </div>
 
 						 <div class="form-group">

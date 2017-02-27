@@ -4929,7 +4929,39 @@ section.email .email-wrapper .email-form form .email-submit input {
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.4);
 }
 
-input[type="submit"] {
+.input-group.input-group--select .input-group-addon {
+  background: #fff8f3;
+  border: 1px solid #e6d3c5;
+  border-color: #e6d3c5;
+  border-radius: 0;
+  border-right: 0;
+  padding: 13px;
+  position: absolute;
+  height: 44px;
+  transition: none !important;
+}
+
+.input-group.input-group--select .input-group-addon.selected {
+  border-color: #ff6138;
+}
+
+.input-group.input-group--select select {
+  background: #fff8f3;
+  border-radius: 0;
+  border: 1px solid #e6d3c5;
+  border-left: 0;
+  height: 44px;
+  padding: 12px 0px;
+  padding-left: 40px;
+  box-shadow: none;
+  transition: none !important;
+}
+
+.input-group.input-group--select select:focus, .input-group.input-group--select select:active {
+  border-color: #ff6138;
+}
+
+input[type="submit"], .button--submit {
   background: #ff6138;
   color: #FFF;
   border: 0;
@@ -4939,7 +4971,7 @@ input[type="submit"] {
   border-radius: 4px;
   height: 50px;
   line-height: 16px;
-  box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15) !important;
 }
 
 label {
@@ -5865,6 +5897,10 @@ section.favourite-hotels .carousel {
   font-weight: 500;
 }
 
+.offer-form .button {
+  margin-top: 15px;
+}
+
 .offer-form .icon {
   display: inline-block;
   margin-right: 10px;
@@ -5886,7 +5922,7 @@ section.favourite-hotels .carousel {
 }
 
 .offer-form.offer-form--long .title {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .offer-form.offer-form--long .sub-title {
@@ -5896,6 +5932,80 @@ section.favourite-hotels .carousel {
 
 .offer-form.offer-form--long li:last-child {
   border-bottom: 0;
+}
+
+.offer-form.offer-form--long .offer-form-price {
+  background: #fbfbf3;
+  border: 1px solid #e9eae5;
+  padding-left: 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+.offer-form.offer-form--long .offer-form-price .row--first {
+  padding-top: 8px;
+}
+
+.offer-form.offer-form--long .offer-form-price ul li {
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 6px;
+  width: auto;
+  border: 0;
+  margin: 0;
+  margin-right: 25px;
+}
+
+.offer-form.offer-form--long .offer-form-price ul li:last-child {
+  margin-right: 0;
+}
+
+.offer-form.offer-form--long .offer-form-price .price-wrapper {
+  background: #f1eedb;
+  border-radius: 0;
+  padding: 18px 10px;
+  margin-bottom: 0;
+  height: 75px;
+}
+
+.offer-form.offer-form--long .offer-form-price .radio input + label {
+  padding-left: 25px;
+}
+
+.offer-form.offer-form--long .offer-form-price .radio input:checked + label:after {
+  top: 7px;
+}
+
+.offer-form.offer-form--long .offer-form-price .radio {
+  margin: 0;
+}
+
+.offer-form.offer-form--long .offer-form-price label {
+  padding: 0;
+}
+
+.offer-form.offer-form--full {
+  padding: 2.5em 4em;
+}
+
+.offer-form.offer-form--full .input-group {
+  width: 100%;
+}
+
+.offer-form.offer-form--full .input-group-addon {
+  padding: 10px;
+  background: #FFF;
+}
+
+.offer-form.offer-form--full select {
+  padding-left: 35px;
+  font-size: 13px;
+  background: #FFF;
+}
+
+.offer-form.offer-form--full .button {
+  height: 60px;
+  line-height: 25px;
 }
 
 .offer-form.offer-form--short {
@@ -5938,6 +6048,8 @@ section.favourite-hotels .carousel {
   padding: 6px 20px;
   margin-top: 15px;
   margin-bottom: 0;
+  line-height: 37px;
+  text-align: center;
 }
 
 .offer-form.offer-form--short .price-wrapper {
@@ -6105,6 +6217,10 @@ body.offer-template-default .header.header--top {
 
 body.offer-template-default .carousel-inner img {
   width: 100%;
+}
+
+body.offer-template-default .carousel {
+  margin-bottom: 2em;
 }
 
 body.home .carousel-inner {

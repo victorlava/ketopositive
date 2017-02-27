@@ -23,11 +23,10 @@ get_header(); ?>
 				<div class="col-md-6">
 					<div class="data-block data-block--offer data-block--article"> 
 						<div class="data-block-image">
-				   			<?php if( have_rows('nuotraukos')): ?>
-					   			<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
-									<img src="<?php the_sub_field('nuotrauka'); ?>">
-									 <?php break; ?>
-								<?php endwhile; ?>
+							<?php if ( has_post_thumbnail() ) : ?>
+							    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+							        <?php the_post_thumbnail('full'); ?>
+							    </a>
 							<?php else: ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/src/offer.jpg">
 							<?php endif; ?>
@@ -93,11 +92,11 @@ get_header(); ?>
 						<div class="data-block-info">
 							<h4 class="title"><?php the_title();?></h4>
 							<div class="stars">
+								<?php $iterator = get_field('zvaigzduciu_skaicius'); $iterator = $iterator * 1; ?>
 								<ul class="list list--inline">
-									<li><i class="icon icon-star"></i></li>
-									<li><i class="icon icon-star"></i></li>
-									<li><i class="icon icon-star"></i></li>
-									<li><i class="icon icon-star"></i></li>
+									<?php for($i=0;$i < $iterator; $i++): ?>
+										<li><i class="icon icon-star"></i></li>
+									<?php endfor; ?>
 								</ul>
 							</div>
 							<p class="time"><?php the_field('vieta'); ?></p>

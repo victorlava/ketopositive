@@ -20,6 +20,7 @@ function kp_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'kp_scripts' );
 
+add_theme_support( 'post-thumbnails' ); 
 
 add_action( 'init', 'codex_offer_init' );
 /**
@@ -299,6 +300,8 @@ register_nav_menus( array(
 	'naudinga'  => __( 'Naudinga informacija', 'kp' ) 
 ) );
 
+
+
 // get the the role object
 $role_object = get_role( 'editor' );
 
@@ -310,6 +313,6 @@ if($role_object->name == 'editor'){
 	    remove_submenu_page( 'themes.php', 'themes.php' ); // hide the theme selection submenu
 	    remove_submenu_page( 'themes.php', 'widgets.php' ); // hide the widgets submenu
 	}
-
+ 
 	add_action('admin_head', 'hide_menu');
 }

@@ -5,21 +5,84 @@
  * @package WordPress
  */
 
+
 get_header(); ?>
    
   <main id="main"> 
  
+ <?php 
+	if ( ! empty( $_POST ) ) {
+
+	    //echo "<pre>";
+	    //print_R($_POST);
+	    //echo "</pre>";
+
+	    $first_name = TRUE;
+	    $last_name = TRUE;
+	    $phone = TRUE;
+	    $email = TRUE;
+	    $adult = TRUE;
+	    $children = TRUE;
+	    $hideForm = FALSE;
+
+	    if($_POST['first_name'] != ''){$first_name = FALSE;}
+	    if($_POST['last_name'] != ''){$last_name = FALSE;}
+	    if($_POST['phone'] != ''){$phone = FALSE;}
+	    if($_POST['email'] != ''){$email = FALSE;}
+	    if($_POST['adult'] != ''){$adult = FALSE;}
+	    if($_POST['children'] != ''){$children = FALSE;}
+
+	    if($first_name == FALSE && 
+	       $last_name == FALSE && 
+	       $phone == FALSE &&
+	       $email == FALSE && 
+	       $adult == FALSE &&
+	       $children == FALSE){
+
+	       $hideForm = TRUE;
+
+	       $message = "";
+	       $message .= "\r\n";
+	       $message .= "Vardas: " . $_POST['first_name'] . "\r\n";
+	       $message .= "Pavardė: " . $_POST['last_name'] . "\r\n";
+	       $message .= "Tel. numeris: " . $_POST['phone'] . "\r\n";
+	       $message .= "El. paštas: " . $_POST['email'] . "\r\n";
+	       $message .= "Suagusieji: " . $_POST['adult'] . "\r\n";
+	       $message .= "Vaikai: " . $_POST['children'] . "\r\n";
+ 
+	       //$headers = array('From: ieska.lt <info@ieska.lt>');
+	       $headers = array('');
+
+	       $mailResult = false;
+
+	       $mailResult = wp_mail('hello@victorlava.com', 'Naujas kelionės užsakymas', $message, $headers);
+	       
+	      
+
+	    }
+	    else{
+	        
+	    }
+	    /* name required */
+	    /* email required */
+	    /* sub category required */
+
+	    // Sanitize the POST field
+	    // Generate email content
+	    // Send to appropriate email
+	}
+
+ ?>
   	<div class="container">
   		<div class="row">
   			<header class="header header--top header--main header--center"> 
 				<h2 class="header-title"><?php the_title(); ?></h2>
 				<div class="stars">
+					<?php $iterator = get_field('zvaigzduciu_skaicius'); $iterator = $iterator * 1; ?>
 					<ul class="list list--inline">
-						<li><i class="icon icon-star"></i></li>
-						<li><i class="icon icon-star"></i></li>
-						<li><i class="icon icon-star"></i></li>
-						<li><i class="icon icon-star"></i></li>
-						<li><i class="icon icon-star"></i></li>
+						<?php for($i=0;$i < $iterator; $i++): ?>
+							<li><i class="icon icon-star"></i></li>
+						<?php endfor; ?>
 					</ul>
 				</div>
 			</header>
@@ -71,9 +134,8 @@ get_header(); ?>
 					<p>-- fb share --</p>
 				</article>
 
-				
-				<div class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
-					<form> 
+				<?php if(get_field('rodyti_forma') == 'Ne'): ?> 
+				<div id="uzsakyti" class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
 						<div class="row">
 							<h3 class="title">Užsakykite kelionę</h3>
 							<h3 class="sub-title"><?php the_field('keliones_kryptis'); ?></h3>
@@ -120,12 +182,132 @@ get_header(); ?>
 								<div class="price-wrapper">
 									<p>Kaina: <span><?php the_field('kaina'); ?> €</span></p> 
 								</div>
-								<input type="submit" class="form-control button button--primary" value="Užsakyti">
-						
+								<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
 							</div>
 						</div>
-					</form>
 				</div>
+				<?php else: ?>
+					<div id="uzsakyti" class="offer-form offer-form--long offer-form--full data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
+					<?php if($adult == TRUE): ?>
+					<div class="error error--block error--red">
+						Prašome pasirinkti suagusiūjų skaičių.
+					</div>
+					<?php endif; ?>
+
+					<?php if($children == TRUE): ?>
+					<div class="error error--block error--red">
+						Prašome pasirinkti vaikų skaičių.
+					</div>
+					<?php endif; ?> 
+
+					<?php if($hideForm == TRUE): ?>
+					<div class="error error--block error--green">
+						Užsakymų forma sėkmingai išsiųsta!
+					</div>
+					<?php endif; ?>
+						<form action="<?php get_permalink(); ?>#uzsakyti" method="POST">
+							<div class="row">
+								<h3 class="title">Užsakykite kelionę</h3>
+							</div>
+							<div class="offer-form-price row">
+								<div class="col-md-9">
+									<div class="row row--first">
+										<ul class="list list--inline">
+											<li><strong><?php the_field('keliones_kryptis_trumpa'); ?></strong></li>
+											<li><?php the_title(); ?></li>
+											<li><?php the_field('keliones_data'); ?></li>
+										</ul>
+									</div>
+									<div class="row">
+										<ul class="list list--inline">
+											<li>Maitinimas:</li>
+											<li>
+												<div class="radio">
+												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="0" checked>
+												  <label for="breakfest-second">Pusryčiai</label>
+												</div>
+											</li>
+											<li>
+												<div class="radio">
+												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('viskas_iskaiciuota'); ?>">
+												  <label for="all-second">Viskas įskaičiuota <span class="highlight">+ <?php the_field('viskas_iskaiciuota'); ?> €</span></label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3 price-wrapper">
+									<p>Kaina: <span><?php the_field('kaina'); ?> €</span></p> 
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+								    <div class="row">
+									    <div class="col-md-6">
+									    	<label for="name">Vardas</label>
+									    	<input type="text" id="first_name" name="first_name" placeholder="" value="<?php echo $_POST['first_name']; ?>" required>
+									    </div>
+									    <div class="col-md-6">
+									    	<label for="name">Pavardė</label>
+									    	<input type="text" id="last_name" name="last_name" placeholder="" value="<?php echo $_POST['last_name']; ?>" required>
+									    </div>
+								    </div>
+								</div>
+								<div class="form-group">
+								    <div class="row">
+								    	<div class="col-md-6">
+									    	<label for="name">Telefonas</label>
+									    	<input type="text" id="phone" name="phone" placeholder="" value="<?php echo $_POST['phone']; ?>" required>
+									    </div>
+									    <div class="col-md-6">
+									    	<label for="name">El. paštas</label>
+									    	<input type="email" id="email" name="email" placeholder="" value="<?php echo $_POST['email']; ?>" required>
+									    </div>
+								    </div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-md-6">
+													<label for="suagusieji">Suagusių skaičius</label>
+													<div class="input-group input-group--select">
+										                <span class="input-group-addon">
+										                	<i class="icon icon-adults"></i>
+										                </span>
+										                <select class="form-control" name="adult">
+										                  <option selected="" disabled="" id="suagusieji" name="suagusieji">Suaugusieji</option>
+										                  <option value="1">1</option>
+										                  <option value="2">2</option>
+										                  <option value="3">3</option>
+										                </select> 
+										            </div>
+												</div>
+												<div class="col-md-6">
+													<label for="vaikai">Vaikų skaičius</label>
+													<div class="input-group input-group--select">
+										                <span class="input-group-addon">
+										                	<i class="icon icon-children"></i>
+										                </span>
+										                <select class="form-control" name="children">
+										                  <option selected="" disabled="" id="vaikai" name="vaikai">Vaikai</option>
+										                  <option value="1">1</option>
+										                  <option value="2">2</option>
+										                  <option value="3">3</option>
+										                </select> 
+										            </div>
+												</div>
+											</div>
+										</div>
+									<div class="col-md-6">
+										<input type="submit" class="form-control button button--primary" value="Užsakyti">
+									</div>
+									</div>
+								</div>
+							</div>
+						</form>
+				</div>
+				<?php endif; ?>
 				
 
 			</div>
@@ -170,7 +352,12 @@ get_header(); ?>
 					<div class="price-wrapper">
 						<p>Kaina: <span><?php the_field('kaina'); ?> €</span></p> 
 					</div>
-					<input type="submit" class="form-control button button--primary" value="Užsakyti">
+					<?php if(get_field('rodyti_forma') == 'Ne'): ?> 
+						<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
+					<?php else: ?>
+						<a href="#uzsakyti" class="form-control button button--primary button--submit">Užsakyti</a>
+					<?php endif; ?>
+
 			
 				</div>
 
