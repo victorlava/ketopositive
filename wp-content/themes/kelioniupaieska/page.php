@@ -24,7 +24,7 @@ get_header(); ?>
 				<article class="article">
 					<?php the_content(); ?>
 				</article>
-				<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+				<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 			</div>
 		<?php endwhile; endif; ?>
 
