@@ -314,7 +314,7 @@ get_header(); ?>
 
 			<div class="sidebar col-md-4"> 
 
-				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff<?php if(get_field('rodyti_forma') == 'Taip'){ echo " hidden-xs hidden-sm";} ?>"> 
+				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff<?php if(get_field('rodyti_forma') != 'Ne'){ echo " hidden-xs hidden-sm";} ?>">   
 					<h3 class="title"><?php the_field('keliones_kryptis_trumpa'); ?></h3>
 					<ul>
 						<li>
