@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Post
+ * Template Name: Iframe
  *
  * @package WordPress
  */
@@ -12,7 +12,7 @@ get_header(); ?>
   	<div class="container">
 		<div class="row">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="col-md-8">
+			<div class="col-md-12">
 				<header class="header header--top header--line header--left"> 
 					<a href="<?php esc_url( get_permalink() ); ?>">
 						<h2 class="header-title"><span class="header-smaller"><?php the_title(); ?></h2>
@@ -22,12 +22,26 @@ get_header(); ?>
 					<?php the_tags(''); ?>
 				</div>
 				<article class="article">
+					<div class="intro-text">
+						<?php the_excerpt(); ?>
+					</div>
 					<?php the_content(); ?>
+					  
+					  <!-- Your like button code -->
+					  <div class="fb-like" 
+					    data-href="<?php echo get_permalink(); ?>" 
+					    data-layout="standard" 
+					    data-action="like" 
+					    data-show-faces="true">
+					  </div>
+					  
 				</article>
-				<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+				<header class="header header--top header--line header--left"> 
+					<h2 class="header-title"></h2>
+				</header>
+
 			</div>
 		<?php endwhile; endif; ?>
-
 		</div>
 	</div>
 

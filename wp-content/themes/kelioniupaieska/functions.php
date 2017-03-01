@@ -153,6 +153,21 @@ function codex_direction_init() {
 }
 
 add_action( 'init', 'codex_hotels_init' );
+
+
+function kelioniupaieska_customizer( $wp_customize ) {
+    $wp_customize->add_section(
+        'example_section_one',
+        array(
+            'title' => 'Example Settings',
+            'description' => 'This is a settings section.',
+            'priority' => 15,
+        )
+    );
+}
+add_action( 'customize_register', 'kelioniupaieska_customizer' );
+
+
 /**
  * Register a direction post type.
  *
@@ -316,3 +331,4 @@ if($role_object->name == 'editor'){
  
 	add_action('admin_head', 'hide_menu');
 }
+
