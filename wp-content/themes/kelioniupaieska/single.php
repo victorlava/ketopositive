@@ -26,7 +26,7 @@ get_header(); ?>
 						<?php the_excerpt(); ?>
 					</div>
 					<?php the_content(); ?>
-					  
+					<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 					  
 				</article>
 				<header class="header header--top header--line header--left"> 
