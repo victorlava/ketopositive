@@ -25,11 +25,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+	<meta property="og:url"           content="<?php echo get_permalink(); ?>" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Your Website Title" />
   <meta property="og:description"   content="Your description" />
-  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
  	<!--
 	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all"> 
     <link rel="stylesheet" href="/assets/css/sprites.css">
