@@ -6238,7 +6238,8 @@ body.blog .content-wrapper {
   padding: 0;
 }
 
-body.post-template-default .sidebar {
+body.post-template-default .sidebar,
+body.page-template-single .sidebar {
   padding-top: 5.2em;
 }
 
