@@ -4450,6 +4450,8 @@ since your site is should be mostly composed of tiny modules.
 .nav.nav--main li {
   border-right: 1px solid #ededed;
   text-align: center;
+  position: relative;
+  z-index: 55;
 }
 
 .nav.nav--main li:first-child {
@@ -4459,6 +4461,7 @@ since your site is should be mostly composed of tiny modules.
 .nav.nav--main li.current_page_item, .nav.nav--main li:hover, .nav.nav--main li:focus, .nav.nav--main li:active {
   background: #f6a41b;
   border-color: #f6a41b;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav.nav--main li.current_page_item a, .nav.nav--main li:hover a, .nav.nav--main li:focus a, .nav.nav--main li:active a {
@@ -4657,8 +4660,7 @@ since your site is should be mostly composed of tiny modules.
   display: none;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  z-index: 5;
-  margin-top: -4px;
+  margin-top: 3px;
   overflow: hidden;
 }
 
@@ -4666,8 +4668,18 @@ since your site is should be mostly composed of tiny modules.
   width: 100%;
   list-style: none;
   border-top: 1px solid #ededed;
+  border-bottom: 0;
   border-left: 0;
   border-right: 0;
+  background: #FFF;
+}
+
+.nav li.menu-item-has-children ul.sub-menu li.current_page_item {
+  font-weight: 500;
+}
+
+.nav li.menu-item-has-children ul.sub-menu li.current_page_item a {
+  color: #f6a41b;
 }
 
 .nav li.menu-item-has-children ul.sub-menu li:hover, .nav li.menu-item-has-children ul.sub-menu li:focus, .nav li.menu-item-has-children ul.sub-menu li:active {
