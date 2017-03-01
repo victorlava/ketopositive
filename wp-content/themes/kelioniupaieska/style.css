@@ -6001,9 +6001,14 @@ section.favourite-hotels .carousel {
 .offer-form.offer-form--long .offer-form-price {
   background: #fbfbf3;
   border: 1px solid #e9eae5;
-  padding-left: 20px;
   border-radius: 6px;
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  .offer-form.offer-form--long .offer-form-price {
+    padding-left: 20px;
+  }
 }
 
 .offer-form.offer-form--long .offer-form-price .row--first {
@@ -6049,7 +6054,24 @@ section.favourite-hotels .carousel {
 }
 
 .offer-form.offer-form--full {
-  padding: 2.5em 4em;
+  padding: 1.5em 2.5em;
+  margin-top: 2.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  .offer-form.offer-form--full {
+    padding: 2.5em 4em;
+  }
+}
+
+.offer-form.offer-form--full .col-md-9 .row {
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .offer-form.offer-form--full .col-md-9 .row {
+    padding-left: 0;
+  }
 }
 
 .offer-form.offer-form--full .input-group {

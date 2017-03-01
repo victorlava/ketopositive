@@ -131,8 +131,8 @@ get_header(); ?>
 				<article class="article"> 
 
 					<?php echo get_post_field('post_content', $post->ID); ?>
-					<p>-- fb share --</p>
 				</article>
+									<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 
 				<?php if(get_field('rodyti_forma') == 'Ne'): ?> 
 				<div id="uzsakyti" class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
@@ -187,7 +187,7 @@ get_header(); ?>
 						</div>
 				</div>
 				<?php else: ?>
-					<div id="uzsakyti" class="offer-form offer-form--long offer-form--full data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
+					<div id="uzsakyti" class="offer-form offer-form--long offer-form--full data-block data-block--simple data-block--hoveroff">
 					<?php if($adult == TRUE): ?>
 					<div class="error error--block error--red">
 						Prašome pasirinkti suagusiūjų skaičių.
@@ -314,7 +314,7 @@ get_header(); ?>
 
 			<div class="sidebar col-md-4"> 
 
-				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff"> 
+				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff<?php if(get_field('rodyti_forma') == 'Taip'){ echo " hidden-xs hidden-sm";} ?>"> 
 					<h3 class="title"><?php the_field('keliones_kryptis_trumpa'); ?></h3>
 					<ul>
 						<li>
