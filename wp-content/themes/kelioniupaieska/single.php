@@ -27,13 +27,6 @@ get_header(); ?>
 					</div>
 					<?php the_content(); ?>
 					  
-					  <!-- Your like button code -->
-					  <div class="fb-like" 
-					    data-href="<?php echo get_permalink(); ?>" 
-					    data-layout="standard" 
-					    data-action="like" 
-					    data-show-faces="true">
-					  </div>
 					  
 				</article>
 				<header class="header header--top header--line header--left"> 
