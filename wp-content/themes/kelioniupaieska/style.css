@@ -4660,6 +4660,7 @@ since your site is should be mostly composed of tiny modules.
   font-weight: 400;
   font-size: 13px;
   display: none;
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   margin-top: 3px;
