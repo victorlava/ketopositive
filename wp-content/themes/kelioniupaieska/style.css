@@ -4667,6 +4667,12 @@ since your site is should be mostly composed of tiny modules.
   overflow: hidden;
 }
 
+@media screen and (max-width: 1200px) {
+  .nav li.menu-item-has-children ul.sub-menu {
+    display: none !important;
+  }
+}
+
 .nav li.menu-item-has-children ul.sub-menu li {
   width: 100%;
   list-style: none;
@@ -5512,8 +5518,13 @@ textarea {
 .carousel.carousel--simple .carousel-control .icon {
   width: 45px !important;
   height: 45px !important;
-  bottom: 20px;
   background: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .carousel.carousel--simple .carousel-control .icon {
+    bottom: 20px;
+  }
 }
 
 .carousel.carousel--simple .carousel-control .icon .icon-arrow-left, .carousel.carousel--simple .carousel-control .icon .icon-arrow-right {
@@ -5961,6 +5972,10 @@ section.favourite-hotels .carousel {
   font-weight: 500;
 }
 
+.offer-form .highlight {
+  white-space: nowrap;
+}
+
 .offer-form .button {
   margin-top: 15px;
 }
@@ -6064,6 +6079,12 @@ section.favourite-hotels .carousel {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .offer-form.offer-form--full label {
+    padding-top: 10px;
+  }
+}
+
 .offer-form.offer-form--full .col-md-9 .row {
   padding-left: 15px;
 }
@@ -6108,7 +6129,14 @@ section.favourite-hotels .carousel {
 }
 
 .offer-form.offer-form--short .icon {
+  display: none;
   margin-right: 5px !important;
+}
+
+@media screen and (min-width: 480px) {
+  .offer-form.offer-form--short .icon {
+    display: inline-block;
+  }
 }
 
 .offer-form.offer-form--short .offer-form-first {
@@ -6128,14 +6156,21 @@ section.favourite-hotels .carousel {
 }
 
 .offer-form.offer-form--short .price-wrapper, .offer-form.offer-form--short .button {
-  width: 45%;
-  display: inline-block;
+  width: 100%;
+  display: block;
   float: left;
   padding: 6px 20px;
   margin-top: 15px;
   margin-bottom: 0;
   line-height: 37px;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .offer-form.offer-form--short .price-wrapper, .offer-form.offer-form--short .button {
+    width: 45%;
+    display: inline-block;
+  }
 }
 
 .offer-form.offer-form--short .price-wrapper {
@@ -6198,6 +6233,7 @@ section.favourite-hotels .carousel {
 .price-wrapper p span {
   color: #ff6138;
   font-size: 21px;
+  white-space: nowrap;
 }
 
 section.favourite-directions .col-md-6 {
