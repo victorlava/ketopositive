@@ -2,6 +2,10 @@ jQuery(document).ready(function( $ ) {
 
 	$('#hotel-carousel').carousel();
 
+
+
+
+
 	$('nav.navbar .navbar-header .navbar-toggle').click(function(){
 		$('#navbar').show();
 		$('html').addClass('no-scroll');
@@ -20,18 +24,37 @@ jQuery(document).ready(function( $ ) {
 	    $('html').off('scroll touchmove mousewheel');
 	});
 
+
+	$('.input-group--select select').each(function(){
+		$(this).focus(function() {
+		        $(this).parent().find('.input-group-addon').addClass('selected');
+		      })
+		      .blur(function() {
+		        $(this).parent().find('.input-group-addon').removeClass('selected');
+		      });
+	})
+
+	/* carousel selectors logic */
 	$('.carousel-selectors li').each(function(){
 		$(this).click(function(e){
-			alert('clicked');
 			var category = $(this).data('category');
 			$('.carousel-selectors li').removeClass('active');
 			$(this).addClass('active');
 			e.preventDefault();
 
-			$('#hotel-carousel .data-block--hotels').hide();
-			$('#hotel-carousel .data-block--hotels.js-data-' + category).show();
+ //pabandyti loopsa ne rowsuose
+			$('section.favourite-hotels .row.js-show-hide .carousel').hide();
+			var category = $(this).data('category');
+
+			$('section.favourite-hotels .row.js-show-hide.'+category+' > .carousel').show();
 
 		})
 	});
+
+	$('section.favourite-hotels .row.js-show-hide .carousel').hide();
+	var category = $('.carousel-selectors li:first-child').data('category');
+
+	$('section.favourite-hotels .row.js-show-hide.'+category+' > .carousel').show();
+	/* end of carousel selectors logic */
 
 }); 

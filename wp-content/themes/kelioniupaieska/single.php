@@ -26,7 +26,15 @@ get_header(); ?>
 						<?php the_excerpt(); ?>
 					</div>
 					<?php the_content(); ?>
-					<p>-- fb share --</p>
+					  
+					  <!-- Your like button code -->
+					  <div class="fb-like" 
+					    data-href="<?php echo get_permalink(); ?>" 
+					    data-layout="standard" 
+					    data-action="like" 
+					    data-show-faces="true">
+					  </div>
+					  
 				</article>
 				<header class="header header--top header--line header--left"> 
 					<h2 class="header-title"></h2>

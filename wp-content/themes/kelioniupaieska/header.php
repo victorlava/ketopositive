@@ -22,9 +22,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="author" content="Victor Lava" />
     <meta name="contact" content="hello@victorlava.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	
+
  	<!--
 	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all"> 
     <link rel="stylesheet" href="/assets/css/sprites.css">
@@ -39,6 +40,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<nav class="navbar navbar--main">
 	    <div class="navbar-top">
@@ -70,6 +79,7 @@
 	                <li class="dropdown">    
 	                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kontaktai</a>
 	                  <ul class="dropdown-menu"> 
+	                  	<a href="/kontaktai/" class="contact-link">Rodyti visus filialus</a>
 	                    <?php while( $getDepartments->have_posts() ) : $getDepartments->the_post(); ?>
 	                    <div class="col-md-6">
 	                      <div class="department">	
@@ -94,7 +104,7 @@
 								</div>
 								<p> <?php the_field('adresas'); ?></br>
 									Tel.: <?php the_field('telefonas'); ?></br>
-									Faks.: <?php the_field('faksas'); ?>
+									El. paštas: <?php the_field('el_pastas'); ?>
 								</p>	
 						   </div>
 	                    </div>
