@@ -6059,6 +6059,7 @@ section.favourite-hotels .carousel {
 
 .offer-form.offer-form--long {
   padding: 2.5em 4em;
+  margin-top: 2.5em;
 }
 
 @media screen and (min-width: 1200px) {
