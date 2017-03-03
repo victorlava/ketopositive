@@ -5118,16 +5118,36 @@ textarea {
 
 .data-block.data-block--article {
   color: #717171;
-  min-height: 370px;
+}
+
+@media screen and (min-width: 992px) {
+  .data-block.data-block--article {
+    min-height: 420px;
+  }
 }
 
 .data-block.data-block--article .data-block-image {
   height: 190px;
+  overflow: hidden;
 }
 
-.data-block.data-block--article .data-block-image img {
-  width: auto;
-  height: 190px;
+@media screen and (min-width: 768px) {
+  .data-block.data-block--article .data-block-image {
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .data-block.data-block--article .data-block-image {
+    height: 190px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .data-block.data-block--article .data-block-image img {
+    width: auto;
+    height: 190px;
+  }
 }
 
 .data-block.data-block--article .data-block-info {
@@ -5790,7 +5810,7 @@ section.favourite-hotels .carousel {
 
 @media screen and (min-width: 992px) {
   .article {
-    padding-right: 4em;
+    padding-right: 0em;
   }
 }
 
@@ -6071,6 +6091,7 @@ section.favourite-hotels .carousel {
 
 .offer-form.offer-form--long .offer-form-price ul li:last-child {
   margin-right: 0;
+  text-transform: capitalize;
 }
 
 .offer-form.offer-form--long .offer-form-price .price-wrapper {
@@ -6174,6 +6195,10 @@ section.favourite-hotels .carousel {
 
 .offer-form.offer-form--short .offer-form-second {
   width: 45%;
+}
+
+.offer-form.offer-form--short .offer-form-second.date {
+  text-transform: capitalize;
 }
 
 .offer-form.offer-form--short ul li:last-child .offer-form-first {
