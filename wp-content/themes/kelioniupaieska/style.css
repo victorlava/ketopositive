@@ -5787,12 +5787,6 @@ section.favourite-hotels .carousel {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .sidebar .data-block--hotels .title {
-    width: 80%;
-  }
-}
-
 .sidebar .carousel-inner {
   padding-bottom: 20px;
 }
