@@ -4332,6 +4332,13 @@ since your site is should be mostly composed of tiny modules.
 @media screen and (min-width: 992px) {
   .header.header--line.header--sidebar:after, .header.header--line.header--sidebar:before {
     display: block;
+    width: 8%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header.header--line.header--sidebar:after, .header.header--line.header--sidebar:before {
+    width: 14%;
   }
 }
 
@@ -4780,7 +4787,7 @@ section.email .email-wrapper {
 
 @media screen and (min-width: 768px) {
   section.email .email-wrapper {
-    padding: 2.27em 0;
+    padding: 2.27em 20px;
   }
 }
 
@@ -5123,6 +5130,12 @@ textarea {
 @media screen and (min-width: 992px) {
   .data-block.data-block--article {
     min-height: 420px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .data-block.data-block--article {
+    min-height: 390px;
   }
 }
 
