@@ -148,7 +148,7 @@ get_header(); ?>
 											<div class="offer-form-first">
 												<i class="icon icon-small-calendar"></i> Kelionės data:
 											</div>
-											<div class="offer-form-second">
+											<div class="offer-form-second date">
 												<?php the_field('keliones_data'); ?>
 											</div>
 										</li>
@@ -164,9 +164,9 @@ get_header(); ?>
 											<div class="offer-form-first">
 												<i class="icon icon-small-drink"></i> Maitinimas: 
 											</div>
-											<div class="offer-form-second">
+											<div class="js-track-change offer-form-second">
 												<div class="radio">
-												  <input type="radio" id="breakfest-second" name="offer-radio-second" checked>
+												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="0" checked>
 												  <label for="breakfest-second">Pusryčiai</label>
 												</div>
 												<div class="radio">
@@ -180,7 +180,7 @@ get_header(); ?>
 							</div>
 							<div class="col-md-4">
 								<div class="price-wrapper">
-									<p>Kaina: <span><?php the_field('kaina'); ?> €</span></p> 
+									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p> 
 								</div>
 								<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
 							</div>
@@ -218,7 +218,7 @@ get_header(); ?>
 											<li><?php the_field('keliones_data'); ?></li>
 										</ul>
 									</div>
-									<div class="row">
+									<div class="js-track-change row">
 										<ul class="list list--inline">
 											<li>Maitinimas:</li>
 											<li>
@@ -237,7 +237,7 @@ get_header(); ?>
 									</div>
 								</div>
 								<div class="col-md-3 price-wrapper">
-									<p>Kaina: <span><?php the_field('kaina'); ?> €</span></p> 
+									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p> 
 								</div>
 							</div>
 							<div class="row">
@@ -318,12 +318,12 @@ get_header(); ?>
 					<h3 class="title"><?php the_field('keliones_kryptis_trumpa'); ?></h3>
 					<ul>
 						<li>
-							<div class="offer-form-first">
+							<div class="offer-form-first date">
 								<i class="icon icon-small-calendar"></i> Kelionės data:
 							</div>
-							<div class="offer-form-second">
+							<div class="offer-form-second date">
 								<?php the_field('keliones_data'); ?>
-							</div>
+							</div> 
 						</li>
 						<li>
 							<div class="offer-form-first">
@@ -337,9 +337,9 @@ get_header(); ?>
 							<div class="offer-form-first">
 								<i class="icon icon-small-drink"></i> Maitinimas: 
 							</div>
-							<div class="offer-form-second">
+							<div class="js-track-change offer-form-second">
 								<div class="radio">
-								  <input type="radio" id="breakfest-first" name="offer-radio-first" checked>
+								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="0" checked>
 								  <label for="breakfest-first">Pusryčiai</label>
 								</div>
 								<div class="radio">
@@ -350,7 +350,7 @@ get_header(); ?>
 						</li>
 					</ul>
 					<div class="price-wrapper">
-						<p>Kaina: <span><?php the_field('kaina'); ?> €</span></p> 
+						<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p> 
 					</div>
 					<?php if(get_field('rodyti_forma') == 'Ne'): ?> 
 						<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
@@ -418,6 +418,25 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+			var currentPrice = $('.js-change-price').html();
+			$('.js-track-change input').on('change', function(){
+				var value = $(this).val();
+
+				if(value != 0){
+					$('.js-change-price').html(value + ' €');
+				}
+				else{
+					$('.js-change-price').html(currentPrice);
+				}
+
+			});
+
+		});
+	</script>
 
   </main><!-- #main -->
 
