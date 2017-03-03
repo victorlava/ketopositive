@@ -5334,6 +5334,13 @@ textarea {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 480px) {
+  .data-block.data-block--hotels ul {
+    margin: auto;
+    display: table;
+  }
+}
+
 .data-block.data-block--sidebar {
   border-color: transparent;
   margin-bottom: 1em;
@@ -5343,10 +5350,19 @@ textarea {
 .data-block.data-block--sidebar a {
   padding: 15px;
   display: table;
+  width: 100%;
 }
 
-.data-block.data-block--sidebar .data-block-image {
-  float: left;
+@media screen and (max-width: 480px) {
+  .data-block.data-block--sidebar {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .data-block.data-block--sidebar .data-block-image {
+    float: left;
+  }
 }
 
 .data-block.data-block--sidebar .data-block-image img {
@@ -5360,10 +5376,21 @@ textarea {
 }
 
 .data-block.data-block--sidebar .data-block-info {
-  float: left;
-  width: 70%;
   padding: 0 16px;
   min-height: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .data-block.data-block--sidebar .data-block-info {
+    float: left;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .data-block.data-block--sidebar .data-block-info {
+    width: 100%;
+  }
 }
 
 .data-block.data-block--cloud a {
@@ -5740,8 +5767,10 @@ section.favourite-hotels .carousel {
   }
 }
 
-.sidebar .data-block--hotels .title {
-  width: 80%;
+@media screen and (min-width: 1200px) {
+  .sidebar .data-block--hotels .title {
+    width: 80%;
+  }
 }
 
 .sidebar .carousel-inner {
