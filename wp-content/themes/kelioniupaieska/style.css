@@ -4661,7 +4661,6 @@ since your site is should be mostly composed of tiny modules.
 
 .nav li.menu-item-has-children ul.sub-menu {
   background: #FFF;
-  position: absolute;
   width: 100.5%;
   padding: 0;
   font-weight: 400;
@@ -4674,9 +4673,9 @@ since your site is should be mostly composed of tiny modules.
   overflow: hidden;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .nav li.menu-item-has-children ul.sub-menu {
-    display: none !important;
+    position: absolute;
   }
 }
 
@@ -4706,6 +4705,18 @@ since your site is should be mostly composed of tiny modules.
   color: #7a2b17;
   display: block;
   padding: 10px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav li.menu-item-has-children.current_page_item ul.sub-menu, .nav li.menu-item-has-children:active ul.sub-menu, .nav li.menu-item-has-children:focus ul.sub-menu {
+    display: block;
+  }
+  .nav li.menu-item-has-children.current_page_item ul.sub-menu li, .nav li.menu-item-has-children:active ul.sub-menu li, .nav li.menu-item-has-children:focus ul.sub-menu li {
+    margin-bottom: 0 !important;
+  }
+  .nav li.menu-item-has-children.current_page_item ul.sub-menu li:after, .nav li.menu-item-has-children:active ul.sub-menu li:after, .nav li.menu-item-has-children:focus ul.sub-menu li:after {
+    display: none !important;
+  }
 }
 
 .nav li.menu-item-has-children:hover ul.sub-menu {
