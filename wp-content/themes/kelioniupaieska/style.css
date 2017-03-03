@@ -4708,13 +4708,13 @@ since your site is should be mostly composed of tiny modules.
 }
 
 @media screen and (max-width: 1200px) {
-  .nav li.menu-item-has-children.current_page_item ul.sub-menu, .nav li.menu-item-has-children:active ul.sub-menu, .nav li.menu-item-has-children:focus ul.sub-menu {
+  .nav li.menu-item-has-children.current_page_item ul.sub-menu, .nav li.menu-item-has-children:active ul.sub-menu, .nav li.menu-item-has-children:focus ul.sub-menu, .nav li.menu-item-has-children:hover ul.sub-menu {
     display: block;
   }
-  .nav li.menu-item-has-children.current_page_item ul.sub-menu li, .nav li.menu-item-has-children:active ul.sub-menu li, .nav li.menu-item-has-children:focus ul.sub-menu li {
+  .nav li.menu-item-has-children.current_page_item ul.sub-menu li, .nav li.menu-item-has-children:active ul.sub-menu li, .nav li.menu-item-has-children:focus ul.sub-menu li, .nav li.menu-item-has-children:hover ul.sub-menu li {
     margin-bottom: 0 !important;
   }
-  .nav li.menu-item-has-children.current_page_item ul.sub-menu li:after, .nav li.menu-item-has-children:active ul.sub-menu li:after, .nav li.menu-item-has-children:focus ul.sub-menu li:after {
+  .nav li.menu-item-has-children.current_page_item ul.sub-menu li:after, .nav li.menu-item-has-children:active ul.sub-menu li:after, .nav li.menu-item-has-children:focus ul.sub-menu li:after, .nav li.menu-item-has-children:hover ul.sub-menu li:after {
     display: none !important;
   }
 }
