@@ -136,20 +136,21 @@
 	            <div class="navbar-top-phone">
 	              <!-- savaičių dienų partial -->
 	              <div class="work-days">
+	
 						<div class="work-days-list">
-							<ul class="list list--inline">
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class=""></li>
-								<li class=""></li>
-							</ul>
-						</div>
-						<div class="work-days-title">
-							8:00 - 18:00
-						</div>
+								<ul class="list list--inline">
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class=""></li>
+									<li class=""></li>
+								</ul>
+							</div>
+							<div class="work-days-title">
+								8:00 - 18:00
+							</div>
 				  </div>
 	              <a href="tel:+37052124474">+370 5 212 4474</a>
 	            </div>

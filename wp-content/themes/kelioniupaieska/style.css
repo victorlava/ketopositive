@@ -4459,8 +4459,7 @@ since your site is should be mostly composed of tiny modules.
   text-align: center;
   position: relative;
   z-index: 1;
-  border-bottom: 3px solid #000;
-  border-color: transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .nav.nav--main li:first-child {
@@ -4887,7 +4886,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .main-search form {
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   display: table;
   border-top-left-radius: 4px;
@@ -6425,6 +6424,12 @@ body.home .carousel-inner {
 
 body.home .carousel .carousel-indicators {
   bottom: -20px;
+}
+
+body.home #main {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: initial;
 }
 
 body.page-template-template-iframe .article {
