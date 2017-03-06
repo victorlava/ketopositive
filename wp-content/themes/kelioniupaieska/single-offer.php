@@ -166,12 +166,12 @@ get_header(); ?>
 											</div>
 											<div class="js-track-change offer-form-second">
 												<div class="radio">
-												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="0" checked>
-												  <label for="breakfest-second">Pusryčiai</label>
+												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutes_reiksme'); ?>" checked>
+												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutes_reiksme')): ?><span class="highlight">+ <?php the_field('pirmos_eilutes_reiksme'); ?>€</span><?php endif; ?></label>
 												</div>
 												<div class="radio">
-												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('viskas_iskaiciuota'); ?>">
-												  <label for="all-second">Viskas įskaičiuota <span class="highlight">+ <?php the_field('viskas_iskaiciuota'); ?> €</span></label>
+												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
+												  <label for="all-second"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 												</div>
 											</div>
 										</li>
@@ -223,14 +223,14 @@ get_header(); ?>
 											<li>Maitinimas:</li>
 											<li>
 												<div class="radio">
-												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="0" checked>
-												  <label for="breakfest-second">Pusryčiai</label>
+												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutes_reiksme'); ?>" checked>
+												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutes_reiksme')): ?><span class="highlight">+ <?php the_field('pirmos_eilutes_reiksme'); ?>€</span><?php endif; ?></label>
 												</div>
-											</li>
+											</li> 
 											<li>
 												<div class="radio">
-												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('viskas_iskaiciuota'); ?>">
-												  <label for="all-second">Viskas įskaičiuota <span class="highlight">+ <?php the_field('viskas_iskaiciuota'); ?> €</span></label>
+												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
+												  <label for="all-second"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 												</div>
 											</li>
 										</ul>
@@ -275,7 +275,7 @@ get_header(); ?>
 										                <span class="input-group-addon">
 										                	<i class="icon icon-adults"></i>
 										                </span>
-										                <select class="form-control" name="adult">
+										                <select class="selectpicker" name="adult">
 										                  <option selected="" disabled="" id="suagusieji" name="suagusieji">Suaugusieji</option>
 										                  <option value="1">1</option>
 										                  <option value="2">2</option>
@@ -289,7 +289,7 @@ get_header(); ?>
 										                <span class="input-group-addon">
 										                	<i class="icon icon-children"></i>
 										                </span>
-										                <select class="form-control" name="children">
+										                <select class="selectpicker" name="children">
 										                  <option selected="" disabled="" id="vaikai" name="vaikai">Vaikai</option>
 										                  <option value="1">1</option>
 										                  <option value="2">2</option>
@@ -306,6 +306,14 @@ get_header(); ?>
 								</div>
 							</div>
 						</form>
+						<script type="text/javascript">
+				        jQuery(document).ready(function ($) {
+					        $('.selectpicker').selectpicker({
+							  style: '',
+							  size: 4
+							}); 
+					    });
+				        </script>
 				</div>
 				<?php endif; ?>
 				
@@ -339,12 +347,12 @@ get_header(); ?>
 							</div>
 							<div class="js-track-change offer-form-second">
 								<div class="radio">
-								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="0" checked>
-								  <label for="breakfest-first">Pusryčiai</label>
+								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="<?php the_field('pirmos_eilutes_reiksme'); ?>" checked>
+								  <label for="breakfest-first"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutes_reiksme')): ?><span class="highlight">+ <?php the_field('pirmos_eilutes_reiksme'); ?>€</span><?php endif; ?></label>
 								</div>
 								<div class="radio">
-								  <input type="radio" id="all-first" name="offer-radio-first" value="<?php the_field('viskas_iskaiciuota'); ?>">
-								  <label for="all-first">Viskas įskaičiuota <span class="highlight">+ <?php the_field('viskas_iskaiciuota'); ?> €</span></label>
+								  <input type="radio" id="all-first" name="offer-radio-first" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
+								  <label for="all-first"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 								</div>
 							</div>
 						</li>
