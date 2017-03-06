@@ -302,23 +302,30 @@ $dates = createDateRangeArray($now, $after);
 			    	<?php endwhile; ?>	    
 				</div>
 
-				<script type="text/javascript">
-					jQuery(document).ready(function($){
-						$('#multiple-items<?php echo $c; ?>').slick({
-						  infinite: false,
-						  slidesToShow: 6,
-						  slidesToScroll: 2,
-						  dots: true,
-						  dotsClass: 'carousel-indicators',
-						  prevArrow: '<a class="left carousel-control" role="button"><i class="icon align"><i class="icon-arrow-left"></i></i></a>',
-						  nextArrow: '<a class="right carousel-control" hrole="button"><i class="icon align"><i class="icon-arrow-right"></i></i></a>'
-						});
-					})
-				</script>
 				<?php endif; ?>
 				<?php $c++; ?>
 			<?php endforeach; ?>
 			<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+						$('.carousel').slick({
+						  infinite: false,
+						  slidesToShow: 6,
+						  slidesToScroll: 2,
+						  dots: true,
+						  lazyLoad: 'progressive',
+						  dotsClass: 'carousel-indicators',
+						  prevArrow: '<a class="left carousel-control" role="button"><i class="icon align"><i class="icon-arrow-left"></i></i></a>',
+						  nextArrow: '<a class="right carousel-control" hrole="button"><i class="icon align"><i class="icon-arrow-right"></i></i></a>'
+						});
+
+						$('.carousel').on('init', function(event, slick){
+							alert('ha');
+						});
+					})
+
+				</script>
 				
 
   	</section>

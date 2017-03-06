@@ -30,23 +30,26 @@ jQuery(document).ready(function( $ ) {
 	$('.carousel-selectors li').each(function(){
 		$(this).click(function(e){
 			var category = $(this).data('category');
+			$('section.favourite-hotels .row.js-show-hide.'+category).find('.slick-active').click();
 			$('.carousel-selectors li').removeClass('active');
 			$(this).addClass('active');
 			e.preventDefault();
 
  //pabandyti loopsa ne rowsuose
 			$('section.favourite-hotels .row.js-show-hide').hide();
-			var category = $(this).data('category');
+			var category = $(this).data('category'); 
 
 			$('section.favourite-hotels .row.js-show-hide.'+category).show();
 
 		})
+						$('section.favourite-hotels .row.js-show-hide').hide();
+						var category = $('.carousel-selectors li:first-child').data('category');
+
+						$('section.favourite-hotels .row.js-show-hide.'+category).show();
+										  // left
 	});
 
-	$('section.favourite-hotels .row.js-show-hide').hide();
-	var category = $('.carousel-selectors li:first-child').data('category');
 
-	$('section.favourite-hotels .row.js-show-hide.'+category).show();
 	/* end of carousel selectors logic */
 
 }); 
