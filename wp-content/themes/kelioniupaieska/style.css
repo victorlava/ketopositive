@@ -4905,6 +4905,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .main-search form .main-search-inputs {
+  display: table;
   padding-top: 17px;
   padding-left: .5em;
   padding-right: .5em;
