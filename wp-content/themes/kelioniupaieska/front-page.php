@@ -255,41 +255,71 @@ $dates = createDateRangeArray($now, $after);
 				</div>
 			</div>
 
-    <!-- #endregion Jssor Slider End -->
-			<?php $c = 0; ?>
-			<?php foreach ($kategorijos as $kategorija): ?>
-				<?php
-					$args = array(
-						'post_type'              => array( 'hotels' ),
-						'post_status'            => array( 'publish' ),
-						'tax_query' => array(
-							array(
-								'taxonomy' => 'kategorija',
-								'field'    => 'slug',
-								'terms'    => $kategorija->slug,
-							),
+		<?php $c = 0; ?>
+		<?php foreach ($kategorijos as $kategorija): ?>
+			<?php
+				$args = array(
+					'post_type'              => array( 'hotels' ),
+					'post_status'            => array( 'publish' ),
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'kategorija',
+							'field'    => 'slug',
+							'terms'    => $kategorija->slug,
 						),
-						'orderby'        => 'rand',
-						'posts_per_page' 		 => 100
-					);
+					),
+					'orderby'        => 'rand',
+					'posts_per_page' 		 => 100
+				);
 
-					// The Query
-					$getHotels = new WP_Query( $args );
-
-				?>
-				<?php if( $getHotels->have_posts() ): ?>
-				<div class="row js-show-hide <?php echo $kategorija->slug; ?>">
-
-		
-					<?php $c++; ?>
+				// The Query
+				$getHotels = new WP_Query( $args );
+			?>
+			<?php if( $getHotels->have_posts() ): ?>
+			<div id="multiple-items<?php echo $c; ?>" class="carousel row js-show-hide <?php echo $kategorija->slug; ?>">
+					<?php while( $getHotels->have_posts() ) : $getHotels->the_post(); ?>			
+			    	<div class="col-md-2">
+			    		<div class="data-block data-block--offer data-block--hotels js-data-<?php the_field('salies_kategorija'); ?>"> 
+							<a href="<?php the_field('nuoroda'); ?>"> 
+								<div class="data-block-image">
+									<img src="<?php the_field('nuotrauka'); ?>">
+								</div>
+								<div class="data-block-info">
+									<h4 class="title"><?php the_title();?></h4>
+									<div class="stars">
+										<ul class="list list--inline">
+											<?php $count = get_field('zvaigzduciu_skaicius');$count = $count * 1;?>
+											<?php for($i=0;$i < $count;$i++): ?>
+												<li><i class="icon icon-star"></i></li>
+											<?php endfor; ?>
+										</ul>
+									</div>
+									<p class="time"><?php the_field('vieta'); ?></p>
+								</div>
+							</a>
+						</div>
+			    	</div>
+			    	<?php endwhile; ?>	    
 				</div>
+
 				<script type="text/javascript">
-			      
-			    </script>
+					jQuery(document).ready(function($){
+						$('#multiple-items<?php echo $c; ?>').slick({
+						  infinite: false,
+						  slidesToShow: 6,
+						  slidesToScroll: 2,
+						  dots: true,
+						  dotsClass: 'carousel-indicators',
+						  prevArrow: '<a class="left carousel-control" role="button"><i class="icon align"><i class="icon-arrow-left"></i></i></a>',
+						  nextArrow: '<a class="right carousel-control" hrole="button"><i class="icon align"><i class="icon-arrow-right"></i></i></a>'
+						});
+					})
+				</script>
 				<?php endif; ?>
-				<?php break; ?>
+				<?php $c++; ?>
 			<?php endforeach; ?>
 			<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+				
 
   	</section>
 
