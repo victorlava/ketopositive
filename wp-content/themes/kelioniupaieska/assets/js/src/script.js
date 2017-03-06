@@ -35,18 +35,18 @@ jQuery(document).ready(function( $ ) {
 			e.preventDefault();
 
  //pabandyti loopsa ne rowsuose
-			$('section.favourite-hotels .row.js-show-hide .carousel').hide();
+			$('section.favourite-hotels .row.js-show-hide').hide();
 			var category = $(this).data('category');
 
-			$('section.favourite-hotels .row.js-show-hide.'+category+' > .carousel').show();
+			$('section.favourite-hotels .row.js-show-hide.'+category).show();
 
 		})
 	});
 
-	$('section.favourite-hotels .row.js-show-hide .carousel').hide();
+	$('section.favourite-hotels .row.js-show-hide').hide();
 	var category = $('.carousel-selectors li:first-child').data('category');
 
-	$('section.favourite-hotels .row.js-show-hide.'+category+' > .carousel').show();
+	$('section.favourite-hotels .row.js-show-hide.'+category).show();
 	/* end of carousel selectors logic */
 
 }); 

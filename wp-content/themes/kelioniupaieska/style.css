@@ -5775,7 +5775,11 @@ textarea {
   height: 14px;
 }
 
-.carousel .carousel-indicators li.active {
+.carousel .carousel-indicators li button {
+  display: none;
+}
+
+.carousel .carousel-indicators li.active, .carousel .carousel-indicators li.slick-active {
   width: 14px;
   height: 14px;
   background: transparent;
@@ -5784,6 +5788,7 @@ textarea {
 .carousel .carousel-control {
   opacity: 1;
   width: 100px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -5832,6 +5837,7 @@ textarea {
 }
 
 .carousel .carousel-control.left {
+  z-index: 5;
   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
