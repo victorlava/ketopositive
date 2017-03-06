@@ -17,7 +17,7 @@ get_header(); ?>
 		                <span class="input-group-addon">
 		                	<i class="icon icon-location"></i>
 		                </span>
-		                <select class="form-control">
+		                <select class="selectpicker" title="Visi">
 		                  <option selected disabled>Visi kurortai</option>
 		                  <option value="turkija">Turkija</option>
 		                  <option value="egiptas">Egiptas</option>
@@ -29,7 +29,7 @@ get_header(); ?>
 		                <span class="input-group-addon">
 		                	<i class="icon icon-adults"></i>
 		                </span>
-		                <select class="form-control">
+		                <select class="selectpicker">
 		                  <option selected disabled>Suaugusieji</option>
 		                  <option value="1">1</option>
 		                  <option value="2">2</option>
@@ -41,7 +41,7 @@ get_header(); ?>
 		                <span class="input-group-addon">
 		                	<i class="icon icon-children"></i>
 		                </span>
-		                <select class="form-control">
+		                <select class="selectpicker">
 		                  <option selected disabled>Vaikai</option>
 		                  <option value="1">1</option>
 		                  <option value="2">2</option>
@@ -53,7 +53,7 @@ get_header(); ?>
 		                <span class="input-group-addon">
 		                	<i class="icon icon-date"></i>
 		                </span>
-		                <select class="form-control">
+		                <select class="selectpicker">
 		                  <option selected disabled>Data</option>
 		                  <option value="1">2015-05-01</option>
 		                  <option value="2">2015-05-02</option>
@@ -66,6 +66,16 @@ get_header(); ?>
 		        	<input type="submit" class="form-control button button--primary" value="Ieškoti">
 	        	</div><!-- .main-search-submit -->
 	        </form>
+	        <script type="text/javascript">
+	        jQuery(document).ready(function ($) {
+		        $('.selectpicker').selectpicker({
+				  style: '',
+				  size: 4
+				}); 
+		    });
+
+
+	        </script>
 		 </div>      
   	</div><!-- .main-search -->
 
@@ -169,6 +179,7 @@ get_header(); ?>
 				</div>
 			</div>
 
+    <!-- #endregion Jssor Slider End -->
 			<?php $c = 0; ?>
 			<?php foreach ($kategorijos as $kategorija): ?>
 				<?php
@@ -188,84 +199,23 @@ get_header(); ?>
 
 					// The Query
 					$getHotels = new WP_Query( $args );
+
 				?>
 				<?php if( $getHotels->have_posts() ): ?>
 				<div class="row js-show-hide <?php echo $kategorija->slug; ?>">
 
-						<div id="hotel-carousels<?php echo $c; ?>" class="carousel slide" data-ride="carousel">
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner" role="listbox">
-
-						  		<?php $b = 1; ?>
-							    <?php while( $getHotels->have_posts() ) : $getHotels->the_post(); ?>
-							    
-								    <?php if ($b % 6 === 1): // Every sixt item, we close the div and start it again. ?>
-										<div class="item<?php if($b == 1){echo ' active';}?>">
-									<?php endif; ?>
-
-								    	<div class="col-md-2">
-								    		<div class="data-block data-block--offer data-block--hotels js-data-<?php the_field('salies_kategorija'); ?>"> 
-												<a href="<?php the_field('nuoroda'); ?>"> 
-													<div class="data-block-image">
-														<img src="<?php the_field('nuotrauka'); ?>">
-													</div>
-													<div class="data-block-info">
-														<h4 class="title"><?php the_title();?></h4>
-														<div class="stars">
-															<ul class="list list--inline">
-																<?php $count = get_field('zvaigzduciu_skaicius');$count = $count * 1;?>
-																<?php for($i=0;$i < $count;$i++): ?>
-																	<li><i class="icon icon-star"></i></li>
-																<?php endfor; ?>
-															</ul>
-														</div>
-														<p class="time"><?php the_field('vieta'); ?></p>
-													</div>
-												</a>
-											</div>
-								    	</div>
-								    
-								   	<?php if ($b % 6 === 0): // Every sixt item, we close the div and start it again. ?>
-										</div>
-									<?php endif; ?>
-
-								    <?php $b = $b + 1; ?>
-								<?php endwhile; ?>
-					
-						  </div>
-
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-						  	<?php $b = 0; $a = 0; ?>
-						  	<?php while( $getHotels->have_posts() ) : $getHotels->the_post(); ?>
-							  	<?php if ($b % 6 === 0): // Every sixt item, we close the div and start it again. ?>
-							  		<li data-target="#hotel-carousels<?php echo $c; ?>" data-slide-to="<?php echo $a; ?>" class="<?php if($b == 0){echo ' active';}?>"></li>
-							  		<?php $a++; ?>
-							  	<?php endif; ?>
-							  	<?php $b++; ?>
-						  	<?php endwhile; ?>
-						  </ol>
-
-						  <!-- Controls -->
-						  <a class="left carousel-control" href="#hotel-carousels<?php echo $c; ?>" role="button" data-slide="prev">
-						    <i class="icon align">
-						    	<i class="icon-arrow-left"></i>
-						    </i>
-						  </a>
-						  <a class="right carousel-control" href="#hotel-carousels<?php echo $c; ?>" role="button" data-slide="next">
-						     <i class="icon align">
-						     	<i class="icon-arrow-right"></i>
-						     </i>
-						  </a>
-						</div>
+		
 					<?php $c++; ?>
 				</div>
 				<script type="text/javascript">
-					jQuery(document).ready(function( $ ) {
-						$('#hotel-carousels<?php echo $c; ?>').carousel();
-					});
-				</script>
+			        jQuery(document).ready(function ($) {
+			        	$('#hotel-carousels<?php echo $c; ?>').slick({
+						      
+						  });
+			        });
+			    </script>
 				<?php endif; ?>
+				<?php break; ?>
 			<?php endforeach; ?>
 			<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 

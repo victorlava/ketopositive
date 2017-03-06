@@ -25,14 +25,6 @@ jQuery(document).ready(function( $ ) {
 	});
 
 
-	$('.input-group--select select').each(function(){
-		$(this).focus(function() {
-		        $(this).parent().find('.input-group-addon').addClass('selected');
-		      })
-		      .blur(function() {
-		        $(this).parent().find('.input-group-addon').removeClass('selected');
-		      });
-	})
 
 	/* carousel selectors logic */
 	$('.carousel-selectors li').each(function(){
