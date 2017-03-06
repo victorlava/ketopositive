@@ -4102,7 +4102,12 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days {
   padding-bottom: 3px;
-  text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days {
+    text-align: right;
+  }
 }
 
 @media screen and (max-width: 768px) {
