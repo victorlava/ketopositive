@@ -284,11 +284,7 @@ $dates = createDateRangeArray($now, $after);
 					<?php $c++; ?>
 				</div>
 				<script type="text/javascript">
-			        jQuery(document).ready(function ($) {
-			        	$('#hotel-carousels<?php echo $c; ?>').slick({
-						      
-						  });
-			        });
+			      
 			    </script>
 				<?php endif; ?>
 				<?php break; ?>
