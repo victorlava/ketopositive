@@ -26,6 +26,7 @@ get_header(); ?>
 					     'hide_empty' => false,
 					     'meta_key' => 'vieta_eileje',
 					     'orderby'	  => 'vieta_eileje',
+					     'order'	=> "ASC",
 					     'parent'    => 0
 				) ); 
 			?>
