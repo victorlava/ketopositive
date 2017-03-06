@@ -5719,6 +5719,10 @@ textarea {
   display: table;
 }
 
+.carousel.js-show-hide {
+  transition: all 0.3s ease;
+}
+
 .carousel.carousel--simple .carousel-control {
   background: transparent !important;
   width: 60px;
