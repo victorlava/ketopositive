@@ -4102,6 +4102,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone .work-days {
   padding-bottom: 3px;
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {
@@ -4459,8 +4460,7 @@ since your site is should be mostly composed of tiny modules.
   text-align: center;
   position: relative;
   z-index: 1;
-  border-bottom: 3px solid #000;
-  border-color: transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .nav.nav--main li:first-child {
@@ -4515,7 +4515,7 @@ since your site is should be mostly composed of tiny modules.
   content: " ";
   position: absolute;
   right: -10px;
-  top: 4px;
+  top: 5px;
   display: block;
   background-image: url(assets/img/src/sprites.png);
   background-position: -333px -122px;
@@ -4525,7 +4525,7 @@ since your site is should be mostly composed of tiny modules.
 
 @media screen and (min-width: 992px) {
   .nav.nav--secondary li.dropdown .dropdown-toggle:before {
-    right: -27px;
+    right: -20px;
   }
 }
 
@@ -4887,7 +4887,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .main-search form {
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   display: table;
   border-top-left-radius: 4px;
@@ -4911,6 +4911,24 @@ section.email .email-wrapper .email-form form .email-submit input {
   }
 }
 
+.main-search form .main-search-inputs .input-group--select:hover .input-group-addon {
+  border-left: 1px solid #ff6138;
+  border-top: 1px solid #ff6138;
+  border-bottom: 1px solid #ff6138;
+}
+
+.main-search form .main-search-inputs .input-group--select:hover .btn {
+  border-top: 1px solid #ff6138;
+  border-bottom: 1px solid #ff6138;
+  border-right: 1px solid #ff6138;
+}
+
+.main-search form .main-search-inputs .input-group--select:hover .dropdown-menu.inner {
+  border-left: 1px solid #ff6138 !important;
+  border-bottom: 1px solid #ff6138 !important;
+  border-right: 1px solid #ff6138 !important;
+}
+
 .main-search form .main-search-inputs > div {
   float: left;
   width: 100%;
@@ -4920,8 +4938,11 @@ section.email .email-wrapper .email-form form .email-submit input {
 
 @media screen and (min-width: 992px) {
   .main-search form .main-search-inputs > div {
-    width: 25%;
+    width: 23.3333%;
     margin-bottom: 0;
+  }
+  .main-search form .main-search-inputs > div:first-child {
+    width: 30%;
   }
 }
 
@@ -4938,9 +4959,10 @@ section.email .email-wrapper .email-form form .email-submit input {
   padding: 13px;
   position: absolute;
   height: 44px;
+  z-index: 5;
 }
 
-.main-search form .main-search-inputs > div select {
+.main-search form .main-search-inputs .btn {
   background: #fff8f3;
   border-radius: 0;
   border: 1px solid #e6d3c5;
@@ -4949,10 +4971,105 @@ section.email .email-wrapper .email-form form .email-submit input {
   padding: 12px 0px;
   padding-left: 40px;
   box-shadow: none;
+  float: none;
+  position: static;
+  width: 100%;
+  font-size: 14px;
+  color: #585454;
 }
 
-.main-search form .main-search-inputs > div select:focus, .main-search form .main-search-inputs > div select:active {
-  border-color: #ff6138;
+.main-search form .main-search-inputs .btn .bs-caret {
+  position: absolute;
+  right: 20px;
+}
+
+.main-search form .main-search-inputs .btn .bs-caret .caret {
+  border: none !important;
+}
+
+.main-search form .main-search-inputs .btn .bs-caret:after {
+  content: " ";
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  display: block;
+  background-image: url(assets/img/src/sprites.png);
+  background-position: -333px -122px;
+  width: 10px;
+  height: 7px;
+}
+
+.main-search form .main-search-inputs .dropdown-menu.open {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+
+.main-search form .main-search-inputs .dropdown-menu.open .dropdown-menu.inner {
+  background-color: #fff8f3 !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  border-top: none !important;
+  box-shadow: none !important;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  top: -1px;
+  border: 1px solid #e6d3c5;
+}
+
+.main-search form .main-search-inputs .dropdown-menu.open .dropdown-menu.inner .disabled {
+  display: none;
+}
+
+.main-search form .main-search-inputs .dropdown-menu.open .dropdown-menu.inner a {
+  display: block;
+  font-weight: normal;
+  color: #585454;
+  white-space: nowrap;
+  border-top: 1px solid #e6d3c5;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-search form .main-search-inputs .dropdown-menu.open .dropdown-menu.inner a:hover {
+  background: #faf1ea;
+  color: #ff6138;
+  cursor: pointer;
+}
+
+.main-search form .main-search-inputs .dropdown-menu.open {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.main-search form .main-search-inputs .dropdown-menu.open .dropdown-menu.inner {
+  background-color: #fff8f3 !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+.main-search form .main-search-inputs .bootstrap-select {
+  width: auto !important;
+  white-space: initial !important;
+  vertical-align: initial !important;
+  position: relative !important;
+  box-shadow: 0 3px 0 #fbf5f1;
+}
+
+.main-search form .main-search-inputs select {
+  display: none;
 }
 
 .main-search form .main-search-submit {
@@ -6425,6 +6542,12 @@ body.home .carousel-inner {
 
 body.home .carousel .carousel-indicators {
   bottom: -20px;
+}
+
+body.home #main {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: initial;
 }
 
 body.page-template-template-iframe .article {

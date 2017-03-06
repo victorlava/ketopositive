@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-position: "
+			],
+			[
+				"js",
+				"js-change-price"
+			],
+			[
 				"pad",
 				"padding: "
 			],
@@ -248,10 +256,6 @@
 				"half-section"
 			],
 			[
-				"back",
-				"background-size"
-			],
-			[
 				"part",
 				"partners-wrapper"
 			],
@@ -275,23 +279,7 @@
 			"file": "wp-content/themes/kelioniupaieska/single-offer.php",
 			"settings":
 			{
-				"buffer_size": 15004,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/kelioniupaieska/functions.php",
-			"settings":
-			{
-				"buffer_size": 13121,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
-			"settings":
-			{
-				"buffer_size": 3263,
+				"buffer_size": 15535,
 				"line_ending": "Windows"
 			}
 		},
@@ -299,24 +287,40 @@
 			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
 			"settings":
 			{
-				"buffer_size": 4824,
+				"buffer_size": 5037,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_carousel.scss",
+			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
 			"settings":
 			{
-				"buffer_size": 3068,
+				"buffer_size": 3361,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_price-wrapper.scss",
+			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
 			"settings":
 			{
-				"buffer_size": 268,
+				"buffer_size": 1733,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/scss/03-pages/_home.scss",
+			"settings":
+			{
+				"buffer_size": 211,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/kelioniupaieska/header.php",
+			"settings":
+			{
+				"buffer_size": 6944,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -344,29 +348,36 @@
 	},
 	"file_history":
 	[
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/front-page.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/header.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_data-block.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_sidebar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_article.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_header.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_email.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single-offer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/functions.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_carousel.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_price-wrapper.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/header.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/main.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/front-page.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/.gitignore",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/template-kontaktai.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_header.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/index.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/page.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_new.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/functions.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/style.css",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/template-iframe.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_iframe.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/plugins/official-mailerlite-sign-up-forms/include/templates/forms/custom_form.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/email.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_email.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/js/src/script.js",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/main.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentysixteen/functions.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentysixteen/inc/customizer.php",
 		"/C/Users/Works/Downloads/demo_iframe/demo_iframe/demo_iframe.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single-offer.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/comments.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_input.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/04-base/_bootstrap.scss",
@@ -375,7 +386,6 @@
 		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify/sidebar-single-resume.php",
 		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/plugins/wp-job-manager/wp-job-manager-functions.php",
 		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify/job-filters-flat.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_offer.scss",
 		"/C/Windows/System32/drivers/etc/hosts",
@@ -396,9 +406,6 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/singlse-offasders.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/new.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single-branch.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_sidebar.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_data-block.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_article.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/single.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/content.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/news.php",
@@ -420,7 +427,6 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/Gruntfile.js",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/02-partials/_main.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/02-partials/_footer.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_carousel.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_favourite-hotels.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/css/sprites.css",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/sprites.scss",
@@ -429,7 +435,6 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/js/src/bootstrap.min.js",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/js/src/script.js",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-form.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/header.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/footer.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/style.css",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_offer-bar.scss",
@@ -470,8 +475,7 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_carousel.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_favourite-hotels.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_button.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_footer.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_data-block.scss"
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_footer.scss"
 	],
 	"find":
 	{
@@ -493,6 +497,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"420px",
+			"min-height",
+			"offer-form-second",
+			"last-child",
+			"kaina",
+			"offer-form-second",
+			"219",
+			"80%",
 			"label",
 			"long",
 			"form-long",
@@ -612,15 +624,7 @@
 			"l-subheader",
 			"mobileNav",
 			"window.mobileNavWidth",
-			"group-countr",
-			"border-radius",
-			"@include box-shadow(0);",
-			"1.67",
-			"line-height",
-			"box-shadow",
-			"content:",
-			"content:\"\\",
-			"transition"
+			"group-countr"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -715,7 +719,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -723,15 +727,15 @@
 					"file": "wp-content/themes/kelioniupaieska/single-offer.php",
 					"settings":
 					{
-						"buffer_size": 15004,
+						"buffer_size": 15535,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11312,
-								11312
+								11774,
+								11774
 							]
 						],
 						"settings":
@@ -742,146 +746,26 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 662.0,
-						"translation.y": 5641.0,
+						"translation.x": 246.0,
+						"translation.y": 5575.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/kelioniupaieska/functions.php",
-					"settings":
-					{
-						"buffer_size": 13121,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 114.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
-					"settings":
-					{
-						"buffer_size": 3263,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2267,
-								2267
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2318.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
 					"settings":
 					{
-						"buffer_size": 4824,
+						"buffer_size": 5037,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4105,
-								4059
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4104.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_carousel.scss",
-					"settings":
-					{
-						"buffer_size": 3068,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								369,
-								369
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 114.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_price-wrapper.scss",
-					"settings":
-					{
-						"buffer_size": 268,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								146,
-								146
+								137,
+								137
 							]
 						],
 						"settings":
@@ -894,6 +778,125 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
+					"settings":
+					{
+						"buffer_size": 3361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								352,
+								352
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
+					"settings":
+					{
+						"buffer_size": 1733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/kelioniupaieska/scss/03-pages/_home.scss",
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/kelioniupaieska/header.php",
+					"settings":
+					{
+						"buffer_size": 6944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4982,
+								4982
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2340.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
