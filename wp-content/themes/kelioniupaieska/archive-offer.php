@@ -22,9 +22,10 @@ get_header(); ?>
  			$currentTaxonomy = strtolower(single_term_title("", FALSE));
 
 		 	$months = get_terms( array(
-					   'taxonomy' => 'menesis',
+					     'taxonomy' => 'menesis',
 					     'hide_empty' => false,
-					     'order'	  => 'DESC',
+					     'meta_key' => 'vieta_eileje',
+					     'orderby'	  => 'vieta_eileje',
 					     'parent'    => 0
 				) ); 
 			?>
