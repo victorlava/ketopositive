@@ -7,21 +7,51 @@
  
 get_header(); ?>
 
+<?php 
+	function createDateRangeArray($strDateFrom,$strDateTo){
+    // takes two dates formatted as YYYY-MM-DD and creates an
+    // inclusive array of the dates between the from and to dates.
+
+    // could test validity of dates here but I'm already doing
+    // that in the main script
+
+    $aryRange=array();
+
+    $iDateFrom=mktime(1,0,0,substr($strDateFrom,5,2),     substr($strDateFrom,8,2),substr($strDateFrom,0,4));
+    $iDateTo=mktime(1,0,0,substr($strDateTo,5,2),     substr($strDateTo,8,2),substr($strDateTo,0,4));
+
+    if ($iDateTo>=$iDateFrom)
+    {
+        array_push($aryRange,date('Y-m-d',$iDateFrom)); // first entry
+        while ($iDateFrom<$iDateTo)
+        {
+            $iDateFrom+=86400; // add 24 hours
+            array_push($aryRange,date('Y-m-d',$iDateFrom));
+        }
+    }
+    return $aryRange;
+}
+$now = date('Y-m-d');
+$after = date('Y-m-d', strtotime("+3 month"));
+$dates = createDateRangeArray($now, $after);
+
+?>
+
   <main id="main"> 
 
   	<div class="main-search">
 		<div class="container">
-	        <form role="form">
+	        <form action="http://kelioniupaieskawp.victorlava.com/tez-tour-keliones/" method="GET" role="form">
 	        	<div class="main-search-inputs col-md-9">
 		            <div class="input-group input-group--select">
 		                <span class="input-group-addon">
 		                	<i class="icon icon-location"></i>
 		                </span>
-		                <select class="selectpicker" title="Visi">
+		                <select class="selectpicker" name="city_id" title="Visi">
 		                  <option selected disabled>Visi kurortai</option>
-		                  <option value="turkija">Turkija</option>
-		                  <option value="egiptas">Egiptas</option>
-		                  <option value="bulgarija">Bulgarija</option>
+		                  <option value="2175">Turkija</option>
+		                  <option value="2223">Egiptas</option> 
+		                  <option value="2208">Bulgarija</option>
 		                </select> 
 		            </div>
 
@@ -29,11 +59,14 @@ get_header(); ?>
 		                <span class="input-group-addon">
 		                	<i class="icon icon-adults"></i>
 		                </span>
-		                <select class="selectpicker">
+		                <select class="selectpicker" name="adults">
 		                  <option selected disabled>Suaugusieji</option>
 		                  <option value="1">1</option>
 		                  <option value="2">2</option>
 		                  <option value="3">3</option>
+		                  <option value="4">4</option>
+		                  <option value="5">5</option>
+		                  <option value="6">6</option>
 		                </select> 
 		            </div>
 
@@ -41,11 +74,12 @@ get_header(); ?>
 		                <span class="input-group-addon">
 		                	<i class="icon icon-children"></i>
 		                </span>
-		                <select class="selectpicker">
+		                <select class="selectpicker" name="children">
 		                  <option selected disabled>Vaikai</option>
 		                  <option value="1">1</option>
 		                  <option value="2">2</option>
 		                  <option value="3">3</option>
+		                  <option value="4">4</option>
 		                </select> 
 		            </div>
 
@@ -53,28 +87,70 @@ get_header(); ?>
 		                <span class="input-group-addon">
 		                	<i class="icon icon-date"></i>
 		                </span>
-		                <select class="selectpicker">
+		                <select class="selectpicker" name="date">
 		                  <option selected disabled>Data</option>
-		                  <option value="1">2015-05-01</option>
-		                  <option value="2">2015-05-02</option>
-		                  <option value="3">2015-05-03</option>
+						  <?php foreach($dates as $date):?>
+		                  <option value="<?php echo $date; ?>"><?php echo $date; ?></option>
+		              	  <?php endforeach; ?>
 		                </select> 
 		            </div>
 	            </div><!-- .main-search-inputs -->
 
 	            <div class="main-search-submit col-md-3">
-		        	<input type="submit" class="form-control button button--primary" value="Ieškoti">
+		        	<a href="#" class="js-add-url form-control button button--primary">Ieškoti</a>
 	        	</div><!-- .main-search-submit -->
 	        </form>
 	        <script type="text/javascript">
 	        jQuery(document).ready(function ($) {
+
+	        	function form_url(base){
+	        		$('.js-add-url').attr('href', base);
+	        	}
+
+	 
+	        	//http://kelioniupaieskawp.victorlava.com/tez-tour-keliones/?wurl=/teztour_search/search/departure_date:2017-03-18/departure_airport:VNO/duration:7/city_id:1688/adults:2/children:4/childage:5%7C20
+	        	
+	        	var base_url = 'http://kelioniupaieskawp.victorlava.com/tez-tour-keliones/?wurl=/teztour_search/search/',
+		        	city_id = 2208,
+		        	departure_airport = 'VNO',
+		        	departure_date = '2017-06-06',
+		        	adults = 2,
+		        	children = 0,
+		        	duration = '2-7';
+
+	        	var full_url = base_url + 'city_id:' + city_id + '/departure_airport:' + 
+	        				departure_airport + '/departure_date:' + departure_date + '/adults:' + adults + '/children:' +
+	        				children + '/childage:5%7C20' + '/duration:' + duration;
+
+	        	form_url(full_url);
+
+	        	$('.selectpicker').on('change', function(){
+	        		var value = $(this).val(),
+	        			name = $(this).attr('name');
+	        		if(name == 'city_id'){
+	        			city_id = value;
+	        		}
+	        		else if(name == 'adults'){
+	        			adults = value;
+	        		}
+	        		else if(name == 'children'){
+	        			children = value;
+	        		}
+	        		else if(name == 'date'){
+	        			departure_date = value;
+	        		}
+	        		full_url = base_url + 'city_id:' + city_id + '/departure_airport:' + 
+	        				departure_airport + '/departure_date:' + departure_date + '/adults:' + adults + '/children:' +
+	        				children + '/childage:5%7C20' + '/duration:' + duration;
+
+	        		form_url(full_url);
+	        	});
+
 		        $('.selectpicker').selectpicker({
 				  style: '',
-				  size: 4
+				  size: 6
 				}); 
 		    });
-
-
 	        </script>
 		 </div>      
   	</div><!-- .main-search -->
