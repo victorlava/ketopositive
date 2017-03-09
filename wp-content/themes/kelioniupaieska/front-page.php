@@ -8,6 +8,17 @@
 get_header(); ?>
 
 <?php 
+
+	$destinations = file_get_contents('https://litamicus.waavo.com/webservice/travels_search_form/destinations');
+	$destinations = json_decode($destinations);
+
+	$last_minute = file_get_contents('https://litamicus.waavo.com/webservice/travels_lastminutes/prices/');
+	$last_minute = json_decode($last_minute);
+
+	//echo "<pre>";
+	//print_R($last_minute);
+	//echo "</pre>";
+
 	function createDateRangeArray($strDateFrom,$strDateTo){
     // takes two dates formatted as YYYY-MM-DD and creates an
     // inclusive array of the dates between the from and to dates.
@@ -49,9 +60,9 @@ $dates = createDateRangeArray($now, $after);
 		                </span>
 		                <select class="selectpicker" name="city_id" title="Visi">
 		                  <option selected disabled>Visi kurortai</option>
-		                  <option value="2175">Turkija</option>
-		                  <option value="2223">Egiptas</option> 
-		                  <option value="2208">Bulgarija</option>
+		                  <?php foreach($destinations->data as $destination): ?>
+		                  <option value="<?php echo $destination->id; ?>"><?php echo $destination->full_name; ?></option>
+		              	  <?php endforeach; ?>
 		                </select> 
 		            </div>
 
@@ -87,12 +98,8 @@ $dates = createDateRangeArray($now, $after);
 		                <span class="input-group-addon">
 		                	<i class="icon icon-date"></i>
 		                </span>
-		                <select class="selectpicker" name="date">
-		                  <option selected disabled>Data</option>
-						  <?php foreach($dates as $date):?>
-		                  <option value="<?php echo $date; ?>"><?php echo $date; ?></option>
-		              	  <?php endforeach; ?>
-		                </select> 
+		                <input type="text" class="datepicker btn" value="Data" name="date">
+		                <span class="bs-caret"><span class="caret"></span></span>
 		            </div>
 	            </div><!-- .main-search-inputs -->
 
@@ -106,6 +113,23 @@ $dates = createDateRangeArray($now, $after);
 	        	function form_url(base){
 	        		$('.js-add-url').attr('href', base);
 	        	}
+
+
+	        	$('.datepicker').pickadate({
+	        		monthsFull: ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Gegužė', 'Birželis', 'Liepa', 'Rugpjūtis', 'Rugsėjis', 'Spalis', 'Lapkritis', 'Gruodis'],
+					weekdaysShort: ['Pr', 'An', 'Tr', 'Ke', 'Pe', 'Še', 'Se'],
+					format: 'yyyy-mm-dd',
+					today: '',
+					clear: '',
+					close: '',
+					onOpen: function(){
+						$('.main-search').css('z-index', 55);
+					},
+					onClose: function(){
+						setTimeout(function(){ $('.main-search').css('z-index', 0); }, 3000);
+					}
+
+	        	});
 
 	 
 	        	//http://kelioniupaieskawp.victorlava.com/tez-tour-keliones/?wurl=/teztour_search/search/departure_date:2017-03-18/departure_airport:VNO/duration:7/city_id:1688/adults:2/children:4/childage:5%7C20
@@ -310,14 +334,24 @@ $dates = createDateRangeArray($now, $after);
 				<script type="text/javascript">
 					jQuery(document).ready(function($){
 						$('.carousel').slick({
-						  infinite: false,
+						  infinite: true,
 						  slidesToShow: 6,
 						  slidesToScroll: 2,
 						  dots: true,
 						  lazyLoad: 'progressive',
 						  dotsClass: 'carousel-indicators',
 						  prevArrow: '<a class="left carousel-control" role="button"><i class="icon align"><i class="icon-arrow-left"></i></i></a>',
-						  nextArrow: '<a class="right carousel-control" hrole="button"><i class="icon align"><i class="icon-arrow-right"></i></i></a>'
+						  nextArrow: '<a class="right carousel-control" hrole="button"><i class="icon align"><i class="icon-arrow-right"></i></i></a>',
+						  responsive: [
+						    {
+						      breakpoint: 994,
+						      settings: 'unslick' 
+						    }
+			
+						    // You can unslick at a given breakpoint now by adding:
+						    // settings: "unslick"
+						    // instead of a settings object
+						  ]
 						});
 
 						$('.carousel').on('init', function(event, slick){
