@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"trans",
+				"transition: "
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"dep",
+				"departure_date"
+			],
+			[
+				"month",
+				"months"
+			],
+			[
 				"back",
 				"background-position: "
 			],
@@ -276,51 +292,19 @@
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/kelioniupaieska/single-offer.php",
+			"file": "/C/Windows/System32/drivers/etc/hosts",
 			"settings":
 			{
-				"buffer_size": 15535,
+				"buffer_size": 2106,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
+			"file": "wp-content/themes/kelioniupaieska/front-page.php",
 			"settings":
 			{
-				"buffer_size": 5037,
+				"buffer_size": 12638,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
-			"settings":
-			{
-				"buffer_size": 3361,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
-			"settings":
-			{
-				"buffer_size": 1733,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/kelioniupaieska/scss/03-pages/_home.scss",
-			"settings":
-			{
-				"buffer_size": 211,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/kelioniupaieska/header.php",
-			"settings":
-			{
-				"buffer_size": 6944,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -348,24 +332,31 @@
 	},
 	"file_history":
 	[
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/archive-offer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/functions.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_carousel.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/js/src/script.js",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single-offer.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_input.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/02-partials/_navbar.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/index.php",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/front-page.php",
+		"/C/Users/Works/Downloads/carousel-slider.slider/with-jquery.html",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_header.scss",
+		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_home.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/header.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_data-block.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_sidebar.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_article.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_header.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_email.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single-offer.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/functions.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_carousel.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_price-wrapper.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/header.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/main.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/front-page.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/.gitignore",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/template-kontaktai.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/index.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/page.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/single.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_new.scss",
@@ -374,27 +365,22 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_iframe.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/plugins/official-mailerlite-sign-up-forms/include/templates/forms/custom_form.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/email.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/js/src/script.js",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentysixteen/functions.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentysixteen/inc/customizer.php",
 		"/C/Users/Works/Downloads/demo_iframe/demo_iframe/demo_iframe.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/comments.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_input.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/04-base/_bootstrap.scss",
 		"/E/Vagrant/airwood/motorent.dev/partials/header.php",
 		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify-classic/page-submission.php",
 		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify/sidebar-single-resume.php",
 		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/plugins/wp-job-manager/wp-job-manager-functions.php",
 		"/E/Vagrant/FTP/ieska.lt/public_html/wp-content/themes/jobify/job-filters-flat.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_offer.scss",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Users/Works/Desktop/wp-config.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/footer.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/email.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/archive-offer.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/partials/menu.php",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_home.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/functions.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/archive-offers.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/03-pages/_offers.scss",
@@ -430,7 +416,6 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/01-components/_favourite-hotels.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/css/sprites.css",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/sprites.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/scss/02-partials/_navbar.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/twentyfifteen/header.php",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/assets/js/src/bootstrap.min.js",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/wp-content/themes/kelioniupaieska/js/src/script.js",
@@ -474,12 +459,11 @@
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/04-base/_fonts.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_carousel.scss",
 		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_favourite-hotels.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_button.scss",
-		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/02-partials/_footer.scss"
+		"/E/Vagrant/airwood/kelioniupaieska.dev/scss/01-components/_button.scss"
 	],
 	"find":
 	{
-		"height": 118.0
+		"height": 144.0
 	},
 	"find_in_files":
 	{
@@ -497,6 +481,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"active",
+			"secondary",
+			".carousel",
+			".active",
+			"left",
+			"dropdown-menu",
+			"min-width",
+			"form",
+			"value=\"<?php the_field('pirmos_eilutes_reiksme'); ?>",
+			"value=\"<?php the_field('pirmos_eilutes_reiksme'); ?>\"",
+			"<?php the_field('pirmos_eilutes_reiksme'); ?>",
+			"<?php the_field('pirmos_eilutes_reiksme'); ?>€",
+			"<?php the_field('antros_eilutės_reiksmė'); ?>",
+			"offer-form-second",
+			":before",
+			".work-days",
+			"input-group",
+			"input-group--select",
+			"input-group-btn",
+			".btn",
 			"420px",
 			"min-height",
 			"offer-form-second",
@@ -604,27 +608,7 @@
 			"max-wid",
 			"catt/",
 			"cat/",
-			"cat/([^/]+)/(feed|rdf|rss|rss2|atom)/?$",
-			"cat/",
-			"cat",
-			"kategorija",
-			"cat",
-			"item/",
-			"cat",
-			"cat/",
-			"cat/4",
-			"cat/",
-			".w-iconbox.size_small .w-iconbox-title",
-			".w-iconbox.iconpos_top",
-			"kategorija",
-			"cat/",
-			"cat",
-			"vieta",
-			"cat/",
-			"l-subheader",
-			"mobileNav",
-			"window.mobileNavWidth",
-			"group-countr"
+			"cat/([^/]+)/(feed|rdf|rss|rss2|atom)/?$"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -632,6 +616,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"<?php the_field('pirmos_eilutes_reiksme'); ?>€",
+			"<?php the_field('pirmos_eilutes_reiksme'); ?>",
+			"<?php the_field('antros_eilutės_reiksmė'); ?>€",
 			"../",
 			"..",
 			"./",
@@ -719,23 +706,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/kelioniupaieska/single-offer.php",
+					"file": "/C/Windows/System32/drivers/etc/hosts",
 					"settings":
 					{
-						"buffer_size": 15535,
+						"buffer_size": 2106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11774,
-								11774
+								2081,
+								2081
 							]
 						],
 						"settings":
@@ -743,148 +730,28 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
-						"translation.x": 246.0,
-						"translation.y": 5575.0,
+						"translation.x": 0.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_nav.scss",
+					"file": "wp-content/themes/kelioniupaieska/front-page.php",
 					"settings":
 					{
-						"buffer_size": 5037,
+						"buffer_size": 12638,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								137,
-								137
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_offer-form.scss",
-					"settings":
-					{
-						"buffer_size": 3361,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								352,
-								352
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/kelioniupaieska/scss/01-components/_main-search.scss",
-					"settings":
-					{
-						"buffer_size": 1733,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								168,
-								168
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 108.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/kelioniupaieska/scss/03-pages/_home.scss",
-					"settings":
-					{
-						"buffer_size": 211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								206,
-								206
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wp-content/themes/kelioniupaieska/header.php",
-					"settings":
-					{
-						"buffer_size": 6944,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4982,
-								4982
+								11278,
+								11278
 							]
 						],
 						"settings":
@@ -896,7 +763,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2340.0,
+						"translation.y": 4660.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -910,7 +777,7 @@
 	},
 	"input":
 	{
-		"height": 36.0
+		"height": 42.0
 	},
 	"layout":
 	{
