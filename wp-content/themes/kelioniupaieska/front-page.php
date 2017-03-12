@@ -147,7 +147,9 @@ $dates = createDateRangeArray($now, $after);
 					dates = [];
 					<?php foreach($destination->dates as $date): //looping through destination dates and formin a nice array of dates ?> 
 						<?php if($i==0): ?> 
-							dates.push({from: [yyyy,mm,dd], to: [yyyyMax,mm,dd]});
+							dates.push({from: [yyyy,mm-1,dd], to: [yyyyMax,mm-1,dd]});
+						<?php else: ?>
+							dates[<?php echo $i; ?>][1] = dates[<?php echo $i; ?>][1] - 1; 
 						<?php endif; ?>
 							dates.push([<?php echo $date; ?>,'inverted']);
 						<?php $i++; ?>
@@ -234,19 +236,13 @@ $dates = createDateRangeArray($now, $after);
 	        		var id = $(this).val();
 	        		//alert();
 	        		console.log(date[id]);
-	        		picker.set('disable', date[id]);
+	        		picker.render(true);
+	        		picker.set('disable', date[id]); 
 	        		//picker.set('disable', [true, 1, 2, 3, 4, 5, 6, 7]);
 	        		//picker.set('enable', date[id]);
 	        	});
 	        	
-	        	picker.set('disable', [
-	        		{from: [2017,3,11], to: [2017,8,11]},
-	        		[2017,3,13, 'inverted'],
-	        		[2017,3,14, 'inverted'],
-	        		[2017,3,15, 'inverted'],
-	        		[2017,3,16, 'inverted']
-	        	]);
-	        	
+
 		        //picker.set('disable', [true, 1, 2, 3, 4, 5, 6, 7, [2017,3,12], [2017,3,13], [2017,3,11]]);
 		
 	        	//picker.render();
