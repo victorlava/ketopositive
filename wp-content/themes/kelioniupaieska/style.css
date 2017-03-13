@@ -5553,13 +5553,6 @@ textarea {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
-  .data-block.data-block--hotels ul {
-    margin: auto;
-    display: table;
-  }
-}
-
 .data-block.data-block--sidebar {
   border-color: transparent;
   margin-bottom: 1em;
