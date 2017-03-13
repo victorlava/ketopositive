@@ -15,6 +15,28 @@ get_header(); ?>
 	$last_minute = file_get_contents('https://litamicus.waavo.com/webservice/travels_lastminutes/prices/');
 	$last_minute = json_decode($last_minute);
 
+
+	foreach($destinations->data as $destination){ //looping through destinations
+		$dates = file_get_contents('https://baltictours.waavo.com/webservice/travels_search_form/calendar/departure_airport:VNO/arrival_city_id:' . $destination->id);
+		$dates = json_decode($dates);
+
+		$destination->dates = $dates->data->dates;
+		$i=0;
+		foreach($destination->dates as $key => $date){ //looping through destination dates and formin a nice array of dates
+			if($i==0){$destination->dates = array();}
+			$key = str_replace('-', ',', $key);
+			$destination->dates[$i] = $key;
+			$i++;
+		}
+	}
+       
+	
+	//echo "<pre>";
+	//print_R($destinations);
+	//echo "</pre>";
+
+
+
 	//echo "<pre>";
 	//print_R($last_minute);
 	//echo "</pre>";
@@ -58,7 +80,7 @@ $dates = createDateRangeArray($now, $after);
 		                <span class="input-group-addon">
 		                	<i class="icon icon-location"></i>
 		                </span>
-		                <select class="selectpicker" name="city_id" title="Visi">
+		                <select id="city_id" class="selectpicker" name="city_id" title="Visi">
 		                  <option selected disabled>Visi kurortai</option>
 		                  <?php foreach($destinations->data as $destination): ?>
 		                  <option value="<?php echo $destination->id; ?>"><?php echo $destination->full_name; ?></option>
@@ -110,15 +132,47 @@ $dates = createDateRangeArray($now, $after);
 	        <script type="text/javascript">
 	        jQuery(document).ready(function ($) {
 
+		var today = new Date(),
+				dd = today.getDate(),
+				mm = today.getMonth()+1,
+				yyyy = today.getFullYear(),
+				yyyyMax = today.getFullYear()+1,
+				fullTodayDate =  yyyy + ',' + mm + ',' + dd,
+				fullMaxDate = yyyyMax + ',' + mm + ',' + dd;
+	        
+			var date = [],
+				dates = [];
+			<?php foreach($destinations->data as $destination): //looping through destinations ?> 
+				<?php $i=0; ?>
+					dates = [];
+					<?php foreach($destination->dates as $date): //looping through destination dates and formin a nice array of dates ?> 
+						<?php if($i==0): ?> 
+							dates.push({from: [yyyy,mm-1,dd], to: [yyyyMax,mm-1,dd]});
+						<?php else: ?>
+							dates[<?php echo $i; ?>][1] = dates[<?php echo $i; ?>][1] - 1; 
+						<?php endif; ?>
+							dates.push([<?php echo $date; ?>,'inverted']);
+						<?php $i++; ?>
+					<?php endforeach; ?>   
+					date[<?php echo $destination->id; ?>] = dates;
+			<?php endforeach; //end through destinations ?>
+
+			console.log(date);
+
+
+				console.log(fullMaxDate);
+
 	        	function form_url(base){
 	        		$('.js-add-url').attr('href', base);
 	        	}
 
-
-	        	$('.datepicker').pickadate({
+	        	var settings = {
 	        		monthsFull: ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Gegužė', 'Birželis', 'Liepa', 'Rugpjūtis', 'Rugsėjis', 'Spalis', 'Lapkritis', 'Gruodis'],
-					weekdaysShort: ['Pr', 'An', 'Tr', 'Ke', 'Pe', 'Še', 'Se'],
+					weekdaysShort: ['Se', 'Pr', 'An', 'Tr', 'Ke', 'Pe', 'Še'],
 					format: 'yyyy-mm-dd',
+					min: new Date(fullTodayDate),
+					max: new Date(fullMaxDate),
+					firstDay: 1,
 					today: '',
 					clear: '',
 					close: '',
@@ -129,7 +183,11 @@ $dates = createDateRangeArray($now, $after);
 						setTimeout(function(){ $('.main-search').css('z-index', 0); }, 3000);
 					}
 
-	        	});
+	        	},
+
+	        	$input = $('.datepicker').pickadate(settings);
+
+	        	var picker = $input.pickadate('picker');
 
 	 
 	        	//http://kelioniupaieskawp.victorlava.com/tez-tour-keliones/?wurl=/teztour_search/search/departure_date:2017-03-18/departure_airport:VNO/duration:7/city_id:1688/adults:2/children:4/childage:5%7C20
@@ -174,6 +232,37 @@ $dates = createDateRangeArray($now, $after);
 				  style: '',
 				  size: 6
 				}); 
+
+		        $('#main .main-search #city_id').on('change', function(){
+	        		var id = $(this).val();
+	   
+	        		$input = $('.datepicker').pickadate(settings);
+
+	        		var picker = $input.pickadate('picker');
+
+	        		picker.set('disable', date[id]); 
+
+	        	
+	        		$(this).parent().parent().addClass('changed');
+
+	        		//picker.set('disable', [true, 1, 2, 3, 4, 5, 6, 7]);
+	        		//picker.set('enable', date[id]);
+	        	});
+
+		        var changedTimes = 0;
+		        $('#main .main-search .input-group--select').on('click', function(){
+		        	if($(this).hasClass('changed') && changedTimes == 2){
+		        		window.location.reload();
+		        	}
+		           changedTimes = changedTimes + 1;
+	        	});
+
+	
+
+		        //picker.set('disable', [true, 1, 2, 3, 4, 5, 6, 7, [2017,3,12], [2017,3,13], [2017,3,11]]);
+		
+	        	//picker.render();
+
 		    });
 	        </script>
 		 </div>      
