@@ -3425,6 +3425,12 @@ html.no-scroll {
   overflow: hidden;
 }
 
+iframe {
+  border: none;
+  outline: none;
+  background: #FFF;
+}
+
 body {
   overflow-x: hidden;
 }
