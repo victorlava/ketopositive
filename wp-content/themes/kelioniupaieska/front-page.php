@@ -233,16 +233,31 @@ $dates = createDateRangeArray($now, $after);
 				  size: 6
 				}); 
 
- 
 		        $('#main .main-search #city_id').on('change', function(){
 	        		var id = $(this).val();
-	        		//alert();
-	        		console.log(date[id]); 
+	   
+	        		$input = $('.datepicker').pickadate(settings);
+
+	        		var picker = $input.pickadate('picker');
+
 	        		picker.set('disable', date[id]); 
+
+	        	
+	        		$(this).parent().parent().addClass('changed');
+
 	        		//picker.set('disable', [true, 1, 2, 3, 4, 5, 6, 7]);
 	        		//picker.set('enable', date[id]);
 	        	});
-	        	
+
+		        var changedTimes = 0;
+		        $('#main .main-search .input-group--select').on('click', function(){
+		        	if($(this).hasClass('changed') && changedTimes == 2){
+		        		window.location.reload();
+		        	}
+		           changedTimes = changedTimes + 1;
+	        	});
+
+	
 
 		        //picker.set('disable', [true, 1, 2, 3, 4, 5, 6, 7, [2017,3,12], [2017,3,13], [2017,3,11]]);
 		
