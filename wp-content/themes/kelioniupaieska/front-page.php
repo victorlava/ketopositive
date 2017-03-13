@@ -157,11 +157,7 @@ $dates = createDateRangeArray($now, $after);
 					date[<?php echo $destination->id; ?>] = dates;
 			<?php endforeach; //end through destinations ?>
 
-			console.log(date);
-
-
-				console.log(fullMaxDate);
-
+	
 	        	function form_url(base){
 	        		$('.js-add-url').attr('href', base);
 	        	}
@@ -180,7 +176,7 @@ $dates = createDateRangeArray($now, $after);
 						$('.main-search').css('z-index', 55);
 					},
 					onClose: function(){
-						setTimeout(function(){ $('.main-search').css('z-index', 0); }, 3000);
+						setTimeout(function(){ $('.main-search').css('z-index', 0); }, 500);
 					}
 
 	        	},
@@ -282,7 +278,7 @@ $dates = createDateRangeArray($now, $after);
 
 	<?php if( $getOffers->have_posts() ): ?>		
   	<section class="section">
-  		<div class="container">
+  		<div class="container"> 
 	  		<div class="row">
 	  			<header class="header header--main header--line header--center">
 					<h2 class="header-title">Karščiausi kelionių pasiūlymai</h2> 
