@@ -166,7 +166,7 @@ $dates = createDateRangeArray($now, $after);
 	        		$('.js-add-url').attr('href', base);
 	        	}
 
-	        	var $input = $('.datepicker').pickadate({
+	        	var settings = {
 	        		monthsFull: ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Gegužė', 'Birželis', 'Liepa', 'Rugpjūtis', 'Rugsėjis', 'Spalis', 'Lapkritis', 'Gruodis'],
 					weekdaysShort: ['Se', 'Pr', 'An', 'Tr', 'Ke', 'Pe', 'Še'],
 					format: 'yyyy-mm-dd',
@@ -183,7 +183,9 @@ $dates = createDateRangeArray($now, $after);
 						setTimeout(function(){ $('.main-search').css('z-index', 0); }, 3000);
 					}
 
-	        	});
+	        	},
+
+	        	$input = $('.datepicker').pickadate(settings);
 
 	        	var picker = $input.pickadate('picker');
 
@@ -235,8 +237,7 @@ $dates = createDateRangeArray($now, $after);
 		        $('#main .main-search #city_id').on('change', function(){
 	        		var id = $(this).val();
 	        		//alert();
-	        		console.log(date[id]);
-	        		picker.render(true);
+	        		console.log(date[id]); 
 	        		picker.set('disable', date[id]); 
 	        		//picker.set('disable', [true, 1, 2, 3, 4, 5, 6, 7]);
 	        		//picker.set('enable', date[id]);
