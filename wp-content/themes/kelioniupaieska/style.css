@@ -4239,7 +4239,7 @@ body.home #main:after {
   background-image: url("./assets/img/src/main-all-bg.jpg");
   background-repeat: no-repeat;
   background-position-y: -140px;
-  background-position-x: -200px;
+  background-size: 100%;
 }
 
 #main:after {
@@ -4252,11 +4252,12 @@ body.home #main:after {
   background-image: url(./assets/img/src/main-bottom-bg.jpg);
   background-repeat: no-repeat;
   position: relative;
+  background-size: 100%;
 }
 
 @media screen and (min-width: 992px) {
   #main:after {
-    height: 177px;
+    height: 127px;
   }
 }
 
@@ -4892,7 +4893,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .main-search {
-  padding: 3em 0 5em;
+  padding: 3em 0 1em;
   z-index: 0;
   position: relative;
 }
@@ -5334,7 +5335,6 @@ textarea {
 }
 
 .data-block.data-block--article .data-block-image {
-  height: 190px;
   overflow: hidden;
 }
 
@@ -6097,6 +6097,14 @@ section.favourite-hotels .carousel {
   font-weight: bold;
 }
 
+@media screen and (max-width: 992px) {
+  #comments p.form-submit {
+    display: table;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
 #comments .title, #comments .comment-reply-title {
   color: #ff6138;
   font-size: 22px;
@@ -6120,9 +6128,14 @@ section.favourite-hotels .carousel {
   position: relative;
   overflow: visible;
   margin-bottom: 0;
-  padding-bottom: 70px;
   padding-top: 0px;
   margin-top: 55px;
+}
+
+@media screen and (min-width: 992px) {
+  #comments ol.comment-list ol.children .comment-body {
+    padding-bottom: 70px;
+  }
 }
 
 #comments ol.comment-list ol.children .comment-body:before {
@@ -6141,26 +6154,43 @@ section.favourite-hotels .carousel {
   display: none;
 }
 
-#comments ol.comment-list .comment .comment-meta {
-  float: left;
+@media screen and (min-width: 992px) {
+  #comments ol.comment-list .comment .comment-meta {
+    float: left;
+  }
 }
 
-#comments ol.comment-list .comment .comment-author,
-#comments ol.comment-list .comment .comment-meta {
-  width: 20%;
+@media screen and (min-width: 992px) {
+  #comments ol.comment-list .comment .comment-author,
+  #comments ol.comment-list .comment .comment-meta {
+    width: 20%;
+  }
 }
 
 #comments ol.comment-list .comment .comment-author + p,
 #comments ol.comment-list .comment .comment-meta + p {
-  float: left;
   color: #717171;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.55;
-  position: relative;
-  top: -30px;
   margin: 0;
-  width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+  #comments ol.comment-list .comment .comment-author + p,
+  #comments ol.comment-list .comment .comment-meta + p {
+    padding: 1em 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #comments ol.comment-list .comment .comment-author + p,
+  #comments ol.comment-list .comment .comment-meta + p {
+    width: 80%;
+    position: relative;
+    float: left;
+    top: -30px;
+  }
 }
 
 #comments ol.comment-list .comment .comment-body {
@@ -6188,8 +6218,10 @@ section.favourite-hotels .carousel {
   font-size: 11px;
 }
 
-#comments ol.comment-list .comment .comment-body .reply {
-  float: right;
+@media screen and (min-width: 992px) {
+  #comments ol.comment-list .comment .comment-body .reply {
+    float: right;
+  }
 }
 
 #comments ol.comment-list .comment .comment-body .reply a {
@@ -7173,7 +7205,14 @@ body.blog .content-wrapper {
 
 body.post-template-default .sidebar,
 body.page-template-single .sidebar {
-  padding-top: 5.2em;
+  padding-top: 3.2em;
+}
+
+@media screen and (min-width: 992px) {
+  body.post-template-default .sidebar,
+  body.page-template-single .sidebar {
+    padding-top: 5.2em;
+  }
 }
 
 body.branch-template-default #main:after {

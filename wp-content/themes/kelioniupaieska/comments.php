@@ -1,19 +1,4 @@
 
-<?php
-/** use action for success message **/
-if ( $post_id != 0 ) { // success!
-	function success_message(){
-		echo '<div class="error error--block error--green">
-						Komentaras sėkmingai publikuotas!
-			  </div>';
-	}
-    add_action('form_message', 'success_message' );
-}
-?>
-<?php 
-	print_R($_POST);
-?>
-
 <?php if ( post_password_required() ) {
 	return;
 }
@@ -82,42 +67,3 @@ if ( $post_id != 0 ) { // success!
 
 </div><!-- .comments-area -->
 
-
-				<hr class="empty">
-				<div class="add-comment data-block data-block--simple data-block--stylesoff">
-					<h3 class="title">Naujas komentaras</h3> 
-					<form lpformnum="1">
-						<div class="form-group">
-							<div class="row">
-								<div class="col-md-6">
-									<label for="name">Vardas</label>
-							    	<input type="text" id="name" placeholder="">
-								</div>
-								<div class="col-md-6">
-								 	<label for="name">El. paštas</label>
-							    	<input type="text" id="email" placeholder="">	
-								</div>
-							</div>
-						 </div>
-
-						 <div class="form-group">
-						    <label for="name">Komentaras</label> 
-						    <textarea id="message"></textarea>
-						 </div>
-
-						 <div class="form-group col-md-3 pull-right">
-						    <div class="row">
-						    	 <input type="submit" class="form-control button button--primary" value="Išsiųsti">
-						    </div>
-						 </div>
-					</form>
-
-					 <?php do_action('form_message'); ?>
-
-					<div class="error error--block error--red">
-						Prašome įvesti el. paštą.
-					</div>
-					<div class="error error--block error--green">
-						Komentaras sėkmingai publikuotas!
-					</div>
-				</div>

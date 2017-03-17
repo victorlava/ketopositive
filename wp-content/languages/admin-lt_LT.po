@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: lt\n"
 "Project-Id-Version: WordPress - 4.7.x - Administration\n"
 
@@ -26,103 +26,103 @@ msgctxt "start of week"
 msgid "1"
 msgstr "1"
 
-#: wp-admin/about.php:234
+#: wp-admin/about.php:232
 msgid "Customize changesets make changes in the customizer persistent, like autosave drafts. They also make exciting new features like starter content possible."
 msgstr "Išvaizdos redaktoriaus pakeitimų leidžia išsaugoti jame atliktus pakeitimus, panašiai kaip automatiniai juodraščiai. Taip pat jie leidžia kurti naujas funkcijas, tokias kaip pavyzdinis turinys."
 
-#: wp-admin/about.php:222
+#: wp-admin/about.php:220
 msgid "Settings Registration API"
 msgstr "Nustatymų registravimo API"
 
 #. translators: 1: register_setting(), 2:
 #. https://make.wordpress.org/core/2016/10/26/registering-your-settings-in-wordpress-4-7/
-#: wp-admin/about.php:226
+#: wp-admin/about.php:224
 msgid "%1$s <a href=\"%2$s\">has been enhanced</a> to include type, description, and REST API visibility."
 msgstr "%1$s <a href=\"%2$s\">buvo patobulinta</a> įtraukiant tipą, aprašymą ir REST API matomumą."
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/08/wp_hook-next-generation-actions-and-filters/
-#: wp-admin/about.php:216
+#: wp-admin/about.php:214
 msgid "The code that lies beneath actions and filters has been overhauled and modernized, fixing bugs along the way."
 msgstr "Kodas, valdantis veiksmų ir filtrų kablius buvo perrašytas ir atnaujintas, pakeliui ištaisant klaidas."
 
-#: wp-admin/about.php:233
+#: wp-admin/about.php:231
 msgid "Customize Changesets"
 msgstr "Išvaizdos redaktoriaus pakeitimų rinkiniai"
 
-#: wp-admin/about.php:195
+#: wp-admin/about.php:193
 msgid "More Theme API Goodies"
 msgstr "Daugiau gėrybių išvaizdos temų API"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/
-#: wp-admin/about.php:199
+#: wp-admin/about.php:197
 msgid "WordPress 4.7 includes <a href=\"%s\">new functions, hooks, and behavior</a> for theme developers."
 msgstr "WordPress 4.7 turi <a href=\"%s\">naujų funkcijų, kablių ir veiksmų</a> skirtų temų kūrėjams."
 
-#: wp-admin/about.php:205
+#: wp-admin/about.php:203
 msgid "Custom Bulk Actions"
 msgstr "Papildomi masiniai veiksmai"
 
-#: wp-admin/about.php:192
+#: wp-admin/about.php:190
 msgid "By opening up the page template functionality to all post types, theme developers have even more flexibility with the WordPress template hierarchy."
 msgstr "Leidžiant puslapių šablonus naudoti kituose turinio tipuose, išvaizdos temų kūrėjai turi dar daugiau laisvės WordPress šablonų hierarchijoje."
 
-#: wp-admin/about.php:206
+#: wp-admin/about.php:204
 msgid "List tables, now with more than bulk edit and delete."
 msgstr "Sąrašų lentelėse dabar galės atsirasti papildomų masinių veiksmų, ne tik redagavimas ir trynimas."
 
-#: wp-admin/about.php:191
+#: wp-admin/about.php:189
 msgid "Post Type Templates"
 msgstr "Įrašų tipų šablonai"
 
 #. translators: %s: smiling face with smiling eyes emoji
-#: wp-admin/about.php:184
+#: wp-admin/about.php:182
 msgid "Even More Developer Happiness %s"
 msgstr "Dar daugiau laimės programuotojams %s"
 
 #. translators: %s: https://developer.wordpress.org/rest-api/
-#: wp-admin/about.php:172
+#: wp-admin/about.php:170
 msgid "Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href=\"%s\">Check out the REST API reference.</a>"
 msgstr "Turinio prieigos taškai (endpoints) leidžia įvairioms programoms pasiektui jūsų WordPress svetainę per švarią, standartais paremtą sąsają ir sukuria galimybes kurti naujus metodus valdyti ir vaizduoti turinį per įskiepius, išvaizdos temas, aplikacijas ir kt. Norite tuo užsiimti? <a href=\"%s\">Peržiūrėkite REST API informaciją.</a>"
 
-#: wp-admin/about.php:166
+#: wp-admin/about.php:164
 msgid "Introducing REST API Content Endpoints"
 msgstr "Pristatomi REST API turinio prieigos taškai"
 
-#: wp-admin/about.php:167
+#: wp-admin/about.php:165
 msgid "WordPress 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings."
 msgstr "WordPress 4.7 turi REST API prieigos taškai (endpoints) įrašams, komentarams, terminams, vartotojams, papildomiems laukams ir nustatymams."
 
-#: wp-admin/about.php:159
+#: wp-admin/about.php:157
 msgid "Just because your site is in one language doesn&#8217;t mean that everybody helping manage it prefers that language for their admin. Add more languages to your site and a user language option will show up in your user&#8217;s profiles."
 msgstr "Jeigu jūsų svetainė lankytojams rodoma viena kalba, tai nereiškia, kad visi ją tvarkantys žmonės taip pat nori dirbti ta kalba savo valdymo skyde. Pridėkite papildomas kalbas į savo tinklalapį ir vartotojo kalbos pasirinkimo nuostata atsiras vartotojų profiliuose."
 
-#: wp-admin/about.php:157
+#: wp-admin/about.php:155
 msgid "Dashboard in your language"
 msgstr "Valdymo skydas Jūsų kalba"
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:152
 msgid "Managing your document collection is easier with WordPress 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents."
 msgstr "Valdyti dokumentų rinkinius su WordPress 4.7 yra gerokai patogiau. Įkeltiems PDF failams bus sugeneruotos miniatiūros, kurios adės lengviau atskirti ir atrasti reikalingus dokumentus."
 
-#: wp-admin/about.php:152
+#: wp-admin/about.php:150
 msgid "PDF Thumbnail Previews"
 msgstr "PDF miniatiūros"
 
-#: wp-admin/about.php:144
+#: wp-admin/about.php:142
 msgid "Sometimes you just need a few visual tweaks to make your site perfect. WordPress 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down."
 msgstr "Kartais tereikia keleto vaizdinių pakeitimų, kad Jūsų svetainė būtų tobula. WordPress 4.7 leidžia pridėti papildomas CSS taisykles ir iš karto matyti, kaip Jūsų kodas keičia tinklalapio vaizdą. Gyva peržiūra leidžia dirbti greitai ir be darbą lėtinančių puslapio atnaujinimų."
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:137
 msgid "Many menus for sites contain links to the pages of your site, but what happens when you don&#8217;t have any pages yet? Now you can add new pages while building menus instead of leaving the customizer and abandoning your changes. Once you&#8217;ve published your customizations, you&#8217;ll have new pages ready for you to fill with content."
 msgstr "Daugelio tinklalapių navigacijos meniu turi nuorodų į Jūsų tinklalapio puslapius. Bet kas tuomet, jei dar neturite sukūrę nė vieno puslapio? Dabar galite kurti naujus puslapius iš karto meniu tvarkymo lange, nepalikdami išvaizdos redaktoriaus ir neprarasdami pakeitimų. Kai pabaigsite darbą išvaizdos redaktoriuje, nauji puslapiai bus sukurti automatiškai ir Jums tereiks juos užpildyti turiniu."
 
-#: wp-admin/about.php:137
+#: wp-admin/about.php:135
 msgid "Smoother Menu Building"
 msgstr "Patogesnis navigacijos kūrimas"
 
-#: wp-admin/about.php:131
+#: wp-admin/about.php:129
 msgid "Sometimes a big atmospheric video as a moving header image is just what you need to showcase your wares; go ahead and try it out with Twenty Seventeen. Need some video inspiration? Try searching for sites with video headers available for download and use."
 msgstr "Kartais didelis, atmosferą kuriantis video antraštėje yra būtent tai, ko reikia; išbandykite jį Twenty Seventeen išvaizdos temoje. Reikia įkvėpimo? Pabandykite paieškiti tinklalapių su video antraštėmis skirtomis parsisiųsti ir naudoti."
 
@@ -134,27 +134,27 @@ msgstr "Video antraštės"
 msgid "Visible icons appear to show you which parts of your site can be customized while live previewing. Click on a shortcut and get straight to editing. Paired with starter content, getting started with customizing your site is faster than ever."
 msgstr "Matomos piktogramos rodo, kurios Jūsų tinklalapio vietos gali būti taisomos išvaizdos redaktoriuje. Spustelėkite nuorodą ir būsite nukelti tiesiai į redagavimo vietą. Sujungus tai su pavyzdiniu turiniu, pradėti darbą su išvazdos redaktoriumi tapo greičiau nei bet kada."
 
-#: wp-admin/about.php:85
+#: wp-admin/about.php:89
 msgid "To help give you a solid base to build from, individual themes can provide starter content that appears when you go to customize your brand new site. This can range from placing a business information widget in the best location to providing a sample menu with social icon links to a static front page complete with beautiful images. Don&#8217;t worry - nothing new will appear on the live site until you&#8217;re ready to save and publish your initial theme setup."
 msgstr "Nuo šiol išvaizdos temos gali jums suteikti tvirtą pagrindą darbui pradėti, pateikdamos pavyzdinį turinį kai imatės tvarkyti naują tinklalapį. Tai gali būti bet kas, pradedant nuo verslo informacijos skydelio geriausioje pozicijoje ir baigiant pavyzdiniais meniu bei statinio pradinio puslapio šablonu, įskaitant ir puikius paveikslėlius. Nebijokite, niekas nebus matoma viešoje tinklalapio versijoje, kol pakeitimų neišsaugosite ir nepublikuosite. "
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:106
 msgid "Edit Shortcuts"
 msgstr "Redagavimo nuorodos"
 
-#: wp-admin/about.php:84
+#: wp-admin/about.php:88
 msgid "Theme Starter Content"
 msgstr "Temos pavyzdinis turinys"
 
-#: wp-admin/about.php:79
+#: wp-admin/about.php:83
 msgid "WordPress 4.7 adds new features to the customizer to help take you through the initial setup of a theme, with non-destructive live previews of all your changes in one uninterrupted workflow."
 msgstr "WordPress 4.7 prideda naujas funkcijas į išvaizdos redaktorių, kurios padeda jums pradėti darbą su nauja išvaizdos tema. Dabar galite gyvai peržiūrėti visus savo pakeitimus nepertraukdami darbo."
 
-#: wp-admin/about.php:78
+#: wp-admin/about.php:82
 msgid "Your Site, Your Way"
 msgstr "Jūsų tinklalapis, Jūsų pasirinkimai"
 
-#: wp-admin/about.php:72
+#: wp-admin/about.php:76
 msgid "Twenty Seventeen focuses on business sites and features a customizable front page with multiple sections. Personalize it with widgets, navigation, social menus, a logo, custom colors, and more. Our default theme for 2017 works great in many languages, on any device, and for a wide range of users."
 msgstr "Twenty Seventeen orientuotas į verslo tinklalapius ir turi valdomą pradinį puslapį su daugeliu sekcijų. Nustatykite jį savaip naudodami skydelius, navigacijos, soc. tinklų meniu, logotipą, papildomas spalvas ir kita. Mūsų standartinė 2017-ųjų tema puikiai veikia įvairiose kalbose, ant įvairių įrenginių ir daugeliui naudotojų."
 
@@ -162,11 +162,11 @@ msgstr "Twenty Seventeen orientuotas į verslo tinklalapius ir turi valdomą pra
 msgid "Thank you for updating to the latest version! WordPress %s helps you get your site set up the way you want it."
 msgstr "Ačiū, kad atnaujinote WordPress į naujausią versiją! WordPress %s padeda jums sutvarkyti savo tinklalapį taip, kaip norite Jūs."
 
-#: wp-admin/about.php:65
+#: wp-admin/about.php:69
 msgid "Presenting Twenty Seventeen"
 msgstr "Pristatoma Twenty Seventeen"
 
-#: wp-admin/about.php:66
+#: wp-admin/about.php:70
 msgid "A brand new default theme brings your site to life with immersive featured images and video headers."
 msgstr "Nauja standartinė išvaizdos tema jūsų tinklalapiui suteikia gyvumo naudodama įtraukiančius spec. paveikslėlius ir video antraštes."
 
@@ -273,7 +273,7 @@ msgstr "Deja, Jūs negalite prisegti failų prie šio įrašo."
 
 #: wp-admin/freedoms.php:45 wp-admin/includes/plugin-install.php:235
 #: wp-admin/includes/plugin-install.php:599 wp-admin/plugin-install.php:82
-#: wp-admin/plugins.php:392
+#: wp-admin/plugins.php:400
 msgid "https://wordpress.org/plugins/"
 msgstr "https://wordpress.org/plugins/"
 
@@ -312,7 +312,7 @@ msgstr "Originalus"
 #: wp-admin/options-media.php:35 wp-admin/options-permalink.php:46
 #: wp-admin/options-reading.php:39 wp-admin/options-writing.php:46
 #: wp-admin/plugin-editor.php:157 wp-admin/plugin-install.php:99
-#: wp-admin/plugins.php:410 wp-admin/revision.php:121
+#: wp-admin/plugins.php:418 wp-admin/revision.php:121
 #: wp-admin/theme-editor.php:43 wp-admin/theme-install.php:115
 #: wp-admin/themes.php:119 wp-admin/tools.php:29 wp-admin/update-core.php:576
 #: wp-admin/upload.php:67 wp-admin/upload.php:211 wp-admin/user-edit.php:56
@@ -411,7 +411,7 @@ msgctxt "plugin"
 msgid "%s was successfully deleted."
 msgstr "%s buvo sėkmingai ištrintas."
 
-#: wp-admin/plugins.php:388
+#: wp-admin/plugins.php:396
 msgid "The search for installed plugins will search for terms in their name, description, or author."
 msgstr "Įdiegtų įskiepių paieška atrinks juos pagal raktinius žodžius pavadinime, aprašyme ir autoriaus varde."
 
@@ -915,13 +915,13 @@ msgid "Sorry, you are not allowed to delete that user."
 msgstr "Deja, Jūs negalite ištrinti to vartotojo."
 
 #. translators: 1: plugin name, 2: plugin author
-#: wp-admin/plugins.php:310
+#: wp-admin/plugins.php:318
 msgctxt "plugin"
 msgid "%1$s by %2$s"
 msgstr "%1$s - %2$s"
 
 #. translators: 1: plugin name, 2: plugin author
-#: wp-admin/plugins.php:306
+#: wp-admin/plugins.php:314
 msgid "%1$s by %2$s (will also <strong>delete its data</strong>)"
 msgstr "%1$s - %2$s (taip pat <strong>ištrinti visus įskiepio duomenis</strong>)"
 
@@ -1230,7 +1230,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Dabar nustatyta: %s)"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:269
+#: wp-admin/about.php:267
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Versija %s</strong> ištaisė vieną saugumo spragą."
 
@@ -1252,15 +1252,15 @@ msgstr "https://lt.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profilio paveikslėlis"
 
-#: wp-admin/about.php:260
+#: wp-admin/about.php:258
 msgid "Maintenance Releases"
 msgstr "Pataisymų laidos"
 
-#: wp-admin/about.php:263
+#: wp-admin/about.php:261
 msgid "Security Releases"
 msgstr "Saugumo laidos"
 
-#: wp-admin/about.php:47 wp-admin/about.php:266
+#: wp-admin/about.php:47 wp-admin/about.php:264
 msgid "Maintenance and Security Releases"
 msgstr "Pataisymų ir saugumo laidos"
 
@@ -1460,11 +1460,11 @@ msgstr "%s failai"
 msgid "Filter themes list"
 msgstr "Filtruoti išvaizdos temų sąrašą"
 
-#: wp-admin/plugins.php:473
+#: wp-admin/plugins.php:481
 msgid "The selected plugin has been <strong>deleted</strong>."
 msgstr "Pasirinktas įskiepis buvo <strong>ištrintas</strong>."
 
-#: wp-admin/plugins.php:490
+#: wp-admin/plugins.php:498
 msgid "All selected plugins are up to date."
 msgstr "Visi pasirinkti įskiepiai yra naujausios versijos."
 
@@ -1488,15 +1488,15 @@ msgstr "Redaguojamas %s (neaktyvus)"
 msgid "Browsing %s (inactive)"
 msgstr "Peržiūrimas %s (neaktyvus)"
 
-#: wp-admin/plugin-install.php:103 wp-admin/plugins.php:414
+#: wp-admin/plugin-install.php:103 wp-admin/plugins.php:422
 msgid "Filter plugins list"
 msgstr "Filtruotio įskiepių sąrašą"
 
-#: wp-admin/plugin-install.php:104 wp-admin/plugins.php:415
+#: wp-admin/plugin-install.php:104 wp-admin/plugins.php:423
 msgid "Plugins list navigation"
 msgstr "Įskiepių sąrašo navigacija"
 
-#: wp-admin/plugin-install.php:105 wp-admin/plugins.php:416
+#: wp-admin/plugin-install.php:105 wp-admin/plugins.php:424
 msgid "Plugins list"
 msgstr "Įskiepių sąrašas"
 
@@ -1657,7 +1657,7 @@ msgstr "Dėžutės"
 msgid "Failed to initialize a SFTP subsystem session with the SSH2 Server %s"
 msgstr "Nepavyko pradėti SFTP subsistemos sesijos su SSH2 serveriu %s"
 
-#: wp-admin/includes/class-wp-press-this.php:1521
+#: wp-admin/includes/class-wp-press-this.php:1526
 msgid "Saving&hellip;"
 msgstr "Saugoma&hellip;"
 
@@ -1955,7 +1955,7 @@ msgstr[0] "Šio autoriaus įrašai: %s"
 msgstr[1] "Šio autoriaus įrašai: %s"
 msgstr[2] "Šio autoriaus įrašai: %s"
 
-#: wp-admin/includes/class-wp-press-this.php:1524
+#: wp-admin/includes/class-wp-press-this.php:1529
 msgid "More actions"
 msgstr "Daugiau veiksmų"
 
@@ -2205,7 +2205,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Editing_Files\">Failų redagavimo 
 msgid "<a href=\"https://codex.wordpress.org/Template_Tags\">Documentation on Template Tags</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Template_Tags\">Documentation on Template Tags</a>"
 
-#: wp-admin/plugins.php:409
+#: wp-admin/plugins.php:417
 msgid "<a href=\"https://codex.wordpress.org/Managing_Plugins#Plugin_Management\">Documentation on Managing Plugins</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Managing_Plugins#Plugin_Management\">Įskiepių tvarkymo dokumentacija</a>"
 
@@ -2284,7 +2284,7 @@ msgstr "https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments"
 msgid "The <a href=\"https://codex.wordpress.org/Glossary#Character_set\">character encoding</a> of your site (UTF-8 is recommended)"
 msgstr "Jūsų tinklalapio <a href=\"https://codex.wordpress.org/Glossary#Character_set\">ženklų koduotė</a>(rekomenduojama UTF-8)"
 
-#: wp-admin/includes/class-wp-press-this.php:1529
+#: wp-admin/includes/class-wp-press-this.php:1534
 msgid "Standard Editor"
 msgstr "Standartinė rašyklė"
 
@@ -2381,7 +2381,7 @@ msgstr "Jūs nurodėte, kad norite ištrinti šiuos vartotojus:"
 msgid "1 post not updated, somebody is editing it."
 msgstr "1 įrašas neatnaujintas, kažkas dar jį redaguoja."
 
-#: wp-admin/plugins.php:296
+#: wp-admin/plugins.php:304
 msgid "These plugins may be active on other sites in the network."
 msgstr "Šie įskiepiai gali būti aktyvūs kituose Jūsų tinklo tinklalapiuose."
 
@@ -2389,7 +2389,7 @@ msgstr "Šie įskiepiai gali būti aktyvūs kituose Jūsų tinklo tinklalapiuose
 msgid "1 page not updated, somebody is editing it."
 msgstr "1 puslapis neatnaujintas, kažkas dar jį redaguoja."
 
-#: wp-admin/plugins.php:298
+#: wp-admin/plugins.php:306
 msgid "You are about to remove the following plugins:"
 msgstr "Jūs ruošiatės ištrinti šiuos įskiepius:"
 
@@ -2402,11 +2402,11 @@ msgstr[0] "%s"
 msgstr[1] "%s"
 msgstr[2] "%s"
 
-#: wp-admin/plugins.php:294
+#: wp-admin/plugins.php:302
 msgid "Delete Plugins"
 msgstr "Ištrinti įskiepius"
 
-#: wp-admin/includes/class-wp-press-this.php:1363
+#: wp-admin/includes/class-wp-press-this.php:1367
 msgid "Hide post options"
 msgstr "Paslėpti įrašo nustatymus"
 
@@ -2651,59 +2651,59 @@ msgstr "Ši kategorija negali būti pridėta. Prašome pakeisti pavadinimą ir p
 msgid "Error while adding the category. Please try again later."
 msgstr "Klaida pridedant kategoriją. Prašome pabandyti vėliau."
 
-#: wp-admin/includes/class-wp-press-this.php:883
+#: wp-admin/includes/class-wp-press-this.php:887
 msgid "Toggle add category"
 msgstr "Įjungti kategorijų pridėjimo rodymą"
 
-#: wp-admin/includes/class-wp-press-this.php:908
+#: wp-admin/includes/class-wp-press-this.php:912
 msgid "Search categories by name"
 msgstr "Ieškoti kategorijų pagal pavadinimą"
 
-#: wp-admin/includes/class-wp-press-this.php:1162
+#: wp-admin/includes/class-wp-press-this.php:1166
 msgctxt "Used in Press This to indicate where the content comes from."
 msgid "Source:"
 msgstr "Šaltinis:"
 
-#: wp-admin/includes/class-wp-press-this.php:910
+#: wp-admin/includes/class-wp-press-this.php:914
 msgid "Search categories"
 msgstr "Ieškoti kategorijų"
 
-#: wp-admin/includes/class-wp-press-this.php:1361
+#: wp-admin/includes/class-wp-press-this.php:1365
 msgid "Show post options"
 msgstr "Rodyti įrašo nustatymus"
 
-#: wp-admin/includes/class-wp-press-this.php:1268
+#: wp-admin/includes/class-wp-press-this.php:1272
 msgid "Press This!"
 msgstr "Press This!"
 
-#: wp-admin/includes/class-wp-press-this.php:1370
+#: wp-admin/includes/class-wp-press-this.php:1374
 msgid "Enter a URL to scan"
 msgstr "Įveskite URL skanavimui"
 
-#: wp-admin/includes/class-wp-press-this.php:1369
+#: wp-admin/includes/class-wp-press-this.php:1373
 msgid "Scan site for content"
 msgstr "Skanuoti tinklalapio turinį"
 
-#: wp-admin/includes/class-wp-press-this.php:1371
+#: wp-admin/includes/class-wp-press-this.php:1375
 msgid "Scan"
 msgstr "Skanuoti"
 
-#: wp-admin/includes/class-wp-press-this.php:1397
+#: wp-admin/includes/class-wp-press-this.php:1402
 msgid "You should upgrade <a href=\"%s\" target=\"_blank\">your bookmarklet</a> to the latest version!"
 msgstr "Turėtumėte atnaujinti <a href=\"%s\" target=\"_blank\">savo žymų įrankį</a> į naujausią versiją!"
 
-#: wp-admin/includes/class-wp-press-this.php:1411
+#: wp-admin/includes/class-wp-press-this.php:1416
 msgid "Suggested media"
 msgstr "Siūlomi failai"
 
-#: wp-admin/includes/class-wp-press-this.php:1406
-#: wp-admin/includes/class-wp-press-this.php:1407
+#: wp-admin/includes/class-wp-press-this.php:1411
+#: wp-admin/includes/class-wp-press-this.php:1412
 msgid "Post title"
 msgstr "Įrašo pavadinimas"
 
-#: wp-admin/includes/class-wp-press-this.php:1478
-#: wp-admin/includes/class-wp-press-this.php:1489
-#: wp-admin/includes/class-wp-press-this.php:1500
+#: wp-admin/includes/class-wp-press-this.php:1483
+#: wp-admin/includes/class-wp-press-this.php:1494
+#: wp-admin/includes/class-wp-press-this.php:1505
 msgid "Back to post options"
 msgstr "Atgal į įrašo nustatymus"
 
@@ -5340,7 +5340,7 @@ msgstr "Nepavyko pataisyti %1$s lentelės. Klaida: %2$s"
 msgid "New users will receive an email letting them know they&#8217;ve been added as a user for your site. This email will also contain their password. Check the box if you don&#8217;t want the user to receive a welcome email."
 msgstr "Nauji vartotojai gaus el.laišką, kuriame bus informuojama, kad jie buvo pridėti kaip šio tinklalapio vartotojai. Tame el.laiške bus nurodytas ir jų prisijungimo slaptažodis. Pažymėkite varnele šioje vietoje, jei nenorėtumėte, kad šis vartotojas gautų tokį laišką."
 
-#: wp-admin/plugins.php:443
+#: wp-admin/plugins.php:451
 msgid "The plugin generated %d characters of <strong>unexpected output</strong> during activation. If you notice &#8220;headers already sent&#8221; messages, problems with syndication feeds or other issues, try deactivating or removing this plugin."
 msgstr "Aktyvuojant įskiepis sugeneravo <strong>netikėtą rezultatą</strong> (viso ženklų: %d). Jei matote įspėjimą &#8220;headers already sent&#8221;, turite bėdų su RSS srautais ar patiriate kitokių problemų, pabandykite išjungti ar pašalinti šį įskiepį. "
 
@@ -5415,13 +5415,14 @@ msgid "Show Toolbar when viewing site"
 msgstr "Rodyti įrankių juostą, kai peržiūrimas tinklalapis"
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:49 wp-admin/about.php:53 wp-admin/about.php:286
+#: wp-admin/about.php:50 wp-admin/about.php:53 wp-admin/about.php:57
+#: wp-admin/about.php:284
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Norėdami sužinoti daugiau, peržiūrėkite <a href=\"%s\">versijos informaciją</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:278
+#: wp-admin/about.php:276
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Versijoje %1$s</strong> ištaisyta saugumo problema ir pašalinta %2$s klaida."
@@ -5429,7 +5430,7 @@ msgstr[1] "<strong>Versijoje %1$s</strong> ištaisyta saugumo problema ir pašal
 msgstr[2] "<strong>Versijoje %1$s</strong> ištaisyta saugumo problema ir pašalinta %2$s klaidų."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:274
+#: wp-admin/about.php:272
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Versijoje %1$s</strong> sutvarkyta %2$s klaida."
@@ -5438,7 +5439,7 @@ msgstr[2] "<strong>Versijoje %1$s</strong> sutvarkyta %2$s klaidų."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:51 wp-admin/about.php:282
+#: wp-admin/about.php:48 wp-admin/about.php:55 wp-admin/about.php:280
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Versijoje %1$s</strong> sustiprintas saugumas ir sutvarkyta %2$s klaida."
@@ -5449,11 +5450,11 @@ msgstr[2] "<strong>Versijoje %1$s</strong> sustiprintas saugumas ir sutvarkyta %
 msgid "Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab above the screen title."
 msgstr "Sveiki atvykę į savo WordPress tinklalapio skydelį! Šį puslapį matysite visuomet, kai prisijungsite prie savo tinklalapio - iš čia pasieksite visas WordPress tinklalapio valdymo funkcijas. Kiekvieno puslapio viršuje matysite Pagalbos skyrelį - jį paspaudę, pamatysite pagalbinius tekstus konkrečiam puslapiui."
 
-#: wp-admin/about.php:259
+#: wp-admin/about.php:257
 msgid "Maintenance Release"
 msgstr "Palaikymo versija"
 
-#: wp-admin/about.php:262
+#: wp-admin/about.php:260
 msgid "Security Release"
 msgstr "Saugumo versija"
 
@@ -5461,12 +5462,12 @@ msgstr "Saugumo versija"
 msgid "What&#8217;s New"
 msgstr "Kas naujo"
 
-#: wp-admin/about.php:265
+#: wp-admin/about.php:263
 msgid "Maintenance and Security Release"
 msgstr "Palaikymo ir saugumo versija"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:48 wp-admin/about.php:271
+#: wp-admin/about.php:52 wp-admin/about.php:269
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Versijoje %s</strong> ištaisytos kai kurios saugumo problemos."
 
@@ -5478,7 +5479,7 @@ msgstr "Šiame puslapyje Jūs galite pasirinkti savo nuorodų struktūrą. Galit
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Dėkojame kad atnaujinote į WordPress %1$s. <a href=\"%2$s\">Sužinokite daugiau apie šią versiją</a>."
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:243
 msgid "Return to Updates"
 msgstr "Grįžti į galimus atnaujinimus"
 
@@ -5486,7 +5487,7 @@ msgstr "Grįžti į galimus atnaujinimus"
 msgid "You can upload media files here without creating a post first. This allows you to upload files to use with posts and pages later and/or to get a web link for a particular file that you can share. There are three options for uploading files:"
 msgstr "Čia Jūs galite pirmiau įkelti norimus failus, prieš kuriant įrašą. Tuomet vėliau, rašydami įrašus bei kurdami puslapius, galėsite naudoti čia įkeltus failus. Įkelti failus galite trim būdais:"
 
-#: wp-admin/plugins.php:397
+#: wp-admin/plugins.php:405
 msgid "Troubleshooting"
 msgstr "Trikčių šalinimas"
 
@@ -5758,11 +5759,11 @@ msgstr "Failas wp-admin/includes/template.php tikriausiai iškviečiamas tiesiog
 msgid "Welcome to WordPress %s"
 msgstr "Dėkojame, kad naudojate WordPress %s"
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:243
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Grįžti į Skydelis &rarr; Atnaujinimai"
 
-#: wp-admin/about.php:248
+#: wp-admin/about.php:246
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Eiti į Skydelis &rarr; Pradinis"
 
@@ -5927,7 +5928,7 @@ msgstr "Navigacija"
 #: wp-admin/options-general.php:39 wp-admin/options-media.php:28
 #: wp-admin/options-permalink.php:20 wp-admin/options-reading.php:22
 #: wp-admin/options-writing.php:20 wp-admin/plugin-editor.php:143
-#: wp-admin/plugin-install.php:80 wp-admin/plugins.php:385
+#: wp-admin/plugin-install.php:80 wp-admin/plugins.php:393
 #: wp-admin/revision.php:115 wp-admin/theme-editor.php:25
 #: wp-admin/theme-install.php:98 wp-admin/themes.php:82
 #: wp-admin/update-core.php:556 wp-admin/upload.php:48 wp-admin/upload.php:189
@@ -5952,7 +5953,7 @@ msgstr "<strong>Perkėlimas pele</strong> &mdash; norėdami perdėlioti skiltis,
 msgid "By %s"
 msgstr "Sukūrė: %s"
 
-#: wp-admin/comment.php:149 wp-admin/plugins.php:290 wp-admin/plugins.php:296
+#: wp-admin/comment.php:149 wp-admin/plugins.php:298 wp-admin/plugins.php:304
 #: wp-admin/theme-editor.php:272
 msgid "Caution:"
 msgstr "Dėmesio:"
@@ -6039,7 +6040,7 @@ msgstr "Patvirtinti ištrynimą"
 #: wp-admin/options-media.php:33 wp-admin/options-permalink.php:43
 #: wp-admin/options-reading.php:37 wp-admin/options-writing.php:44
 #: wp-admin/plugin-editor.php:154 wp-admin/plugin-install.php:97
-#: wp-admin/plugins.php:408 wp-admin/revision.php:119
+#: wp-admin/plugins.php:416 wp-admin/revision.php:119
 #: wp-admin/theme-editor.php:38 wp-admin/theme-install.php:113
 #: wp-admin/themes.php:117 wp-admin/tools.php:27 wp-admin/update-core.php:574
 #: wp-admin/upload.php:65 wp-admin/upload.php:209 wp-admin/user-edit.php:54
@@ -6188,7 +6189,7 @@ msgstr ""
 msgid "Full Width Template"
 msgstr "Pilno pločio šablonas"
 
-#: wp-admin/includes/class-wp-press-this.php:841
+#: wp-admin/includes/class-wp-press-this.php:845
 #: wp-admin/includes/meta-boxes.php:385 wp-admin/includes/theme.php:263
 msgid "Post Formats"
 msgstr "Įrašo formatai"
@@ -6239,7 +6240,7 @@ msgid "You can find additional themes for your site by using the Theme Browser/I
 msgstr "Daugiau temų savo tinklalapiui galite rasti per Temų paiešką/Instaliavimą, matomą šiame ekrane - čia rodomos temos iš <a href=\"%s\">WordPress.org temų katalogo</a>. Šias temas sukūrė ir plėtoja tretieji asmenys, jos yra nemokamos bei tinkamos naudoti pagal WordPress naudojamą licenciją."
 
 #. translators: %s: WordPress Plugin Directory URL
-#: wp-admin/plugins.php:391
+#: wp-admin/plugins.php:399
 msgid "If you would like to see more plugins to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional plugins from the <a href=\"%s\">WordPress Plugin Directory</a>. Plugins in the WordPress Plugin Directory are designed and developed by third parties, and are compatible with the license WordPress uses. Oh, and they&#8217;re free!"
 msgstr "Jei norite pamatyti didesnį įskiepių pasirinkimą, spustelėkite „Pridėti“ mygtuką ir galėsite naršyti ar ieškoti papildomų įskiepių <a href=\"%s\">WordPress.org įskiepių kataloge</a>. Įskiepiai šiame kaltaloge yra kuriami kitų programuotojų ir yra suderinami su WordPress naudojama licenzija. Ir jie nemokami!"
 
@@ -6408,11 +6409,11 @@ msgstr "%1$s iš %2$s"
 msgid "%s Page Template"
 msgstr "%s puslapio šablonas"
 
-#: wp-admin/includes/ajax-actions.php:3783 wp-admin/plugins.php:441
+#: wp-admin/includes/ajax-actions.php:3783 wp-admin/plugins.php:449
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "Jūs negalite ištrinti įskiepio, kol jis yra įjungtas pagrindiniame tinklalapyje."
 
-#: wp-admin/plugins.php:290
+#: wp-admin/plugins.php:298
 msgid "This plugin may be active on other sites in the network."
 msgstr "Šie įskiepiai gali būti įjungti kituose tinklo tinklalapiuose."
 
@@ -7008,7 +7009,7 @@ msgstr "Žemiau pasirinkite norimą redaguoti įskiepį ir paspauskite mygtuką 
 msgid "You can customize the display of this screen using the Screen Options tab and/or the dropdown filters above the links table."
 msgstr "Galite keisti šio puslapio vaizdą pasirinkdami skiltį „Ekrano nustatymai“ ir/arba panaudodami filtravimo funkciją."
 
-#: wp-admin/plugins.php:399
+#: wp-admin/plugins.php:407
 msgid "Most of the time, plugins play nicely with the core of WordPress and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue."
 msgstr "Jei susidursite su kokiomis nors suderinamumo problemomis, pabandykite išjungti visus įskiepius. Gali būti, kad kai kurie iš jų nedera tarpusavyje. Jei tai išspręs problemą, bandykite įjungti įskiepius po vieną ir nustatyti nesuderinamumo šaltinį."
 
@@ -7172,7 +7173,7 @@ msgstr "Išskleidžiamuosiuose langeliuose galite filtruoti įrašus pagal kateg
 msgid "You can hide/display columns based on your needs and decide how many posts to list per screen using the Screen Options tab."
 msgstr "Skiltyje „Ekrano nustatymai“ pagal poreikius galite pasirinkti, kuriuos lentelės elementus rodyti/slėpti, taip pat, kiek įrašų rodyti viename puslapyje."
 
-#: wp-admin/plugins.php:526
+#: wp-admin/plugins.php:534
 msgid "Search Installed Plugins"
 msgstr "Ieškoti tarp įdiegtų įskiepių"
 
@@ -7607,15 +7608,15 @@ msgstr "Redaguoti meniu elementą"
 msgid "Please enter a valid menu name."
 msgstr "Įveskite tinkamą meniu pavadinimą."
 
-#: wp-admin/plugins.php:317
+#: wp-admin/plugins.php:325
 msgid "Are you sure you wish to delete these files and data?"
 msgstr "Ar jūs tikrai norite ištrinti šiuos failus ir duomenis?"
 
-#: wp-admin/plugins.php:288
+#: wp-admin/plugins.php:296
 msgid "Delete Plugin"
 msgstr "Ištrinti įskiepį"
 
-#: wp-admin/about.php:248
+#: wp-admin/about.php:246
 msgid "Go to Dashboard"
 msgstr "Eiti į valdymo skydelį"
 
@@ -7638,11 +7639,11 @@ msgstr "Šiuo metu galioja vasaros laikas."
 msgid "View All"
 msgstr "Visi (-os)"
 
-#: wp-admin/plugins.php:330
+#: wp-admin/plugins.php:338
 msgid "Yes, delete these files and data"
 msgstr "Taip, noriu ištrinti šiuos failus ir duomenis"
 
-#: wp-admin/plugins.php:292
+#: wp-admin/plugins.php:300
 msgid "You are about to remove the following plugin:"
 msgstr "Jūs norite ištrinti šį įskiepį:"
 
@@ -7823,23 +7824,23 @@ msgctxt "Plugin Installer"
 msgid "Popular"
 msgstr "Populiariausi"
 
-#: wp-admin/plugins.php:319
+#: wp-admin/plugins.php:327
 msgid "Are you sure you wish to delete these files?"
 msgstr "Ar tikrai norite ištrinti šiuos failus?"
 
-#: wp-admin/plugins.php:482
+#: wp-admin/plugins.php:490
 msgid "Plugin <strong>activated</strong>."
 msgstr "Įskiepis <strong>įjungtas</strong>."
 
-#: wp-admin/plugins.php:484
+#: wp-admin/plugins.php:492
 msgid "Selected plugins <strong>activated</strong>."
 msgstr "Pasirinkti įskiepiai <strong>įjungti</strong>."
 
-#: wp-admin/plugins.php:486
+#: wp-admin/plugins.php:494
 msgid "Plugin <strong>deactivated</strong>."
 msgstr "Įskiepis <strong>išjungtas</strong>."
 
-#: wp-admin/plugins.php:488
+#: wp-admin/plugins.php:496
 msgid "Selected plugins <strong>deactivated</strong>."
 msgstr "Pasirinkti įskiepiai <strong>išjungti</strong>."
 
@@ -8503,7 +8504,7 @@ msgstr "Įskiepių nerasta"
 msgid "No such file exists! Double check the name and try again."
 msgstr "Toks failas neegzistuoja! Dar kartą patikrinkite pavadinimą ir bandykite iš naujo."
 
-#: wp-admin/plugins.php:336
+#: wp-admin/plugins.php:344
 msgid "No, return me to the plugin list"
 msgstr "Ne, grąžinkite mane prie įskiepių sąrašo"
 
@@ -8557,11 +8558,11 @@ msgstr "Prieš pradedant, reikia pateikti šiek tiek informacijos. Bet kada vėl
 msgid "Plugin Reactivation"
 msgstr "Įskiepis vėl įjungiamas"
 
-#: wp-admin/plugins.php:445
+#: wp-admin/plugins.php:453
 msgid "Plugin could not be activated because it triggered a <strong>fatal error</strong>."
 msgstr "Įskiepis negali būti įjungtas, nes sukelia <strong>kritinę klaidą</strong>."
 
-#: wp-admin/plugins.php:467
+#: wp-admin/plugins.php:475
 msgid "Plugin could not be deleted due to an error: %s"
 msgstr "Įskiepis negali būti ištrintas dėl šios klaidos: %s"
 
@@ -8573,7 +8574,7 @@ msgstr "Dėl įvykusios klaidos įskiepio įjungti nepavyko."
 msgid "Plugin reactivated successfully."
 msgstr "Įskiepis įjungtas"
 
-#: wp-admin/plugins.php:387
+#: wp-admin/plugins.php:395
 msgid "Plugins extend and expand the functionality of WordPress. Once a plugin is installed, you may activate it or deactivate it here."
 msgstr "Įskiepiai suteikia WordPress sistemai papildomų funkcijų. Čia jūs galite įjungti ir išjungti įskiepius."
 
@@ -8655,7 +8656,7 @@ msgstr "Žymų priešdėlis"
 msgid "The current user&#8217;s role must have user editing capabilities."
 msgstr "Dabartinio vartotojo rolė privalo turėti vartotojų redagavimo galimybę."
 
-#: wp-admin/plugins.php:475
+#: wp-admin/plugins.php:483
 msgid "The selected plugins have been <strong>deleted</strong>."
 msgstr "Pasirinkti įskiepiai buvo <strong>ištrinti</strong>."
 
@@ -8824,7 +8825,7 @@ msgstr "Rašymas"
 msgid "X &#8212; Even more mature than above"
 msgstr "X &#8212; Dar brandesniems asmenims nei R"
 
-#: wp-admin/plugins.php:330
+#: wp-admin/plugins.php:338
 msgid "Yes, delete these files"
 msgstr "Taip, noriu ištrinti šiuos failus"
 
@@ -8879,7 +8880,7 @@ msgid "older"
 msgstr "senesni"
 
 #. translators: add new plugin
-#: wp-admin/menu.php:208 wp-admin/plugins.php:496
+#: wp-admin/menu.php:208 wp-admin/plugins.php:504
 msgctxt "plugin"
 msgid "Add New"
 msgstr "Įdiegti įskiepį"
@@ -8980,7 +8981,7 @@ msgid "Post via email"
 msgstr "Skelbti įrašus el. paštu"
 
 #. translators: 1: plugin file 2: error message
-#: wp-admin/plugins.php:430
+#: wp-admin/plugins.php:438
 msgid "The plugin %1$s has been <strong>deactivated</strong> due to an error: %2$s"
 msgstr "Įskiepis %1$s buvo <strong>išjungtas</strong> dėl šios klaidos: %2$s"
 
@@ -8989,7 +8990,7 @@ msgid "For users without a custom avatar of their own, you can either display a 
 msgstr "Vartotojai, kurie neturi nustatyto avataro, galima rodyti arba standartinį logotipą arba pagal el.pašto adresą automatiškai sugeneruotą paveikslėlį."
 
 #. translators: WP_PLUGIN_DIR constant value
-#: wp-admin/plugins.php:402
+#: wp-admin/plugins.php:410
 msgid "If something goes wrong with a plugin and you can&#8217;t use WordPress, delete or rename that file in the %s directory and it will be automatically deactivated."
 msgstr "Jeigu dėl kurio nors įskiepio kiltų problemų ir negalėtumėte naudotis WordPress, ištrinkite arba pervadinkite tą failą %s kataloge ir įskiepis bus automatiškai išjungtas."
 
@@ -10493,7 +10494,7 @@ msgstr "Prilipdytas"
 msgid "Submit Reply"
 msgstr "Įrašyti atsakymą"
 
-#: wp-admin/includes/class-wp-press-this.php:1520
+#: wp-admin/includes/class-wp-press-this.php:1525
 #: wp-admin/includes/meta-boxes.php:269 wp-admin/includes/meta-boxes.php:270
 msgid "Submit for Review"
 msgstr "Išsaugoti peržiūrai"
