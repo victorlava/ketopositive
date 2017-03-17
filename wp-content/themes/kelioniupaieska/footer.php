@@ -100,11 +100,10 @@
 	    				<div class="footer-copyright pull-left">
 	        				Kelioniupaieska.lt ® 2016
 	        			</div>
-	        			<div class="footer-social pull-right">
-	        				<ul class="list list--inline">
-	        					<li><a href="#" class="facebook"><i class="icon"></i></a></li>
-	        					<li><a href="#" class="google"><i class="icon"></i></a></li>
-	        					<li><a href="#" class="instagram"><i class="icon"></i></a></li>
+	        			<div class="footer-social pull-right"> 
+	        					<li><a href="<?php echo get_theme_mod('social_setting'); ?>" class="facebook"><i class="icon"></i></a></li>
+	        					<li><a href="<?php echo get_theme_mod('social_setting2'); ?>" class="google"><i class="icon"></i></a></li>
+	        					<li><a href="<?php echo get_theme_mod('social_setting3'); ?>" class="instagram"><i class="icon"></i></a></li>
 	        				</ul>
 	        			</div>
 	    			</div>

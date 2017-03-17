@@ -12,7 +12,7 @@ get_header(); ?>
   	  	<div class="container">
   		<div class="row">
 		  	<header class="header header--top header--main header--line header--center"> 
-				<h2 class="header-title"><span class="header-smaller">Naujienos</span> <?php single_post_title(); ?></h2>
+				<h2 class="header-title"><span class="header-smaller">Naujienos</span> <?php if(single_tag_title()){ single_tag_title(); } else{ single_post_title(); } ?></h2>
 			</header>
 		</div> 
 

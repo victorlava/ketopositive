@@ -165,14 +165,18 @@ get_header(); ?>
 												<i class="icon icon-small-drink"></i> Maitinimas: 
 											</div>
 											<div class="js-track-change offer-form-second">
-												<div class="radio">
-												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutes_reiksme'); ?>" checked>
-												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutes_reiksme')): ?><span class="highlight">+ <?php the_field('pirmos_eilutes_reiksme'); ?>€</span><?php endif; ?></label>
+												<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
+												<div class="js-first-radio radio">
+												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked>
+												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('pirmos_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 												</div>
-												<div class="radio">
+												<?php endif; ?>
+												<?php if(get_field('antros_eilutes_pavadinimas')): ?>
+												<div class="js-second-radio radio">
 												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
 												  <label for="all-second"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 												</div>
+												<?php endif; ?>
 											</div>
 										</li>
 									</ul>
@@ -221,18 +225,22 @@ get_header(); ?>
 									<div class="js-track-change row">
 										<ul class="list list--inline">
 											<li>Maitinimas:</li>
+											<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
 											<li>
-												<div class="radio">
-												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutes_reiksme'); ?>" checked>
-												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutes_reiksme')): ?><span class="highlight">+ <?php the_field('pirmos_eilutes_reiksme'); ?>€</span><?php endif; ?></label>
+												<div class="js-first-radio radio">
+												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked>
+												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('pirmos_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 												</div>
-											</li> 
+											</li>
+											<?php endif ;?>
+											<?php if(get_field('antros_eilutes_pavadinimas')): ?> 
 											<li>
-												<div class="radio">
+												<div class="js-second-radio radio">
 												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
 												  <label for="all-second"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 												</div>
 											</li>
+											<?php endif; ?>
 										</ul>
 									</div>
 								</div>
@@ -333,7 +341,7 @@ get_header(); ?>
 								<?php the_field('keliones_data'); ?>
 							</div> 
 						</li>
-						<li>
+						<li> 
 							<div class="offer-form-first">
 								<i class="icon icon-small-bed"></i> Nakvynių skaičius:
 							</div>
@@ -346,14 +354,18 @@ get_header(); ?>
 								<i class="icon icon-small-drink"></i> Maitinimas: 
 							</div>
 							<div class="js-track-change offer-form-second">
-								<div class="radio">
-								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="<?php the_field('pirmos_eilutes_reiksme'); ?>" checked>
-								  <label for="breakfest-first"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutes_reiksme')): ?><span class="highlight">+ <?php the_field('pirmos_eilutes_reiksme'); ?>€</span><?php endif; ?></label>
+								<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
+								<div class="js-first-radio radio">
+								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked> 
+								  <label for="breakfest-first"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('pirmos_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 								</div>
-								<div class="radio">
+								<?php endif; ?>
+								<?php if(get_field('antros_eilutes_pavadinimas')): ?>
+								<div class="js-second-radio radio">
 								  <input type="radio" id="all-first" name="offer-radio-first" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
 								  <label for="all-first"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 								</div>
+								<?php endif; ?>
 							</div>
 						</li>
 					</ul>
@@ -431,14 +443,23 @@ get_header(); ?>
 		jQuery(document).ready(function($){
 
 			var currentPrice = $('.js-change-price').html();
-			$('.js-track-change input').on('change', function(){
-				var value = $(this).val();
+				currentPrice = currentPrice.replace(' €', '') * 1;
 
-				if(value != 0){
-					$('.js-change-price').html(value + ' €');
+			$('.js-track-change input').on('change', function(){
+				var value = $(this).val() * 1;
+
+				if($(this).parent().hasClass('js-first-radio')){
+					$('#main .js-first-radio input').attr('checked', true);
 				}
 				else{
-					$('.js-change-price').html(currentPrice);
+					$('#main .js-second-radio input').attr('checked', true);
+				}
+
+				if(value != 0){
+					$('.js-change-price').html(value + currentPrice + ' €');
+				}
+				else{
+					$('.js-change-price').html(currentPrice + ' €');
 				}
 
 			});

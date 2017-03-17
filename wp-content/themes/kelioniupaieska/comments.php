@@ -1,29 +1,28 @@
-<?php
-/**
- * The template for displaying comments
- *
- * The area of the page that contains both current comments
- * and the comment form.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
 
-/*
- * If the current post is protected by a password and
- * the visitor has not yet entered the password we will
- * return early without loading the comments.
- */
-if ( post_password_required() ) {
+<?php
+/** use action for success message **/
+if ( $post_id != 0 ) { // success!
+	function success_message(){
+		echo '<div class="error error--block error--green">
+						Komentaras sėkmingai publikuotas!
+			  </div>';
+	}
+    add_action('form_message', 'success_message' );
+}
+?>
+<?php 
+	print_R($_POST);
+?>
+
+<?php if ( post_password_required() ) {
 	return;
 }
 ?>
 
-<div id="comments">
-
+<div id="comments" class="comments-area">
+	<h3 class="title">Komentarai</h3>
 	<?php if ( have_comments() ) : ?>
-		<ol class="commentlist">
+		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
 					'style'       => 'ol',
@@ -33,6 +32,7 @@ if ( post_password_required() ) {
 			?>
 		</ol><!-- .comment-list -->
 
+	
 
 	<?php endif; // have_comments() ?>
 
@@ -40,78 +40,49 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Komentarų nėra.', 'twentyfifteen' ); ?></p>
+		<p class="no-comments">Nėra komentarų.</p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	 <?php do_action('form_message'); ?>
+
+	<?php 
+
+	$fields =  array(
+
+	  'author' =>
+	    '<p class="comment-form-author col-md-6"><label for="author">Vardas</label> ' .
+	    ( $req ? '<span class="required">*</span>' : '' ) .
+	    '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+	    '" size="30"' . $aria_req . ' /></p>',
+
+	  'email' =>
+	    '<p class="comment-form-email col-md-6"><label for="email">El. paštas</label> ' .
+	    ( $req ? '<span class="required">*</span>' : '' ) .
+	    '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+	    '" size="30"' . $aria_req . ' /></p>',
+
+	   'comment_field' => '<p class="comment-form-comment col-md-12"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>'
+	);
+		$comments_args = array(
+		        // change the title of send button 
+		        'label_submit'=> 'Išsiųsti',
+		        'class_submit'      => 'submit col-md-3 pull-right',
+		        // change the title of the reply section
+		        'title_reply'=> 'Naujas komentaras',
+		        'comment_field' => '',
+		        // remove "Text or HTML to be displayed after the set of comment fields"
+		        'comment_notes_before' => '',
+		        'comment_notes_after' => '',
+		        'fields' => apply_filters( 'comment_form_default_fields', $fields )
+		);
+
+		comment_form($comments_args);
+	?>
+
 
 </div><!-- .comments-area -->
 
-				<div class="comments data-block data-block--simple data-block--stylesoff">
 
-
-					<h3 class="title">Komentarai</h3>
-
-					<?php comments_template(); ?>
-					<div id="comments">
-
-
-
-						<ol class="commentlist">
-							<li class="comment even thread-even depth-1" id="li-comment-20905">
-								<div class="comment-container data-block data-block--simple data-block--hoveroff">
-									<div class="row">
-										<div class="col-md-2">
-											<div class="comment-author vcard">
-												<cite class="fn">Sigitas</cite>
-											</div><!-- .comment-author .vcard -->
-											
-											<div class="comment-meta commentmetadata">
-												2016-01-20<br>13:15			
-											</div><!-- .comment-meta .commentmetadata -->
-										</div>
-
-
-										<div class="col-md-10">
-											<div class="comment-body">
-												<p>Paryžiuje bus pristatytas "Gallimard" leidyklos išleistas gidas "Vilnius žemėlapiuose" ("Cartoville Vilnius"). Tai pirmasis ir kol kas vienintelis gidas apie Vilnių prancūzų kalba. Beje, leidinyje trumpai apžvelgiami visi keturi mūsų šalies regionai. Leidykla "Gallimard" gidą "Vilnius žemėlapiuose", be prancūzų, išleido dar anglų ir norvegų kalbomis. Leidėjų teigimu, knygą bus galima įsigyti septynių</p>
-											</div>
-
-											<div class="reply pull-right">
-												<a href="#">Atsakyti</a>
-											</div><!-- .reply -->
-										</div>
-									</div>
-								</div><!-- #comment-##  -->
-
-								<ul class="children">
-										<li class="comment byuser comment-author-emanuel_blagonic bypostauthor odd alt depth-2" id="li-comment-20906">
-											<div class="comment-container data-block data-block--simple data-block--hoveroff">
-												<div class="row">
-													<div class="col-md-2">
-														<div class="comment-author vcard">
-															<cite class="fn">Sigitas</cite>
-														</div><!-- .comment-author .vcard -->
-														
-														<div class="comment-meta commentmetadata">
-															2016-01-20<br>13:15			
-														</div><!-- .comment-meta .commentmetadata -->
-													</div>
-
-
-													<div class="col-md-10">
-														<div class="comment-body">
-															<p>Paryžiuje bus pristatytas "Gallimard" leidyklos išleistas gidas "Vilnius žemėlapiuose" ("Cartoville Vilnius"). Tai pirmasis ir kol kas vienintelis gidas apie Vilnių prancūzų kalba. Beje, leidinyje trumpai apžvelgiami visi keturi mūsų šalies regionai. Leidykla "Gallimard" gidą "Vilnius žemėlapiuose", be prancūzų, išleido dar anglų ir norvegų kalbomis. Leidėjų teigimu, knygą bus galima įsigyti septynių</p>
-														</div>
-													</div>
-												</div>
-											</div><!-- #comment-##  -->
-										</li><!-- #comment-## -->
-								</ul><!-- .children -->
-							</li><!-- #comment-## -->
-						</ol>
-					</div> 
-				</div>
 				<hr class="empty">
 				<div class="add-comment data-block data-block--simple data-block--stylesoff">
 					<h3 class="title">Naujas komentaras</h3> 
@@ -140,6 +111,9 @@ if ( post_password_required() ) {
 						    </div>
 						 </div>
 					</form>
+
+					 <?php do_action('form_message'); ?>
+
 					<div class="error error--block error--red">
 						Prašome įvesti el. paštą.
 					</div>

@@ -11,7 +11,7 @@ get_header(); ?>
 
   	<div class="container">
 		<div class="row">
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="col-md-8">
 				<header class="header header--top header--line header--left"> 
 					<a href="<?php esc_url( get_permalink() ); ?>">
@@ -29,13 +29,21 @@ get_header(); ?>
 					<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 					  
 				</article>
+
+
+
 				<header class="header header--top header--line header--left"> 
 					<h2 class="header-title"></h2>
 				</header>
 
-			</div>
-		<?php endwhile; endif; ?>
+				<?php if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif; ?>
 
+			</div>
+		
+		<?php endwhile; ?>
+			
 			<div class="sidebar col-md-4"> 
 				<?php
 					$args = array(

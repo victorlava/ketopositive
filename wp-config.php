@@ -20,15 +20,15 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_SITEURL', 'http://kelioniupaieskawp.victorlava.com');
-define('WP_HOME', 'http://kelioniupaieskawp.victorlava.com');
+define('WP_SITEURL', 'http://kelioniupaieska.dev');
+define('WP_HOME', 'http://kelioniupaieska.dev');
 define('DB_NAME', 'kelioniupaieska');
 
 /** MySQL database username */
-define('DB_USER', 'e19e14103982');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '0c9615a720a442af');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
