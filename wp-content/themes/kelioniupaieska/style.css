@@ -6080,6 +6080,10 @@ section.favourite-hotels .carousel {
   margin-right: -15px;
 }
 
+#comments img {
+  display: none;
+}
+
 #comments br {
   display: none;
 }
