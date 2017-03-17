@@ -5,8 +5,8 @@
 ?>
 
 <div id="comments" class="comments-area">
-	<h3 class="title">Komentarai</h3>
 	<?php if ( have_comments() ) : ?>
+		<h3 class="title">Komentarai</h3>
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(

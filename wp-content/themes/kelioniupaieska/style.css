@@ -6116,6 +6116,10 @@ section.favourite-hotels .carousel {
   font-weight: bold;
 }
 
+#comments ol {
+  list-style: none;
+}
+
 #comments ol.comment-list {
   padding: 0;
   margin: 0;
