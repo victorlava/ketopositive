@@ -32,7 +32,10 @@ get_header(); ?>
 							<?php endif; ?>
 					    </div>
 						<div class="data-block-info">
-							<a href="<?php echo esc_url( get_permalink()); ?>"><h3 class="title"><?php the_title(); ?></h3></a>
+							<a href="<?php echo esc_url( get_permalink()); ?>">
+								<h3 class="title"><?php the_title(); ?></h3>
+								<span class="comment-count"><?php comments_number( '0', '1', '%' ); ?></span> 
+							</a>
 							<p><?php echo get_excerpt(); ?></p> 
 							<div class="tag-links">  
 								<?php the_tags(''); ?>
