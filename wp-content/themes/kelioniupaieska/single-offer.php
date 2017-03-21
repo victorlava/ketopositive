@@ -55,7 +55,7 @@ get_header(); ?>
 
 	       $mailResult = false;
 
-	       $mailResult = wp_mail('hello@victorlava.com', 'Naujas kelionės užsakymas', $message, $headers);
+	       $mailResult = wp_mail('klaipeda@litamicus.lt', 'Naujas kelionės užsakymas', $message, $headers);
 	       
 	      
 

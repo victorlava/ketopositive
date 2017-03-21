@@ -50,7 +50,7 @@ get_header(); ?>
 
 	       $mailResult = false;
 
-	       $mailResult = wp_mail('hello@victorlava.com', 'Naujas užklausa', $message, $headers);
+	       $mailResult = wp_mail($_POST['email'], 'Naujas užklausa', $message, $headers);
 	       //$mailResult = wp_mail($_POST['filialas'], 'Naujas užklausa', $message, $headers);
 	      
 
