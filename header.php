@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/assets/js/src/script.js"></script>-->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<?php wp_head(); ?>
@@ -57,7 +57,7 @@
 	        <div class="row">
 
 	          <a class="navbar-brand pull-left" href="/">
-	            KelioniuPaieska.lt
+	            KetoPositive.me
 	          </a>
 
 	          <div class="navbar-top-right">
@@ -149,10 +149,10 @@
 								</ul>
 							</div>
 							<div class="work-days-title">
-								8:00 - 18:00
+								FOLLOW OUR INSTAGRAM
 							</div>
 				  </div>
-	              <a href="tel:+37052124474">+370 5 212 4474</a>
+	              <a href="tel:+37052124474">@ketopositive</a>
 	            </div>
 
 	            <div class="navbar-header">
