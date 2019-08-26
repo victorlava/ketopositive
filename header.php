@@ -15,7 +15,6 @@
 	$getDepartments = new WP_Query( $args );
 
 
-
 ?><!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -163,9 +162,6 @@
 	        <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
 	          <img class="navbar-close" src="<?php echo get_template_directory_uri(); ?>/assets/img/src/close.png" width="16" height="16">
 	          <ul class="nav nav--main navbar-nav">
-	          	<li id="menu-item-144" class="<?php if(get_post_type() == 'offer'){ echo "current_page_item "; } ?>menu-item menu-item-type-post_type menu-item-object-page menu-item-144">
-	          		<a href="<?php get_site_url()?>/pasiulymas/">Top pasiūlymai</a>
-	          	</li>
             	<?php
     				$defaults = array(
 					    'theme_location'  => 'pagrindinis',
