@@ -7,88 +7,26 @@
 
 
 get_header(); ?>
-   
-  <main id="main"> 
- 
- <?php 
-	if ( ! empty( $_POST ) ) {
 
-	    //echo "<pre>";
-	    //print_R($_POST);
-	    //echo "</pre>";
+  <main id="main">
 
-	    $first_name = TRUE;
-	    $last_name = TRUE;
-	    $phone = TRUE;
-	    $email = TRUE;
-	    $adult = TRUE;
-	    $children = TRUE;
-	    $hideForm = FALSE;
-
-	    if($_POST['first_name'] != ''){$first_name = FALSE;}
-	    if($_POST['last_name'] != ''){$last_name = FALSE;}
-	    if($_POST['phone'] != ''){$phone = FALSE;}
-	    if($_POST['email'] != ''){$email = FALSE;}
-	    if($_POST['adult'] != ''){$adult = FALSE;}
-	    if($_POST['children'] != ''){$children = FALSE;}
-
-	    if($first_name == FALSE && 
-	       $last_name == FALSE && 
-	       $phone == FALSE &&
-	       $email == FALSE && 
-	       $adult == FALSE &&
-	       $children == FALSE){
-
-	       $hideForm = TRUE;
-
-	       $message = "";
-	       $message .= "\r\n";
-	       $message .= "Vardas: " . $_POST['first_name'] . "\r\n";
-	       $message .= "Pavardė: " . $_POST['last_name'] . "\r\n";
-	       $message .= "Tel. numeris: " . $_POST['phone'] . "\r\n";
-	       $message .= "El. paštas: " . $_POST['email'] . "\r\n";
-	       $message .= "Suagusieji: " . $_POST['adult'] . "\r\n";
-	       $message .= "Vaikai: " . $_POST['children'] . "\r\n";
- 
-	       //$headers = array('From: ieska.lt <info@ieska.lt>');
-	       $headers = array('');
-
-	       $mailResult = false;
-
-	       $mailResult = wp_mail('klaipeda@litamicus.lt', 'Naujas kelionės užsakymas', $message, $headers);
-	       
-	      
-
-	    }
-	    else{
-	        
-	    }
-	    /* name required */
-	    /* email required */
-	    /* sub category required */
-
-	    // Sanitize the POST field
-	    // Generate email content
-	    // Send to appropriate email
-	}
-
- ?>
   	<div class="container">
   		<div class="row">
-  			<header class="header header--top header--main header--center"> 
+  			<header class="header header--top header--main header--center">
 				<h2 class="header-title"><?php the_title(); ?></h2>
 				<div class="stars">
-					<?php $iterator = get_field('zvaigzduciu_skaicius'); $iterator = $iterator * 1; ?>
 					<ul class="list list--inline">
-						<?php for($i=0;$i < $iterator; $i++): ?>
 							<li><i class="icon icon-star"></i></li>
-						<?php endfor; ?>
+                            <li><i class="icon icon-star"></i></li>
+                            <li><i class="icon icon-star"></i></li>
+                            <li><i class="icon icon-star"></i></li>
+                            <li><i class="icon icon-star"></i></li>
 					</ul>
 				</div>
 			</header>
   		</div>
 		<div class="row">
-			<div class="col-md-8"> 
+			<div class="col-md-8">
 				<?php if( have_rows('nuotraukos') ): ?>
 				<div id="hotel-carousel" class="carousel slide carousel--simple box-shadow" data-ride="carousel">
 				  <!-- Wrapper for slides -->
@@ -101,7 +39,7 @@ get_header(); ?>
 						    </div>
 						    <?php $b = $b + 1; ?>
 				   		<?php endwhile; ?>
-				
+
 				  </div>
 
 				  <!-- Indicators -->
@@ -128,13 +66,13 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 
-				<article class="article"> 
+				<article class="article">
 
 					<?php echo get_post_field('post_content', $post->ID); ?>
 				</article>
 									<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 
-				<?php if(get_field('rodyti_forma') == 'Ne'): ?> 
+				<?php if(get_field('rodyti_forma') == 'Ne'): ?>
 				<div id="uzsakyti" class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
 						<div class="row">
 							<h3 class="title">Užsakykite kelionę</h3>
@@ -162,7 +100,7 @@ get_header(); ?>
 										</li>
 										<li>
 											<div class="offer-form-first">
-												<i class="icon icon-small-drink"></i> Maitinimas: 
+												<i class="icon icon-small-drink"></i> Maitinimas:
 											</div>
 											<div class="js-track-change offer-form-second">
 												<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
@@ -184,7 +122,7 @@ get_header(); ?>
 							</div>
 							<div class="col-md-4">
 								<div class="price-wrapper">
-									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p> 
+									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p>
 								</div>
 								<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
 							</div>
@@ -202,7 +140,7 @@ get_header(); ?>
 					<div class="error error--block error--red">
 						Prašome pasirinkti vaikų skaičių.
 					</div>
-					<?php endif; ?> 
+					<?php endif; ?>
 
 					<?php if($hideForm == TRUE): ?>
 					<div class="error error--block error--green">
@@ -233,7 +171,7 @@ get_header(); ?>
 												</div>
 											</li>
 											<?php endif ;?>
-											<?php if(get_field('antros_eilutes_pavadinimas')): ?> 
+											<?php if(get_field('antros_eilutes_pavadinimas')): ?>
 											<li>
 												<div class="js-second-radio radio">
 												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
@@ -245,7 +183,7 @@ get_header(); ?>
 									</div>
 								</div>
 								<div class="col-md-3 price-wrapper">
-									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p> 
+									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p>
 								</div>
 							</div>
 							<div class="row">
@@ -288,7 +226,7 @@ get_header(); ?>
 										                  <option value="1">1</option>
 										                  <option value="2">2</option>
 										                  <option value="3">3</option>
-										                </select> 
+										                </select>
 										            </div>
 												</div>
 												<div class="col-md-6">
@@ -302,7 +240,7 @@ get_header(); ?>
 										                  <option value="1">1</option>
 										                  <option value="2">2</option>
 										                  <option value="3">3</option>
-										                </select> 
+										                </select>
 										            </div>
 												</div>
 											</div>
@@ -319,18 +257,18 @@ get_header(); ?>
 					        $('.selectpicker').selectpicker({
 							  style: '',
 							  size: 4
-							}); 
+							});
 					    });
 				        </script>
 				</div>
 				<?php endif; ?>
-				
+
 
 			</div>
 
-			<div class="sidebar col-md-4"> 
+			<div class="sidebar col-md-4">
 
-				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff<?php if(get_field('rodyti_forma') != 'Ne'){ echo " hidden-xs hidden-sm";} ?>">   
+				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff<?php if(get_field('rodyti_forma') != 'Ne'){ echo " hidden-xs hidden-sm";} ?>">
 					<h3 class="title"><?php the_field('keliones_kryptis_trumpa'); ?></h3>
 					<ul>
 						<li>
@@ -339,9 +277,9 @@ get_header(); ?>
 							</div>
 							<div class="offer-form-second date">
 								<?php the_field('keliones_data'); ?>
-							</div> 
+							</div>
 						</li>
-						<li> 
+						<li>
 							<div class="offer-form-first">
 								<i class="icon icon-small-bed"></i> Nakvynių skaičius:
 							</div>
@@ -351,12 +289,12 @@ get_header(); ?>
 						</li>
 						<li>
 							<div class="offer-form-first">
-								<i class="icon icon-small-drink"></i> Maitinimas: 
+								<i class="icon icon-small-drink"></i> Maitinimas:
 							</div>
 							<div class="js-track-change offer-form-second">
 								<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
 								<div class="js-first-radio radio">
-								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked> 
+								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked>
 								  <label for="breakfest-first"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('pirmos_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
 								</div>
 								<?php endif; ?>
@@ -370,15 +308,15 @@ get_header(); ?>
 						</li>
 					</ul>
 					<div class="price-wrapper">
-						<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p> 
+						<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p>
 					</div>
-					<?php if(get_field('rodyti_forma') == 'Ne'): ?> 
+					<?php if(get_field('rodyti_forma') == 'Ne'): ?>
 						<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
 					<?php else: ?>
 						<a href="#uzsakyti" class="form-control button button--primary button--submit">Užsakyti</a>
 					<?php endif; ?>
 
-			
+
 				</div>
 
 				<?php
@@ -396,14 +334,14 @@ get_header(); ?>
 				?>
 
 				<?php if( $getOffers->have_posts() ): ?>
-					<header class="header header--sidebar header--line"> 
+					<header class="header header--sidebar header--line">
 						<h4 class="header-title">Kiti pasiūlymai</h4>
 					</header>
 
 
 					<?php while( $getOffers->have_posts() ) : $getOffers->the_post(); ?>
 						<div class="data-block data-block--offer data-block--hoveroff">
-							<a href="<?php get_permalink();?>"> 
+							<a href="<?php get_permalink();?>">
 								<div class="data-block-image">
 							   		<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
 								   		<div class="data-block-image">
@@ -419,7 +357,7 @@ get_header(); ?>
 										<div class="align align--vertical">
 											<p><?php the_field('kaina'); ?>€</p>
 											<?php if(get_field('sena_kaina')): ?>
-												<p class="old-price"><?php the_field('sena_kaina'); ?>€</p> 
+												<p class="old-price"><?php the_field('sena_kaina'); ?>€</p>
 											<?php endif; ?>
 										</div>
 									</div>
