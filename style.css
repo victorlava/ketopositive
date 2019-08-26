@@ -3465,7 +3465,7 @@ a:hover, a:focus, a:active {
 }
 
 span.highlight {
-  color: #ff6138;
+  color: #D33A2C;
 }
 
 .box-shadow {
@@ -3583,13 +3583,13 @@ h3 {
 h4 {
   font-size: 20px;
   font-weight: 400;
-  color: #ff6138;
+  color: #D33A2C;
 }
 
 h5 {
   font-size: 16px;
   font-weight: bold;
-  color: #ff6138;
+  color: #D33A2C;
 }
 
 .icon-adults {
@@ -3907,7 +3907,7 @@ section.footer footer .footer-bottom .footer-social li a.instagram .icon {
 }
 
 section.footer footer .footer-bottom .footer-social li:hover, section.footer footer .footer-bottom .footer-social li:active, section.footer footer .footer-bottom .footer-social li:focus {
-  background: #ff6138;
+  background: #D33A2C;
 }
 
 section.footer footer .footer-bottom .footer-social li:hover a.facebook .icon, section.footer footer .footer-bottom .footer-social li:active a.facebook .icon, section.footer footer .footer-bottom .footer-social li:focus a.facebook .icon {
@@ -3978,7 +3978,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
     content: " ";
     width: 20%;
     height: 4px;
-    background: #f6a41b;
+    background: #C78248;
     display: block;
     position: absolute;
     bottom: 0;
@@ -4005,7 +4005,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 }
 
 .navbar .navbar-header .navbar-toggle {
-  border: 1px solid #ff6138;
+  border: 1px solid #D33A2C;
   border-radius: 10em;
   width: 36px;
   height: 36px;
@@ -4015,7 +4015,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 }
 
 .navbar .navbar-header .navbar-toggle .icon-bar {
-  background: #ff6138;
+  background: #D33A2C;
   width: 50%;
   height: 2px;
   border-radius: 1px;
@@ -4178,7 +4178,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 }
 
 .navbar .navbar-top .navbar-top-right .navbar-top-phone a {
-  color: #ff6138;
+  color: #D33A2C;
   font-size: 18px;
   font-weight: bold;
   float: right;
@@ -4282,7 +4282,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .header.header--main .header-title {
-  color: #ff6138;
+  color: #373948;
 }
 
 .header.header--main .header-title .header-smaller {
@@ -4311,7 +4311,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .header.header--main .header-sub-title {
-  color: #a5857c;
+  color: #848386;
   font-weight: 400;
   padding-top: 4px;
 }
@@ -4321,7 +4321,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .header.header--sidebar .header-title {
-  color: #ff6138;
+  color: #D33A2C;
   text-align: center;
   font-weight: bold;
 }
@@ -4487,8 +4487,8 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav.nav--main li.current_page_item, .nav.nav--main li:hover, .nav.nav--main li:focus, .nav.nav--main li:active {
-  background: #f6a41b;
-  border-color: #f6a41b;
+  background: #C78248;
+  border-color: #C78248;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -4577,7 +4577,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav.nav--secondary li:hover a, .nav.nav--secondary li:focus a, .nav.nav--secondary li:active a, .nav.nav--secondary li.current_page_item a, .nav.nav--secondary li.open a {
-  color: #f6a41b;
+  color: #C78248;
   background: transparent;
 }
 
@@ -4614,7 +4614,7 @@ since your site is should be mostly composed of tiny modules.
   height: 1px;
   bottom: -3.5px;
   display: block;
-  background: #f6a41b;
+  background: #C78248;
   position: relative;
 }
 
@@ -4717,7 +4717,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav li.menu-item-has-children ul.sub-menu li.current_page_item a {
-  color: #f6a41b;
+  color: #C78248;
 }
 
 .nav li.menu-item-has-children ul.sub-menu li:hover, .nav li.menu-item-has-children ul.sub-menu li:focus, .nav li.menu-item-has-children ul.sub-menu li:active {
@@ -4760,11 +4760,11 @@ since your site is should be mostly composed of tiny modules.
   height: 7px;
   display: block;
   margin: 0 1.5px;
-  border: 1px solid #f6a41b;
+  border: 1px solid #C78248;
 }
 
 .work-days .work-days-list li.active {
-  background: #f6a41b;
+  background: #C78248;
 }
 
 .work-days .work-days-title {
@@ -4894,7 +4894,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .section.section--primary {
-  background-color: #ff6138;
+  background-color: #D33A2C;
 }
 
 .main-search {
@@ -4902,6 +4902,10 @@ section.email .email-wrapper .email-form form .email-submit input {
   padding: 3em 0;
   z-index: 0;
   position: relative;
+}
+
+.main-search h1 {
+    margin-top: 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -4952,21 +4956,21 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .main-search form .main-search-inputs .input-group--select:hover .input-group-addon {
-  border-left: 1px solid #ff6138;
-  border-top: 1px solid #ff6138;
-  border-bottom: 1px solid #ff6138;
+  border-left: 1px solid #D33A2C;
+  border-top: 1px solid #D33A2C;
+  border-bottom: 1px solid #D33A2C;
 }
 
 .main-search form .main-search-inputs .input-group--select:hover .btn {
-  border-top: 1px solid #ff6138;
-  border-bottom: 1px solid #ff6138;
-  border-right: 1px solid #ff6138;
+  border-top: 1px solid #D33A2C;
+  border-bottom: 1px solid #D33A2C;
+  border-right: 1px solid #D33A2C;
 }
 
 .main-search form .main-search-inputs .input-group--select:hover .dropdown-menu.inner {
-  border-left: 1px solid #ff6138 !important;
-  border-bottom: 1px solid #ff6138 !important;
-  border-right: 1px solid #ff6138 !important;
+  border-left: 1px solid #D33A2C !important;
+  border-bottom: 1px solid #D33A2C !important;
+  border-right: 1px solid #D33A2C !important;
 }
 
 .main-search form .main-search-inputs > div {
@@ -5132,7 +5136,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 
 .input-group.input-group--select .dropdown-menu.open .dropdown-menu.inner a:hover {
   background: #faf1ea;
-  color: #ff6138;
+  color: #D33A2C;
   cursor: pointer;
 }
 
@@ -5228,11 +5232,11 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .input-group.input-group--select select:focus, .input-group.input-group--select select:active {
-  border-color: #ff6138;
+  border-color: #D33A2C;
 }
 
 input[type="submit"], .button--submit {
-  background: #ff6138;
+  background: #D33A2C;
   color: #FFF;
   border: 0;
   outline: 0;
@@ -5264,7 +5268,7 @@ input, select, textarea {
 }
 
 input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
-  border-color: #ff6138;
+  border-color: #D33A2C;
   box-shadow: none !important;
   outline: 0;
 }
@@ -5382,7 +5386,7 @@ textarea {
 }
 
 .data-block.data-block--article:hover .title, .data-block.data-block--article:focus .title, .data-block.data-block--article:active .title {
-  color: #f6a41b;
+  color: #C78248;
   text-decoration: underline;
 }
 
@@ -5391,7 +5395,7 @@ textarea {
 }
 
 .data-block.data-block--simple .title {
-  color: #ff6138;
+  color: #D33A2C;
   font-size: 22px;
   margin-bottom: 12px;
 }
@@ -5437,7 +5441,7 @@ textarea {
   width: 60px;
   height: 60px;
   border-radius: 10em;
-  background: #ff6138;
+  background: #D33A2C;
   position: absolute;
   right: 7px;
   top: -20px;
@@ -5537,7 +5541,7 @@ textarea {
 
 .data-block.data-block--offer time, .data-block.data-block--offer .time {
   text-transform: uppercase;
-  color: #ff6138;
+  color: #D33A2C;
   letter-spacing: 1px;
   font-size: 11px;
 }
@@ -5614,7 +5618,7 @@ textarea {
 }
 
 .data-block.data-block--cloud a {
-  color: #ff6138;
+  color: #D33A2C;
   margin-right: 14px;
   font-weight: 400;
 }
@@ -5678,13 +5682,12 @@ textarea {
 }
 
 .button.button--primary, .page-numbers.button--primary {
-  background: #ff6138;
+  background: #D33A2C;
   color: #FFF;
 }
 
 .button.button--primary:hover, .button.button--primary:focus, .button.button--primary:active, .page-numbers.button--primary:hover, .page-numbers.button--primary:focus, .page-numbers.button--primary:active {
-  background: #c9572c;
-  box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15);
+  background: #C78248;
 }
 
 .button.button--long, .page-numbers.button--long {
@@ -5963,7 +5966,7 @@ section.favourite-hotels .carousel {
   background: #fbfaf3;
   border-radius: 4px;
   border: 1px solid #f1eedb;
-  color: #f6a41b;
+  color: #C78248;
   padding: 3px 10px;
   font-size: 11px;
   margin-right: 3px;
@@ -5983,7 +5986,7 @@ section.favourite-hotels .carousel {
 }
 
 .nav-links .page-numbers.current {
-  background: #ff6138;
+  background: #D33A2C;
   color: #FFF;
 }
 
@@ -6084,7 +6087,7 @@ section.favourite-hotels .carousel {
   background: #fbfaf3;
   border-radius: 10em;
   border: 1px solid #f1eedb;
-  color: #f6a41b;
+  color: #C78248;
   font-size: 11px;
   margin-left: 5px;
   text-transform: uppercase;
@@ -6127,7 +6130,7 @@ section.favourite-hotels .carousel {
 }
 
 #comments .title, #comments .comment-reply-title {
-  color: #ff6138;
+  color: #D33A2C;
   font-size: 22px;
   margin-bottom: 12px;
   font-weight: bold;
@@ -6251,7 +6254,7 @@ section.favourite-hotels .carousel {
 
 #comments ol.comment-list .comment .comment-body .reply a {
   font-size: 14px;
-  color: #ff6138;
+  color: #D33A2C;
 }
 
 .offer-bar {
@@ -6281,7 +6284,7 @@ section.favourite-hotels .carousel {
 }
 
 .offer-bar li.active, .offer-bar li:hover, .offer-bar li:active, .offer-bar li:focus {
-  background: #ff6138;
+  background: #D33A2C;
 }
 
 .offer-bar li.active a, .offer-bar li:hover a, .offer-bar li:active a, .offer-bar li:focus a {
@@ -6294,7 +6297,7 @@ section.favourite-hotels .carousel {
   display: block;
   bottom: -3px;
   position: absolute;
-  border-bottom: 3px solid #ff6138;
+  border-bottom: 3px solid #D33A2C;
 }
 
 .offer-bar li.active:after, .offer-bar li:hover:after, .offer-bar li:active:after, .offer-bar li:focus:after {
@@ -6342,7 +6345,7 @@ section.favourite-hotels .carousel {
   border-radius: 10em;
   width: 20px;
   height: 20px;
-  color: #ff6138;
+  color: #D33A2C;
   background: #fbfaf3;
   border: 1px solid #f1eedb;
   font-size: 10px;
@@ -6631,7 +6634,7 @@ section.favourite-hotels .carousel {
 }
 
 .price-wrapper p span {
-  color: #ff6138;
+  color: #D33A2C;
   font-size: 21px;
   white-space: nowrap;
 }
@@ -7058,15 +7061,15 @@ section.favourite-directions .col-md-6 {
 .picker__day--highlighted:hover,
 .picker--focused .picker__day--highlighted {
   cursor: pointer;
-  background: #ff6138;
-  border-color: #ff6138;
+  background: #D33A2C;
+  border-color: #D33A2C;
   color: #FFF;
 }
 
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
-  background: #ff6138;
+  background: #D33A2C;
   color: #ffffff;
 }
 
