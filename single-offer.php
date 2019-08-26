@@ -72,7 +72,7 @@ get_header(); ?>
 				</article>
 									<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 
-				<?php if(get_field('rodyti_forma') == 'Ne'): ?>
+		
 				<div id="uzsakyti" class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
 						<div class="row">
 							<h3 class="title">Užsakykite kelionę</h3>
@@ -128,140 +128,7 @@ get_header(); ?>
 							</div>
 						</div>
 				</div>
-				<?php else: ?>
-					<div id="uzsakyti" class="offer-form offer-form--long offer-form--full data-block data-block--simple data-block--hoveroff">
-					<?php if($adult == TRUE): ?>
-					<div class="error error--block error--red">
-						Prašome pasirinkti suagusiūjų skaičių.
-					</div>
-					<?php endif; ?>
 
-					<?php if($children == TRUE): ?>
-					<div class="error error--block error--red">
-						Prašome pasirinkti vaikų skaičių.
-					</div>
-					<?php endif; ?>
-
-					<?php if($hideForm == TRUE): ?>
-					<div class="error error--block error--green">
-						Užsakymų forma sėkmingai išsiųsta!
-					</div>
-					<?php endif; ?>
-						<form action="<?php get_permalink(); ?>#uzsakyti" method="POST">
-							<div class="row">
-								<h3 class="title">Užsakykite kelionę</h3>
-							</div>
-							<div class="offer-form-price row">
-								<div class="col-md-9">
-									<div class="row row--first">
-										<ul class="list list--inline">
-											<li><strong><?php the_field('keliones_kryptis_trumpa'); ?></strong></li>
-											<li><?php the_title(); ?></li>
-											<li><?php the_field('keliones_data'); ?></li>
-										</ul>
-									</div>
-									<div class="js-track-change row">
-										<ul class="list list--inline">
-											<li>Maitinimas:</li>
-											<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
-											<li>
-												<div class="js-first-radio radio">
-												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked>
-												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('pirmos_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
-												</div>
-											</li>
-											<?php endif ;?>
-											<?php if(get_field('antros_eilutes_pavadinimas')): ?>
-											<li>
-												<div class="js-second-radio radio">
-												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
-												  <label for="all-second"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
-												</div>
-											</li>
-											<?php endif; ?>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 price-wrapper">
-									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="form-group">
-								    <div class="row">
-									    <div class="col-md-6">
-									    	<label for="name">Vardas</label>
-									    	<input type="text" id="first_name" name="first_name" placeholder="" value="<?php echo $_POST['first_name']; ?>" required>
-									    </div>
-									    <div class="col-md-6">
-									    	<label for="name">Pavardė</label>
-									    	<input type="text" id="last_name" name="last_name" placeholder="" value="<?php echo $_POST['last_name']; ?>" required>
-									    </div>
-								    </div>
-								</div>
-								<div class="form-group">
-								    <div class="row">
-								    	<div class="col-md-6">
-									    	<label for="name">Telefonas</label>
-									    	<input type="text" id="phone" name="phone" placeholder="" value="<?php echo $_POST['phone']; ?>" required>
-									    </div>
-									    <div class="col-md-6">
-									    	<label for="name">El. paštas</label>
-									    	<input type="email" id="email" name="email" placeholder="" value="<?php echo $_POST['email']; ?>" required>
-									    </div>
-								    </div>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="row">
-												<div class="col-md-6">
-													<label for="suagusieji">Suagusių skaičius</label>
-													<div class="input-group input-group--select">
-										                <span class="input-group-addon">
-										                	<i class="icon icon-adults"></i>
-										                </span>
-										                <select class="selectpicker" name="adult">
-										                  <option selected="" disabled="" id="suagusieji" name="suagusieji">Suaugusieji</option>
-										                  <option value="1">1</option>
-										                  <option value="2">2</option>
-										                  <option value="3">3</option>
-										                </select>
-										            </div>
-												</div>
-												<div class="col-md-6">
-													<label for="vaikai">Vaikų skaičius</label>
-													<div class="input-group input-group--select">
-										                <span class="input-group-addon">
-										                	<i class="icon icon-children"></i>
-										                </span>
-										                <select class="selectpicker" name="children">
-										                  <option selected="" disabled="" id="vaikai" name="vaikai">Vaikai</option>
-										                  <option value="1">1</option>
-										                  <option value="2">2</option>
-										                  <option value="3">3</option>
-										                </select>
-										            </div>
-												</div>
-											</div>
-										</div>
-									<div class="col-md-6">
-										<input type="submit" class="form-control button button--primary" value="Užsakyti">
-									</div>
-									</div>
-								</div>
-							</div>
-						</form>
-						<script type="text/javascript">
-				        jQuery(document).ready(function ($) {
-					        $('.selectpicker').selectpicker({
-							  style: '',
-							  size: 4
-							});
-					    });
-				        </script>
-				</div>
-				<?php endif; ?>
 
 
 			</div>
@@ -376,34 +243,6 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-
-	<script type="text/javascript">
-		jQuery(document).ready(function($){
-
-			var currentPrice = $('.js-change-price').html();
-				currentPrice = currentPrice.replace(' €', '') * 1;
-
-			$('.js-track-change input').on('change', function(){
-				var value = $(this).val() * 1;
-
-				if($(this).parent().hasClass('js-first-radio')){
-					$('#main .js-first-radio input').attr('checked', true);
-				}
-				else{
-					$('#main .js-second-radio input').attr('checked', true);
-				}
-
-				if(value != 0){
-					$('.js-change-price').html(value + currentPrice + ' €');
-				}
-				else{
-					$('.js-change-price').html(currentPrice + ' €');
-				}
-
-			});
-
-		});
-	</script>
 
   </main><!-- #main -->
 
