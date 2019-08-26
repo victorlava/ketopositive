@@ -4146,13 +4146,10 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
   }
 }
 
-.navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
+.navbar .navbar-top .navbar-top-right .navbar-top-phone i {
   content: " ";
   position: absolute;
   display: block;
-  background-image: url(assets/img/src/phone-for-mobiles.png);
-  width: 16px;
-  height: 24px;
   right: 160px;
   top: 19px;
 }
@@ -4164,16 +4161,15 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 }
 
 @media screen and (min-width: 992px) {
-  .navbar .navbar-top .navbar-top-right .navbar-top-phone:before {
-    background-image: url(assets/img/src/sprites.png);
-    background-position: -279px 0px;
-    width: 64px;
-    height: 58px;
+  .navbar .navbar-top .navbar-top-right .navbar-top-phone i {
     bottom: 2px;
-    left: 0;
+    left: 25px;
     top: auto;
     right: auto;
     display: block;
+    font-size: 52px;
+    transform: rotate(-24deg);
+    color: #848386;
   }
 }
 
@@ -4587,7 +4583,7 @@ since your site is should be mostly composed of tiny modules.
 
 .nav.nav--secondary li a {
   padding: 0px 5px;
-  color: #7a2b17;
+  color: #373948;
   position: relative;
   text-transform: uppercase;
 }
@@ -4715,7 +4711,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav li.menu-item-has-children ul.sub-menu li a {
-  color: #7a2b17;
+  color: #373948;
   display: block;
   padding: 10px 0;
 }
@@ -4759,7 +4755,7 @@ since your site is should be mostly composed of tiny modules.
 
 .work-days .work-days-title {
   font-size: 14px;
-  color: #7a2b17;
+  color: #373948;
   margin-left: 20px;
 }
 
@@ -6312,7 +6308,7 @@ section.favourite-hotels .carousel {
   display: block;
   font-size: 12px;
   text-transform: uppercase;
-  color: #7a2b17;
+  color: #373948;
 }
 
 @media screen and (min-width: 992px) {

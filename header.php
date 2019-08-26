@@ -135,11 +135,11 @@
 
 	            <div class="navbar-top-phone">
 	              <!-- savaičių dienų partial -->
+                  <i class="fab fa-instagram"></i>
 	              <div class="work-days">
-
-							<div class="work-days-title">
-								FOLLOW OUR INSTAGRAM
-							</div>
+    				<div class="work-days-title">
+    					FOLLOW OUR INSTAGRAM
+    				</div>
 				  </div>
 	              <a href="tel:+37052124474">@ketopositive</a>
 	            </div>
