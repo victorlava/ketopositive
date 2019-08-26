@@ -1138,7 +1138,7 @@ output {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 100px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -4608,16 +4608,6 @@ since your site is should be mostly composed of tiny modules.
   }
 }
 
-.nav.nav--secondary li a:after {
-  content: " ";
-  width: 100%;
-  height: 1px;
-  bottom: -3.5px;
-  display: block;
-  background: #C78248;
-  position: relative;
-}
-
 .nav.nav--carousel-selectors li {
   margin: 0 7px;
 }
@@ -4821,7 +4811,7 @@ section.email .email-wrapper {
 
 @media screen and (min-width: 768px) {
   section.email .email-wrapper {
-    padding: 2.27em 20px;
+    padding: 5em 20px;
   }
 }
 
@@ -4857,9 +4847,8 @@ section.email .email-wrapper .email-form form > div {
 
 section.email .email-wrapper .email-form form .email-email input {
   border: 1px solid #eeded3;
-  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.05);
   padding: 21px;
-  height: 48px !important;
+  height: 50px !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -4871,7 +4860,7 @@ section.email .email-wrapper .email-form form .email-email input {
 }
 
 section.email .email-wrapper .email-form form .email-email input:focus, section.email .email-wrapper .email-form form .email-email input:active {
-  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.05) !important;
+
 }
 
 section.email .email-wrapper .email-form form .email-submit input {
@@ -4879,7 +4868,6 @@ section.email .email-wrapper .email-form form .email-submit input {
   text-transform: capitalize;
   letter-spacing: 0;
   padding: 14px;
-  box-shadow: inset 0 -3px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 992px) {
@@ -5029,7 +5017,6 @@ section.email .email-wrapper .email-form form .email-submit input {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
-  /* box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15) !important; */
 }
 
 @media screen and (max-width: 768px) {
@@ -5242,10 +5229,9 @@ input[type="submit"], .button--submit {
   outline: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-radius: 4px;
+  border-radius: 100px;
   height: 50px;
   line-height: 16px;
-  box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.15) !important;
 }
 
 label {
@@ -5914,7 +5900,7 @@ textarea {
 }
 
 section.favourite-hotels {
-  padding: 3em 0;
+  padding: 5em 0;
   position: relative;
   border-top: 1px solid #eeddd0;
   border-bottom: 1px solid #eeddd0;
