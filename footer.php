@@ -101,9 +101,16 @@
 	        				KetoPositive.me ® <?php echo date('Y'); ?>
 	        			</div>
 	        			<div class="footer-social pull-right">
-	        					<li><a href="<?php echo get_theme_mod('social_setting'); ?>" class="facebook"><i class="icon"></i></a></li>
-	        					<li><a href="<?php echo get_theme_mod('social_setting2'); ?>" class="google"><i class="icon"></i></a></li>
-	        					<li><a href="<?php echo get_theme_mod('social_setting3'); ?>" class="instagram"><i class="icon"></i></a></li>
+	        					<li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </li>
 	        				</ul>
 	        			</div>
 	    			</div>

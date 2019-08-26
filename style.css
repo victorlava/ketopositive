@@ -3868,10 +3868,16 @@ section.footer footer .footer-bottom .footer-copyright {
   }
 }
 
+section.footer .footer-social a {
+    display: block;
+    text-align: center;
+    line-height: 47px;
+}
+
 section.footer footer .footer-bottom .footer-social li {
   background: #463632;
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 47px;
   border-radius: 10em;
   margin-left: 10px;
   list-style: none;
@@ -3883,27 +3889,6 @@ section.footer footer .footer-bottom .footer-social li a .icon {
   position: relative;
   top: 9px;
   margin: auto;
-}
-
-section.footer footer .footer-bottom .footer-social li a.facebook .icon {
-  background-image: url(assets/img/src/sprites.png);
-  background-position: -313px -122px;
-  width: 20px;
-  height: 32px;
-}
-
-section.footer footer .footer-bottom .footer-social li a.google .icon {
-  background-image: url(assets/img/src/sprites.png);
-  background-position: -313px -90px;
-  width: 26px;
-  height: 32px;
-}
-
-section.footer footer .footer-bottom .footer-social li a.instagram .icon {
-  background-image: url(assets/img/src/sprites.png);
-  background-position: -311px -186px;
-  width: 32px;
-  height: 32px;
 }
 
 section.footer footer .footer-bottom .footer-social li:hover, section.footer footer .footer-bottom .footer-social li:active, section.footer footer .footer-bottom .footer-social li:focus {
