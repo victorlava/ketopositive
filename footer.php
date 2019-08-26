@@ -12,10 +12,10 @@
 	// The Query
 	$getDepartments = new WP_Query( $args );
 
-		
+
 ?>
-	<?php get_template_part( 'partials/email' ); ?>  
-	
+	<?php get_template_part( 'partials/email' ); ?>
+
 	<section class="footer section">
 		<footer>
 				<div class="footer-top row">
@@ -28,7 +28,7 @@
 			        			<p>Profesionalų komanda, sukaupusi ilgametę patirtį ir padedanti įsigyti keliones į bet kurį pasaulio kraštą. Siūlome aviabilietus, traukinių, autobusų, keltų bilietus, viešbučius visame pasaulyje. Mūsų biuruose gausite išsamią, tikslią ir naujausią informaciją.</p>
 		        			</div>
 		        		</div>
-		        		
+
 		        		<div class="col-md-3">
 		        			<div class="footer-block">
 		        				<header class="header header--line header--left">
@@ -37,7 +37,7 @@
 		        				<?php if( $getDepartments->have_posts() ): ?>
 		        				<ul class="list list--phones">
 		        					<?php while( $getDepartments->have_posts() ) : $getDepartments->the_post(); ?>
-		        					<?php 
+		        					<?php
 		        						$telephone = get_field('telefonas');
 		        						$telephone = str_replace(array(' ', '(', ')', '-'), '', $telephone);
 		        					?>
@@ -56,14 +56,14 @@
 		        					<h4 class="header-title">Naudinga informacija</h4>
 		        				</header>
 			        			<ul class="list list--links">
-	        						<?php 
+	        						<?php
 				        				$defaults = array(
 										    'theme_location'  => 'naudinga',
 										    'echo'            => true,
 										    'fallback_cb'     => 'wp_page_menu',
 										    'items_wrap'      => '%3$s'
 										);
-				
+
 			        				?>
 
 			        				<?php wp_nav_menu( $defaults ); ?>
@@ -77,7 +77,7 @@
 		        					<h4 class="header-title">Kelionės</h4>
 		        				</header>
 			        			<ul class="list list--links">
-			        				<?php 
+			        				<?php
 				        				$defaults = array(
 										    'theme_location'  => 'keliones',
 										    'container'		  => '',
@@ -85,22 +85,22 @@
 										    'fallback_cb'     => 'wp_page_menu',
 										    'items_wrap'      => '%3$s'
 										);
-				
+
 			        				?>
 
 			        				<?php wp_nav_menu( $defaults ); ?>
 		        				</ul>
 		        			</div>
 		        		</div>
-		        	</div> 
+		        	</div>
 	    		</div>
 
 	    		<div class="footer-bottom">
 	    			<div class="container">
 	    				<div class="footer-copyright pull-left">
-	        				Kelioniupaieska.lt ® 2016
+	        				KetoPositive.me ® <?php echo date('Y'); ?>
 	        			</div>
-	        			<div class="footer-social pull-right"> 
+	        			<div class="footer-social pull-right">
 	        					<li><a href="<?php echo get_theme_mod('social_setting'); ?>" class="facebook"><i class="icon"></i></a></li>
 	        					<li><a href="<?php echo get_theme_mod('social_setting2'); ?>" class="google"><i class="icon"></i></a></li>
 	        					<li><a href="<?php echo get_theme_mod('social_setting3'); ?>" class="instagram"><i class="icon"></i></a></li>
@@ -110,7 +110,7 @@
 	    		</div>
 	    </footer>
 	</section>
- 
+
 <?php wp_footer(); ?>
 
 </body>

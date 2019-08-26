@@ -35,6 +35,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/assets/js/src/script.js"></script>-->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e14d669a4.js"></script>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<?php wp_head(); ?>
