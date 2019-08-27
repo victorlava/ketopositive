@@ -110,32 +110,38 @@ get_header(); ?>
                             </a>
 						</div>
 					</div>
-                    <?php if( have_rows('ingredients') ): ?>
-                    <div class="ingredient-wrapper">
-                        <div class="row">
-                            <h2 class="title">Ingredients</h2>
-                        </div>
-                        <div class="row">
-                        	<div class="col-md-7">
+                    <?php if( have_rows('products') ): ?>
+                    <?php while ( have_rows('products') ) : the_row(); ?>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="ingredient-wrapper">
                                 <div class="row">
-    								<ul>
-                                        <?php while ( have_rows('ingredients') ) : the_row(); ?>
-    									<li>
-    										<div class="offer-form-first">
-                                                <i class="fas fa-circle"></i>
-                                                <?php the_sub_field('amount'); ?>
-                                                <?php echo get_term(get_sub_field('measurement_unit'))->name; ?>
-                                                <strong><?php echo get_term(get_sub_field('ingredient'))->name;  ?></strong>
-                                                <em><?php the_sub_field('comment'); ?></em>
-                                                <!-- 6 ounce peanut butter (creamy) -->
-    										</div>
-    									</li>
-                                        <?php endwhile; ?>
-    								</ul>
-    							</div>
+                                    <h2 class="title"><?php the_sub_field('product_name'); ?>: </h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="row">
+                                            <ul>
+                                                <?php while ( have_rows('product_ingredients') ) : the_row(); ?>
+                                                <li>
+                                                    <div class="offer-form-first">
+                                                        <i class="fas fa-circle"></i>
+                                                        <?php the_sub_field('amount'); ?>
+                                                        <?php echo get_term(get_sub_field('measurement_unit'))->name; ?>
+                                                        <strong><?php echo get_term(get_sub_field('ingredient'))->name;  ?></strong>
+                                                        <em><?php the_sub_field('comment'); ?></em>
+                                                        <!-- 6 ounce peanut butter (creamy) -->
+                                                    </div>
+                                                </li>
+                                                <?php endwhile; ?>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <?php endwhile; ?>
                     <?php endif; ?>
 				</div>
 

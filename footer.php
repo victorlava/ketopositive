@@ -14,9 +14,10 @@
 
 
 ?>
-	<?php get_template_part( 'partials/email' ); ?>
-
+	
 	<section class="footer section">
+        <?php get_template_part( 'partials/email' ); ?>
+
 		<footer>
 				<div class="footer-top row">
 		        	<div class="container">

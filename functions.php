@@ -58,7 +58,7 @@ function codex_offer_init() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'recipe' ),
+		'rewrite'            => array( 'slug' => 'keto-recipe' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
@@ -274,7 +274,7 @@ function create_ingredient_taxonomies() {
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'ingredient' ),
+		'rewrite'           => array( 'slug' => 'keto-product' ),
 	);
 
 	register_taxonomy( 'ingredient', 'recipe', $args );
