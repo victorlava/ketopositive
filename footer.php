@@ -14,7 +14,7 @@
 
 
 ?>
-	
+
 	<section class="footer section">
         <?php get_template_part( 'partials/email' ); ?>
 
@@ -24,29 +24,29 @@
 		        		<div class="col-md-3">
 		        			<div class="footer-block">
 		        				<header class="header header--line header--left">
-		        					<h4 class="header-title">Apie kelioniupaieska.lt</h4>
+		        					<h4 class="header-title">About ketopositive.me</h4>
 		        				</header>
-			        			<p>Profesionalų komanda, sukaupusi ilgametę patirtį ir padedanti įsigyti keliones į bet kurį pasaulio kraštą. Siūlome aviabilietus, traukinių, autobusų, keltų bilietus, viešbučius visame pasaulyje. Mūsų biuruose gausite išsamią, tikslią ir naujausią informaciją.</p>
+			        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
 		        			</div>
 		        		</div>
 
 		        		<div class="col-md-3">
 		        			<div class="footer-block">
 		        				<header class="header header--line header--left">
-		        					<h4 class="header-title">Agentūros filialai</h4>
+		        					<h4 class="header-title">Main</h4>
 		        				</header>
-		        				<?php if( $getDepartments->have_posts() ): ?>
-		        				<ul class="list list--phones">
-		        					<?php while( $getDepartments->have_posts() ) : $getDepartments->the_post(); ?>
-		        					<?php
-		        						$telephone = get_field('telefonas');
-		        						$telephone = str_replace(array(' ', '(', ')', '-'), '', $telephone);
-		        					?>
-		        					<li><a href="call:<?php echo $telephone; ?>"><strong><?php the_field('miestas'); ?>:</strong> <?php the_field('telefonas'); ?></a></li>
-		        					<?php endwhile; ?>
-		        				</ul>
-		        				<?php endif;?>
-								<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+                                <ul class="list list--links">
+	        						<?php
+				        				$defaults = array(
+										    'theme_location'  => 'footer_2',
+										    'echo'            => true,
+										    'fallback_cb'     => 'wp_page_menu',
+										    'items_wrap'      => '%3$s'
+										);
+
+			        				?>
+
+			        				<?php wp_nav_menu( $defaults ); ?>
 		        			</div>
 		        		</div>
 
@@ -54,12 +54,12 @@
 		        		<div class="col-md-3">
 		        			<div class="footer-block">
 		        				<header class="header header--line header--left">
-		        					<h4 class="header-title">Naudinga informacija</h4>
+		        					<h4 class="header-title">Recipes</h4>
 		        				</header>
 			        			<ul class="list list--links">
 	        						<?php
 				        				$defaults = array(
-										    'theme_location'  => 'naudinga',
+										    'theme_location'  => 'footer_3',
 										    'echo'            => true,
 										    'fallback_cb'     => 'wp_page_menu',
 										    'items_wrap'      => '%3$s'
@@ -75,12 +75,12 @@
 		        		<div class="col-md-3">
 		        			<div class="footer-block">
 		        				<header class="header header--line header--left">
-		        					<h4 class="header-title">Kelionės</h4>
+		        					<h4 class="header-title">Popular</h4>
 		        				</header>
 			        			<ul class="list list--links">
 			        				<?php
 				        				$defaults = array(
-										    'theme_location'  => 'keliones',
+										    'theme_location'  => 'footer_4',
 										    'container'		  => '',
 										    'echo'            => true,
 										    'fallback_cb'     => 'wp_page_menu',
@@ -99,17 +99,38 @@
 	    		<div class="footer-bottom">
 	    			<div class="container">
 	    				<div class="footer-copyright pull-left">
-	        				KetoPositive.me ® <?php echo date('Y'); ?>
+	        				KetoPositive.me © <?php echo date('Y'); ?> All rights reserved.
 	        			</div>
+                        <div class="footer-bottom-menu pull-left">
+                            <ul>
+                                <?php
+                                    $defaults = array(
+                                        'theme_location'  => 'footer_copyright',
+                                        'container'		  => '',
+                                        'echo'            => true,
+                                        'fallback_cb'     => 'wp_page_menu',
+                                        'items_wrap'      => '%3$s'
+                                    );
+
+                                ?>
+
+                                <?php wp_nav_menu( $defaults ); ?>
+                            </ul>
+                        </div>
 	        			<div class="footer-social pull-right">
 	        					<li>
-                                    <a href="#">
+                                    <a href="#" target="_blank">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#" target="_blank">
                                         <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-youtube"></i>
                                     </a>
                                 </li>
 	        				</ul>

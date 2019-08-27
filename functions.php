@@ -345,8 +345,10 @@ register_nav_menus( array(
 	'pagrindinis' => __( 'Pagrindinis', 'kp' ),
 	'virsutinis' => __( 'Virsutinis', 'kp' ),
 	'virsutinis_mobilus' => __( 'Virsutinis Mobilus', 'kp' ),
-	'keliones'  => __( 'Kelionės', 'kp' ),
-	'naudinga'  => __( 'Naudinga informacija', 'kp' )
+    'footer_2'  => __( 'Footer 2', 'kp' ),
+	'footer_3'  => __( 'Footer 3', 'kp' ),
+    'footer_4'  => __( 'Footer 4', 'kp' ),
+    'footer_copyright'  => __( 'Footer Copyright', 'kp' )
 ) );
 
 

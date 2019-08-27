@@ -3834,6 +3834,12 @@ section.footer footer .footer-bottom {
   padding: 1em 0;
 }
 
+section.footer footer .footer-bottom .footer-bottom-menu li {
+    display: inline-block;
+    padding: 0 .7rem;
+    line-height: 22px;
+}
+
 @media screen and (max-width: 992px) {
   section.footer footer .footer-bottom {
     padding-top: 0;
@@ -4312,7 +4318,7 @@ since your site is should be mostly composed of tiny modules.
   content: " ";
   display: block;
   background: #f3e1d9;
-  height: 6px;
+  height: 4px;
   width: 40px;
 }
 
@@ -4354,8 +4360,8 @@ since your site is should be mostly composed of tiny modules.
 
 .header.header--line.header--left:after {
   left: 0;
-  bottom: -25px;
-  width: 27px;
+  bottom: -24px;
+  width: 37px;
 }
 
 .header.header--line.header--left .header-title {
