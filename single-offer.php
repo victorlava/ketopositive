@@ -14,15 +14,6 @@ get_header(); ?>
   		<div class="row">
   			<header class="header header--top header--main header--center">
 				<h2 class="header-title"><?php the_title(); ?></h2>
-				<div class="stars">
-					<ul class="list list--inline">
-							<li><i class="icon icon-star"></i></li>
-                            <li><i class="icon icon-star"></i></li>
-                            <li><i class="icon icon-star"></i></li>
-                            <li><i class="icon icon-star"></i></li>
-                            <li><i class="icon icon-star"></i></li>
-					</ul>
-				</div>
 			</header>
   		</div>
 		<div class="row">
