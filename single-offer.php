@@ -27,15 +27,15 @@ get_header(); ?>
   		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<?php if( have_rows('nuotraukos') ): ?>
+				<?php if( have_rows('images') ): ?>
 				<div id="hotel-carousel" class="carousel slide carousel--simple box-shadow" data-ride="carousel">
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 
 				  		<?php $b = 0; ?>
-				   		<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
+				   		<?php while ( have_rows('images') ) : the_row(); ?>
 					   		<div class="item<?php if($b == 0){echo " active";}?>">
-								<img class="box-shadow" src="<?php the_sub_field('nuotrauka'); ?>" width="825" height="508">
+								<img class="box-shadow" src="<?php the_sub_field('image'); ?>" width="825" height="508">
 						    </div>
 						    <?php $b = $b + 1; ?>
 				   		<?php endwhile; ?>
@@ -45,7 +45,7 @@ get_header(); ?>
 				  <!-- Indicators -->
 				  <ol class="carousel-indicators">
 				  	<?php $b = 0; ?>
-			   		<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
+			   		<?php while ( have_rows('images') ) : the_row(); ?>
 				   		<li data-target="#hotel-carousel" data-slide-to="<?php echo $b; ?>" class="<?php if($b == 0){ echo "active";}?>"></li>
 					    <?php $b = $b + 1; ?>
 			   		<?php endwhile; ?>
@@ -151,9 +151,9 @@ get_header(); ?>
 						<div class="data-block data-block--offer data-block--hoveroff">
 							<a href="<?php get_permalink();?>">
 								<div class="data-block-image">
-							   		<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
+							   		<?php while ( have_rows('images') ) : the_row(); ?>
 								   		<div class="data-block-image">
-											<img src="<?php the_sub_field('nuotrauka'); ?>">
+											<img src="<?php the_sub_field('image'); ?>">
 									    </div>
 									    <?php break; ?>
 							   		<?php endwhile; ?>
