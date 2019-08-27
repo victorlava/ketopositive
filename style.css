@@ -5646,7 +5646,7 @@ textarea {
   font-weight: bold;
   font-size: 15px;
   color: #545858;
-  padding: 18px 28px;
+  padding: 18px;
 }
 
 .button:hover, .button:focus, .button:active, .page-numbers:hover, .page-numbers:focus, .page-numbers:active {
@@ -6340,6 +6340,7 @@ section.favourite-hotels .carousel {
 
 .offer-form .button {
   margin-top: 15px;
+  text-align: center;
 }
 
 .offer-form .icon {
@@ -6360,7 +6361,7 @@ section.favourite-hotels .carousel {
 
 @media screen and (min-width: 1200px) {
   .offer-form.offer-form--long {
-    padding: 2.5em 7em;
+    padding: 2.5em 4em;
   }
 }
 
@@ -6568,12 +6569,13 @@ section.favourite-hotels .carousel {
 .offer-form .offer-form-first {
   font-weight: normal;
   color: #787575;
-  width: 45%;
+  width: 70%;
 }
 
 .offer-form .offer-form-second {
   color: #5b5858;
-  width: 55%;
+  width: 30%;
+  text-align: right;
 }
 
 .offer-form .offer-form-second .radio:first-child {

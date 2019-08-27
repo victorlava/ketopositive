@@ -72,59 +72,52 @@ get_header(); ?>
 				</article>
 									<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 
-		
+
 				<div id="uzsakyti" class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
 						<div class="row">
-							<h3 class="title">Užsakykite kelionę</h3>
-							<h3 class="sub-title"><?php the_field('keliones_kryptis'); ?></h3>
+							<h3 class="title">Nutrient information for <?php the_title(); ?></h3>
+							<h3 class="sub-title"><?php the_title(); ?></h3>
 						</div>
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-md-7">
 								<div class="row">
 									<ul>
 										<li>
 											<div class="offer-form-first">
-												<i class="icon icon-small-calendar"></i> Kelionės data:
+												<i class="icon icon-small-calendar"></i> Carbs / Fiber / Net Carbs:
 											</div>
 											<div class="offer-form-second date">
-												<?php the_field('keliones_data'); ?>
+												<?php the_field('carbs'); ?> / <?php the_field('fiber'); ?> / <?php the_field('net_carbs'); ?> g.
 											</div>
 										</li>
-										<li>
-											<div class="offer-form-first">
-												<i class="icon icon-small-bed"></i> Nakvynių skaičius:
+                                        <li>
+                                            <div class="offer-form-first">
+												<i class="icon icon-small-drink"></i>Fats:
 											</div>
-											<div class="offer-form-second">
-												<?php the_field('nakvyniu_skaicius'); ?>
+                                            <div class="offer-form-second">
+                                                <?php the_field('fats'); ?> g.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="offer-form-first">
+												<i class="icon icon-small-drink"></i>Proteins:
 											</div>
-										</li>
-										<li>
-											<div class="offer-form-first">
-												<i class="icon icon-small-drink"></i> Maitinimas:
-											</div>
-											<div class="js-track-change offer-form-second">
-												<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
-												<div class="js-first-radio radio">
-												  <input type="radio" id="breakfest-second" name="offer-radio-second" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked>
-												  <label for="breakfest-second"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('pirmos_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
-												</div>
-												<?php endif; ?>
-												<?php if(get_field('antros_eilutes_pavadinimas')): ?>
-												<div class="js-second-radio radio">
-												  <input type="radio" id="all-second" name="offer-radio-second" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
-												  <label for="all-second"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
-												</div>
-												<?php endif; ?>
-											</div>
-										</li>
+                                            <div class="offer-form-second">
+                                                <?php the_field('proteins'); ?> g.
+                                            </div>
+                                        </li>
 									</ul>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-md-offset-1">
 								<div class="price-wrapper">
-									<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p>
+									<p>Per serving <span class="js-change-price"><?php the_field('calories'); ?> kCal</span></p>
 								</div>
-								<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
+								<a href="<?php the_field('iframe_nuoroda'); ?>"
+                                    class="form-control button button--primary button--submit">
+                                    <i class="fas fa-print"></i>
+                                    Print Recipe
+                                </a>
 							</div>
 						</div>
 				</div>
