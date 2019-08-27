@@ -5280,7 +5280,6 @@ textarea {
 
 .data-block .title {
   margin: 0;
-  font-weight: bold;
   color: #3d3939;
   line-height: 1.1;
 }
@@ -5368,7 +5367,7 @@ textarea {
 }
 
 .data-block.data-block--simple .title {
-  color: #D33A2C;
+  color: #3d3939;
   font-size: 22px;
   margin-bottom: 12px;
 }
@@ -6327,6 +6326,10 @@ section.favourite-hotels .carousel {
   text-align: center;
 }
 
+.ingredient-wrapper {
+    margin-top: 2rem;
+}
+
 .offer-form label {
   font-size: 13px;
   line-height: 1.5;
@@ -6345,7 +6348,13 @@ section.favourite-hotels .carousel {
 .offer-form .icon {
   display: inline-block;
   margin-right: 10px;
-  vertical-align: sub;
+  background-color: #D33A2C;
+  color: white;
+  border-radius: 10rem;
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
 }
 
 .offer-form .icon.icon.icon-small-drink {
@@ -6561,8 +6570,8 @@ section.favourite-hotels .carousel {
 .offer-form .offer-form-first, .offer-form .offer-form-second {
   display: inline-block;
   font-size: 13px;
-  line-height: 1;
   vertical-align: top;
+  line-height: 27px;
 }
 
 .offer-form .offer-form-first {

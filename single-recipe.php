@@ -65,54 +65,79 @@ get_header(); ?>
 
 
 				<div class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
-						<div class="row">
-							<h3 class="title">Nutrient Information for <?php the_title(); ?></h3>
-						</div>
-						<div class="row">
-							<div class="col-md-7">
-								<div class="row">
-									<ul>
-										<li>
-											<div class="offer-form-first">
-												<i class="icon icon-small-calendar"></i> Carbs / Fiber / Net Carbs:
-											</div>
-											<div class="offer-form-second date">
-												<?php the_field('carbs'); ?> / <?php the_field('fiber'); ?> / <?php the_field('net_carbs'); ?> g.
-											</div>
-										</li>
-                                        <li>
-                                            <div class="offer-form-first">
-												<i class="icon icon-small-drink"></i>Fats:
-											</div>
-                                            <div class="offer-form-second">
-                                                <?php the_field('fats'); ?> g.
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="offer-form-first">
-												<i class="icon icon-small-drink"></i>Proteins:
-											</div>
-                                            <div class="offer-form-second">
-                                                <?php the_field('proteins'); ?> g.
-                                            </div>
-                                        </li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-md-4 col-md-offset-1">
-								<div class="price-wrapper">
-									<p>Total calories <br><span class="js-change-price"><?php the_field('calories'); ?> kCal</span></p>
-								</div>
-								<a href="<?php the_field('iframe_nuoroda'); ?>"
-                                    class="form-control button button--primary button--submit">
-                                    <i class="fas fa-print"></i>
-                                    Print Recipe
-                                </a>
+    				<div class="row">
+    					<h2 class="title">Nutrient Information for <?php the_title(); ?></h2>
+    				</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="row">
+								<ul>
+									<li>
+										<div class="offer-form-first">
+											<i class="icon fas fa-pizza-slice"></i>Carbs / Fiber / Net Carbs:
+										</div>
+										<div class="offer-form-second date">
+											<?php the_field('carbs'); ?> / <?php the_field('fiber'); ?> / <?php the_field('net_carbs'); ?> g.
+										</div>
+									</li>
+                                    <li>
+                                        <div class="offer-form-first">
+											<i class="icon fas fa-cheese"></i>Fats:
+										</div>
+                                        <div class="offer-form-second">
+                                            <?php the_field('fats'); ?> g.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="offer-form-first">
+											<i class="icon fas fa-fish"></i>Proteins:
+										</div>
+                                        <div class="offer-form-second">
+                                            <?php the_field('proteins'); ?> g.
+                                        </div>
+                                    </li>
+								</ul>
 							</div>
 						</div>
+						<div class="col-md-4 col-md-offset-1">
+							<div class="price-wrapper">
+								<p>Total calories <br><span class="js-change-price"><?php the_field('calories'); ?> kCal</span></p>
+							</div>
+							<a href="<?php the_field('iframe_nuoroda'); ?>"
+                                class="form-control button button--primary button--submit">
+                                <i class="fas fa-print"></i>
+                                Print Recipe
+                            </a>
+						</div>
+					</div>
+                    <?php if( have_rows('ingredients') ): ?>
+                    <div class="ingredient-wrapper">
+                        <div class="row">
+                            <h2 class="title">Ingredients</h2>
+                        </div>
+                        <div class="row">
+                        	<div class="col-md-7">
+                                <div class="row">
+    								<ul>
+                                        <?php while ( have_rows('ingredients') ) : the_row(); ?>
+    									<li>
+    										<div class="offer-form-first">
+                                                <i class="fas fa-circle"></i>
+                                                <?php the_sub_field('amount'); ?>
+                                                <?php echo get_term(get_sub_field('measurement_unit'))->name; ?>
+                                                <strong><?php echo get_term(get_sub_field('ingredient'))->name;  ?></strong>
+                                                <em><?php the_sub_field('comment'); ?></em>
+                                                <!-- 6 ounce peanut butter (creamy) -->
+    										</div>
+    									</li>
+                                        <?php endwhile; ?>
+    								</ul>
+    							</div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endif; ?>
 				</div>
-
-
 
 			</div>
 
