@@ -3774,20 +3774,26 @@ section.footer {
   background-size: cover;
   background-position: center bottom;
   position: relative;
-  color: #f3e1d9;
+  color: white;
   font-size: 14px;
   font-weight: 400;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-section.footer a {
-  color: #f3e1d9;
+section.footer a,
+section.footer p {
+  color: white;
+  opacity: 0.6;
+}
+
+section.footer .header.header--line.header--left .header-title {
+    color: white;
 }
 
 section.footer:after {
   content: " ";
-  background: rgba(54, 33, 29, 0.75);
+  background: rgba(21, 21, 21, 0.97);
   width: 100%;
   height: 100%;
   left: 0;
@@ -3808,7 +3814,6 @@ section.footer footer {
 
 section.footer footer .footer-top {
   padding: 5em 0 2em 0;
-  border-bottom: 1px solid #695853;
 }
 
 @media screen and (max-width: 992px) {
@@ -3831,7 +3836,13 @@ section.footer footer .footer-top .footer-block .header {
 }
 
 section.footer footer .footer-bottom {
-  padding: 1em 0;
+  padding: 1.2em 0;
+  background: rgb(21, 21, 21);
+}
+
+section.footer .footer-bottom .footer-copyright,
+section.footer .footer-bottom a {
+    opacity: 0.4;
 }
 
 section.footer footer .footer-bottom .footer-bottom-menu li {
@@ -3847,7 +3858,6 @@ section.footer footer .footer-bottom .footer-bottom-menu li {
 }
 
 section.footer footer .footer-bottom .footer-copyright {
-  color: #e2b9a7;
   line-height: 3.5;
 }
 
@@ -3878,17 +3888,21 @@ section.footer footer .footer-bottom .footer-copyright {
 section.footer .footer-social a {
     display: block;
     text-align: center;
-    line-height: 47px;
+    line-height: 37px;
 }
 
 section.footer footer .footer-bottom .footer-social li {
-  background: #463632;
-  width: 47px;
-  height: 47px;
+  background: #d33a2c;
+  width: 37px;
+  height: 37px;
   border-radius: 10em;
-  margin-left: 10px;
+  margin-left: 13px;
   list-style: none;
   display: inline-block;
+}
+
+section.footer footer .footer-bottom .footer-social li a {
+    opacity: 1;
 }
 
 section.footer footer .footer-bottom .footer-social li a .icon {
@@ -4424,7 +4438,6 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .list.list--links li {
-  border-bottom: 1px solid rgba(243, 225, 217, 0.2);
   line-height: 1.4;
 }
 
