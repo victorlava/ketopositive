@@ -76,7 +76,6 @@ get_header(); ?>
 				<div id="uzsakyti" class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
 						<div class="row">
 							<h3 class="title">Nutrient information for <?php the_title(); ?></h3>
-							<h3 class="sub-title"><?php the_title(); ?></h3>
 						</div>
 						<div class="row">
 							<div class="col-md-7">
@@ -111,7 +110,7 @@ get_header(); ?>
 							</div>
 							<div class="col-md-4 col-md-offset-1">
 								<div class="price-wrapper">
-									<p>Per serving <span class="js-change-price"><?php the_field('calories'); ?> kCal</span></p>
+									<p>Total calories <br><span class="js-change-price"><?php the_field('calories'); ?> kCal</span></p>
 								</div>
 								<a href="<?php the_field('iframe_nuoroda'); ?>"
                                     class="form-control button button--primary button--submit">
@@ -127,57 +126,6 @@ get_header(); ?>
 			</div>
 
 			<div class="sidebar col-md-4">
-
-				<div class="offer-form offer-form--short data-block data-block--simple data-block--hoveroff<?php if(get_field('rodyti_forma') != 'Ne'){ echo " hidden-xs hidden-sm";} ?>">
-					<h3 class="title"><?php the_field('keliones_kryptis_trumpa'); ?></h3>
-					<ul>
-						<li>
-							<div class="offer-form-first date">
-								<i class="icon icon-small-calendar"></i> Kelionės data:
-							</div>
-							<div class="offer-form-second date">
-								<?php the_field('keliones_data'); ?>
-							</div>
-						</li>
-						<li>
-							<div class="offer-form-first">
-								<i class="icon icon-small-bed"></i> Nakvynių skaičius:
-							</div>
-							<div class="offer-form-second">
-								<?php the_field('nakvyniu_skaicius'); ?>
-							</div>
-						</li>
-						<li>
-							<div class="offer-form-first">
-								<i class="icon icon-small-drink"></i> Maitinimas:
-							</div>
-							<div class="js-track-change offer-form-second">
-								<?php if(get_field('pirmos_eilutes_pavadinimas')): ?>
-								<div class="js-first-radio radio">
-								  <input type="radio" id="breakfest-first" name="offer-radio-first" value="<?php the_field('pirmos_eilutės_reiksmė'); ?>" checked>
-								  <label for="breakfest-first"><?php the_field('pirmos_eilutes_pavadinimas'); ?> <?php if(get_field('pirmos_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('pirmos_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
-								</div>
-								<?php endif; ?>
-								<?php if(get_field('antros_eilutes_pavadinimas')): ?>
-								<div class="js-second-radio radio">
-								  <input type="radio" id="all-first" name="offer-radio-first" value="<?php the_field('antros_eilutės_reiksmė'); ?>">
-								  <label for="all-first"><?php the_field('antros_eilutes_pavadinimas'); ?> <?php if(get_field('antros_eilutės_reiksmė')): ?><span class="highlight">+ <?php the_field('antros_eilutės_reiksmė'); ?>€</span><?php endif; ?></label>
-								</div>
-								<?php endif; ?>
-							</div>
-						</li>
-					</ul>
-					<div class="price-wrapper">
-						<p>Kaina: <span class="js-change-price"><?php the_field('kaina'); ?> €</span></p>
-					</div>
-					<?php if(get_field('rodyti_forma') == 'Ne'): ?>
-						<a href="<?php the_field('iframe_nuoroda'); ?>" class="form-control button button--primary button--submit">Užsakyti</a>
-					<?php else: ?>
-						<a href="#uzsakyti" class="form-control button button--primary button--submit">Užsakyti</a>
-					<?php endif; ?>
-
-
-				</div>
 
 				<?php
 					$args = array(
@@ -195,7 +143,7 @@ get_header(); ?>
 
 				<?php if( $getOffers->have_posts() ): ?>
 					<header class="header header--sidebar header--line">
-						<h4 class="header-title">Kiti pasiūlymai</h4>
+						<h4 class="header-title">Similar recipes</h4>
 					</header>
 
 
