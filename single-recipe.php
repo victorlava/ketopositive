@@ -1,6 +1,6 @@
 <?php
 /**
- * Offer
+ * Recipe
  *
  * @package WordPress
  */

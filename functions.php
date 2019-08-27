@@ -249,6 +249,7 @@ function create_hotels_taxonomies() {
 
 // hook into the init action and call create_book_taxonomies when it fires
 add_action( 'init', 'create_ingredient_taxonomies', 0 );
+add_action( 'init', 'create_units_taxonomy', 0 );
 
 // create two taxonomies, genres and writers for the post type "book"
 function create_ingredient_taxonomies() {
@@ -277,6 +278,35 @@ function create_ingredient_taxonomies() {
 	);
 
 	register_taxonomy( 'ingredient', 'recipe', $args );
+
+}
+
+function create_units_taxonomy() {
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Units', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Unit', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Units', 'textdomain' ),
+		'all_items'         => __( 'All Units', 'textdomain' ),
+		'parent_item'       => __( 'Parent Unit', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Unit:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Unit', 'textdomain' ),
+		'update_item'       => __( 'Update Unit', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Unit', 'textdomain' ),
+		'new_item_name'     => __( 'New Unit Name', 'textdomain' ),
+		'menu_name'         => __( 'Units', 'textdomain' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'unit' ),
+	);
+
+	register_taxonomy( 'unit', 'recipe', $args );
 
 }
 
