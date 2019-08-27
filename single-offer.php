@@ -64,9 +64,9 @@ get_header(); ?>
 									<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 
 
-				<div id="uzsakyti" class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
+				<div class="offer-form offer-form--long data-block data-block--simple data-block--hoveroff hidden-xs hidden-sm">
 						<div class="row">
-							<h3 class="title">Nutrient information for <?php the_title(); ?></h3>
+							<h3 class="title">Nutrient Information for <?php the_title(); ?></h3>
 						</div>
 						<div class="row">
 							<div class="col-md-7">
@@ -134,7 +134,7 @@ get_header(); ?>
 
 				<?php if( $getOffers->have_posts() ): ?>
 					<header class="header header--sidebar header--line">
-						<h4 class="header-title">Similar recipes</h4>
+						<h4 class="header-title">Similar Keto Recipes</h4>
 					</header>
 
 
