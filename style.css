@@ -3415,7 +3415,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 html {
   color: #3d3939;
-  background: #fff8f3;
+  background: white;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3964,7 +3964,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 
 @media screen and (min-width: 768px) {
   .navbar {
-    background: #fff8f3;
+    background: white;
   }
 }
 
@@ -3977,7 +3977,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
     position: absolute;
     top: 0;
     z-index: 5555;
-    background: #fff8f3;
+    background: white;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -4117,7 +4117,7 @@ section.footer footer .footer-bottom .footer-social li:hover a.instagram .icon, 
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-top .navbar-top-right .navbar-top-phone {
-    background: #fff8f3;
+    background: white;
     border-top: 1px solid #e8dfcc;
     padding: 14px 15px;
     margin-top: 20px;
@@ -4469,6 +4469,7 @@ since your site is should be mostly composed of tiny modules.
 .list.list--links li:focus a,
 .list.list--links li:active a {
   opacity: 1;
+  color: #C78248;
 }
 
 .list.list--phones li {
@@ -4509,8 +4510,8 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav.nav--main li.current_page_item, .nav.nav--main li:hover, .nav.nav--main li:focus, .nav.nav--main li:active {
-  background: #C78248;
-  border-color: #C78248;
+  background: #D33A2C;
+  border-color: #D33A2C;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -4733,7 +4734,7 @@ since your site is should be mostly composed of tiny modules.
 }
 
 .nav li.menu-item-has-children ul.sub-menu li:hover, .nav li.menu-item-has-children ul.sub-menu li:focus, .nav li.menu-item-has-children ul.sub-menu li:active {
-  background: #fff8f3;
+  background: white;
 }
 
 .nav li.menu-item-has-children ul.sub-menu li a {
@@ -5017,7 +5018,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .main-search form .main-search-inputs > div .input-group-addon {
-  background: #fff8f3;
+  background: white;
   border: 1px solid #e6d3c5;
   border-color: #e6d3c5;
   border-radius: 0;
@@ -5115,7 +5116,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 
 .input-group.input-group--select .dropdown-menu.open .dropdown-menu.inner {
   min-width: 0 !important;
-  background-color: #fff8f3 !important;
+  background-color: white !important;
   border-bottom-left-radius: 4px !important;
   border-bottom-right-radius: 4px !important;
   margin-top: 0 !important;
@@ -5168,7 +5169,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .input-group.input-group--select .dropdown-menu.open .dropdown-menu.inner {
-  background-color: #fff8f3 !important;
+  background-color: white !important;
   border-bottom-left-radius: 4px !important;
   border-bottom-right-radius: 4px !important;
   margin-top: 0 !important;
@@ -5186,7 +5187,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .input-group.input-group--select .btn {
-  background: #fff8f3;
+  background: white;
   border-radius: 0;
   border: 1px solid #e6d3c5;
   border-left: 0;
@@ -5229,7 +5230,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .input-group.input-group--select .input-group-addon {
-  background: #fff8f3;
+  background: white;
   border: 1px solid #e6d3c5;
   border-color: #e6d3c5;
   border-radius: 0;
@@ -5241,7 +5242,7 @@ section.email .email-wrapper .email-form form .email-submit input {
 }
 
 .input-group.input-group--select select {
-  background: #fff8f3;
+  background: white;
   border-radius: 0;
   border: 1px solid #e6d3c5;
   border-left: 0;
