@@ -4816,13 +4816,18 @@ section.email {
   padding: 0;
 }
 
+section.email .header-sub-title {
+    font-size: 16px;
+    opacity: 1;
+}
+
 section.email .mailerlite-form .mailerlite-subscribe-button-container,
 section.email .mailerlite-form .mailerlite-form-field {
   padding: 0;
 }
 
 section.email .email-wrapper {
-  background-color: #fff8f3;
+  background-color: white;
   padding: 20px;
   box-shadow: 0 0 53px 5px rgba(0, 0, 0, 0.25);
   bottom: 142px;
@@ -4831,25 +4836,25 @@ section.email .email-wrapper {
   overflow: hidden;
 }
 
+section.email .email-wrapper i {
+    font-size: 270px;
+    color: #ebebeb;
+    position: absolute;
+    transform: rotate(-14deg);
+    top: 15px;
+    left: -15px;
+}
+
 @media screen and (min-width: 768px) {
   section.email .email-wrapper {
     padding: 5em 20px;
   }
 }
 
-section.email .email-wrapper:before {
-  content: " ";
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  background-image: url(assets/img/src/sprites.png);
-  background-position: 0px 0px;
-  width: 279px;
-  height: 228px;
-}
-
 section.email .email-wrapper .header {
   margin-bottom: 32px;
+  z-index: 1;
+  position: relative;
 }
 
 section.email .email-wrapper .email-form {
@@ -4868,7 +4873,7 @@ section.email .email-wrapper .email-form form > div {
 }
 
 section.email .email-wrapper .email-form form .email-email input {
-  border: 1px solid #eeded3;
+  border: 1px solid #e2e2e2;
   padding: 21px;
   height: 50px !important;
 }
@@ -4887,8 +4892,8 @@ section.email .email-wrapper .email-form form .email-email input:focus, section.
 
 section.email .email-wrapper .email-form form .email-submit input {
   width: 100%;
-  text-transform: capitalize;
-  letter-spacing: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   padding: 14px;
 }
 
