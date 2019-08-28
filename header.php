@@ -157,11 +157,19 @@
 	      </div>
 	  </div><!-- .navbar-top -->
 
+
 	  <div class="navbar-bottom">
 	    <div class="container">
 	      <div class="row">
 	        <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
 	          <img class="navbar-close" src="<?php echo get_template_directory_uri(); ?>/assets/img/src/close.png" width="16" height="16">
+              <i class="far fa-lightbulb"></i>
+              <i class="fas fa-ice-cream"></i>
+              <i class="fas fa-egg"></i>
+              <i class="fas fa-carrot"></i>
+              <i class="fas fa-candy-cane"></i>
+              <i class="fas fa-drumstick-bite"></i>
+              <i class="fas fa-fish"></i>
 	          <ul class="nav nav--main navbar-nav">
             	<?php
     				$defaults = array(
