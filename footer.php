@@ -24,7 +24,7 @@
 		        		<div class="col-md-3">
 		        			<div class="footer-block">
 		        				<header class="header header--line header--left">
-		        					<h4 class="header-title">About ketopositive.me</h4>
+		        					<h4 class="header-title">About KetoPositive.me</h4>
 		        				</header>
 			        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
 		        			</div>
@@ -99,7 +99,7 @@
 	    		<div class="footer-bottom">
 	    			<div class="container">
 	    				<div class="footer-copyright pull-left">
-	        				KetoPositive.me © <?php echo date('Y'); ?> All rights reserved.
+	        				<a href="#">KetoPositive.me</a> © <?php echo date('Y'); ?> All rights reserved.
 	        			</div>
                         <div class="footer-bottom-menu pull-left">
                             <ul>

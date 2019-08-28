@@ -3832,7 +3832,7 @@ section.footer footer .footer-top {
 }
 
 section.footer footer .footer-top .footer-block .header {
-  margin-bottom: 1.4em;
+  margin-bottom: 2em;
 }
 
 section.footer footer .footer-bottom {
@@ -3843,6 +3843,10 @@ section.footer footer .footer-bottom {
 section.footer .footer-bottom .footer-copyright,
 section.footer .footer-bottom a {
     opacity: 0.4;
+}
+
+section.footer .footer-social {
+    margin: 6px 0;
 }
 
 section.footer footer .footer-bottom .footer-bottom-menu li {
@@ -3859,6 +3863,16 @@ section.footer footer .footer-bottom .footer-bottom-menu li {
 
 section.footer footer .footer-bottom .footer-copyright {
   line-height: 3.5;
+}
+
+section.footer footer .footer-bottom .footer-copyright a {
+    opacity: 1;
+}
+
+section.footer footer .footer-bottom .footer-copyright a:hover,
+section.footer footer .footer-bottom .footer-copyright a:active,
+section.footer footer .footer-bottom .footer-copyright a:focus {
+    opacity: 1;
 }
 
 @media screen and (max-width: 992px) {
@@ -3901,6 +3915,11 @@ section.footer footer .footer-bottom .footer-social li {
   display: inline-block;
 }
 
+section.footer footer .footer-bottom .footer-social li:hover,
+section.footer footer .footer-bottom .footer-social li:focus {
+    background: #C78248 !important;
+}
+
 section.footer footer .footer-bottom .footer-social li a {
     opacity: 1;
 }
@@ -3912,7 +3931,7 @@ section.footer footer .footer-bottom .footer-social li a .icon {
   margin: auto;
 }
 
-section.footer footer .footer-bottom .footer-social li:hover, section.footer footer .footer-bottom .footer-social li:active, section.footer footer .footer-bottom .footer-social li:focus {
+section.footer footer .footer-bottom .footer-social li:active, section.footer footer .footer-bottom .footer-social li:focus {
   background: #D33A2C;
 }
 
@@ -4446,8 +4465,10 @@ since your site is should be mostly composed of tiny modules.
   padding: 8px 0;
 }
 
-.list.list--links li:hover, .list.list--links li:focus, .list.list--links li:active {
-  background: rgba(255, 248, 243, 0.15);
+.list.list--links li:hover a,
+.list.list--links li:focus a,
+.list.list--links li:active a {
+  opacity: 1;
 }
 
 .list.list--phones li {
