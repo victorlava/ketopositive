@@ -1,4 +1,20 @@
 <?php
+
+add_filter('wp_nav_menu_objects', 'func_nav_main_icon', 10, 2);
+
+function func_nav_main_icon( $items, $args ) {
+
+	foreach( $items as &$item ) {
+		$icon = get_field('icon', $item);
+
+		if( $icon ) {
+			$item->title .= $icon;
+		}
+	}
+
+	return $items;
+}
+
 /**
  * Enqueue scripts and styles.
  *

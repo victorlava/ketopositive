@@ -2474,10 +2474,21 @@ tbody.collapse.in {
   margin: 7.5px -15px;
 }
 
+.navbar-nav a i {
+    float: left;
+    color: white;
+    width: 27px;
+    height: 27px;
+    border-radius: 10rem;
+    background-color: #D33A2C;
+    line-height: 27px;
+    font-size: 14px;
+}
+
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 27px;
 }
 
 @media (max-width: 767px) {
