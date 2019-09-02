@@ -8,12 +8,18 @@ get_header(); ?>
 
   <main id="main">
 
+        <div class="archive-wrapper">
+            <div class="container">
+                <div class="row">
+        		  	<header class="header header--top header--main header--line header--center">
+        				<h1 class="header-title"><?php single_tag_title(); ?></h1>
+        			</header>
+        		</div>
+            </div>
+        </div>
+
   	  	<div class="container">
-  		<div class="row">
-		  	<header class="header header--top header--main header--line header--center">
-				<h1 class="header-title"><?php single_tag_title(); ?></h1>
-			</header>
-		</div>
+
 
         <?php
             $term = get_queried_object();
@@ -86,6 +92,8 @@ get_header(); ?>
 					?>
 				</div>
 			</div>
+            <?php else: ?>
+                <h3 class="text-center"><strong>Sorry</strong>, no recipes have been found.</h3>
 			<?php endif; ?>
 		</div>
 	</div>

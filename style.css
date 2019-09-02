@@ -4816,7 +4816,7 @@ section.email .mailerlite-form .mailerlite-form-field {
 section.email .email-wrapper {
   background-color: white;
   padding: 20px;
-  box-shadow: 0 0 53px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 53px 5px rgba(0, 0, 0, 0.15);
   bottom: 142px;
   border-radius: 10px;
   position: relative;
@@ -5308,7 +5308,7 @@ textarea {
 }
 
 .data-block {
-  background: #FFF;
+  background: #f7f7f7;
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 3px 0px 0px rgba(0, 0, 0, 0.1);
@@ -5360,7 +5360,7 @@ textarea {
 
 @media screen and (min-width: 992px) {
   .data-block.data-block--article .data-block-image {
-    height: 190px;
+    height: 234px;
   }
 }
 
@@ -5498,7 +5498,7 @@ textarea {
 }
 
 .data-block.data-block--offer .data-block-info .included {
-  background: #fbfaf3;
+  background: #fff;
   border: 1px solid #f1eedb;
   border-radius: 4px;
   padding: 8px;
@@ -6474,7 +6474,7 @@ section.favourite-hotels .carousel {
 }
 
 .offer-form.offer-form--long .offer-form-price .price-wrapper {
-  background: #f1eedb;
+  background: #fff;
   border-radius: 0;
   padding: 18px 10px;
   margin-bottom: 0;
@@ -6658,7 +6658,7 @@ section.favourite-hotels .carousel {
 }
 
 .price-wrapper {
-  background: #fbfaf3;
+  background: #fff;
   border: 1px solid #f1eedb;
   border-radius: 6px;
   padding: 6px 10px;
@@ -7346,3 +7346,16 @@ body.page-template-template-iframe .article {
 .text-center {
 	text-align: center;
 }
+
+.archive-wrapper {
+    background-color: black;
+    padding: 2rem 0 2.5rem 0;
+    color: white;
+    margin-bottom: 3.5rem;
+    background: url('./assets/img/src/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.archive-wrapper .header.header--top .header-title { color: white; }
