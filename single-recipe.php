@@ -12,7 +12,7 @@ get_header(); ?>
 
   	<div class="container">
   		<div class="row">
-  			<header class="header header--top header--main header--center">
+  			<header class="header header--top">
 				<h2 class="header-title"><?php the_title(); ?></h2>
 			</header>
   		</div>
@@ -150,10 +150,10 @@ get_header(); ?>
 			<div class="sidebar col-md-4">
 				<?php
 					$args = array(
-						'post_type'              => array( 'offer' ),
+						'post_type'              => array( 'recipe' ),
 						'post_status'            => array( 'public' ),
-						'orderby'                => 'rand',
-						'posts_per_page'		 => 2
+						'orderby'                => 'date',
+						'posts_per_page'		 => 5
 					);
 
 					// The Query
@@ -170,7 +170,7 @@ get_header(); ?>
 
 					<?php while( $getOffers->have_posts() ) : $getOffers->the_post(); ?>
 						<div class="data-block data-block--offer data-block--hoveroff">
-							<a href="<?php get_permalink();?>">
+							<a href="<?php the_permalink();?>">
 								<div class="data-block-image">
 							   		<?php while ( have_rows('images') ) : the_row(); ?>
 								   		<div class="data-block-image">
