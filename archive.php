@@ -61,9 +61,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<div class="sidebar col-md-4">
-				<div class="data-block data-block--offer data-block--simple data-block--cloud data-block--hoveroff">
-					<?php wp_tag_cloud( '' ); ?>
-				</div>
+		
 
 					<?php
 						$args = array(
