@@ -11,16 +11,36 @@ get_header(); ?>
   	  	<div class="container">
   		<div class="row">
 		  	<header class="header header--top header--main header--line header--center">
-				<h1 class="header-title">
-                    <?php single_tag_title(); ?></h1>
+				<h1 class="header-title"><?php single_tag_title(); ?></h1>
 			</header>
 		</div>
 
+        <?php
+            $term = get_queried_object();
+            $term_name = apply_filters( 'single_cat_title', $term->name );
+            
+    		$args = array(
+    			'post_type'              => array( 'recipe' ),
+    			'post_status'            => array( 'publish' ),
+    			'posts_per_page' => 6,
+                'tax_query' => array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field' => 'name',
+                            'terms'  => $term_name,
+                        ),
+                    ),
+    		);
+
+    		// The Query
+    		$recipes = new WP_Query( $args );
+
+    	?>
 		<div class="row">
-			<?php if ( have_posts() ) : ?>
-			<div class="col-md-8 content-wrapper">
-				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="col-md-6">
+			<?php if ( $recipes->have_posts() ) : ?>
+			<div class="col-md-12 content-wrapper">
+				<?php while ( $recipes->have_posts() ) : $recipes->the_post(); ?>
+				<div class="col-md-4">
 					<div class="data-block data-block--offer data-block--article">
 						<div class="data-block-image">
 							<?php if ( has_post_thumbnail() ) : ?>
