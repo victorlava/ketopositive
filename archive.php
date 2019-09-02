@@ -18,7 +18,7 @@ get_header(); ?>
         <?php
             $term = get_queried_object();
             $term_name = apply_filters( 'single_cat_title', $term->name );
-            
+
     		$args = array(
     			'post_type'              => array( 'recipe' ),
     			'post_status'            => array( 'publish' ),
@@ -43,22 +43,30 @@ get_header(); ?>
 				<div class="col-md-4">
 					<div class="data-block data-block--offer data-block--article">
 						<div class="data-block-image">
-							<?php if ( has_post_thumbnail() ) : ?>
-							    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-							        <?php the_post_thumbnail('full'); ?>
-							    </a>
-							<?php else: ?>
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/src/offer.jpg">
-							<?php endif; ?>
+						    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+						        <?php the_post_thumbnail('full'); ?>
+						    </a>
 					    </div>
 						<div class="data-block-info">
 							<a href="<?php echo esc_url( get_permalink()); ?>">
 								<h3 class="title"><?php the_title(); ?></h3>
-								<span class="comment-count"><?php comments_number( '0', '1', '%' ); ?></span>
 							</a>
 							<p><?php echo get_excerpt(); ?></p>
-							<div class="tag-links">
-								<?php the_tags(''); ?>
+                            <div class="included">
+								<ul class="list list--inline">
+									<li>
+                                        <i class="icon fas fa-pizza-slice" aria-hidden="true"></i>
+                                        <span><?php the_field('carbs'); ?> g.</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon fas fa-cheese" aria-hidden="true"></i>
+                                        <span><?php the_field('fats'); ?> g.</span>
+                                    </li>
+									<li>
+                                        <i class="icon fas fa-fish" aria-hidden="true"></i>
+                                        <span><?php the_field('proteins'); ?> g.</span>
+                                    </li>
+								</ul>
 							</div>
 						</div>
 					</div>

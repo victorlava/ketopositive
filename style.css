@@ -4264,6 +4264,7 @@ body.home #main:after {
 
 #main {
     min-height: 500px;
+    padding-bottom: 13rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -5366,7 +5367,7 @@ textarea {
 @media screen and (min-width: 992px) {
   .data-block.data-block--article .data-block-image img {
     width: auto;
-    height: 190px;
+    height: 234px;
   }
 }
 
