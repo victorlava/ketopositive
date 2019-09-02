@@ -59,55 +59,6 @@ get_header(); ?>
 				</div>
 			</div>
 			<?php endif; ?>
-
-			<div class="sidebar col-md-4">
-		
-
-					<?php
-						$args = array(
-							'post_type'              => array( 'hotels' ),
-							'post_status'            => array( 'publish' ),
-							'orderby'                => 'rand',
-							'posts_per_page' 		 => 10
-						);
-
-						// The Query
-						$getHotels = new WP_Query( $args );
-
-						//echo "<pre>";
-						//print_R($getHotels);
-						//echo "</pre>";
-
-					?>
-				<?php if( $getHotels->have_posts() ): ?>
-				<header class="header header--sidebar header--line">
-					<h4 class="header-title">Turkijos viešbučių TOP10</h4>
-				</header>
-
-				<?php while( $getHotels->have_posts() ) : $getHotels->the_post(); ?>
-				<div class="data-block data-block--offer data-block--hotels data-block--sidebar">
-					<a href="<?php the_field('nuoroda'); ?>">
-						<div class="data-block-image">
-							<img src="<?php the_field('nuotrauka'); ?>">
-						</div>
-						<div class="data-block-info">
-							<h4 class="title"><?php the_title();?></h4>
-							<div class="stars">
-								<?php $iterator = get_field('zvaigzduciu_skaicius'); $iterator = $iterator * 1; ?>
-								<ul class="list list--inline">
-									<?php for($i=0;$i < $iterator; $i++): ?>
-										<li><i class="icon icon-star"></i></li>
-									<?php endfor; ?>
-								</ul>
-							</div>
-							<p class="time"><?php the_field('vieta'); ?></p>
-						</div>
-					</a>
-				</div>
-				<?php endwhile; ?>
-				<?php endif;?>
-
-			</div>
 		</div>
 	</div>
 
