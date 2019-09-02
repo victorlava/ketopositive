@@ -5544,7 +5544,13 @@ textarea {
 
 .data-block.data-block--offer .data-block-info .included ul li {
   font-weight: 400;
-  width: 50%;
+  width: 33.33%;
+  line-height: 1.9;
+}
+
+.data-block.data-block--offer li span {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
@@ -5558,16 +5564,12 @@ textarea {
 }
 
 .data-block.data-block--offer .data-block-info .included ul li .icon {
-  display: inline-block;
-  margin-right: 4px;
-  font-weight: 300;
-  padding-top: 5px;
-  vertical-align: middle;
+
 }
 
 @media screen and (min-width: 768px) {
   .data-block.data-block--offer .data-block-info .included ul li .icon {
-    margin-right: 7px;
+    margin-right: 3px;
   }
 }
 
@@ -6414,7 +6416,8 @@ section.favourite-hotels .carousel {
   text-align: center;
 }
 
-.offer-form .icon {
+.offer-form .icon,
+.data-block.data-block--offer .data-block-info .icon {
   display: inline-block;
   margin-right: 10px;
   background-color: #D33A2C;
@@ -6641,6 +6644,12 @@ section.favourite-hotels .carousel {
   font-size: 13px;
   vertical-align: top;
   line-height: 27px;
+}
+
+.offer-form .offer-form-first .fa-circle {
+    font-size: 10px;
+    padding-right: 5px;
+    vertical-align: middle;
 }
 
 .offer-form .offer-form-first {

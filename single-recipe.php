@@ -148,7 +148,6 @@ get_header(); ?>
 			</div>
 
 			<div class="sidebar col-md-4">
-
 				<?php
 					$args = array(
 						'post_type'              => array( 'offer' ),
@@ -182,19 +181,20 @@ get_header(); ?>
 								</div>
 								<div class="data-block-info">
 									<h4 class="title"><?php the_title(); ?></h4>
-									<time datetime="2001-05-15T19:00"><?php the_field('keliones_data'); ?></time>
-									<div class="price-wrapper">
-										<div class="align align--vertical">
-											<p><?php the_field('kaina'); ?>€</p>
-											<?php if(get_field('sena_kaina')): ?>
-												<p class="old-price"><?php the_field('sena_kaina'); ?>€</p>
-											<?php endif; ?>
-										</div>
-									</div>
 									<div class="included">
 										<ul class="list list--inline">
-											<li><i class="icon icon-bed"></i> <?php the_field('nakvyniu_skaicius'); ?></li>
-											<li><i class="icon icon-drink"></i> Viskas įskaičiuota</li>
+											<li>
+                                                <i class="icon fas fa-pizza-slice" aria-hidden="true"></i>
+                                                <span><?php the_field('carbs'); ?> g.</span>
+                                            </li>
+                                            <li>
+                                                <i class="icon fas fa-cheese" aria-hidden="true"></i>
+                                                <span><?php the_field('fats'); ?> g.</span>
+                                            </li>
+											<li>
+                                                <i class="icon fas fa-fish"></i>
+                                                <span><?php the_field('proteins'); ?> g.</span>
+                                            </li>
 										</ul>
 									</div>
 								</div>
