@@ -14,7 +14,8 @@ function func_nav_main_icon( $items, $args ) {
 
 	return $items;
 }
-
+global $wp_rewrite;
+    $wp_rewrite->flush_rules();
 /**
  * Enqueue scripts and styles.
  *
