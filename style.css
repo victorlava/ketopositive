@@ -5677,6 +5677,15 @@ textarea {
   border: 0;
 }
 
+.breadcrumb {
+    padding: 14px 4px 0 4px;
+    font-weight: 300;
+}
+
+.breadcrumb a {
+    color: #C78248;
+}
+
 .button, .page-numbers {
   box-shadow: inset 0 -3px 0px 0px rgba(0, 0, 0, 0.1);
   border: 0;

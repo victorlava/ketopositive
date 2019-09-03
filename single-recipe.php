@@ -12,9 +12,14 @@ get_header(); ?>
 
   	<div class="container">
   		<div class="row">
-  			<header class="header header--top">
-				<h2 class="header-title"><?php the_title(); ?></h2>
-			</header>
+  			<div class="col-md-12">
+                <header class="header header--top">
+                  <h2 class="header-title"><?php the_title(); ?></h2>
+                    <div class="breadcrumb">
+                        <?php get_breadcrumb(); ?>
+                    </div>
+              </header>
+            </div>
   		</div>
 		<div class="row">
 			<div class="col-md-8">
