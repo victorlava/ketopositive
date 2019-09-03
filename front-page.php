@@ -35,7 +35,7 @@ get_header(); ?>
 
 	<?php
 		$args = array(
-			'post_type'              => array( 'offer' ),
+			'post_type'              => array( 'recipe' ),
 			'post_status'            => array( 'publish' ),
 			'posts_per_page' => 6
 		);
@@ -50,8 +50,8 @@ get_header(); ?>
   		<div class="container">
 	  		<div class="row">
 	  			<header class="header header--main header--line header--center">
-					<h2 class="header-title">Karščiausi kelionių pasiūlymai</h2>
-					<p class="header-sub-title">Atrinkome populiariausias kryptis ir geriausius viešbučius</p>
+					<h2 class="header-title">Recipes</h2>
+					<p class="header-sub-title">Popular Keto Recipes</p>
 				</header>
 	  		</div>
 
@@ -59,43 +59,42 @@ get_header(); ?>
 				<?php $b = 0; ?>
 				<?php while( $getOffers->have_posts() ) : $getOffers->the_post(); ?>
 				<div class="col-md-4">
-					<div class="data-block data-block--offer">
-						<a href="<?php the_permalink();?>">
-
-							<?php while ( have_rows('nuotraukos') ) : the_row(); ?>
-						   		<div class="data-block-image">
-									<img src="<?php the_sub_field('nuotrauka'); ?>">
-							    </div>
-							    <?php break; ?>
-					   		<?php endwhile; ?>
-
-							<div class="data-block-info">
-								<h4 class="title"><?php the_title(); ?></h4>
-								<time datetime="2001-05-15T19:00"><?php the_field('keliones_data'); ?></time>
-								<div class="price-wrapper">
-									<div class="align align--vertical">
-										<p><?php the_field('kaina'); ?>€</p>
-										<?php if(get_field('sena_kaina')): ?>
-											<p class="old-price"><?php the_field('sena_kaina'); ?>€</p>
-										<?php endif; ?>
-									</div>
-								</div>
-								<div class="included">
-									<ul class="list list--inline">
-										<li><i class="icon icon-bed"></i> <?php the_field('nakvyniu_skaicius'); ?></li>
-										<li><i class="icon icon-drink"></i> Viskas įskaičiuota</li>
-									</ul>
-								</div>
-							</div>
-						</a>
-					</div>
+                    <div class="data-block data-block--offer data-block--article">
+                        <div class="data-block-image">
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <?php the_post_thumbnail('full'); ?>
+                            </a>
+                        </div>
+                        <div class="data-block-info">
+                            <a href="<?php echo esc_url( get_permalink()); ?>">
+                                <h3 class="title"><?php the_title(); ?></h3>
+                            </a>
+                            <p><?php echo get_excerpt(); ?></p>
+                            <div class="included">
+                                <ul class="list list--inline">
+                                    <li>
+                                        <i class="icon fas fa-pizza-slice" aria-hidden="true"></i>
+                                        <span><?php the_field('carbs'); ?> g.</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon fas fa-cheese" aria-hidden="true"></i>
+                                        <span><?php the_field('fats'); ?> g.</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon fas fa-fish" aria-hidden="true"></i>
+                                        <span><?php the_field('proteins'); ?> g.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 				<?php endwhile; ?>
 			</div>
 
 			<div class="row">
 				<hr class="empty half">
-				<a href="pasiulymas/" class="button button--long button--center">Žiūrėti visus pasiūlymus</a>
+				<a href="keto/all-recipes/" class="button button--primary button--long button--center">Click to See More Recipes</a>
 			</div>
 		</div>
   	</section>
@@ -106,8 +105,8 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<header class="header header--main header--line header--center">
-						<h2 class="header-title">Mėgstamiausi mūsų keliautojų viešbučiai</h2>
-						<p class="header-sub-title">Jūsų rinktinės vietos</p>
+						<h2 class="header-title">What is a Keto Diet?</h2>
+						<p class="header-sub-title">A quick explanation on what is the Keto Diet</p>
 					</header>
 				</div>
 			</div>
