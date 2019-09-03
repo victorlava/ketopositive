@@ -4801,6 +4801,7 @@ section.email {
   z-index: 5;
   position: relative;
   padding: 0;
+  max-height: 200px;
 }
 
 section.email .header-sub-title {
