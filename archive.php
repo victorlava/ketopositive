@@ -8,7 +8,7 @@ get_header(); ?>
 
   <main id="main">
 
-        <div class="archive-wrapper">
+        <div class="archive-wrapper" style="background-image:url(<?php the_field('background_image'); ?>);">
             <div class="container">
                 <div class="row">
         		  	<header class="header header--top header--main header--line header--center">
@@ -24,18 +24,21 @@ get_header(); ?>
         <?php
             $term = get_queried_object();
             $term_name = apply_filters( 'single_cat_title', $term->name );
+            $tax_query = array(
+                                array(
+                                    'taxonomy' => 'category',
+                                    'field' => 'name',
+                                    'terms'  => $term_name,
+                                ),
+                            );
+                            
+            if(get_field('show_all_recipes') === 'Yes') { $tax_query = array(); }
 
     		$args = array(
     			'post_type'              => array( 'recipe' ),
     			'post_status'            => array( 'publish' ),
     			'posts_per_page' => 6,
-                'tax_query' => array(
-                        array(
-                            'taxonomy' => 'category',
-                            'field' => 'name',
-                            'terms'  => $term_name,
-                        ),
-                    ),
+                'tax_query' => $tax_query,
     		);
 
     		// The Query
