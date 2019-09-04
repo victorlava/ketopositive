@@ -141,7 +141,7 @@
     					FOLLOW OUR INSTAGRAM
     				</div>
 				  </div>
-	              <a href="tel:+37052124474">@ketopositive</a>
+	              <a href="<?php the_field('instagram', 'option'); ?>" target="_blank">@keto.positive</a>
 	            </div>
 
 	            <div class="navbar-header">

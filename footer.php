@@ -119,18 +119,23 @@
                         </div>
 	        			<div class="footer-social pull-right">
 	        					<li>
-                                    <a href="#" target="_blank">
+                                    <a href="<?php the_field('instagram', 'option'); ?>" target="_blank">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="<?php the_field('youtube', 'option'); ?>" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php the_field('pinterest', 'option'); ?>" target="_blank">
                                         <i class="fab fa-pinterest-p"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
-                                        <i class="fab fa-youtube"></i>
+                                    <a href="<?php the_field('facebook', 'option'); ?>" target="_blank">
+                                        <i class="fab fa-facebook"></i>
                                     </a>
                                 </li>
 	        				</ul>
