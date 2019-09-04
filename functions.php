@@ -1,5 +1,9 @@
 <?php
 
+// Remove on ProductioN!!!
+global $wp_rewrite;
+$wp_rewrite->flush_rules();
+
 add_filter('wp_nav_menu_objects', 'func_nav_main_icon', 10, 2);
 
 function func_nav_main_icon( $items, $args ) {
@@ -14,8 +18,27 @@ function func_nav_main_icon( $items, $args ) {
 
 	return $items;
 }
-global $wp_rewrite;
-    $wp_rewrite->flush_rules();
+
+function register_acf_options_pages() {
+
+    // Check function exists.
+    if( !function_exists('acf_add_options_page') )
+        return;
+
+    // register options page.
+    $option_page = acf_add_options_page(array(
+        'page_title'    => __('Custom Settings'),
+        'menu_title'    => __('Custom Settings'),
+        'menu_slug'     => 'theme-custom-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+
+// Hook into acf initialization.
+add_action('acf/init', 'register_acf_options_pages');
+
+
 /**
  * Enqueue scripts and styles.
  *
