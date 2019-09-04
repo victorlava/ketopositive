@@ -109,6 +109,32 @@ get_header(); ?>
 						<p class="header-sub-title">A quick explanation on what is the Keto Diet</p>
 					</header>
 				</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Ketogenic Diet</h3>
+                        <p>A ketogenic diet is a low carb, high fat diet that turns your body into a fat-burning machine. When insulin - the fat storing hormone - levels drop, you will feel the difference of an optimal body. Keto has many weight loss, health and performance benefits for type 2 diabetes, epilepsy, PCOS, metabolic syndrome, blood pressure, cholesterol, mental focus and numerous autoimmune diseases.
+
+                        </p>
+                        <p>Keto restricts your intake of sugar and starchy foods, like pasta and bread. Instead, you'll eat delicious real food with selective protein, healthy fats, and vegetables for nutrients. Ruled.me contains everything you need - what to eat, what to avoid, and exactly how to do it.</p>
+
+                        <p>To learn more, take a peek at our guide:</p>
+                        <a href="#" target="_blank" class="button button--primary">Start Here</a>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Start changing your life</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" target="_blank" class="button button--primary">Join the club</a>
+                    </div>
+                </div>
 			</div>
 
   	</section>
