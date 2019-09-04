@@ -5955,13 +5955,11 @@ section.favourite-hotels .header {
 
 section.favourite-hotels:after {
   bottom: 0;
-  background-image: url("./assets/img/src/carousel-bottom.jpg");
   background-position: center;
 }
 
 section.favourite-hotels:before {
   top: 0;
-  background-image: url("./assets/img/src/carousel-top.jpg");
 }
 
 section.favourite-hotels:after, section.favourite-hotels:before {
