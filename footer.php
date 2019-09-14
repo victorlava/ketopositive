@@ -26,7 +26,7 @@
 		        				<header class="header header--line header--left">
 		        					<h4 class="header-title">About KetoPositive.me</h4>
 		        				</header>
-			        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                                <p>Our goal is to motivate you and explore delicious recipes to start your life-changing keto journey. Explore tasty keto recipes and start your weight loss journey in a fun and approachable way possible. </p>
 		        			</div>
 		        		</div>
 
